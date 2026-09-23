@@ -1,0 +1,23 @@
+{
+  "source_commit": "a332abc73dca97f769054c4f61aef0a52009cf34",
+  "model": "repo simple_mlp_net, batch_size=8, hidden_sizes=[64,128,64], num_classes=10, training graph",
+  "torch_version": "2.5.1+cu118",
+  "cuda_runtime": "11.8",
+  "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "initial_real_run": {
+    "real": true,
+    "latency": 0.518338680267334,
+    "peak_memory": 2158592.0
+  },
+  "best_real_run": {
+    "real": true,
+    "latency": 0.5806079804897308,
+    "peak_memory": 2158592.0
+  },
+  "initial_sim_latency": 0.43162245988644926,
+  "best_sim_latency": 0.43162245988644926,
+  "best_sim_peak_memory_elements": 36048,
+  "best_num_ops": 27,
+  "elapsed_wall_seconds": 0.2,
+  "search_iterations": 2
+}

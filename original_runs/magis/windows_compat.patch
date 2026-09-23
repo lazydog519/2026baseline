@@ -1,0 +1,9 @@
+diff --git a/python/magis/op_graph.py b/python/magis/op_graph.py
+index 46ea307..5aecc90 100644
+--- a/python/magis/op_graph.py
++++ b/python/magis/op_graph.py
+@@ -1,3 +1,4 @@
++from __future__ import annotations
+ import math
+ from functools import reduce
+ from collections import defaultdict
