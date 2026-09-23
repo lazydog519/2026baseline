@@ -1,0 +1,120 @@
+diff --git a/src/applications/mapper/main.cpp b/src/applications/mapper/main.cpp
+index 5864481..ed45ab8 100644
+--- a/src/applications/mapper/main.cpp
++++ b/src/applications/mapper/main.cpp
+@@ -41,20 +41,20 @@ void handler(int s)
+ {
+   if (!gTerminate)
+   {
+-    std::cerr << strsignal(s) << " caught. Mapper threads will terminate after "
++    std::cerr << s << " caught. Mapper threads will terminate after "
+               << "completing any ongoing evaluations." << std::endl;
+     gTerminate = true;
+   }
+   else if (!gTerminateEval)
+   {
+-    std::cerr << "Second " << strsignal(s) << " caught. Mapper threads will "
++    std::cerr << "Second " << s << " caught. Mapper threads will "
+               << "abandon ongoing evaluations and terminate immediately."
+               << std::endl;
+     gTerminateEval = true;
+   }
+   else
+   {
+-    std::cerr << "Third " << strsignal(s) << " caught. Existing disgracefully."
++    std::cerr << "Third " << s << " caught. Existing disgracefully."
+               << std::endl;
+     exit(0);
+   }
+@@ -68,11 +68,7 @@ int main(int argc, char* argv[])
+ {
+   assert(argc >= 2);
+ 
+-  struct sigaction action;
+-  action.sa_handler = handler;
+-  sigemptyset(&action.sa_mask);
+-  action.sa_flags = 0;
+-  sigaction(SIGINT, &action, NULL);
++  std::signal(SIGINT, handler);
+ 
+   std::vector<std::string> input_files;
+   std::string output_dir = ".";
+diff --git a/src/applications/model/main.cpp b/src/applications/model/main.cpp
+index 1905650..95cc42d 100644
+--- a/src/applications/model/main.cpp
++++ b/src/applications/model/main.cpp
+@@ -40,20 +40,20 @@ void handler(int s)
+ {
+   if (!gTerminate)
+   {
+-    std::cerr << strsignal(s) << " caught. Terminating after "
++    std::cerr << s << " caught. Terminating after "
+               << "completing ongoing evaluation." << std::endl;
+     gTerminate = true;
+   }
+   else if (!gTerminateEval)
+   {
+-    std::cerr << "Second " << strsignal(s) << " caught. Abandoning "
++    std::cerr << "Second " << s << " caught. Abandoning "
+               << "ongoing evaluation and terminating immediately."
+               << std::endl;
+     gTerminateEval = true;
+   }
+   else
+   {
+-    std::cerr << "Third " << strsignal(s) << " caught. Existing disgracefully."
++    std::cerr << "Third " << s << " caught. Existing disgracefully."
+               << std::endl;
+     exit(0);
+   }
+@@ -67,11 +67,7 @@ int main(int argc, char* argv[])
+ {
+   assert(argc >= 2);
+ 
+-  struct sigaction action;
+-  action.sa_handler = handler;
+-  sigemptyset(&action.sa_mask);
+-  action.sa_flags = 0;
+-  sigaction(SIGINT, &action, NULL);
++  std::signal(SIGINT, handler);
+   
+   std::vector<std::string> input_files;
+   std::string output_dir = ".";
+diff --git a/src/loop-analysis/nest-analysis.cpp b/src/loop-analysis/nest-analysis.cpp
+index 4cf6061..d9781f1 100644
+--- a/src/loop-analysis/nest-analysis.cpp
++++ b/src/loop-analysis/nest-analysis.cpp
+@@ -360,9 +360,9 @@ void NestAnalysis::CollectWorkingSets()
+         tiling::TileInfo tile;
+         tile.size                   = condensed_state.max_size[pv];
+         tile.partition_size         = 0; // will be set later.
+-        tile.accesses               = condensed_state.accesses[pv]; // network accesses
++        tile.accesses.assign(condensed_state.accesses[pv].begin(), condensed_state.accesses[pv].end()); // network accesses
+         tile.fills                  = 0; // will be set later
+-        tile.scatter_factors        = condensed_state.scatter_factors[pv];
++        tile.scatter_factors.assign(condensed_state.scatter_factors[pv].begin(), condensed_state.scatter_factors[pv].end());
+         tile.cumulative_hops        = condensed_state.cumulative_hops[pv];
+         tile.content_accesses       = tile.GetTotalAccesses();
+         tile.link_transfers         = condensed_state.link_transfers[pv];
+diff --git a/src/model/network-legacy.cpp b/src/model/network-legacy.cpp
+index 86a3196..ea8138b 100644
+--- a/src/model/network-legacy.cpp
++++ b/src/model/network-legacy.cpp
+@@ -217,7 +217,7 @@ EvalStatus LegacyNetwork::ComputeAccesses(const tiling::CompoundTile& tile, cons
+         if (sink->HardwareReductionSupported() ||
+             (specs_.cType == ConnectionType::ReadFill) )
+         {
+-          stats_.ingresses[pv] = tile[pvi].accesses;
++          stats_.ingresses[pv].assign(tile[pvi].accesses.begin(), tile[pvi].accesses.end());
+         }
+         else
+         {
+@@ -249,7 +249,7 @@ EvalStatus LegacyNetwork::ComputeAccesses(const tiling::CompoundTile& tile, cons
+     }
+     else // Read-only data space.
+     {
+-      stats_.ingresses[pv] = tile[pvi].accesses;
++      stats_.ingresses[pv].assign(tile[pvi].accesses.begin(), tile[pvi].accesses.end());
+     }
+ 
+     stats_.spatial_reductions[pv] = 0;

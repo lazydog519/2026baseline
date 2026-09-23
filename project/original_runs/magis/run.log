@@ -1,0 +1,23 @@
+2026-09-24 00:27:49.871 | INFO     | magis.optimizer:_reset:149 - init_search: init_state=State(run_res=(True, 0.518338680267334, 2158592.0), sim_res=(0.43162245988644926, 36048), digest=1579374123977593367, history=()), lat_limit_ratio=None, lat_limit=None, mem_limit_ratio=0.8, mem_limit=1726873.6
+2026-09-24 00:27:49.874 | INFO     | magis.optimizer:_run:280 - pop state: State(run_res=(True, 0.5806079804897308, 2158592.0), sim_res=(0.43162245988644926, 36048), digest=1579374123977593367, history=())
+2026-09-24 00:27:49.880 | INFO     | magis.transform.mutator:gen_mutations:63 - <class 'magis.transform.mutator.FissionTreeMutator'> generates 3 mutations
+2026-09-24 00:27:49.880 | INFO     | magis.transform.mutator:gen_mutations:63 - <class 'magis.transform.mutator.FissionFactorMutator'> generates 0 mutations
+2026-09-24 00:27:49.880 | DEBUG    | magis.optimizer:_push:266 - push state: State(run_res=(), sim_res=(0.4715312604089356, 33488), digest=15971153500341904230, history=('swap 1 [26]',))
+2026-09-24 00:27:49.880 | DEBUG    | magis.optimizer:_push:266 - push state: State(run_res=(), sim_res=(0.4672608588119126, 35536), digest=15330003776318055670, history=('swap 0 [25]',))
+2026-09-24 00:27:49.881 | DEBUG    | magis.optimizer:_push:266 - push state: State(run_res=(), sim_res=(0.46808859447437295, 35024), digest=3789244588721181354, history=('swap 3 [23]',))
+2026-09-24 00:27:49.881 | DEBUG    | magis.optimizer:_push:266 - push state: State(run_res=(), sim_res=(0.4496448600272116, 36048), digest=9782484326081026485, history=('remat 3 [23]',))
+2026-09-24 00:27:49.881 | INFO     | magis.transform.mutator:gen_mutations:63 - <class 'magis.transform.mutator.SwapRematMutator'> generates 4 mutations
+2026-09-24 00:27:49.883 | INFO     | magis.transform.mutator:gen_mutations:63 - <class 'magis.transform.mutator.RewriteRuleMutator'> generates 0 mutations
+2026-09-24 00:27:49.883 | INFO     | magis.optimizer:_run:320 - visited/generated: 8/7
+2026-09-24 00:27:49.883 | INFO     | magis.optimizer:_run:321 - current iter consumption: 1/2
+2026-09-24 00:27:49.883 | INFO     | magis.optimizer:_run:324 - current time consumption: 0.011316500000020824/20
+2026-09-24 00:27:49.886 | INFO     | magis.optimizer:_run:280 - pop state: State(run_res=(True, 0.6442559957504272, 2159616.0), sim_res=(0.4496448600272116, 36048), digest=9782484326081026485, history=('remat 3 [23]',))
+2026-09-24 00:27:49.890 | INFO     | magis.transform.mutator:gen_mutations:63 - <class 'magis.transform.mutator.FissionTreeMutator'> generates 3 mutations
+2026-09-24 00:27:49.890 | INFO     | magis.transform.mutator:gen_mutations:63 - <class 'magis.transform.mutator.FissionFactorMutator'> generates 0 mutations
+2026-09-24 00:27:49.892 | DEBUG    | magis.optimizer:_push:266 - push state: State(run_res=(), sim_res=(0.4724987267434375, 35024), digest=16858164290209448681, history=('remat 3 [23]', 'remat 2 [27]'))
+2026-09-24 00:27:49.892 | INFO     | magis.transform.mutator:gen_mutations:63 - <class 'magis.transform.mutator.SwapRematMutator'> generates 4 mutations
+2026-09-24 00:27:49.894 | INFO     | magis.transform.mutator:gen_mutations:63 - <class 'magis.transform.mutator.RewriteRuleMutator'> generates 2 mutations
+2026-09-24 00:27:49.894 | INFO     | magis.optimizer:_run:320 - visited/generated: 15/16
+2026-09-24 00:27:49.894 | INFO     | magis.optimizer:_run:321 - current iter consumption: 2/2
+2026-09-24 00:27:49.894 | INFO     | magis.optimizer:_run:336 - final best state: State(run_res=(True, 0.5806079804897308, 2158592.0), sim_res=(0.43162245988644926, 36048), digest=1579374123977593367, history=())
+{"source_commit": "a332abc73dca97f769054c4f61aef0a52009cf34", "model": "repo simple_mlp_net, batch_size=8, hidden_sizes=[64,128,64], num_classes=10, training graph", "torch_version": "2.5.1+cu118", "cuda_runtime": "11.8", "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU", "initial_real_run": {"real": true, "latency": 0.518338680267334, "peak_memory": 2158592.0}, "best_real_run": {"real": true, "latency": 0.5806079804897308, "peak_memory": 2158592.0}, "initial_sim_latency": 0.43162245988644926, "best_sim_latency": 0.43162245988644926, "best_sim_peak_memory_elements": 36048, "best_num_ops": 27, "elapsed_wall_seconds": 0.2, "search_iterations": 2}

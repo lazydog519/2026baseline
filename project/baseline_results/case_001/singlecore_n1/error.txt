@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\lenovo3c\Desktop\数学建模\output\A题三问求解\solution\run_baseline.py", line 118, in main
+    with gzip.open(path / "result.json.gz", "wt", encoding="utf-8",
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo3c\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\gzip.py", line 65, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo3c\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\gzip.py", line 201, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'output\\A题三问求解\\baseline_results\\case_001\\singlecore_n1\\result.json.gz'
