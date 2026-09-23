@@ -1,0 +1,3833 @@
+{
+  "sha": "32370826fdf1aa3c8deb0c93e6b2a2fc7cf053aa",
+  "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/32370826fdf1aa3c8deb0c93e6b2a2fc7cf053aa",
+  "tree": [
+    {
+      "path": ".clang-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94e31504ac65e87d93e4f1bd6295cdc8a72db279",
+      "size": 203,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/94e31504ac65e87d93e4f1bd6295cdc8a72db279"
+    },
+    {
+      "path": ".doxygen-config",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b39bced5630f39777ef958594da18b371e3b43d6",
+      "size": 116378,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b39bced5630f39777ef958594da18b371e3b43d6"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f45e2864a702c783923f5556c7a0e4b0d0e5bb4b",
+      "size": 935,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f45e2864a702c783923f5556c7a0e4b0d0e5bb4b"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1fa00909618976740e2ccf58bbd7433fa022d83",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/c1fa00909618976740e2ccf58bbd7433fa022d83"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "053e242c653412cbbffa79ebe3b8a50d2d7eab55",
+      "size": 1547,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/053e242c653412cbbffa79ebe3b8a50d2d7eab55"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "918ff18f4fd947723d705b2bc488e8c8eb5968f6",
+      "size": 1485,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/918ff18f4fd947723d705b2bc488e8c8eb5968f6"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cc514c2c6c3f04e36c4f0aa6b11e32aadc2e0da",
+      "size": 1876,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8cc514c2c6c3f04e36c4f0aa6b11e32aadc2e0da"
+    },
+    {
+      "path": "SConstruct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7f71b4361a14c05ad235210dff75df724b03391",
+      "size": 2580,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a7f71b4361a14c05ad235210dff75df724b03391"
+    },
+    {
+      "path": "configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8a926b37765f6c1acd258b4f8e694730495230a",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/a8a926b37765f6c1acd258b4f8e694730495230a"
+    },
+    {
+      "path": "configs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c89df05b4aca30da98e31521be8de627e424976",
+      "size": 68,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6c89df05b4aca30da98e31521be8de627e424976"
+    },
+    {
+      "path": "configs/mapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd6165a15cbd13be57507b7a65a5df8347144b07",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/dd6165a15cbd13be57507b7a65a5df8347144b07"
+    },
+    {
+      "path": "configs/mapper/chen-asplos2014.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97a324e464a4dba1833985570b0e818393ac32ef",
+      "size": 9161,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/97a324e464a4dba1833985570b0e818393ac32ef"
+    },
+    {
+      "path": "configs/mapper/eyeriss-1024.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19eb13e7fd89f65263e7fc0d32068877cb3ced54",
+      "size": 7257,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/19eb13e7fd89f65263e7fc0d32068877cb3ced54"
+    },
+    {
+      "path": "configs/mapper/eyeriss-256-split-accelergy-arg.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9bee4642772567fc0761b24cdbe6d605dc42904",
+      "size": 3280,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b9bee4642772567fc0761b24cdbe6d605dc42904"
+    },
+    {
+      "path": "configs/mapper/eyeriss-256-split-arg.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe8cc6a60892f7e45eed200ac1669a2d5a783fe4",
+      "size": 2349,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/fe8cc6a60892f7e45eed200ac1669a2d5a783fe4"
+    },
+    {
+      "path": "configs/mapper/eyeriss-256-split-problem.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc447b42987dc8416945e4b979357b29c6d690b9",
+      "size": 3062,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/cc447b42987dc8416945e4b979357b29c6d690b9"
+    },
+    {
+      "path": "configs/mapper/eyeriss-256.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d06c7c74e11a7cb472075b3bc5b60beda461eeb",
+      "size": 7287,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5d06c7c74e11a7cb472075b3bc5b60beda461eeb"
+    },
+    {
+      "path": "configs/mapper/eyeriss-256.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2531775cb728270f388f82a7a124c188773db6e",
+      "size": 3874,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c2531775cb728270f388f82a7a124c188773db6e"
+    },
+    {
+      "path": "configs/mapper/mapperstats.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2059862298cbdd33f5c22dda98a68fc02eb76c0a",
+      "size": 4815,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2059862298cbdd33f5c22dda98a68fc02eb76c0a"
+    },
+    {
+      "path": "configs/mapper/sample-accelergy.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db84f6aff00537c7be7a7e5f4659d6c593101f28",
+      "size": 3840,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/db84f6aff00537c7be7a7e5f4659d6c593101f28"
+    },
+    {
+      "path": "configs/mapper/sample.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "996d188cc5d0fef5225731b5786f19c6066174b6",
+      "size": 4484,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/996d188cc5d0fef5225731b5786f19c6066174b6"
+    },
+    {
+      "path": "configs/mapper/sample.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0e4664dae5d04f6b5d134e459589029af9ec00e",
+      "size": 3203,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e0e4664dae5d04f6b5d134e459589029af9ec00e"
+    },
+    {
+      "path": "configs/mapper/simba-chip.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b74159e0c37a06f4bb6a95e5dc88333e62d656e",
+      "size": 6134,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9b74159e0c37a06f4bb6a95e5dc88333e62d656e"
+    },
+    {
+      "path": "configs/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1b79c1e3a7c74f82a7f454bd1dbff838c7edb1b",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/c1b79c1e3a7c74f82a7f454bd1dbff838c7edb1b"
+    },
+    {
+      "path": "configs/model/sample.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d17b2fe677a577e0fe70387cd3153494ef4d868",
+      "size": 3050,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3d17b2fe677a577e0fe70387cd3153494ef4d868"
+    },
+    {
+      "path": "doc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f062c425d797c7e74968c4b19255f6be3c4b11e",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/0f062c425d797c7e74968c4b19255f6be3c4b11e"
+    },
+    {
+      "path": "doc/mapper.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e244a1d8449f49912e619bd5c641741cbb2eb1a2",
+      "size": 5614,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e244a1d8449f49912e619bd5c641741cbb2eb1a2"
+    },
+    {
+      "path": "env",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f376269fc5c4cd9560b82b02422f43ef69c892bd",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/f376269fc5c4cd9560b82b02422f43ef69c892bd"
+    },
+    {
+      "path": "env/setup-env.bash",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccde4c326db59402e43370f4aa79ccdd54421424",
+      "size": 1978,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ccde4c326db59402e43370f4aa79ccdd54421424"
+    },
+    {
+      "path": "include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9265c18ebbe90076b3c17090a7d06178b9f95f8c",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/9265c18ebbe90076b3c17090a7d06178b9f95f8c"
+    },
+    {
+      "path": "include/applications",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd078233b6a6eb535b7e0dac6939078dbbe728bc",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/dd078233b6a6eb535b7e0dac6939078dbbe728bc"
+    },
+    {
+      "path": "include/applications/design-space",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f20a5188eefdb6bd9e0cc431fc6eeff833e8efeb",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/f20a5188eefdb6bd9e0cc431fc6eeff833e8efeb"
+    },
+    {
+      "path": "include/applications/design-space/arch.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc1f39ec53978c02eb7a81dbdf5a4ee5a588ab52",
+      "size": 2501,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/cc1f39ec53978c02eb7a81dbdf5a4ee5a588ab52"
+    },
+    {
+      "path": "include/applications/design-space/design-space.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b437018e0ce4801355f5dcd68602343a8cf9dbd4",
+      "size": 2897,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b437018e0ce4801355f5dcd68602343a8cf9dbd4"
+    },
+    {
+      "path": "include/applications/design-space/problem.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f3f9928547759bd55c3aab4e8b7efd151f9a4eb",
+      "size": 2183,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/7f3f9928547759bd55c3aab4e8b7efd151f9a4eb"
+    },
+    {
+      "path": "include/applications/looptree-model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87ff79460be45dc9fb806d09068491adfb15dcc2",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/87ff79460be45dc9fb806d09068491adfb15dcc2"
+    },
+    {
+      "path": "include/applications/looptree-model/model.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87fb2cf6f3c30a3f22d420d68528efb0166a147b",
+      "size": 1958,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/87fb2cf6f3c30a3f22d420d68528efb0166a147b"
+    },
+    {
+      "path": "include/applications/mapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2b6b9a8b3eb8b8320a82f828ae78277c645063b",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/d2b6b9a8b3eb8b8320a82f828ae78277c645063b"
+    },
+    {
+      "path": "include/applications/mapper/mapper-thread.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73116a3fd569ea9d38825509f523cce01120b1e",
+      "size": 5094,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f73116a3fd569ea9d38825509f523cce01120b1e"
+    },
+    {
+      "path": "include/applications/mapper/mapper.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20540b6e45e5d5ecee7cbc93e910147ce516f92e",
+      "size": 4338,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/20540b6e45e5d5ecee7cbc93e910147ce516f92e"
+    },
+    {
+      "path": "include/applications/metrics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa3208df73ae89849dca4561c947f0fe9dd3ad0d",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/fa3208df73ae89849dca4561c947f0fe9dd3ad0d"
+    },
+    {
+      "path": "include/applications/metrics/metrics.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f74769af085062ab3ccb7269fd7d8fc79e62886b",
+      "size": 2190,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f74769af085062ab3ccb7269fd7d8fc79e62886b"
+    },
+    {
+      "path": "include/applications/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aeafe3f9f65caf61186d1722f90b63fba860130b",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/aeafe3f9f65caf61186d1722f90b63fba860130b"
+    },
+    {
+      "path": "include/applications/model/model.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53dd30e74665422848ca85916e982f8841c51f27",
+      "size": 3801,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/53dd30e74665422848ca85916e982f8841c51f27"
+    },
+    {
+      "path": "include/applications/simple-mapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abab324f9554ae3b2c6a770ff4bed2f738185343",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/abab324f9554ae3b2c6a770ff4bed2f738185343"
+    },
+    {
+      "path": "include/applications/simple-mapper/simple-mapper.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d855005c6df47717994dff5be9d4eb62f6abf763",
+      "size": 2261,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d855005c6df47717994dff5be9d4eb62f6abf763"
+    },
+    {
+      "path": "include/compound-config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4ffdd3196438c6462caffa462a2f00b28102ca9",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/e4ffdd3196438c6462caffa462a2f00b28102ca9"
+    },
+    {
+      "path": "include/compound-config/compound-config.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61b01f8ec4702402962eb497888cfc7eaab5da55",
+      "size": 6611,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/61b01f8ec4702402962eb497888cfc7eaab5da55"
+    },
+    {
+      "path": "include/compound-config/hyphens-to-underscores.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f16d334680022f84b344e12e3ee20101b6797429",
+      "size": 3628,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f16d334680022f84b344e12e3ee20101b6797429"
+    },
+    {
+      "path": "include/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51877c0666c18875e904f0dcb6bdfb1baf9b6149",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/51877c0666c18875e904f0dcb6bdfb1baf9b6149"
+    },
+    {
+      "path": "include/data/cnn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "751f9e658fa455b13eaaaf8c3972bf8c5037cad0",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/751f9e658fa455b13eaaaf8c3972bf8c5037cad0"
+    },
+    {
+      "path": "include/data/cnn/cnn-densities.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f0a19f18e9c589ac4bd9bb5eee690df08ffa82b",
+      "size": 1952,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2f0a19f18e9c589ac4bd9bb5eee690df08ffa82b"
+    },
+    {
+      "path": "include/data/cnn/cnn-layers.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b979ae0d775cec3789b73d7fc6791bbb1cbd1cbc",
+      "size": 2493,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b979ae0d775cec3789b73d7fc6791bbb1cbd1cbc"
+    },
+    {
+      "path": "include/einsum-graph",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b7a2ca302d150a82011d5d5c2fd859eeb013f3c",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/1b7a2ca302d150a82011d5d5c2fd859eeb013f3c"
+    },
+    {
+      "path": "include/einsum-graph/einsum-graph.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b227c35750fea953e1d2362667da0c995329ed74",
+      "size": 798,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b227c35750fea953e1d2362667da0c995329ed74"
+    },
+    {
+      "path": "include/isl-wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb348b8882b5275be31cf42b66c2ac44b44f7974",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/fb348b8882b5275be31cf42b66c2ac44b44f7974"
+    },
+    {
+      "path": "include/isl-wrapper/ctx-manager.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "915f5d48b1c10b37a31a8d39bf817f5c108abb13",
+      "size": 104,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/915f5d48b1c10b37a31a8d39bf817f5c108abb13"
+    },
+    {
+      "path": "include/isl-wrapper/isl-functions.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "767774ee902c5805a753b2805ab34feab3a35a4e",
+      "size": 3754,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/767774ee902c5805a753b2805ab34feab3a35a4e"
+    },
+    {
+      "path": "include/layout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe428f029c6d58a26f9bb95be472524edeea8211",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/fe428f029c6d58a26f9bb95be472524edeea8211"
+    },
+    {
+      "path": "include/layout/layout.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5a9e10201b4bb78b84ba74f297a7e41566736ab",
+      "size": 4232,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f5a9e10201b4bb78b84ba74f297a7e41566736ab"
+    },
+    {
+      "path": "include/loop-analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01a90b3db5739e17777b03c262e3cf6922faf8e6",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/01a90b3db5739e17777b03c262e3cf6922faf8e6"
+    },
+    {
+      "path": "include/loop-analysis/aahr-carve.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6b3c4743bc301c271b3dcddd5e387a3e2d78433",
+      "size": 1860,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f6b3c4743bc301c271b3dcddd5e387a3e2d78433"
+    },
+    {
+      "path": "include/loop-analysis/bounds-inference.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b4951496c4a229fddd7e340f9494f3301d3d2ba",
+      "size": 124,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1b4951496c4a229fddd7e340f9494f3301d3d2ba"
+    },
+    {
+      "path": "include/loop-analysis/coordinate-space-tile-info.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdaa96b8778959c30f5717ce8b1689554d57c9b4",
+      "size": 3209,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/bdaa96b8778959c30f5717ce8b1689554d57c9b4"
+    },
+    {
+      "path": "include/loop-analysis/isl-analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e805bba0d3037924df5141d75f1c3f7f5dc7ef20",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/e805bba0d3037924df5141d75f1c3f7f5dc7ef20"
+    },
+    {
+      "path": "include/loop-analysis/isl-analysis/isl-nest-analysis.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a8a98c6bf2b9e9c32977cb9182a4e2097116f69",
+      "size": 1589,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3a8a98c6bf2b9e9c32977cb9182a4e2097116f69"
+    },
+    {
+      "path": "include/loop-analysis/isl-analysis/isl-to-legacy-adaptor.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a4c1093c6c6b3efa1f3f812c73e0d1b01d54d8d",
+      "size": 685,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5a4c1093c6c6b3efa1f3f812c73e0d1b01d54d8d"
+    },
+    {
+      "path": "include/loop-analysis/isl-ir.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14e0354b706372079131c707cfea4f18fe3761a2",
+      "size": 6622,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/14e0354b706372079131c707cfea4f18fe3761a2"
+    },
+    {
+      "path": "include/loop-analysis/loop-state.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b9175d6efe8b3ce41201f9df3a7cab4d0f8e94e",
+      "size": 3871,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2b9175d6efe8b3ce41201f9df3a7cab4d0f8e94e"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "405f24a248ffd8bce5b2bbf3c9880833fbad9ad5",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/405f24a248ffd8bce5b2bbf3c9880833fbad9ad5"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl/fused-mapping-to-isl.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a964024fdeeeec6c948d92434d273273b8f2bbff",
+      "size": 1798,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a964024fdeeeec6c948d92434d273273b8f2bbff"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl/mapping-to-isl.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65eecd61b1dc5a199e217a05a73cd08d43958715",
+      "size": 274,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/65eecd61b1dc5a199e217a05a73cd08d43958715"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl/tile-shape-inference-impl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d1cd7ae752dfa9e391309b88c2749404d87415c",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/7d1cd7ae752dfa9e391309b88c2749404d87415c"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl/tile-shape-inference-impl/producer-consumer.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21cb513aeb0ccde82742b2507ed318a05a3982a4",
+      "size": 2109,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/21cb513aeb0ccde82742b2507ed318a05a3982a4"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl/tile-shape-inference-impl/shared-input.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65f8732e575be8b0692569964cc887d31f2354e2",
+      "size": 2724,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/65f8732e575be8b0692569964cc887d31f2354e2"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl/tile-shape-inference.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6df098723052bc9cbe2065eec1dd9e7e9d457123",
+      "size": 189,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6df098723052bc9cbe2065eec1dd9e7e9d457123"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl/tiling.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e59ea53890684ca29582fa982445bd63da605d2f",
+      "size": 441,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e59ea53890684ca29582fa982445bd63da605d2f"
+    },
+    {
+      "path": "include/loop-analysis/mapping-to-isl/tree-analyzer.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24f62dd802caed40cc15d4748fb0e332a4cd7ed3",
+      "size": 713,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/24f62dd802caed40cc15d4748fb0e332a4cd7ed3"
+    },
+    {
+      "path": "include/loop-analysis/nest-analysis-tile-info.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c72d48d069db7a7699cfd4055c287a70f79ff3c",
+      "size": 5302,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4c72d48d069db7a7699cfd4055c287a70f79ff3c"
+    },
+    {
+      "path": "include/loop-analysis/nest-analysis.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e488060fd9cb1dcc48bf98b6c0417c5c0c654af",
+      "size": 10484,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0e488060fd9cb1dcc48bf98b6c0417c5c0c654af"
+    },
+    {
+      "path": "include/loop-analysis/operation-type.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9bafdc118bd63a36a81e9e88efb45322cf35303",
+      "size": 1910,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c9bafdc118bd63a36a81e9e88efb45322cf35303"
+    },
+    {
+      "path": "include/loop-analysis/point-set-aahr.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3bf024fbf1f7fd7e32d02766e89ad9c81d4b984",
+      "size": 4221,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b3bf024fbf1f7fd7e32d02766e89ad9c81d4b984"
+    },
+    {
+      "path": "include/loop-analysis/point-set-isl.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad70aba98aba8510b86da3b279614faec716c81e",
+      "size": 2912,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ad70aba98aba8510b86da3b279614faec716c81e"
+    },
+    {
+      "path": "include/loop-analysis/point-set-multi-aahr.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2439cd1448bfe24aca3bc54de5955bea01bf7320",
+      "size": 2992,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2439cd1448bfe24aca3bc54de5955bea01bf7320"
+    },
+    {
+      "path": "include/loop-analysis/point-set.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6d99d5162ed772197a6c577b7d7487dc29f3d97",
+      "size": 2333,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d6d99d5162ed772197a6c577b7d7487dc29f3d97"
+    },
+    {
+      "path": "include/loop-analysis/point.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c257cbf92681d9b9afb145dc607d0dcc60d4c448",
+      "size": 2767,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c257cbf92681d9b9afb145dc607d0dcc60d4c448"
+    },
+    {
+      "path": "include/loop-analysis/spatial-analysis.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f36e4a7ec7233e9d2babbbe4ac3166998ac645c3",
+      "size": 3473,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f36e4a7ec7233e9d2babbbe4ac3166998ac645c3"
+    },
+    {
+      "path": "include/loop-analysis/temporal-analysis.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09895b32485dc5e9c517ae5af6446b6f9164be81",
+      "size": 892,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/09895b32485dc5e9c517ae5af6446b6f9164be81"
+    },
+    {
+      "path": "include/loop-analysis/tiling-tile-info.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03ebfc95ebab76410f98dc45907799fe0c70bacd",
+      "size": 12348,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/03ebfc95ebab76410f98dc45907799fe0c70bacd"
+    },
+    {
+      "path": "include/loop-analysis/tiling.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9d6185b58dbe44c9f862139ca845e329f2bac8a",
+      "size": 3290,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f9d6185b58dbe44c9f862139ca845e329f2bac8a"
+    },
+    {
+      "path": "include/mapping",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "990fc2fb39548670cbcb4da11bb694d6c7aa5798",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/990fc2fb39548670cbcb4da11bb694d6c7aa5798"
+    },
+    {
+      "path": "include/mapping/arch-properties.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34b14e38166ed9ab0e13d1a800650e4624a6ab23",
+      "size": 3301,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/34b14e38166ed9ab0e13d1a800650e4624a6ab23"
+    },
+    {
+      "path": "include/mapping/constraints.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f9935dee15b4ef8439206acffdff70277d816c9",
+      "size": 6209,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9f9935dee15b4ef8439206acffdff70277d816c9"
+    },
+    {
+      "path": "include/mapping/fused-mapping.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "071f51e0c13c51cb1f0e6ed55b89018e523758cc",
+      "size": 9662,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/071f51e0c13c51cb1f0e6ed55b89018e523758cc"
+    },
+    {
+      "path": "include/mapping/loop.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d6a5b686d4e74417f89517a0947cfe86860f34c",
+      "size": 3882,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8d6a5b686d4e74417f89517a0947cfe86860f34c"
+    },
+    {
+      "path": "include/mapping/mapping.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "944c7ed53a90e1903e74b66f59f8cc9830ebdaf0",
+      "size": 3881,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/944c7ed53a90e1903e74b66f59f8cc9830ebdaf0"
+    },
+    {
+      "path": "include/mapping/nest.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "485a593309b70f49990a99a0fac90b3b4d1b22d2",
+      "size": 4890,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/485a593309b70f49990a99a0fac90b3b4d1b22d2"
+    },
+    {
+      "path": "include/mapping/parser.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3481d173cc8423f7677fe1812e804675c720d453",
+      "size": 1906,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3481d173cc8423f7677fe1812e804675c720d453"
+    },
+    {
+      "path": "include/mapping/spacetime.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86cd095b0eeb9ad87eb740d299042d7bea4e94a0",
+      "size": 1775,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/86cd095b0eeb9ad87eb740d299042d7bea4e94a0"
+    },
+    {
+      "path": "include/mapspaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "509036ad7c03c22759bc48d92394aa8e2ec77b96",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/509036ad7c03c22759bc48d92394aa8e2ec77b96"
+    },
+    {
+      "path": "include/mapspaces/mapspace-base.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e44cac6eb6ff839f7928a03d6b745486850d8b8",
+      "size": 4171,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4e44cac6eb6ff839f7928a03d6b745486850d8b8"
+    },
+    {
+      "path": "include/mapspaces/mapspace-factory.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01fe211cf01807ac5c5001e7c768afea501f5783",
+      "size": 2237,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/01fe211cf01807ac5c5001e7c768afea501f5783"
+    },
+    {
+      "path": "include/mapspaces/ruby.hpp",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "07649719130ed0c6abad31640bd303cabaaca11d",
+      "size": 5581,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/07649719130ed0c6abad31640bd303cabaaca11d"
+    },
+    {
+      "path": "include/mapspaces/subspaces.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42c8f2779e0b8976642b0b1933f0a9cfcc38f697",
+      "size": 7537,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/42c8f2779e0b8976642b0b1933f0a9cfcc38f697"
+    },
+    {
+      "path": "include/mapspaces/uber.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7148ba41ef444f4d5de4a09fc36f4fb65ac8669e",
+      "size": 5592,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/7148ba41ef444f4d5de4a09fc36f4fb65ac8669e"
+    },
+    {
+      "path": "include/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c150f469946e8213624a178f42c2b1b9b95b06fc",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/c150f469946e8213624a178f42c2b1b9b95b06fc"
+    },
+    {
+      "path": "include/model/arithmetic.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5decc51ae9f5ffd2331de43b687125bd1ced02b5",
+      "size": 8337,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5decc51ae9f5ffd2331de43b687125bd1ced02b5"
+    },
+    {
+      "path": "include/model/attribute.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0918fef0fe9346a2d7d2c8c4342ec501d0ad0d3c",
+      "size": 2781,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0918fef0fe9346a2d7d2c8c4342ec501d0ad0d3c"
+    },
+    {
+      "path": "include/model/buffer.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1891a3c82f85eedbb2a8590ace0020072a272615",
+      "size": 22560,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1891a3c82f85eedbb2a8590ace0020072a272615"
+    },
+    {
+      "path": "include/model/engine.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac14430d1cd4475f7c1dbba4eddcde127ffb9d42",
+      "size": 3602,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ac14430d1cd4475f7c1dbba4eddcde127ffb9d42"
+    },
+    {
+      "path": "include/model/level.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5d8c6b8e57612f3be2c0eabe1faafac4da2f7c2",
+      "size": 4661,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a5d8c6b8e57612f3be2c0eabe1faafac4da2f7c2"
+    },
+    {
+      "path": "include/model/model-base.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec44e6bb3f5e9d0967b6d7f0f5719ef545a183c5",
+      "size": 1866,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ec44e6bb3f5e9d0967b6d7f0f5719ef545a183c5"
+    },
+    {
+      "path": "include/model/network-factory.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3facc82be87629b29817716d37f8b1d67d2af40e",
+      "size": 2379,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3facc82be87629b29817716d37f8b1d67d2af40e"
+    },
+    {
+      "path": "include/model/network-legacy.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "257156e4b81f78b91e615f63be97d423a62f3a26",
+      "size": 8222,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/257156e4b81f78b91e615f63be97d423a62f3a26"
+    },
+    {
+      "path": "include/model/network-reduction-tree.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c44e85d513bc64fe29411ce4c70746d3250c2719",
+      "size": 6846,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c44e85d513bc64fe29411ce4c70746d3250c2719"
+    },
+    {
+      "path": "include/model/network-simple-multicast.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "880513963194c5ccb894654d9c482ff270c36015",
+      "size": 6739,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/880513963194c5ccb894654d9c482ff270c36015"
+    },
+    {
+      "path": "include/model/network.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "879db7498cc584ea7389930c29d9869cf4d524cb",
+      "size": 4517,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/879db7498cc584ea7389930c29d9869cf4d524cb"
+    },
+    {
+      "path": "include/model/sparse-base.hpp",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a531853c0c45a69096043832ab1792e2a4822e6f",
+      "size": 1894,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a531853c0c45a69096043832ab1792e2a4822e6f"
+    },
+    {
+      "path": "include/model/sparse-optimization-info.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c9ba2f94a9c2d3b296cb0422a90df3cb2c56e3f",
+      "size": 5739,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1c9ba2f94a9c2d3b296cb0422a90df3cb2c56e3f"
+    },
+    {
+      "path": "include/model/sparse-optimization-parser.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29d18c5f68743e3b961698744db75ece45acd78f",
+      "size": 1877,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/29d18c5f68743e3b961698744db75ece45acd78f"
+    },
+    {
+      "path": "include/model/topology.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1fbec56594fbe15dce8f1c563a2e3b5d2b696b7",
+      "size": 15828,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b1fbec56594fbe15dce8f1c563a2e3b5d2b696b7"
+    },
+    {
+      "path": "include/model/util.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dec1887b8eec75e0d8d6b08bb74b15ec96797d0",
+      "size": 4271,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1dec1887b8eec75e0d8d6b08bb74b15ec96797d0"
+    },
+    {
+      "path": "include/pat",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "88297dff0188aa951c42c8c311eb9aaffecf02cd",
+      "size": 10,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/88297dff0188aa951c42c8c311eb9aaffecf02cd"
+    },
+    {
+      "path": "include/search",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b0d5740918e4b650ecc3f8494296bef723f90b6",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/8b0d5740918e4b650ecc3f8494296bef723f90b6"
+    },
+    {
+      "path": "include/search/exhaustive.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "459e4b4c55aa5c1bca29887ad2a4e9e5911d234f",
+      "size": 2691,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/459e4b4c55aa5c1bca29887ad2a4e9e5911d234f"
+    },
+    {
+      "path": "include/search/hybrid.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecd3e873bffce6c2aba98220a1335ed71883a0d2",
+      "size": 2977,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ecd3e873bffce6c2aba98220a1335ed71883a0d2"
+    },
+    {
+      "path": "include/search/linear-pruned.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1c4b927492ebfceee3165d6ac20cc889b4a9fee",
+      "size": 2840,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f1c4b927492ebfceee3165d6ac20cc889b4a9fee"
+    },
+    {
+      "path": "include/search/random-pruned.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37c212cbf753d7e4e630e70b66c2b4cb645aea47",
+      "size": 3079,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/37c212cbf753d7e4e630e70b66c2b4cb645aea47"
+    },
+    {
+      "path": "include/search/random.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cc8693a3b4c0cee9769302e25a930159eaadd32",
+      "size": 2791,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9cc8693a3b4c0cee9769302e25a930159eaadd32"
+    },
+    {
+      "path": "include/search/search-factory.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91d5db6e1840fce62df2232b7a62e367b4541f43",
+      "size": 2031,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/91d5db6e1840fce62df2232b7a62e367b4541f43"
+    },
+    {
+      "path": "include/search/search.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75d043ebe9bfb8b685dc64cd8c22ccf5c362c3cf",
+      "size": 1944,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/75d043ebe9bfb8b685dc64cd8c22ccf5c362c3cf"
+    },
+    {
+      "path": "include/sparse-analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8df61f88ce318f96c76bfdefa68cc0472e7dda09",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/8df61f88ce318f96c76bfdefa68cc0472e7dda09"
+    },
+    {
+      "path": "include/sparse-analysis/sparse-analysis.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37476ee0fe8eaf52c672fd875f357644cfcd32d4",
+      "size": 4689,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/37476ee0fe8eaf52c672fd875f357644cfcd32d4"
+    },
+    {
+      "path": "include/sparse-analysis/state.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c2f9e5209f57a12600f8f2b3a4fe58da443c6c5",
+      "size": 4620,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8c2f9e5209f57a12600f8f2b3a4fe58da443c6c5"
+    },
+    {
+      "path": "include/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae73ca2537b34d3cb7f298dc46a7230728f45ff7",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/ae73ca2537b34d3cb7f298dc46a7230728f45ff7"
+    },
+    {
+      "path": "include/util/accelergy_interface.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0d15dee4e0072a07075838a03ea15c635fe9909",
+      "size": 1806,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e0d15dee4e0072a07075838a03ea15c635fe9909"
+    },
+    {
+      "path": "include/util/args.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8fabec9dd5b2eb580c54ac9667809698dedd6fd",
+      "size": 1750,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c8fabec9dd5b2eb580c54ac9667809698dedd6fd"
+    },
+    {
+      "path": "include/util/banner.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "458d2ba0c1b3739dfde954b5f125554db05cd111",
+      "size": 1662,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/458d2ba0c1b3739dfde954b5f125554db05cd111"
+    },
+    {
+      "path": "include/util/dynamic-array.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3ba9a67ac705769a7e99f438b4c5746c62063f1",
+      "size": 3812,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c3ba9a67ac705769a7e99f438b4c5746c62063f1"
+    },
+    {
+      "path": "include/util/fork-helper.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6098ae99db8026353916073308fc3da07b7afff4",
+      "size": 2017,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6098ae99db8026353916073308fc3da07b7afff4"
+    },
+    {
+      "path": "include/util/map2d.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75b6f1f2a81005c64090f7773b75a3695e6b5fb2",
+      "size": 2328,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/75b6f1f2a81005c64090f7773b75a3695e6b5fb2"
+    },
+    {
+      "path": "include/util/metaprogramming.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19120dc8365b0b90e58eb2c316ab39369b3faf13",
+      "size": 301,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/19120dc8365b0b90e58eb2c316ab39369b3faf13"
+    },
+    {
+      "path": "include/util/misc.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb118b179b3dcfb023e18d85de941f0226859912",
+      "size": 2027,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/cb118b179b3dcfb023e18d85de941f0226859912"
+    },
+    {
+      "path": "include/util/numeric.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f99b61fcd977c1cb4178a577fcfa9f3e90079e4c",
+      "size": 16008,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f99b61fcd977c1cb4178a577fcfa9f3e90079e4c"
+    },
+    {
+      "path": "include/workload",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "760b479c9784e3ec3808b677e59a4cd460a115cd",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/760b479c9784e3ec3808b677e59a4cd460a115cd"
+    },
+    {
+      "path": "include/workload/density-models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "883a463e26e5227a20cac63de7e467455afc7c79",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/883a463e26e5227a20cac63de7e467455afc7c79"
+    },
+    {
+      "path": "include/workload/density-models/banded-distribution.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12966dcd03cc2de7352bdbabbc9775dd4c152735",
+      "size": 5024,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/12966dcd03cc2de7352bdbabbc9775dd4c152735"
+    },
+    {
+      "path": "include/workload/density-models/density-distribution-factory.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d99650c3e2e80f9d3f7b84548632a230ce41f563",
+      "size": 2244,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d99650c3e2e80f9d3f7b84548632a230ce41f563"
+    },
+    {
+      "path": "include/workload/density-models/density-distribution.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5397b6697ce1dcb45dfff777009569416c7d7ccd",
+      "size": 4860,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5397b6697ce1dcb45dfff777009569416c7d7ccd"
+    },
+    {
+      "path": "include/workload/density-models/fixed-structured-distribution.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5f2c63f41b18a1a1e5262157da4cd9c58cbf8fd",
+      "size": 4688,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e5f2c63f41b18a1a1e5262157da4cd9c58cbf8fd"
+    },
+    {
+      "path": "include/workload/density-models/hypergeometric-distribution.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51d284d25fbf9f66b53c430bfac5f1264c864c8a",
+      "size": 5587,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/51d284d25fbf9f66b53c430bfac5f1264c864c8a"
+    },
+    {
+      "path": "include/workload/format-models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8720d870840ac24c0cde3183217ed3df1a07822",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/f8720d870840ac24c0cde3183217ed3df1a07822"
+    },
+    {
+      "path": "include/workload/format-models/bitmask.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1536cf4d505a39ae5adf5e45122a1f2c3dc0aa38",
+      "size": 4177,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1536cf4d505a39ae5adf5e45122a1f2c3dc0aa38"
+    },
+    {
+      "path": "include/workload/format-models/coordinate-payload.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f9791cf67fb2f0cf914f39952f63a74e9091d6e",
+      "size": 4263,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3f9791cf67fb2f0cf914f39952f63a74e9091d6e"
+    },
+    {
+      "path": "include/workload/format-models/metadata-format-factory.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76185e9b4539b4bf6192994d7e69da5b5698c4a6",
+      "size": 2272,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/76185e9b4539b4bf6192994d7e69da5b5698c4a6"
+    },
+    {
+      "path": "include/workload/format-models/metadata-format.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d8156fb780d542389cfda0f40cff477b13e17ef",
+      "size": 6879,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9d8156fb780d542389cfda0f40cff477b13e17ef"
+    },
+    {
+      "path": "include/workload/format-models/run-length-encoding.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfa5eded34dcf1ded1d4547b7043b9205705ab0d",
+      "size": 4247,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/dfa5eded34dcf1ded1d4547b7043b9205705ab0d"
+    },
+    {
+      "path": "include/workload/format-models/uncompressed-bitmask.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a77c1a1e7d90d728bdf20c8f6aa6dadbb230656c",
+      "size": 4267,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a77c1a1e7d90d728bdf20c8f6aa6dadbb230656c"
+    },
+    {
+      "path": "include/workload/format-models/uncompressed-offset-pair.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fe47a2823f75b7d375a7a112f0b1c7dcf8f7eac",
+      "size": 4281,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9fe47a2823f75b7d375a7a112f0b1c7dcf8f7eac"
+    },
+    {
+      "path": "include/workload/fused-workload-dependency-analyzer.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a902696a1c721a2dc32194016b19b824e66d51a",
+      "size": 2047,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9a902696a1c721a2dc32194016b19b824e66d51a"
+    },
+    {
+      "path": "include/workload/fused-workload.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c168250eaf59f848f9dfb9b1ad0ed9021d0d3cc",
+      "size": 4800,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6c168250eaf59f848f9dfb9b1ad0ed9021d0d3cc"
+    },
+    {
+      "path": "include/workload/shape-models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53d5ac59f20e633df28bb027bd4d8f61f1fb4764",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/53d5ac59f20e633df28bb027bd4d8f61f1fb4764"
+    },
+    {
+      "path": "include/workload/shape-models/data-space.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54fd9d4c5d01872e8092dcc1906af7f8452a29ef",
+      "size": 2735,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/54fd9d4c5d01872e8092dcc1906af7f8452a29ef"
+    },
+    {
+      "path": "include/workload/shape-models/operation-space.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7175186e40ef5a15e15873cee97af95688079146",
+      "size": 4782,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/7175186e40ef5a15e15873cee97af95688079146"
+    },
+    {
+      "path": "include/workload/shape-models/problem-shape.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "072a01572edde8757bef2052a9b8f2641e587149",
+      "size": 5491,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/072a01572edde8757bef2052a9b8f2641e587149"
+    },
+    {
+      "path": "include/workload/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "130e406474bc1988ed0331cf647bd74d7b132352",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/130e406474bc1988ed0331cf647bd74d7b132352"
+    },
+    {
+      "path": "include/workload/util/per-data-space.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d66fbe8915121b2e1a64214cce4e5523db3f6f6",
+      "size": 3865,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9d66fbe8915121b2e1a64214cce4e5523db3f6f6"
+    },
+    {
+      "path": "include/workload/util/per-problem-dimension.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78c62174c5dba935a4998344679c251b1115b3be",
+      "size": 2969,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/78c62174c5dba935a4998344679c251b1115b3be"
+    },
+    {
+      "path": "include/workload/workload.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "babbeaa952b4f546175ce68e827e93b031d9cdb0",
+      "size": 6457,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/babbeaa952b4f546175ce68e827e93b031d9cdb0"
+    },
+    {
+      "path": "orojenesis-v2-wip",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e91993fa460b67f632439e6f25c547840c7e65e",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/2e91993fa460b67f632439e6f25c547840c7e65e"
+    },
+    {
+      "path": "orojenesis-v2-wip/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24003c8d9761caf960bac7b4ad3b86333f14771c",
+      "size": 274,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/24003c8d9761caf960bac7b4ad3b86333f14771c"
+    },
+    {
+      "path": "orojenesis-v2-wip/Figure18.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdc90131146a3aa227248feb782211ebcdf7d8d7",
+      "size": 5482,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/fdc90131146a3aa227248feb782211ebcdf7d8d7"
+    },
+    {
+      "path": "orojenesis-v2-wip/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25172e0759dab70dafea51ff430f8b49e8c9cfdf",
+      "size": 233,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/25172e0759dab70dafea51ff430f8b49e8c9cfdf"
+    },
+    {
+      "path": "orojenesis-v2-wip/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5899d02a75f397dbb6cfd348b87e6264bc5ccce4",
+      "size": 9596,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5899d02a75f397dbb6cfd348b87e6264bc5ccce4"
+    },
+    {
+      "path": "orojenesis-v2-wip/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "612762b403f9ee0892ad9012f531697ba11e7784",
+      "size": 168,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/612762b403f9ee0892ad9012f531697ba11e7784"
+    },
+    {
+      "path": "orojenesis-v2-wip/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92d086ee9045176cbcc3ba398e2669f1f53129df",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/92d086ee9045176cbcc3ba398e2669f1f53129df"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/arch.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e006fd8c25ffa6219a930526ed8fbf6eff55514",
+      "size": 8149,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6e006fd8c25ffa6219a930526ed8fbf6eff55514"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/mappings.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03c94cae1dc645bd948924425d210f088a99ec76",
+      "size": 31387,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/03c94cae1dc645bd948924425d210f088a99ec76"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/oavesplots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b41a8f2ffadaa34e8ed5a988a8ab1a662482ef51",
+      "size": 13362,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b41a8f2ffadaa34e8ed5a988a8ab1a662482ef51"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/operations.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b50753ac6d4c7d2d8fe979bd24cbcdcc6cec96aa",
+      "size": 28184,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b50753ac6d4c7d2d8fe979bd24cbcdcc6cec96aa"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/paretos.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41bf8e8384069d7f7c4a508f268293fdb0cad40a",
+      "size": 8283,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/41bf8e8384069d7f7c4a508f268293fdb0cad40a"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/plots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e236741c7eddabcf9a6a1eae35cfe283db9f1fb",
+      "size": 11532,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9e236741c7eddabcf9a6a1eae35cfe283db9f1fb"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/tensors.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a40162084b64b2f10481a32725fb9ee9df71553",
+      "size": 4757,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8a40162084b64b2f10481a32725fb9ee9df71553"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/timeloop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0857bfda6b7eed914cfec8cc927941415dcdfef8",
+      "size": 23647,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0857bfda6b7eed914cfec8cc927941415dcdfef8"
+    },
+    {
+      "path": "orojenesis-v2-wip/src/util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12cb2232ed0d40bfc978b401d6e7f5ed2962abbf",
+      "size": 5584,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/12cb2232ed0d40bfc978b401d6e7f5ed2962abbf"
+    },
+    {
+      "path": "orojenesis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f85333d380f697bc5b61436c1455a5961d07f94c",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/f85333d380f697bc5b61436c1455a5961d07f94c"
+    },
+    {
+      "path": "orojenesis/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "914565ec7da212135757ea1af547a206081c2c09",
+      "size": 1485,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/914565ec7da212135757ea1af547a206081c2c09"
+    },
+    {
+      "path": "orojenesis/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e073ec1839dc810665bbfab0a9fe3da0d383415",
+      "size": 795,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4e073ec1839dc810665bbfab0a9fe3da0d383415"
+    },
+    {
+      "path": "orojenesis/configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8aae05345c483dfea62d7dc64c8c0d6f82e93b53",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/8aae05345c483dfea62d7dc64c8c0d6f82e93b53"
+    },
+    {
+      "path": "orojenesis/configs/gbmm_template.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a1806f1f5174827d6cd0b1e92206ec6ba732d12",
+      "size": 410,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4a1806f1f5174827d6cd0b1e92206ec6ba732d12"
+    },
+    {
+      "path": "orojenesis/configs/multi-einsum",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26b5e0cbf99196115e6f7b63406daca2f0665c83",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/26b5e0cbf99196115e6f7b63406daca2f0665c83"
+    },
+    {
+      "path": "orojenesis/configs/multi-einsum/arch.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee7e6a8ddf62e7f9ba8979c64d4d7d7a8a0508a5",
+      "size": 595,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ee7e6a8ddf62e7f9ba8979c64d4d7d7a8a0508a5"
+    },
+    {
+      "path": "orojenesis/configs/multi-einsum/constraints.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "161743b399c68361d57670749615d4fb00144507",
+      "size": 567,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/161743b399c68361d57670749615d4fb00144507"
+    },
+    {
+      "path": "orojenesis/configs/multi-einsum/mapper.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "950a854ff051909c08e5b9a912f0d59945c74ecf",
+      "size": 810,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/950a854ff051909c08e5b9a912f0d59945c74ecf"
+    },
+    {
+      "path": "orojenesis/configs/multi-einsum/mapper_bmm.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9c0b67621bfadb3f9f3bd91647f08379e08b4d0",
+      "size": 1300,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d9c0b67621bfadb3f9f3bd91647f08379e08b4d0"
+    },
+    {
+      "path": "orojenesis/configs/multi-einsum/mapper_ew.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b20f4f1c0f8489da5b501a5cb693da04b582354f",
+      "size": 680,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b20f4f1c0f8489da5b501a5cb693da04b582354f"
+    },
+    {
+      "path": "orojenesis/configs/multi-einsum/mapper_nc.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0332c02f03ee0681e30535ed7053d3428ac40b9e",
+      "size": 839,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0332c02f03ee0681e30535ed7053d3428ac40b9e"
+    },
+    {
+      "path": "orojenesis/configs/simba",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "153755104f8fcc486b213db304c39c4fba371ed2",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/153755104f8fcc486b213db304c39c4fba371ed2"
+    },
+    {
+      "path": "orojenesis/configs/simba/mapper.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ae023662e4cd0cb25f76cd50941e1653bb8d02b",
+      "size": 201,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0ae023662e4cd0cb25f76cd50941e1653bb8d02b"
+    },
+    {
+      "path": "orojenesis/configs/simba/simba-chip.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d32413e04ac70ef1c38c0d5f9d7005d15b3c79a",
+      "size": 2627,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4d32413e04ac70ef1c38c0d5f9d7005d15b3c79a"
+    },
+    {
+      "path": "orojenesis/configs/single-einsum",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ef759a41e9f361899a0e11c152aeb22a827dc76",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/1ef759a41e9f361899a0e11c152aeb22a827dc76"
+    },
+    {
+      "path": "orojenesis/configs/single-einsum/arch.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bac36b98381ff10a86eb1499e09b135f85796aac",
+      "size": 432,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/bac36b98381ff10a86eb1499e09b135f85796aac"
+    },
+    {
+      "path": "orojenesis/configs/single-einsum/conv_mapper.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af190e5b55fef0c766053c686357feb50413306a",
+      "size": 571,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/af190e5b55fef0c766053c686357feb50413306a"
+    },
+    {
+      "path": "orojenesis/configs/single-einsum/gbmm_mapper.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fba2de341bc3e27a9c24679d04923d2cabe1576d",
+      "size": 570,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/fba2de341bc3e27a9c24679d04923d2cabe1576d"
+    },
+    {
+      "path": "orojenesis/configs/single-einsum/mapper.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb0f2c8fdbadb28cdb1e8c4c5f08bd182c0ba9eb",
+      "size": 203,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/eb0f2c8fdbadb28cdb1e8c4c5f08bd182c0ba9eb"
+    },
+    {
+      "path": "orojenesis/configs/single-einsum/mm_mapper.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ae59f7fc125df61512b79c543be56dd533d2098",
+      "size": 455,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9ae59f7fc125df61512b79c543be56dd533d2098"
+    },
+    {
+      "path": "orojenesis/docker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96ec2ec1cc020eea316ecdc7c0f6f79b34cb22d7",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/96ec2ec1cc020eea316ecdc7c0f6f79b34cb22d7"
+    },
+    {
+      "path": "orojenesis/docker/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "601ba0fa338cadb8c897111c3c9cdf05361e6b4f",
+      "size": 2602,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/601ba0fa338cadb8c897111c3c9cdf05361e6b4f"
+    },
+    {
+      "path": "orojenesis/install.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9d613ed4f1086a34721ec4bd4c5011b5c1696723",
+      "size": 374,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9d613ed4f1086a34721ec4bd4c5011b5c1696723"
+    },
+    {
+      "path": "orojenesis/orojenesis_example.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb489e4c775b43c4c4c9487b4f2506fc2924055e",
+      "size": 5248,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/bb489e4c775b43c4c4c9487b4f2506fc2924055e"
+    },
+    {
+      "path": "orojenesis/orojenesis_multi.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54b7ff64de0f6a20574736dc2159559ee741cd16",
+      "size": 29389,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/54b7ff64de0f6a20574736dc2159559ee741cd16"
+    },
+    {
+      "path": "orojenesis/orojenesis_single.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f074e10b24320c0d4ac23ec1b007a9df527a3356",
+      "size": 19100,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f074e10b24320c0d4ac23ec1b007a9df527a3356"
+    },
+    {
+      "path": "orojenesis/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bff5c365b5f22530cbc388299b00c1ee8ee067a2",
+      "size": 141,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/bff5c365b5f22530cbc388299b00c1ee8ee067a2"
+    },
+    {
+      "path": "orojenesis/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07547ba9a27a0544b3aae0ebbb1cf49fafee2d12",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/07547ba9a27a0544b3aae0ebbb1cf49fafee2d12"
+    },
+    {
+      "path": "orojenesis/src/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "orojenesis/src/gen_mappings.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "412252823a21bcc3e4ab64750c49c91995b1f699",
+      "size": 14735,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/412252823a21bcc3e4ab64750c49c91995b1f699"
+    },
+    {
+      "path": "orojenesis/src/orojenesis_process_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21a9db821e11814048a0e6b337bc65b4759987b1",
+      "size": 6588,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/21a9db821e11814048a0e6b337bc65b4759987b1"
+    },
+    {
+      "path": "orojenesis/src/plots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18fcbd83249eb58039b14d972fa06d16bacdd317",
+      "size": 36472,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/18fcbd83249eb58039b14d972fa06d16bacdd317"
+    },
+    {
+      "path": "orojenesis/src/process_tiled_fusion.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e616d31bf89538c3eacd7caf41be6921e99aec96",
+      "size": 51960,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e616d31bf89538c3eacd7caf41be6921e99aec96"
+    },
+    {
+      "path": "orojenesis/src/process_untiled_fusion.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61f88651957dd8477ae9fda2b6ad845b81223cf7",
+      "size": 19912,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/61f88651957dd8477ae9fda2b6ad845b81223cf7"
+    },
+    {
+      "path": "orojenesis/src/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43779bb1bf759ef21f14561c378dfa5d2d94ccea",
+      "size": 26292,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/43779bb1bf759ef21f14561c378dfa5d2d94ccea"
+    },
+    {
+      "path": "pat-public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0fc81fd245affe4c2ca3d9cda8311e55370254c",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/b0fc81fd245affe4c2ca3d9cda8311e55370254c"
+    },
+    {
+      "path": "pat-public/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "add49e732693014f070d9186639235ca3ff2adda",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/add49e732693014f070d9186639235ca3ff2adda"
+    },
+    {
+      "path": "pat-public/src/pat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e314d5351308e141026ec819e37102583b70f47",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/6e314d5351308e141026ec819e37102583b70f47"
+    },
+    {
+      "path": "pat-public/src/pat/pat.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d406602c37e1c15f46db26007115e8efb2632664",
+      "size": 3328,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d406602c37e1c15f46db26007115e8efb2632664"
+    },
+    {
+      "path": "pat-public/src/pat/pat.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5deebd67fc0a98b5a7fb254add124d22401107d1",
+      "size": 2221,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5deebd67fc0a98b5a7fb254add124d22401107d1"
+    },
+    {
+      "path": "problem-shapes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2de051a01c87846938a773129f131999abce3f6",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/a2de051a01c87846938a773129f131999abce3f6"
+    },
+    {
+      "path": "problem-shapes/cnn_layer.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60c21f4633ad8e89a429b897a43aed7774e7698a",
+      "size": 2267,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/60c21f4633ad8e89a429b897a43aed7774e7698a"
+    },
+    {
+      "path": "problem-shapes/gemm.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d949b4b701896f199d01f649490c21cac01f48f5",
+      "size": 1902,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d949b4b701896f199d01f649490c21cac01f48f5"
+    },
+    {
+      "path": "problem-shapes/gemm_ABZ.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8ff470c7f13daf03530a716622fdd02bf44d38a",
+      "size": 1830,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c8ff470c7f13daf03530a716622fdd02bf44d38a"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b903c26dc7a02185b2b0bf5dd28020d4bb628a7b",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/b903c26dc7a02185b2b0bf5dd28020d4bb628a7b"
+    },
+    {
+      "path": "scripts/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5bdd214e01603ecd6c83be9f66d88579c588ec6",
+      "size": 4,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f5bdd214e01603ecd6c83be9f66d88579c588ec6"
+    },
+    {
+      "path": "scripts/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7a6b8d05aa5267bfc53d33a600d08ad3e1ce848",
+      "size": 942,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a7a6b8d05aa5267bfc53d33a600d08ad3e1ce848"
+    },
+    {
+      "path": "scripts/apply_license.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5cf7c44f1a54993f7eb4fff6f238cc534ce4bf42",
+      "size": 7787,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5cf7c44f1a54993f7eb4fff6f238cc534ce4bf42"
+    },
+    {
+      "path": "scripts/cnn_layers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cbb6b37962f87792fba388f222cb66cdf15cc4c",
+      "size": 2075,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3cbb6b37962f87792fba388f222cb66cdf15cc4c"
+    },
+    {
+      "path": "scripts/hyphens2underscores.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a20f2045125939d6ff73180824d2c0033157f514",
+      "size": 4478,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a20f2045125939d6ff73180824d2c0033157f514"
+    },
+    {
+      "path": "scripts/parse_timeloop_output.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2048f5280374aaed65e6c0cc891dd05515e47667",
+      "size": 11708,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2048f5280374aaed65e6c0cc891dd05515e47667"
+    },
+    {
+      "path": "scripts/sample.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "707a068f2facf935bbed97b7a8e36ff19620ba11",
+      "size": 2924,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/707a068f2facf935bbed97b7a8e36ff19620ba11"
+    },
+    {
+      "path": "scripts/timeloop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecccaa6f84deb56cac5b6cb15c5f3addf49cddad",
+      "size": 5177,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ecccaa6f84deb56cac5b6cb15c5f3addf49cddad"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87ada5b6c88d560d64cee28205f30e68d30b2a6a",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/87ada5b6c88d560d64cee28205f30e68d30b2a6a"
+    },
+    {
+      "path": "src/README",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e67e011145639007a3ba1abcc395df13cde6d1d4",
+      "size": 2013,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e67e011145639007a3ba1abcc395df13cde6d1d4"
+    },
+    {
+      "path": "src/SConscript",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b440bce2c5f39bdbc793e44ad9853c625dfde3bc",
+      "size": 12943,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b440bce2c5f39bdbc793e44ad9853c625dfde3bc"
+    },
+    {
+      "path": "src/applications",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "046eb87d309a9f4f4852c51974b074df3830b700",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/046eb87d309a9f4f4852c51974b074df3830b700"
+    },
+    {
+      "path": "src/applications/design-space",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e024c99163a5c5209ea34e1dc878a7391de20ca",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/0e024c99163a5c5209ea34e1dc878a7391de20ca"
+    },
+    {
+      "path": "src/applications/design-space/arch.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9babe96af2775dfdf5b18e456252ac861486b5e",
+      "size": 10467,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b9babe96af2775dfdf5b18e456252ac861486b5e"
+    },
+    {
+      "path": "src/applications/design-space/design-space.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abebce6faf31a25213fb0ca69ac130cf1ba4de02",
+      "size": 6714,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/abebce6faf31a25213fb0ca69ac130cf1ba4de02"
+    },
+    {
+      "path": "src/applications/design-space/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4661fb0f7c520f9dbd8da79a3da4d9ee5077702",
+      "size": 2147,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a4661fb0f7c520f9dbd8da79a3da4d9ee5077702"
+    },
+    {
+      "path": "src/applications/design-space/problem.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d27110ecf687ea72bd3159448a72b26519a23785",
+      "size": 2869,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d27110ecf687ea72bd3159448a72b26519a23785"
+    },
+    {
+      "path": "src/applications/einsum-graph",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70f4ed2dc235c88ddf6607cc2a8a897ee0d0cd7c",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/70f4ed2dc235c88ddf6607cc2a8a897ee0d0cd7c"
+    },
+    {
+      "path": "src/applications/einsum-graph/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fa1437f6f6dde0bb41ece010a8c227fb8487601",
+      "size": 846,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3fa1437f6f6dde0bb41ece010a8c227fb8487601"
+    },
+    {
+      "path": "src/applications/looptree-model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a241b9e195913456736438eef3e73eb791f62783",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/a241b9e195913456736438eef3e73eb791f62783"
+    },
+    {
+      "path": "src/applications/looptree-model/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4635c8686da78eeed512e18bf33e6ce69958843",
+      "size": 1339,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f4635c8686da78eeed512e18bf33e6ce69958843"
+    },
+    {
+      "path": "src/applications/looptree-model/model.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29412ee088d1522e837eb16bec6c389dd1b28aba",
+      "size": 5224,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/29412ee088d1522e837eb16bec6c389dd1b28aba"
+    },
+    {
+      "path": "src/applications/mapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "720fc1ed08a2b53adc758da1c9c939fb9869c165",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/720fc1ed08a2b53adc758da1c9c939fb9869c165"
+    },
+    {
+      "path": "src/applications/mapper/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a67769eb2a6841893c4967a9b34b4deb373a47ea",
+      "size": 3973,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a67769eb2a6841893c4967a9b34b4deb373a47ea"
+    },
+    {
+      "path": "src/applications/mapper/mapper-thread.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f70babef48fc8f52663e8be62e5725b3038948d7",
+      "size": 27996,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f70babef48fc8f52663e8be62e5725b3038948d7"
+    },
+    {
+      "path": "src/applications/mapper/mapper.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a193954564c2e36f5c13a8dbc5cc9347ffb11127",
+      "size": 27516,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a193954564c2e36f5c13a8dbc5cc9347ffb11127"
+    },
+    {
+      "path": "src/applications/metrics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "764555a4b1d3eeccaf900010786cef5e33caa134",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/764555a4b1d3eeccaf900010786cef5e33caa134"
+    },
+    {
+      "path": "src/applications/metrics/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2266dd23b605a3811806daad0b1db1da809b711",
+      "size": 2196,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f2266dd23b605a3811806daad0b1db1da809b711"
+    },
+    {
+      "path": "src/applications/metrics/metrics.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2030108ca38d2c3375300403e725852517d6c2d6",
+      "size": 4535,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2030108ca38d2c3375300403e725852517d6c2d6"
+    },
+    {
+      "path": "src/applications/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f904cefe32ccea46f26ec1c4efb8d48efc8c8f7b",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/f904cefe32ccea46f26ec1c4efb8d48efc8c8f7b"
+    },
+    {
+      "path": "src/applications/model/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65c54162921c3e29e9ba903d786d4c8f1f1501eb",
+      "size": 3446,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/65c54162921c3e29e9ba903d786d4c8f1f1501eb"
+    },
+    {
+      "path": "src/applications/model/model.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7afa9c8f6324894c2442b523eca8c5a1668ea91",
+      "size": 12877,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f7afa9c8f6324894c2442b523eca8c5a1668ea91"
+    },
+    {
+      "path": "src/applications/simple-mapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e832f8d77824e642e554015e126e1872f529094",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/0e832f8d77824e642e554015e126e1872f529094"
+    },
+    {
+      "path": "src/applications/simple-mapper/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4815b63d4e8f9946bbd1841dfee70bf3076d1f45",
+      "size": 2070,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4815b63d4e8f9946bbd1841dfee70bf3076d1f45"
+    },
+    {
+      "path": "src/applications/simple-mapper/simple-mapper.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af8b0be21dfaf06b862c08ed6bb884a94d81e227",
+      "size": 9814,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/af8b0be21dfaf06b862c08ed6bb884a94d81e227"
+    },
+    {
+      "path": "src/compound-config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99717b3c992adf363268e35b0699b75205b3fc1a",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/99717b3c992adf363268e35b0699b75205b3fc1a"
+    },
+    {
+      "path": "src/compound-config/compound-config.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6209dfaa3e9a0bf99b7f613fb7201f8637c8d305",
+      "size": 28343,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6209dfaa3e9a0bf99b7f613fb7201f8637c8d305"
+    },
+    {
+      "path": "src/compound-config/hyphens-to-underscores.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5679271ca2c776e9e13da8d0dcbcb7acc64e5bf4",
+      "size": 2964,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5679271ca2c776e9e13da8d0dcbcb7acc64e5bf4"
+    },
+    {
+      "path": "src/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff92a4836c0e542969c14878b210e6bb09399a40",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/ff92a4836c0e542969c14878b210e6bb09399a40"
+    },
+    {
+      "path": "src/data/cnn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94d2c17a9b6e64db025a0a65770cfc43045b6d2b",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/94d2c17a9b6e64db025a0a65770cfc43045b6d2b"
+    },
+    {
+      "path": "src/data/cnn/cnn-densities.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f94c98c147e96f6ace8f503d1c08746a66abd11",
+      "size": 13801,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/7f94c98c147e96f6ace8f503d1c08746a66abd11"
+    },
+    {
+      "path": "src/data/cnn/cnn-layers.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b342f5cf44d28ce6694e287b02f6640c83df43c9",
+      "size": 31904,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b342f5cf44d28ce6694e287b02f6640c83df43c9"
+    },
+    {
+      "path": "src/data/cnn/densities.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c2fee1e92d2b16617042da886b797df8466e475",
+      "size": 3904,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9c2fee1e92d2b16617042da886b797df8466e475"
+    },
+    {
+      "path": "src/einsum-graph",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe8c57fe45a95ecbc1f79fb2376dbd9bcf03ace3",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/fe8c57fe45a95ecbc1f79fb2376dbd9bcf03ace3"
+    },
+    {
+      "path": "src/einsum-graph/einsum-graph.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c943e97d4cff9108266d40fd48fea57dda60f2c9",
+      "size": 6412,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c943e97d4cff9108266d40fd48fea57dda60f2c9"
+    },
+    {
+      "path": "src/isl-wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9e3fa97e58f9a32e91f3500fcacab47d28e5fc5",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/f9e3fa97e58f9a32e91f3500fcacab47d28e5fc5"
+    },
+    {
+      "path": "src/isl-wrapper/ctx-manager.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da0138aebc70f581ad2a715d52d58a9fc741b62a",
+      "size": 657,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/da0138aebc70f581ad2a715d52d58a9fc741b62a"
+    },
+    {
+      "path": "src/isl-wrapper/isl-functions.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1848c2cf7b3301a8501d506b1a2e6cdd2b733f76",
+      "size": 15556,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1848c2cf7b3301a8501d506b1a2e6cdd2b733f76"
+    },
+    {
+      "path": "src/layout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1840f089a6754cd66956530a0acb423a5132ba7d",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/1840f089a6754cd66956530a0acb423a5132ba7d"
+    },
+    {
+      "path": "src/layout/layout.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2d128ef6a5ca231d4c5b487b7e2a5467da8fdec",
+      "size": 21276,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a2d128ef6a5ca231d4c5b487b7e2a5467da8fdec"
+    },
+    {
+      "path": "src/loop-analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf4f015cf922ebe051fbd2ccfcf62b0b86fb2401",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/bf4f015cf922ebe051fbd2ccfcf62b0b86fb2401"
+    },
+    {
+      "path": "src/loop-analysis/aahr-carve.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bb9e7f6fef3d3ed3bf34eee511f43a0c00531f0",
+      "size": 6346,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6bb9e7f6fef3d3ed3bf34eee511f43a0c00531f0"
+    },
+    {
+      "path": "src/loop-analysis/bounds-inference.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3a48947852aa5c7d4669b47a5e90ce498348fce",
+      "size": 114,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f3a48947852aa5c7d4669b47a5e90ce498348fce"
+    },
+    {
+      "path": "src/loop-analysis/coordinate-space-tile-info.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "018c25efd8816fc4d0caa255a26ec62f4068bccc",
+      "size": 3678,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/018c25efd8816fc4d0caa255a26ec62f4068bccc"
+    },
+    {
+      "path": "src/loop-analysis/isl-analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b3dbcc675445fef2435baaf927b93fd6ccfdc0a",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/2b3dbcc675445fef2435baaf927b93fd6ccfdc0a"
+    },
+    {
+      "path": "src/loop-analysis/isl-analysis/isl-nest-analysis.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c133e15fdd8985e9ce5152e3de4c57f75b1fcf16",
+      "size": 2542,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c133e15fdd8985e9ce5152e3de4c57f75b1fcf16"
+    },
+    {
+      "path": "src/loop-analysis/isl-analysis/isl-to-legacy-adaptor.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e33bca4a5926afdd1216be77f91d0c4504a9e6e5",
+      "size": 8437,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e33bca4a5926afdd1216be77f91d0c4504a9e6e5"
+    },
+    {
+      "path": "src/loop-analysis/isl-ir",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57cba58b1686b847b954009321efc0a8a7a83052",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/57cba58b1686b847b954009321efc0a8a7a83052"
+    },
+    {
+      "path": "src/loop-analysis/isl-ir/input-output.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edcca64fc525d0715e62f752acc28f60f3da0609",
+      "size": 2517,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/edcca64fc525d0715e62f752acc28f60f3da0609"
+    },
+    {
+      "path": "src/loop-analysis/isl-ir/ir.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e0e4e615e2c3ea441def9f64e7325bd70f62ff7",
+      "size": 2727,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3e0e4e615e2c3ea441def9f64e7325bd70f62ff7"
+    },
+    {
+      "path": "src/loop-analysis/logical-buffer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68e15f88e5053cd5ab831a4556dd339c607c414d",
+      "size": 62,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/68e15f88e5053cd5ab831a4556dd339c607c414d"
+    },
+    {
+      "path": "src/loop-analysis/loop-state.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef36b0cb2f1719b471dc28ffac5cd45dc28ea294",
+      "size": 2937,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ef36b0cb2f1719b471dc28ffac5cd45dc28ea294"
+    },
+    {
+      "path": "src/loop-analysis/mapping-to-isl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fdd6b48932bed508a0a86e2884ee2de96cf4030",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/5fdd6b48932bed508a0a86e2884ee2de96cf4030"
+    },
+    {
+      "path": "src/loop-analysis/mapping-to-isl/fused-mapping-to-isl.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8add8a7fabab095dca9871d9e8940fb958755aba",
+      "size": 24464,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8add8a7fabab095dca9871d9e8940fb958755aba"
+    },
+    {
+      "path": "src/loop-analysis/mapping-to-isl/mapping-to-isl.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fdaac1476a793ad4bae7aba769d77932c82e6b6",
+      "size": 15651,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2fdaac1476a793ad4bae7aba769d77932c82e6b6"
+    },
+    {
+      "path": "src/loop-analysis/mapping-to-isl/tiling.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b5e1e476e78d4b4d221fa47c8a509c82f56ebdd",
+      "size": 3083,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5b5e1e476e78d4b4d221fa47c8a509c82f56ebdd"
+    },
+    {
+      "path": "src/loop-analysis/nest-analysis-tile-info.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ce289a29bc44daba8cba024e1a4f8a4535ab80f",
+      "size": 5475,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2ce289a29bc44daba8cba024e1a4f8a4535ab80f"
+    },
+    {
+      "path": "src/loop-analysis/nest-analysis.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c8580441ed0a484db24c2f638d857d647bb0687",
+      "size": 87987,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9c8580441ed0a484db24c2f638d857d647bb0687"
+    },
+    {
+      "path": "src/loop-analysis/operation-type.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fa41ea7cef35837bae85ff0120d31f6f16b23aa",
+      "size": 4114,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1fa41ea7cef35837bae85ff0120d31f6f16b23aa"
+    },
+    {
+      "path": "src/loop-analysis/point-set-aahr.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "317a534e6af4976b0145e8f7d20fdd6e619f74c2",
+      "size": 18274,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/317a534e6af4976b0145e8f7d20fdd6e619f74c2"
+    },
+    {
+      "path": "src/loop-analysis/point-set-isl.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53a040b24f3f61e5e60a571cbf9e5d71feec9407",
+      "size": 6861,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/53a040b24f3f61e5e60a571cbf9e5d71feec9407"
+    },
+    {
+      "path": "src/loop-analysis/point-set-multi-aahr.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4196981b3510d39f3c3645f161f4c9efee885357",
+      "size": 7831,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4196981b3510d39f3c3645f161f4c9efee885357"
+    },
+    {
+      "path": "src/loop-analysis/point.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08c2a08ecf7895dbd040afe2d860815aec7128c1",
+      "size": 4092,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/08c2a08ecf7895dbd040afe2d860815aec7128c1"
+    },
+    {
+      "path": "src/loop-analysis/spatial-analysis.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4a9ecb482553d428c36853b2c191531d4007cf7",
+      "size": 15514,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c4a9ecb482553d428c36853b2c191531d4007cf7"
+    },
+    {
+      "path": "src/loop-analysis/temporal-analysis.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b51a3d6784cff0e50b8ef96f9964a8250613f23c",
+      "size": 6218,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b51a3d6784cff0e50b8ef96f9964a8250613f23c"
+    },
+    {
+      "path": "src/loop-analysis/tiling-tile-info.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48f235201129f9ef99bdd504b65b9eee5967e629",
+      "size": 10396,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/48f235201129f9ef99bdd504b65b9eee5967e629"
+    },
+    {
+      "path": "src/loop-analysis/tiling.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2948921cc6e824ef2fee0ccb5ba2461b60946fa3",
+      "size": 47316,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2948921cc6e824ef2fee0ccb5ba2461b60946fa3"
+    },
+    {
+      "path": "src/mapping",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c71dbbf0498584fd1b7304e1cc022c4a5a9fe25",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/0c71dbbf0498584fd1b7304e1cc022c4a5a9fe25"
+    },
+    {
+      "path": "src/mapping/arch-properties.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "295d15060554cbf887e792b34b15eb4a7142080c",
+      "size": 6942,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/295d15060554cbf887e792b34b15eb4a7142080c"
+    },
+    {
+      "path": "src/mapping/constraints.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cc7fba8314f57f099411f222d9df20adb013375",
+      "size": 44352,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/7cc7fba8314f57f099411f222d9df20adb013375"
+    },
+    {
+      "path": "src/mapping/fused-mapping",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2b5e81c7df67cc391e964351c4d92194ddad439",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/a2b5e81c7df67cc391e964351c4d92194ddad439"
+    },
+    {
+      "path": "src/mapping/fused-mapping/dfs.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51c2301a7b8030cf8aded28b3c77e2c35f2bc761",
+      "size": 2713,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/51c2301a7b8030cf8aded28b3c77e2c35f2bc761"
+    },
+    {
+      "path": "src/mapping/fused-mapping/fused-mapping.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f5660e3e4b678c683d7754dc81381a300c97067",
+      "size": 3242,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9f5660e3e4b678c683d7754dc81381a300c97067"
+    },
+    {
+      "path": "src/mapping/fused-mapping/mapping-path.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb50aa22b4b902d5ef9a7ef48a32097a58dd2fa4",
+      "size": 3542,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/fb50aa22b4b902d5ef9a7ef48a32097a58dd2fa4"
+    },
+    {
+      "path": "src/mapping/fused-mapping/parser.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67c4846d9d4141c3c2d12b89ce31846ceae6cd74",
+      "size": 10670,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/67c4846d9d4141c3c2d12b89ce31846ceae6cd74"
+    },
+    {
+      "path": "src/mapping/loop.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac8e6d3613c9f339d1b75d9ca189ccaaea36ba1d",
+      "size": 6217,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ac8e6d3613c9f339d1b75d9ca189ccaaea36ba1d"
+    },
+    {
+      "path": "src/mapping/mapping.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f092e21c4c8b734c340fe7145e2cd07a5dedcd1",
+      "size": 21862,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5f092e21c4c8b734c340fe7145e2cd07a5dedcd1"
+    },
+    {
+      "path": "src/mapping/nest.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cb0fbee28ea25c6ef4afb364f02df8c28165522",
+      "size": 22832,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2cb0fbee28ea25c6ef4afb364f02df8c28165522"
+    },
+    {
+      "path": "src/mapping/parser.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9353ed218b0d06276eceb2275f73249d6f36ef35",
+      "size": 28362,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9353ed218b0d06276eceb2275f73249d6f36ef35"
+    },
+    {
+      "path": "src/mapping/spacetime.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e10a1fff26ceda0867df04cf9663da26a697bd89",
+      "size": 379,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e10a1fff26ceda0867df04cf9663da26a697bd89"
+    },
+    {
+      "path": "src/mapspaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f6eaff8bacb5a2c18c0f1e1db26306ca57bb3165",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/f6eaff8bacb5a2c18c0f1e1db26306ca57bb3165"
+    },
+    {
+      "path": "src/mapspaces/mapspace-base.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e265960f77fcb1104b7d2413948115318279091",
+      "size": 2224,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1e265960f77fcb1104b7d2413948115318279091"
+    },
+    {
+      "path": "src/mapspaces/mapspace-factory.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7620c4effbd97bab0325b1845642c2b351cdbe11",
+      "size": 2719,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/7620c4effbd97bab0325b1845642c2b351cdbe11"
+    },
+    {
+      "path": "src/mapspaces/ruby.cpp",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "35d6fcfe3897461336d8df24c674e78d966aa1c2",
+      "size": 31224,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/35d6fcfe3897461336d8df24c674e78d966aa1c2"
+    },
+    {
+      "path": "src/mapspaces/subspaces.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b3b79b9f34f3a2fbb46ba00c1d00dd1fcd072c2",
+      "size": 17351,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8b3b79b9f34f3a2fbb46ba00c1d00dd1fcd072c2"
+    },
+    {
+      "path": "src/mapspaces/uber.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2393f0c6f75f798f3a1c9a0fccd79a26cbd7eaf8",
+      "size": 33306,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2393f0c6f75f798f3a1c9a0fccd79a26cbd7eaf8"
+    },
+    {
+      "path": "src/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "031563de7284a5fb60c0d8e4618e5e86e62d84e7",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/031563de7284a5fb60c0d8e4618e5e86e62d84e7"
+    },
+    {
+      "path": "src/model/arithmetic.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1876a089f6ad6a014a620dd7d9a7ac21fd551823",
+      "size": 14354,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1876a089f6ad6a014a620dd7d9a7ac21fd551823"
+    },
+    {
+      "path": "src/model/buffer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2d3d6747f601c936e098b4e17856d652c2c6b83",
+      "size": 140290,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f2d3d6747f601c936e098b4e17856d652c2c6b83"
+    },
+    {
+      "path": "src/model/engine.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fa05a42f805932430fd38c5353e976e20b15c93",
+      "size": 4784,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3fa05a42f805932430fd38c5353e976e20b15c93"
+    },
+    {
+      "path": "src/model/level.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bbc971243e6a300a0a1e1290246fb17a2622086",
+      "size": 1738,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1bbc971243e6a300a0a1e1290246fb17a2622086"
+    },
+    {
+      "path": "src/model/model-base.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecd1a97ff7a5ce4952cdc8720ad632f915c55884",
+      "size": 1850,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ecd1a97ff7a5ce4952cdc8720ad632f915c55884"
+    },
+    {
+      "path": "src/model/network-factory.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1c1a9940b64287fafd246d3e8010845741a1b0c",
+      "size": 4395,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b1c1a9940b64287fafd246d3e8010845741a1b0c"
+    },
+    {
+      "path": "src/model/network-legacy.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "710fb303f111133bb3c761f817bd441c45206f71",
+      "size": 23971,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/710fb303f111133bb3c761f817bd441c45206f71"
+    },
+    {
+      "path": "src/model/network-reduction-tree.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32ba6537e42fe7fdf36a48327a15fb273dfe55bf",
+      "size": 12218,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/32ba6537e42fe7fdf36a48327a15fb273dfe55bf"
+    },
+    {
+      "path": "src/model/network-simple-multicast.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae21ac64bbed79377e26bcaf8169c0524223353a",
+      "size": 12086,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ae21ac64bbed79377e26bcaf8169c0524223353a"
+    },
+    {
+      "path": "src/model/network.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b4b85df2c33247ee6e9b73f4500e7373bd02799",
+      "size": 1746,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5b4b85df2c33247ee6e9b73f4500e7373bd02799"
+    },
+    {
+      "path": "src/model/sparse-optimization-info.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "454d1cb7664c20705f1469ced9f7347e0eed4106",
+      "size": 3677,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/454d1cb7664c20705f1469ced9f7347e0eed4106"
+    },
+    {
+      "path": "src/model/sparse-optimization-parser.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9031f5b3890c73ff39c8a068aa4af4346be6d93",
+      "size": 25468,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a9031f5b3890c73ff39c8a068aa4af4346be6d93"
+    },
+    {
+      "path": "src/model/topology.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "441137477910a6ffbb56f5cf9fce0f3cbe9d3dee",
+      "size": 63600,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/441137477910a6ffbb56f5cf9fce0f3cbe9d3dee"
+    },
+    {
+      "path": "src/model/util.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "004db8df864585453fab8fbd25b42d3245eec65d",
+      "size": 2162,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/004db8df864585453fab8fbd25b42d3245eec65d"
+    },
+    {
+      "path": "src/search",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c6648dfe15b42fd8673fe38dc0fe5ea3417b83e5",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/c6648dfe15b42fd8673fe38dc0fe5ea3417b83e5"
+    },
+    {
+      "path": "src/search/exhaustive.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "353f47d4ba5ff6ef1b4564a57447f1751c406a50",
+      "size": 4850,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/353f47d4ba5ff6ef1b4564a57447f1751c406a50"
+    },
+    {
+      "path": "src/search/hybrid.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bce2ce6775abbaa4b44475b9e8cdbb0e38819922",
+      "size": 7328,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/bce2ce6775abbaa4b44475b9e8cdbb0e38819922"
+    },
+    {
+      "path": "src/search/linear-pruned.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7827cabc4e14c33cda6c87b7a5a757b9491a55b",
+      "size": 6447,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f7827cabc4e14c33cda6c87b7a5a757b9491a55b"
+    },
+    {
+      "path": "src/search/random-pruned.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db851e7782cd9dd71a98779c60b71e553d699135",
+      "size": 8749,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/db851e7782cd9dd71a98779c60b71e553d699135"
+    },
+    {
+      "path": "src/search/random.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "549b7bd6e92e00fd958bf3e1ff3762370498f89b",
+      "size": 5479,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/549b7bd6e92e00fd958bf3e1ff3762370498f89b"
+    },
+    {
+      "path": "src/search/search-factory.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b80d8ebb38ae03c9ffa5fae7bc7e12374760ea10",
+      "size": 2907,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b80d8ebb38ae03c9ffa5fae7bc7e12374760ea10"
+    },
+    {
+      "path": "src/sparse-analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "397a2d3150595cc52202b384e07c4eb83ba18018",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/397a2d3150595cc52202b384e07c4eb83ba18018"
+    },
+    {
+      "path": "src/sparse-analysis/compute-gs-analyzer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58c2b4ae607503c25692b3b524f4583fd18b1e23",
+      "size": 39971,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/58c2b4ae607503c25692b3b524f4583fd18b1e23"
+    },
+    {
+      "path": "src/sparse-analysis/representation-analyzer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b0421f1c00d9e8c4bcfec8edb106c49607145cc",
+      "size": 45246,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5b0421f1c00d9e8c4bcfec8edb106c49607145cc"
+    },
+    {
+      "path": "src/sparse-analysis/sparse-analysis.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b89fdd683231c59c93355e3f5dc0e149d75954ad",
+      "size": 16340,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b89fdd683231c59c93355e3f5dc0e149d75954ad"
+    },
+    {
+      "path": "src/sparse-analysis/state.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b091a45ee3bbea01122e296ae1cfc24d6a7303",
+      "size": 5610,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/08b091a45ee3bbea01122e296ae1cfc24d6a7303"
+    },
+    {
+      "path": "src/sparse-analysis/storage-gs-analyzer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8598416d2d738f0a903d6570766063de6e73c2a7",
+      "size": 60091,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8598416d2d738f0a903d6570766063de6e73c2a7"
+    },
+    {
+      "path": "src/sparse-analysis/storage-optimization-combiner.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cbb2674d4983adb5c3ea5e5e7573c1d411ba13a",
+      "size": 23197,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4cbb2674d4983adb5c3ea5e5e7573c1d411ba13a"
+    },
+    {
+      "path": "src/unit-test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e2421e82f82eba1e1335d37b2a38387725b43d51",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/e2421e82f82eba1e1335d37b2a38387725b43d51"
+    },
+    {
+      "path": "src/unit-test/compound-config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ca3a3db3f5da4f4e11c8b70d74bcc8d1da06102",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/7ca3a3db3f5da4f4e11c8b70d74bcc8d1da06102"
+    },
+    {
+      "path": "src/unit-test/compound-config/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d0dbe446770be5127eb719b695414c427b09715",
+      "size": 6,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3d0dbe446770be5127eb719b695414c427b09715"
+    },
+    {
+      "path": "src/unit-test/compound-config/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a167a9c849ce9070668c7199e3fa5c2e6b27607",
+      "size": 669,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6a167a9c849ce9070668c7199e3fa5c2e6b27607"
+    },
+    {
+      "path": "src/unit-test/compound-config/test-compound-config.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc419de17ad84910579bb4d84f22da0e8e8559b6",
+      "size": 25762,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/cc419de17ad84910579bb4d84f22da0e8e8559b6"
+    },
+    {
+      "path": "src/unit-test/configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db6e18cdfc055f3f5a15a9c36e2256d1aa509a67",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/db6e18cdfc055f3f5a15a9c36e2256d1aa509a67"
+    },
+    {
+      "path": "src/unit-test/configs/arch.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "252b83cc260fab81531d80aa3ccfa05e27d56631",
+      "size": 354,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/252b83cc260fab81531d80aa3ccfa05e27d56631"
+    },
+    {
+      "path": "src/unit-test/configs/conv1d.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aaeb0ccf279379418b0bdbabb8cda820a4a48f8",
+      "size": 297,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0aaeb0ccf279379418b0bdbabb8cda820a4a48f8"
+    },
+    {
+      "path": "src/unit-test/configs/mapping.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f8b71ed487b0afa0b47cc6cf266de801173c56c",
+      "size": 89,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/7f8b71ed487b0afa0b47cc6cf266de801173c56c"
+    },
+    {
+      "path": "src/unit-test/test-isl-functions.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb66ffd51e34ff541ee28f0404254d50a11f49e1",
+      "size": 1351,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/eb66ffd51e34ff541ee28f0404254d50a11f49e1"
+    },
+    {
+      "path": "src/unit-test/test-main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ebb3cccfa36f5ba59f02d9a70d30d59213e0129",
+      "size": 89,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4ebb3cccfa36f5ba59f02d9a70d30d59213e0129"
+    },
+    {
+      "path": "src/unit-test/test-mapping-to-isl.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d89892b0b6056d4da72b05e701a49953156374c6",
+      "size": 1543,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d89892b0b6056d4da72b05e701a49953156374c6"
+    },
+    {
+      "path": "src/unit-test/test-multicast.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "855f11abee6543dd0ddadef45837e8889dc13e77",
+      "size": 3148,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/855f11abee6543dd0ddadef45837e8889dc13e77"
+    },
+    {
+      "path": "src/unit-test/test-simple-link-transfer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43be761467ebf7a5cbebc31500949552eb39ba69",
+      "size": 966,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/43be761467ebf7a5cbebc31500949552eb39ba69"
+    },
+    {
+      "path": "src/unit-test/test-temporal-reuse-analysis.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d52992695b98ce5c8e99d09b039eb9f62c5dd78",
+      "size": 1050,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3d52992695b98ce5c8e99d09b039eb9f62c5dd78"
+    },
+    {
+      "path": "src/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "afa5bfd5e3bbcb86d0304c847a43e663611ee45c",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/afa5bfd5e3bbcb86d0304c847a43e663611ee45c"
+    },
+    {
+      "path": "src/util/accelergy_interface.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "324347b29138ab2add340da8936fef5ae017b184",
+      "size": 3203,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/324347b29138ab2add340da8936fef5ae017b184"
+    },
+    {
+      "path": "src/util/args.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea55e3f32c5003f914cde312f7fdc2ef2a4bec80",
+      "size": 2847,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ea55e3f32c5003f914cde312f7fdc2ef2a4bec80"
+    },
+    {
+      "path": "src/util/banner.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e04f24488e3cafa739a3ebe57c9a93146be0fca8",
+      "size": 1939,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e04f24488e3cafa739a3ebe57c9a93146be0fca8"
+    },
+    {
+      "path": "src/util/map2d.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c01e2719ea9a9983f8a791f7e9f12aa0475b1308",
+      "size": 4063,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c01e2719ea9a9983f8a791f7e9f12aa0475b1308"
+    },
+    {
+      "path": "src/util/numeric.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "930dd28063d37d065b985bd422e9c8644c572592",
+      "size": 27288,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/930dd28063d37d065b985bd422e9c8644c572592"
+    },
+    {
+      "path": "src/workload",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "551add48d921232fccb6d7008b454445340d953c",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/551add48d921232fccb6d7008b454445340d953c"
+    },
+    {
+      "path": "src/workload/density-models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a163aad6e70409abb6f12158a5e43d6c15ecb043",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/a163aad6e70409abb6f12158a5e43d6c15ecb043"
+    },
+    {
+      "path": "src/workload/density-models/banded-distribution.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2102f292ed29b6ed36525b56d19070a39521046a",
+      "size": 18683,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2102f292ed29b6ed36525b56d19070a39521046a"
+    },
+    {
+      "path": "src/workload/density-models/density-distribution-factory.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9721af651542f8c56849334036152888adabdadc",
+      "size": 4407,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9721af651542f8c56849334036152888adabdadc"
+    },
+    {
+      "path": "src/workload/density-models/density-distribution.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2029b48ecf0db8f21912fd6575e443c3180ade11",
+      "size": 2104,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2029b48ecf0db8f21912fd6575e443c3180ade11"
+    },
+    {
+      "path": "src/workload/density-models/fixed-structured-distribution.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c47385e1141b38ab4a3e74133e38cd1f925f15b0",
+      "size": 7446,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c47385e1141b38ab4a3e74133e38cd1f925f15b0"
+    },
+    {
+      "path": "src/workload/density-models/hypergeometric-distribution.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a686ef4da5ebfb807cb2adb8dff4b2e8eb5824c6",
+      "size": 11639,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a686ef4da5ebfb807cb2adb8dff4b2e8eb5824c6"
+    },
+    {
+      "path": "src/workload/format-models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0dcd270954001d25cdd261c5ce8db375ca993763",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/0dcd270954001d25cdd261c5ce8db375ca993763"
+    },
+    {
+      "path": "src/workload/format-models/bitmask.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c1cea31a4b691d915d990b692bd25fcd84f4b9f",
+      "size": 3735,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5c1cea31a4b691d915d990b692bd25fcd84f4b9f"
+    },
+    {
+      "path": "src/workload/format-models/coordinate-payload.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9474522f5b3c6acaa1b9b3af8fefc4f7dc724630",
+      "size": 3790,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9474522f5b3c6acaa1b9b3af8fefc4f7dc724630"
+    },
+    {
+      "path": "src/workload/format-models/metadata-format-factory.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f51c8328d79e56d8c34b419671689c24479fe1b7",
+      "size": 5329,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f51c8328d79e56d8c34b419671689c24479fe1b7"
+    },
+    {
+      "path": "src/workload/format-models/metadata-format.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "020d18e8afa8d8afda87795224e5e77677c9cbd5",
+      "size": 5795,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/020d18e8afa8d8afda87795224e5e77677c9cbd5"
+    },
+    {
+      "path": "src/workload/format-models/run-length-encoding.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55f5be007ab5631e1d4a96cc2297b3934355ab96",
+      "size": 3785,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/55f5be007ab5631e1d4a96cc2297b3934355ab96"
+    },
+    {
+      "path": "src/workload/format-models/uncompressed-bitmask.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3feb5c3bd9cfcb7736e540b9d60eecdf13532c64",
+      "size": 3439,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3feb5c3bd9cfcb7736e540b9d60eecdf13532c64"
+    },
+    {
+      "path": "src/workload/format-models/uncompressed-offset-pair.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aa48ef47ac7347c247cd7fa765c4e9157266b03",
+      "size": 4008,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3aa48ef47ac7347c247cd7fa765c4e9157266b03"
+    },
+    {
+      "path": "src/workload/fused-workload-dependency-analyzer.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ff7d4f0ff1e13c23d5c576c6d21c9b6e2719fcc",
+      "size": 16809,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9ff7d4f0ff1e13c23d5c576c6d21c9b6e2719fcc"
+    },
+    {
+      "path": "src/workload/fused-workload.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7ca02a695930c2122e5a2527a66357b8a29451c",
+      "size": 12539,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c7ca02a695930c2122e5a2527a66357b8a29451c"
+    },
+    {
+      "path": "src/workload/shape-models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d2f7e9493ef537f10ee6b19ec583ca50a91b54a",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/7d2f7e9493ef537f10ee6b19ec583ca50a91b54a"
+    },
+    {
+      "path": "src/workload/shape-models/operation-space.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5a539b0548a70bb609e112084633e5c01037d35",
+      "size": 20099,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e5a539b0548a70bb609e112084633e5c01037d35"
+    },
+    {
+      "path": "src/workload/shape-models/problem-shape.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5303446b6624085c237b4d9fbf58f4df118cc83",
+      "size": 13384,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b5303446b6624085c237b4d9fbf58f4df118cc83"
+    },
+    {
+      "path": "src/workload/workload.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13be61cfe1f2e70cf9cdae5330cfa4c7bfb0c48b",
+      "size": 9861,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/13be61cfe1f2e70cf9cdae5330cfa4c7bfb0c48b"
+    },
+    {
+      "path": "tenssella",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "edf41059676e30874b58bc21af0648d070e86528",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/edf41059676e30874b58bc21af0648d070e86528"
+    },
+    {
+      "path": "tenssella/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ffc4cf3691fd27dae7ca4c006dc287efac1e71b",
+      "size": 76,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1ffc4cf3691fd27dae7ca4c006dc287efac1e71b"
+    },
+    {
+      "path": "tenssella/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1a8881a2697dd42d2792cc3374aed0b8da55af0",
+      "size": 1485,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c1a8881a2697dd42d2792cc3374aed0b8da55af0"
+    },
+    {
+      "path": "tenssella/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d40c5965b7804f5c0a4b795137364ba72cdc7a28",
+      "size": 1448,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d40c5965b7804f5c0a4b795137364ba72cdc7a28"
+    },
+    {
+      "path": "tenssella/SConstruct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c058728aa8c573a0b93d25253f52ad94e7bb69c4",
+      "size": 2765,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c058728aa8c573a0b93d25253f52ad94e7bb69c4"
+    },
+    {
+      "path": "tenssella/arch-2D-3L.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8733c8f0711a9425460f1fa50816a0a0195d5535",
+      "size": 16022,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8733c8f0711a9425460f1fa50816a0a0195d5535"
+    },
+    {
+      "path": "tenssella/arch-2D-4L.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a65406a37ffde56cbb9c383eae6f503dc248959b",
+      "size": 10533,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/a65406a37ffde56cbb9c383eae6f503dc248959b"
+    },
+    {
+      "path": "tenssella/arch-fuse.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97cdfe39ddf1260469c667468d17390e3eb0cfa7",
+      "size": 11441,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/97cdfe39ddf1260469c667468d17390e3eb0cfa7"
+    },
+    {
+      "path": "tenssella/arch-row-diag-col-4L.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2f70c1b67ee3835cc6b3dfb28e24cf0c96bd431",
+      "size": 4561,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b2f70c1b67ee3835cc6b3dfb28e24cf0c96bd431"
+    },
+    {
+      "path": "tenssella/arch-timeloop-3L.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9542b12653ab255ddc09888abeabc0a8b45eb97f",
+      "size": 4431,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9542b12653ab255ddc09888abeabc0a8b45eb97f"
+    },
+    {
+      "path": "tenssella/architecture.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1eb8bcf71b1b99937749091dd75fe8e03655ca0",
+      "size": 2526,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f1eb8bcf71b1b99937749091dd75fe8e03655ca0"
+    },
+    {
+      "path": "tenssella/build_and_run.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e6ce11d1183aa47147461b002e69206097204638",
+      "size": 1819,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e6ce11d1183aa47147461b002e69206097204638"
+    },
+    {
+      "path": "tenssella/data.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c21665054dd59bb3f13cf0094bd8be29df21a79",
+      "size": 2589,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1c21665054dd59bb3f13cf0094bd8be29df21a79"
+    },
+    {
+      "path": "tenssella/data.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c935b9ce9badd4e6e7cb01719d87ff888264d9c",
+      "size": 4149,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8c935b9ce9badd4e6e7cb01719d87ff888264d9c"
+    },
+    {
+      "path": "tenssella/emulation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d120fb904db8273dde6b58179584c9e1e91e64a6",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/d120fb904db8273dde6b58179584c9e1e91e64a6"
+    },
+    {
+      "path": "tenssella/emulation/action-macros.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9ca14755c1d43fb9588c89184d0c7a1ddd636b8",
+      "size": 56417,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b9ca14755c1d43fb9588c89184d0c7a1ddd636b8"
+    },
+    {
+      "path": "tenssella/emulation/arch-mt.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "134f7dd97f697a879a8d76cac505ca77653cc044",
+      "size": 7566,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/134f7dd97f697a879a8d76cac505ca77653cc044"
+    },
+    {
+      "path": "tenssella/emulation/arch-st.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c8565258232f6234eda0c35d73b65d03a6ca40a",
+      "size": 4113,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9c8565258232f6234eda0c35d73b65d03a6ca40a"
+    },
+    {
+      "path": "tenssella/emulation/arch.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "134f7dd97f697a879a8d76cac505ca77653cc044",
+      "size": 7566,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/134f7dd97f697a879a8d76cac505ca77653cc044"
+    },
+    {
+      "path": "tenssella/emulation/buffet.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "001f435228f81a4dec6beb67d846e1f8aad2a095",
+      "size": 13587,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/001f435228f81a4dec6beb67d846e1f8aad2a095"
+    },
+    {
+      "path": "tenssella/emulation/functions.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4a9ff8793747e628891f2857c86bf9d107a5b24",
+      "size": 1757,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c4a9ff8793747e628891f2857c86bf9d107a5b24"
+    },
+    {
+      "path": "tenssella/emulation/includes.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29cf89a3779dc40348e2ee0230dc6c0ce18f4155",
+      "size": 1737,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/29cf89a3779dc40348e2ee0230dc6c0ce18f4155"
+    },
+    {
+      "path": "tenssella/emulation/transfer-engine.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89fada180cfed859d7a4ebbce49d33e3e6d529dc",
+      "size": 11777,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/89fada180cfed859d7a4ebbce49d33e3e6d529dc"
+    },
+    {
+      "path": "tenssella/inputs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51557ba24592f48275943cdf31f7471fc56724e0",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/51557ba24592f48275943cdf31f7471fc56724e0"
+    },
+    {
+      "path": "tenssella/inputs/conv7d.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da5ee43ad2d4f237c562c5d59585d690bc9260d5",
+      "size": 28,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/da5ee43ad2d4f237c562c5d59585d690bc9260d5"
+    },
+    {
+      "path": "tenssella/inputs/mapping.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e694658fd40db53ffc389ef9714d603fa96216ee",
+      "size": 158,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e694658fd40db53ffc389ef9714d603fa96216ee"
+    },
+    {
+      "path": "tenssella/install_isl_utils.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9df14297966db65f1d6a34daf1a0551a8bd7d5f2",
+      "size": 1724,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9df14297966db65f1d6a34daf1a0551a8bd7d5f2"
+    },
+    {
+      "path": "tenssella/main.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34b4715afedd3c38e4bfad1307d128db38e7218b",
+      "size": 27613,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/34b4715afedd3c38e4bfad1307d128db38e7218b"
+    },
+    {
+      "path": "tenssella/manual-inputs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fcbd8ae5d2ebaf36188420ef46e41e074c621a85",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/fcbd8ae5d2ebaf36188420ef46e41e074c621a85"
+    },
+    {
+      "path": "tenssella/manual-inputs/conv7d.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0332bfe5d2bd09e4398d05768e5beeba02dd2f44",
+      "size": 30,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0332bfe5d2bd09e4398d05768e5beeba02dd2f44"
+    },
+    {
+      "path": "tenssella/manual-inputs/mapping.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bf2300133effe435aa3def70e3ea9ebb86f8da0",
+      "size": 173,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6bf2300133effe435aa3def70e3ea9ebb86f8da0"
+    },
+    {
+      "path": "tenssella/mapping-CONV-1D.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2837273d1c2e53643a4b81857851182d0f0284c",
+      "size": 8721,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c2837273d1c2e53643a4b81857851182d0f0284c"
+    },
+    {
+      "path": "tenssella/mapping-CONV-1D.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0f0ee44423f173ef43204219f134ae48176e1bf",
+      "size": 7574,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b0f0ee44423f173ef43204219f134ae48176e1bf"
+    },
+    {
+      "path": "tenssella/mapping-CONV-2D.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c68e2c0bbefc034cb9f6880adb90058cc9638ed",
+      "size": 7246,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/2c68e2c0bbefc034cb9f6880adb90058cc9638ed"
+    },
+    {
+      "path": "tenssella/mapping-CONV-PRK-4L.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96785e56438744b7bf9f5317d7b1ac57b7705c45",
+      "size": 3856,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/96785e56438744b7bf9f5317d7b1ac57b7705c45"
+    },
+    {
+      "path": "tenssella/mapping-CONV-PRK-ref.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f44a77ff6498038437b996b7680808f1881a2999",
+      "size": 4341,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f44a77ff6498038437b996b7680808f1881a2999"
+    },
+    {
+      "path": "tenssella/mapping-CONV7D-ref.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba460b18350e8d237d2d2120e4be2bc241eb9655",
+      "size": 3637,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ba460b18350e8d237d2d2120e4be2bc241eb9655"
+    },
+    {
+      "path": "tenssella/mapping-CONV7D-timeloop-3L.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48286ff056766b218f0d8ecec2fc1d864d512551",
+      "size": 6329,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/48286ff056766b218f0d8ecec2fc1d864d512551"
+    },
+    {
+      "path": "tenssella/mapping-GEMM-3L.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f3080b9088b7d41891c241a52eca3f2d09777d6",
+      "size": 6195,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4f3080b9088b7d41891c241a52eca3f2d09777d6"
+    },
+    {
+      "path": "tenssella/mapping-GEMM-4L.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e905bb6899707605699d027f1a2e7023e33d6af",
+      "size": 5876,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4e905bb6899707605699d027f1a2e7023e33d6af"
+    },
+    {
+      "path": "tenssella/mapping-MV.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15ba76c73b0f4567145b592131e86512b099bc5b",
+      "size": 27038,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/15ba76c73b0f4567145b592131e86512b099bc5b"
+    },
+    {
+      "path": "tenssella/mapping-timeloop.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99fbd1c505b94461949512db294adf123db4407d",
+      "size": 12540,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/99fbd1c505b94461949512db294adf123db4407d"
+    },
+    {
+      "path": "tenssella/mapping.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "658d320519aedeba74ce584b4d7c3dd6d7c5c601",
+      "size": 10964,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/658d320519aedeba74ce584b4d7c3dd6d7c5c601"
+    },
+    {
+      "path": "tenssella/out",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b5680609c25b15c3a4b14f610f58e6413ba0237",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/6b5680609c25b15c3a4b14f610f58e6413ba0237"
+    },
+    {
+      "path": "tenssella/out/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "883964dcf5625136641fd4c27c96a9f2fd059885",
+      "size": 58,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/883964dcf5625136641fd4c27c96a9f2fd059885"
+    },
+    {
+      "path": "tenssella/out/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "722f7384322661cd13a434ab9351898f9fb6dfb2",
+      "size": 40,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/722f7384322661cd13a434ab9351898f9fb6dfb2"
+    },
+    {
+      "path": "tenssella/out/SConstruct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e677c2ffc4133ff9c0078f66c1fd0243f58a680",
+      "size": 1970,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8e677c2ffc4133ff9c0078f66c1fd0243f58a680"
+    },
+    {
+      "path": "tenssella/out/convert-macros.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ec46f0fd3993d9fb90f00ffc90c35e43a1ce372b",
+      "size": 1788,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ec46f0fd3993d9fb90f00ffc90c35e43a1ce372b"
+    },
+    {
+      "path": "tenssella/out/sample.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95a2014a7c51c82ccc2ac05ccfc9bd2e197a77aa",
+      "size": 5208,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/95a2014a7c51c82ccc2ac05ccfc9bd2e197a77aa"
+    },
+    {
+      "path": "tenssella/out/val-emulator.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1212e35883437a5dea68f16c827d8578c6393942",
+      "size": 18067,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1212e35883437a5dea68f16c827d8578c6393942"
+    },
+    {
+      "path": "tenssella/prelude.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f4041f1f3fedc6f15e125d0f80ef0d14a7aaadf",
+      "size": 2247,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4f4041f1f3fedc6f15e125d0f80ef0d14a7aaadf"
+    },
+    {
+      "path": "tenssella/printers.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b115adb07b36dc247343d0fe244819a63612dc4c",
+      "size": 4227,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b115adb07b36dc247343d0fe244819a63612dc4c"
+    },
+    {
+      "path": "tenssella/printers.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "450966b0c71282b71a0de471587e9da08bb0cb16",
+      "size": 4769,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/450966b0c71282b71a0de471587e9da08bb0cb16"
+    },
+    {
+      "path": "tenssella/problem-CONV-1D.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ea46728225745172756ba51fcbc77cafad96776",
+      "size": 7462,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6ea46728225745172756ba51fcbc77cafad96776"
+    },
+    {
+      "path": "tenssella/problem-CONV-1D.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc63b5ab564d223a168b6da13163f8901a0aa3e2",
+      "size": 3529,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/dc63b5ab564d223a168b6da13163f8901a0aa3e2"
+    },
+    {
+      "path": "tenssella/problem-CONV-2D.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b100bdaa8c5b4381098421c6c8bd475d7cb014d5",
+      "size": 5505,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b100bdaa8c5b4381098421c6c8bd475d7cb014d5"
+    },
+    {
+      "path": "tenssella/problem-CONV-PRK.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b00199e6c69eaaa4462a50ef5ff954f76180151",
+      "size": 5051,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4b00199e6c69eaaa4462a50ef5ff954f76180151"
+    },
+    {
+      "path": "tenssella/problem-CONV7D.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e1269bdc97f701fbe842f5f10fb7ffdac21b960",
+      "size": 5320,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5e1269bdc97f701fbe842f5f10fb7ffdac21b960"
+    },
+    {
+      "path": "tenssella/problem-GEMM.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efc8f8f8d5ffe09f643203c40be98b6fca9a6fbe",
+      "size": 5058,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/efc8f8f8d5ffe09f643203c40be98b6fca9a6fbe"
+    },
+    {
+      "path": "tenssella/problem-MV.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cfdd4f318ba93e21b2e8bdcf8155d63f9071073",
+      "size": 8772,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/1cfdd4f318ba93e21b2e8bdcf8155d63f9071073"
+    },
+    {
+      "path": "tenssella/problem.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7e01c077d172d00f8fc2d03364839cb324d3298",
+      "size": 2969,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d7e01c077d172d00f8fc2d03364839cb324d3298"
+    },
+    {
+      "path": "tenssella/problem.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b73f31ca1b685621b7a501d03176c70713f081e0",
+      "size": 3948,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/b73f31ca1b685621b7a501d03176c70713f081e0"
+    },
+    {
+      "path": "tenssella/ref",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54dcd58c87a2a6e860edc6a186ade455bc992386",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/54dcd58c87a2a6e860edc6a186ade455bc992386"
+    },
+    {
+      "path": "tenssella/ref/conv-prk.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf20cb10cf3fcbb6c110a1bcc7226c1c15b1e724",
+      "size": 3924,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/cf20cb10cf3fcbb6c110a1bcc7226c1c15b1e724"
+    },
+    {
+      "path": "tenssella/ref/gemm.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bacc2ebb07b8298cbccec70d0f23a53e1a6cf55",
+      "size": 3706,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6bacc2ebb07b8298cbccec70d0f23a53e1a6cf55"
+    },
+    {
+      "path": "tenssella/run_emulator.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "338182d26889793d68c8349f89c19c2e88ffe227",
+      "size": 2060,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/338182d26889793d68c8349f89c19c2e88ffe227"
+    },
+    {
+      "path": "tenssella/tenssella.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4b6052e81b05e54ce56d9f7256fe864cbfde6c6",
+      "size": 44091,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c4b6052e81b05e54ce56d9f7256fe864cbfde6c6"
+    },
+    {
+      "path": "tenssella/tenssella.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffb6493e79de6e7061cd163c1f76e75ea4c89920",
+      "size": 104801,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ffb6493e79de6e7061cd163c1f76e75ea4c89920"
+    },
+    {
+      "path": "tenssella/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf594ed23669ca729860157a1325f65fc26268b8",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/bf594ed23669ca729860157a1325f65fc26268b8"
+    },
+    {
+      "path": "tenssella/tests/SConstruct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae0c862a84093e6e02921bc8fc767815786069d2",
+      "size": 2272,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/ae0c862a84093e6e02921bc8fc767815786069d2"
+    },
+    {
+      "path": "tenssella/tutorial",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0711822929d4ac0b4d76083d389f9a3b9ed598e8",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/0711822929d4ac0b4d76083d389f9a3b9ed598e8"
+    },
+    {
+      "path": "tenssella/tutorial/arch-tutorial.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b03948316973d24afcaa2e17a8d8943b682b2f9",
+      "size": 4607,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0b03948316973d24afcaa2e17a8d8943b682b2f9"
+    },
+    {
+      "path": "tenssella/tutorial/binding-tutorial.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b9e5dbde586cf8f59b0fc9fef969b9d79314e3e",
+      "size": 1690,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/5b9e5dbde586cf8f59b0fc9fef969b9d79314e3e"
+    },
+    {
+      "path": "tenssella/tutorial/mapping-tutorial.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23b4a5e09b2858b6cc2b40b7636813655fb26efc",
+      "size": 4916,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/23b4a5e09b2858b6cc2b40b7636813655fb26efc"
+    },
+    {
+      "path": "tenssella/tutorial/problem-tutorial.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08c2ebd7c05e2ef6fe201e0bfc986be0981751ef",
+      "size": 4547,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/08c2ebd7c05e2ef6fe201e0bfc986be0981751ef"
+    },
+    {
+      "path": "tenssella/tutorial/tutorial.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f89a9446993a97bb43257b80b5529448421c4b4a",
+      "size": 7598,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/f89a9446993a97bb43257b80b5529448421c4b4a"
+    },
+    {
+      "path": "tenssella/tutorial/tutorial.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b79a7b29e084d04eea00b26e3b814a7468024b9",
+      "size": 1751,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/8b79a7b29e084d04eea00b26e3b814a7468024b9"
+    },
+    {
+      "path": "tenssella/utils.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71230fbe6710e6fb818828c97aaa350e315fa1ff",
+      "size": 2580,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/71230fbe6710e6fb818828c97aaa350e315fa1ff"
+    },
+    {
+      "path": "tenssella/utils.hpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d11acdca8259dcecf8329e8ec6713ae1b6b790be",
+      "size": 7546,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/d11acdca8259dcecf8329e8ec6713ae1b6b790be"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "63f3543bf422cc405b7991aac4bac2c2d896e53e",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/63f3543bf422cc405b7991aac4bac2c2d896e53e"
+    },
+    {
+      "path": "tests/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f7f74da690503bc5831e7dba111ca56575e59f0",
+      "size": 81,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/7f7f74da690503bc5831e7dba111ca56575e59f0"
+    },
+    {
+      "path": "tests/README.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d5a67cee9db53d1dabd3a0a7cede310d1c1a284",
+      "size": 324,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/0d5a67cee9db53d1dabd3a0a7cede310d1c1a284"
+    },
+    {
+      "path": "tests/SConstruct",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e28c635ea17a270a168383b40dd4651b97fc1c62",
+      "size": 108,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/e28c635ea17a270a168383b40dd4651b97fc1c62"
+    },
+    {
+      "path": "tests/c++_to_python.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c94a51e9e550bde732c11db6f775abbbada31a7a",
+      "size": 1073,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/c94a51e9e550bde732c11db6f775abbbada31a7a"
+    },
+    {
+      "path": "tests/results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4aaffa0f428279427fda47e9192120c6bfb69908",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/4aaffa0f428279427fda47e9192120c6bfb69908"
+    },
+    {
+      "path": "tests/results/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9617f5202d00c3a56eca51b6754bbc521531b900",
+      "size": 45,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/9617f5202d00c3a56eca51b6754bbc521531b900"
+    },
+    {
+      "path": "tests/results/changes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab7b7066302544c585c1a632ed429c28ecfc74a2",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/ab7b7066302544c585c1a632ed429c28ecfc74a2"
+    },
+    {
+      "path": "tests/results/changes/configs_mapper_sample",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d94edfdef1031909053149b567fc33565748b331",
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/trees/d94edfdef1031909053149b567fc33565748b331"
+    },
+    {
+      "path": "tests/results/changes/configs_mapper_sample/reference_stats.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f5224d3977d0e79a829dd94b00fc7d85fc895b4",
+      "size": 3914,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/6f5224d3977d0e79a829dd94b00fc7d85fc895b4"
+    },
+    {
+      "path": "tests/simba_chip.cfg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b0557222e14696426eb3a48c3492255b6b8726a",
+      "size": 6679,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/3b0557222e14696426eb3a48c3492255b6b8726a"
+    },
+    {
+      "path": "tests/test_changes.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "bf4c119cfb9da07aafcde384f6d8bb7ce56e30fa",
+      "size": 6201,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/bf4c119cfb9da07aafcde384f6d8bb7ce56e30fa"
+    },
+    {
+      "path": "tests/test_simba_chip.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f5611fc8f0e98c4c97aa4067d8c3e611d183d09",
+      "size": 14731,
+      "url": "https://api.github.com/repos/NVlabs/timeloop/git/blobs/4f5611fc8f0e98c4c97aa4067d8c3e611d183d09"
+    }
+  ],
+  "truncated": false
+}

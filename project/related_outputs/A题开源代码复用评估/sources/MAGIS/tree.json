@@ -1,0 +1,492 @@
+{
+  "sha": "a332abc73dca97f769054c4f61aef0a52009cf34",
+  "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/a332abc73dca97f769054c4f61aef0a52009cf34",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "effe178bec0cb2ab5fa0061dff8ba4663c026b33",
+      "size": 2555,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/effe178bec0cb2ab5fa0061dff8ba4663c026b33"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e94e3aeb5f0a122fae3392963d009ae8da27c5a1",
+      "size": 1070,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/e94e3aeb5f0a122fae3392963d009ae8da27c5a1"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d69546abaef329e10f605d9d665ca1e1a7f9d015",
+      "size": 4953,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/d69546abaef329e10f605d9d665ca1e1a7f9d015"
+    },
+    {
+      "path": "media",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e0f086a8ac6872e19ba46a6dec96c3780f39e24",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/1e0f086a8ac6872e19ba46a6dec96c3780f39e24"
+    },
+    {
+      "path": "media/magis-asplos24-paper.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5765704de00ed726e4369d97f3c893a87f4874ba",
+      "size": 3338326,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/5765704de00ed726e4369d97f3c893a87f4874ba"
+    },
+    {
+      "path": "media/magis-asplos24-poster.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "099a501165326c421e2d9480c3aab3324ef93bb2",
+      "size": 1174700,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/099a501165326c421e2d9480c3aab3324ef93bb2"
+    },
+    {
+      "path": "media/magis-asplos24-talk.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41ca695b609f7dfc2891dfa20884644abe03dbcb",
+      "size": 1884362,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/41ca695b609f7dfc2891dfa20884644abe03dbcb"
+    },
+    {
+      "path": "python",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8076b38fe555c843944ac17235531b80a8e9423",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/f8076b38fe555c843944ac17235531b80a8e9423"
+    },
+    {
+      "path": "python/magis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0695ebd5ad4ed93d66557ef40c5217f06f8437fb",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/0695ebd5ad4ed93d66557ef40c5217f06f8437fb"
+    },
+    {
+      "path": "python/magis/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "python/magis/backend",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56e6ab5bf4b76bfc9cbc12f73d51cd123f72be7f",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/56e6ab5bf4b76bfc9cbc12f73d51cd123f72be7f"
+    },
+    {
+      "path": "python/magis/backend/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18a8baaf1ffb1d500ea68785cd63fd832397fa44",
+      "size": 71,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/18a8baaf1ffb1d500ea68785cd63fd832397fa44"
+    },
+    {
+      "path": "python/magis/backend/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9779c56f1c31cf26e7fde7a62636facb270b7e36",
+      "size": 6869,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/9779c56f1c31cf26e7fde7a62636facb270b7e36"
+    },
+    {
+      "path": "python/magis/backend/torch_cuda.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cd7c5fead59f99f0b27741f670c191c4a0fa611",
+      "size": 21247,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/1cd7c5fead59f99f0b27741f670c191c4a0fa611"
+    },
+    {
+      "path": "python/magis/dim_graph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e33cc0277629b06856aab1b290368f55b3b423e",
+      "size": 4239,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/5e33cc0277629b06856aab1b290368f55b3b423e"
+    },
+    {
+      "path": "python/magis/op_graph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46ea307a7c153f2a1eb9753ce0d5403f298cf7e4",
+      "size": 28736,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/46ea307a7c153f2a1eb9753ce0d5403f298cf7e4"
+    },
+    {
+      "path": "python/magis/operators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a997996293b855fd4d9362c9080413ddec4206b1",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/a997996293b855fd4d9362c9080413ddec4206b1"
+    },
+    {
+      "path": "python/magis/operators/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31360fd59f409430efc73f3ffa9547c30d789806",
+      "size": 177,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/31360fd59f409430efc73f3ffa9547c30d789806"
+    },
+    {
+      "path": "python/magis/operators/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85816fe6601c8b4207195a69a4198d72a7194e5d",
+      "size": 9553,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/85816fe6601c8b4207195a69a4198d72a7194e5d"
+    },
+    {
+      "path": "python/magis/operators/bijection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e95a6d9577a4142402d895e2523f2dc567f5e39f",
+      "size": 6162,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/e95a6d9577a4142402d895e2523f2dc567f5e39f"
+    },
+    {
+      "path": "python/magis/operators/blas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "847427bda11d90d6e81681c40bc5f7ebabc2defb",
+      "size": 5151,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/847427bda11d90d6e81681c40bc5f7ebabc2defb"
+    },
+    {
+      "path": "python/magis/operators/conv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8553d26ecaefddbd851bf27c939c8b11e7736ba5",
+      "size": 7301,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/8553d26ecaefddbd851bf27c939c8b11e7736ba5"
+    },
+    {
+      "path": "python/magis/operators/fission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a14117c618a6dd77bc19bf045165de33f285e81a",
+      "size": 2251,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/a14117c618a6dd77bc19bf045165de33f285e81a"
+    },
+    {
+      "path": "python/magis/operators/reduction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73d1fa429c1818da45550a5152eca79f05c71fd8",
+      "size": 3194,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/73d1fa429c1818da45550a5152eca79f05c71fd8"
+    },
+    {
+      "path": "python/magis/operators/tailor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93e5d97c38b77744029e67b58a4b8e03ec283175",
+      "size": 3572,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/93e5d97c38b77744029e67b58a4b8e03ec283175"
+    },
+    {
+      "path": "python/magis/optimizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7f18c3bfd9a6ab52ed27d60d651c5ceaf576eee",
+      "size": 17210,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/d7f18c3bfd9a6ab52ed27d60d651c5ceaf576eee"
+    },
+    {
+      "path": "python/magis/scheduler.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9aed41d7bb2343e6f37ff8c86563718a530197e9",
+      "size": 30489,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/9aed41d7bb2343e6f37ff8c86563718a530197e9"
+    },
+    {
+      "path": "python/magis/simulator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "997bfcee5273ebbd9fd4eed5a72913740588345a",
+      "size": 8059,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/997bfcee5273ebbd9fd4eed5a72913740588345a"
+    },
+    {
+      "path": "python/magis/testing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e5aa8b9390969fb4ce7192da82764c4897dd528",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/9e5aa8b9390969fb4ce7192da82764c4897dd528"
+    },
+    {
+      "path": "python/magis/testing/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed68c841a58c2ed098132b79a5a6d4541894f7bc",
+      "size": 58,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/ed68c841a58c2ed098132b79a5a6d4541894f7bc"
+    },
+    {
+      "path": "python/magis/testing/bench.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b164ebd486e3536a974959f2d3d51a2411288cec",
+      "size": 2397,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/b164ebd486e3536a974959f2d3d51a2411288cec"
+    },
+    {
+      "path": "python/magis/testing/configs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93c051c24dfc7983a75341e3fed95790712a6172",
+      "size": 1386,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/93c051c24dfc7983a75341e3fed95790712a6172"
+    },
+    {
+      "path": "python/magis/testing/nn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "265c40018484ec4d0bf16273141a784edbfdda6e",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/265c40018484ec4d0bf16273141a784edbfdda6e"
+    },
+    {
+      "path": "python/magis/testing/nn/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eb3dafdff3fc7fb8a47779796c651deec87f28a",
+      "size": 278,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/0eb3dafdff3fc7fb8a47779796c651deec87f28a"
+    },
+    {
+      "path": "python/magis/testing/nn/densenet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08498e9a1ebe8ccef011414fc71f94257c5ef532",
+      "size": 2248,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/08498e9a1ebe8ccef011414fc71f94257c5ef532"
+    },
+    {
+      "path": "python/magis/testing/nn/mlp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8165dc52444a54d7eb205c31b5fb8f07ff438bb7",
+      "size": 729,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/8165dc52444a54d7eb205c31b5fb8f07ff438bb7"
+    },
+    {
+      "path": "python/magis/testing/nn/resnet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "280a44f204e1b70bfe254f74805d38e622853536",
+      "size": 4299,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/280a44f204e1b70bfe254f74805d38e622853536"
+    },
+    {
+      "path": "python/magis/testing/nn/transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20b075ecc81d015957ef63c3e5e7ef355fd5e13b",
+      "size": 3652,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/20b075ecc81d015957ef63c3e5e7ef355fd5e13b"
+    },
+    {
+      "path": "python/magis/testing/nn/unet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc563efe25d720d3918d66df14a23c6b7fea577f",
+      "size": 4071,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/cc563efe25d720d3918d66df14a23c6b7fea577f"
+    },
+    {
+      "path": "python/magis/testing/nn/vgg.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7620896129a21ef8f35f7c05fedc4023cf388b39",
+      "size": 1484,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/7620896129a21ef8f35f7c05fedc4023cf388b39"
+    },
+    {
+      "path": "python/magis/transform",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba8879065dfdc663b8e14c31b0d68351251b3813",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/ba8879065dfdc663b8e14c31b0d68351251b3813"
+    },
+    {
+      "path": "python/magis/transform/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55e196206d459d11f70bd0008481d4290e7296ee",
+      "size": 389,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/55e196206d459d11f70bd0008481d4290e7296ee"
+    },
+    {
+      "path": "python/magis/transform/misc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb21a25344204d55779759e8b413f1dc3b7b5d75",
+      "size": 14470,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/cb21a25344204d55779759e8b413f1dc3b7b5d75"
+    },
+    {
+      "path": "python/magis/transform/mutator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37dcb2b4ecabc141bd808e276ac86ba696b22f2e",
+      "size": 12880,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/37dcb2b4ecabc141bd808e276ac86ba696b22f2e"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e418df6478b7b53ff1c4c6c25775cb855805921",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/7e418df6478b7b53ff1c4c6c25775cb855805921"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e5987ce4cafc9739d3913c1087df8b2dd6cdb87",
+      "size": 191,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/6e5987ce4cafc9739d3913c1087df8b2dd6cdb87"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b577f0644a56f9c8fb1a9d603281089f400c3f6",
+      "size": 3528,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/2b577f0644a56f9c8fb1a9d603281089f400c3f6"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules/sched_rules.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10ef6e93b8e60b9a46ee0f65aa933a5fd5094f29",
+      "size": 6829,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/10ef6e93b8e60b9a46ee0f65aa933a5fd5094f29"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules/taso_rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "189bf9793e2987ca5dfac3288257d669119c91be",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/189bf9793e2987ca5dfac3288257d669119c91be"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules/taso_rules/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77917bf12467fb49fb13d0fe7d740e6a60c57a2c",
+      "size": 65,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/77917bf12467fb49fb13d0fe7d740e6a60c57a2c"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules/taso_rules/addmul.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b777241167ae983b009b843b25c7221bbf6f830",
+      "size": 18111,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/1b777241167ae983b009b843b25c7221bbf6f830"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules/taso_rules/concat.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51e412d2f975ddaa026a2bc87b4c26b19314de8e",
+      "size": 5961,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/51e412d2f975ddaa026a2bc87b4c26b19314de8e"
+    },
+    {
+      "path": "python/magis/transform/rewrite_rules/taso_rules/merge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8e4f7dd9068e28689ee69ea5ec95677dc4e5b85",
+      "size": 7525,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/d8e4f7dd9068e28689ee69ea5ec95677dc4e5b85"
+    },
+    {
+      "path": "python/magis/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ad06031fe24c4aa4400594e5d50943fa9859957",
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/trees/7ad06031fe24c4aa4400594e5d50943fa9859957"
+    },
+    {
+      "path": "python/magis/utils/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aad57ad9c40e8c9fc0297b94b2dfbc653757ae6b",
+      "size": 1302,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/aad57ad9c40e8c9fc0297b94b2dfbc653757ae6b"
+    },
+    {
+      "path": "python/magis/utils/base_graph.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f23629e4646a9626fe8a4450afaa90994e59a450",
+      "size": 7634,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/f23629e4646a9626fe8a4450afaa90994e59a450"
+    },
+    {
+      "path": "python/magis/utils/conv_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2073a42034ac63430d84acddb7bbe536611ef357",
+      "size": 1916,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/2073a42034ac63430d84acddb7bbe536611ef357"
+    },
+    {
+      "path": "python/magis/utils/logging.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3db1dbaecba2ebbc0ffb74538d331efa3fe96dbb",
+      "size": 284,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/3db1dbaecba2ebbc0ffb74538d331efa3fe96dbb"
+    },
+    {
+      "path": "python/magis/utils/timing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "399517d309da7dce26f25e535f07cc06e40980d5",
+      "size": 1447,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/399517d309da7dce26f25e535f07cc06e40980d5"
+    },
+    {
+      "path": "python/magis/utils/union_find_set.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dec6f4b4e642f9b877144aaf1c86602add7fd1c",
+      "size": 474,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/3dec6f4b4e642f9b877144aaf1c86602add7fd1c"
+    },
+    {
+      "path": "python/setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76db26a3e0617308e77c7f2fd7c90b1471e89602",
+      "size": 102,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/76db26a3e0617308e77c7f2fd7c90b1471e89602"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8b06a21ed0146f8f20e3c91bfe1ccf79ea01d3f",
+      "size": 52,
+      "url": "https://api.github.com/repos/pku-liang/MAGIS/git/blobs/f8b06a21ed0146f8f20e3c91bfe1ccf79ea01d3f"
+    }
+  ],
+  "truncated": false
+}
