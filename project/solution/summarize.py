@@ -64,9 +64,13 @@ def main():
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     fig, axes = plt.subplots(1, 2, figsize=(10, 4), layout="constrained")
-    for kind, label in (("q1", "Q1"), ("q2", "Q2")):
-        x = list(map(int, means[kind]))
-        axes[0].plot(x, [means[kind][str(n)] for n in x], "o-", label=label)
+    x = list(map(int, means["q2"]))
+    axes[0].plot(x, [means["q2"][str(n)] for n in x], "s--",
+                 color="#e87b00", linewidth=1.7, markersize=5, label="Q2")
+    x = list(map(int, means["q1"]))
+    axes[0].plot(x, [means["q1"][str(n)] for n in x], "o-",
+                 color="#1767a6", linewidth=2.5, markersize=9,
+                 markerfacecolor="none", markeredgewidth=1.6, label="Q1")
     axes[0].axhline(1, color="0.5", linewidth=0.8)
     axes[0].set(xlabel="Core count", ylabel="Mean speedup vs single core", xticks=range(1, 6))
     axes[0].legend()

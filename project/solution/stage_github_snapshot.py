@@ -103,7 +103,7 @@ def main():
 
     metrics = src / "final_metrics"
     if done == expected and metrics.is_dir():
-        for name in ("aggregate.json", "per_case_metrics.csv",
+        for name in ("aggregate.json", "per_case_metrics.csv", "verification.json",
                      "mean_speedup.png", "mean_speedup.pdf"):
             copy(metrics / name, dst / "results" / name)
     snapshot = {"generated_utc": datetime.now(timezone.utc).isoformat(),
