@@ -1,0 +1,12 @@
+{
+  "schema": "q2-cold-frozen-v1",
+  "created": "2026-09-24T17:01:54.648347+00:00",
+  "files": {
+    "q2_cold.py": "4e377ed308b905a946e5c6125a652143a7dffc9703d8a645df5dcee294785813",
+    "q2_cold_config.json": "0496cc5e70f781cc8d58b7f367190dd7c7d1a9c3564b145a681794d07221ad7f",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab"
+  },
+  "official_config_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "experiment": "100 cases x cores 2,3,4,5; 2 concurrent fresh processes; no cached plans; no post-selection across runs"
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "name": "base_w0_k2",
+    "family": "structure",
+    "descriptor": [
+      "base",
+      0,
+      2
+    ],
+    "proxy_cycles": 89207,
+    "pre_spill_bytes": 697994,
+    "fingerprint": "ad7d6e8c72638e92420f212facb5eab588fb2ac4ec43e3abac2f1d3dcada2e99",
+    "lower_bound_cycles": 89207,
+    "event": "evaluation",
+    "evaluation": 1,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 89756,
+    "added_copy_bytes": 0,
+    "spill_bytes": 0,
+    "peak_l1_bytes": 229376,
+    "peak_ub_bytes": 110620,
+    "evaluation_s": 0.14773589999822434,
+    "elapsed_s": 0.18941589999667485,
+    "best_cycles": 89756,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "valley_w1_k2",
+    "family": "structure",
+    "descriptor": [
+      "valley",
+      1,
+      2
+    ],
+    "proxy_cycles": 90448,
+    "pre_spill_bytes": 1480450,
+    "fingerprint": "cd109caa7879276848f34b27d5e7f1d1b4991462c208b4650f09c36ce4699f2e",
+    "lower_bound_cycles": 90448,
+    "event": "evaluation",
+    "evaluation": 2,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 100432,
+    "added_copy_bytes": 876664,
+    "spill_bytes": 94208,
+    "peak_l1_bytes": 196608,
+    "peak_ub_bytes": 131072,
+    "evaluation_s": 0.17607639999914682,
+    "elapsed_s": 0.38753189999988535,
+    "best_cycles": 89756,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "valley_w6_k2",
+    "family": "structure",
+    "descriptor": [
+      "valley",
+      6,
+      2
+    ],
+    "proxy_cycles": 91385,
+    "pre_spill_bytes": 1210106,
+    "fingerprint": "c2a580f14f39ea80ad223a99d312c4449d55fd7d3ead9287b8e13a21ddd4a4bd",
+    "lower_bound_cycles": 91385,
+    "event": "evaluation",
+    "evaluation": 3,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 103219,
+    "added_copy_bytes": 553072,
+    "spill_bytes": 40960,
+    "peak_l1_bytes": 253952,
+    "peak_ub_bytes": 114718,
+    "evaluation_s": 0.16348139999900013,
+    "elapsed_s": 0.5752841999965312,
+    "best_cycles": 89756,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "band_w2_k2",
+    "family": "structure",
+    "descriptor": [
+      "band",
+      2,
+      2
+    ],
+    "proxy_cycles": 84299,
+    "pre_spill_bytes": 2819066,
+    "fingerprint": "a58b76c4217d15fd6561c439d2a8cce6d85e17d328c46318e7f8a5abb966efa2",
+    "lower_bound_cycles": 84299,
+    "event": "evaluation",
+    "evaluation": 4,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 109574,
+    "added_copy_bytes": 3223980,
+    "spill_bytes": 1102908,
+    "peak_l1_bytes": 262144,
+    "peak_ub_bytes": 131072,
+    "evaluation_s": 0.24703980000049341,
+    "elapsed_s": 0.8431550999994215,
+    "best_cycles": 89756,
+    "best_added_bytes": 0
+  },
+  {
+    "event": "bound_pruned",
+    "name": "base_w0_k1",
+    "lower_bound_cycles": 162701,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "valley_w1_k1",
+    "lower_bound_cycles": 162701,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "valley_w2_k2",
+    "lower_bound_cycles": 92056,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "valley_w6_k1",
+    "lower_bound_cycles": 162701,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s0_c1",
+    "lower_bound_cycles": 162701,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s0_d26_c1",
+    "lower_bound_cycles": 115679,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r1173_d13_c1",
+    "lower_bound_cycles": 136778,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r1173_d39_c1",
+    "lower_bound_cycles": 94580,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s1_c0",
+    "lower_bound_cycles": 162701,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s1_d20_c0",
+    "lower_bound_cycles": 100634,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r2458_d11_c0",
+    "lower_bound_cycles": 101635,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r2458_d21_c0",
+    "lower_bound_cycles": 96854,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r2458_d31_c0",
+    "lower_bound_cycles": 93011,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r189_d7_c0",
+    "lower_bound_cycles": 90577,
+    "incumbent_cycles": 89756
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r189_d14_c0",
+    "lower_bound_cycles": 89804,
+    "incumbent_cycles": 89756
+  },
+  {
+    "name": "split_s0_d26_c0",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 89207,
+    "pre_spill_bytes": 697994,
+    "fingerprint": "373079557fac469459d9e7b89e6a40ab73b741219e611fc1b5435a7200a48dc6",
+    "lower_bound_cycles": 89207,
+    "event": "evaluation",
+    "evaluation": 5,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 89756,
+    "added_copy_bytes": 0,
+    "spill_bytes": 0,
+    "peak_l1_bytes": 229376,
+    "peak_ub_bytes": 110620,
+    "evaluation_s": 0.1459285999990243,
+    "elapsed_s": 1.345719699998881,
+    "best_cycles": 89756,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "split_s1_d20_c1",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 89207,
+    "pre_spill_bytes": 697994,
+    "fingerprint": "5829e6346875e65a80acfc91faac96f1d856013776aa7c277101ea9f713de092",
+    "lower_bound_cycles": 89207,
+    "event": "evaluation",
+    "evaluation": 6,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 89756,
+    "added_copy_bytes": 126980,
+    "spill_bytes": 126980,
+    "peak_l1_bytes": 229376,
+    "peak_ub_bytes": 127028,
+    "evaluation_s": 0.16695009999966715,
+    "elapsed_s": 1.5139282999989518,
+    "best_cycles": 89756,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "chain_s1_r189_d20_c0",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 89348,
+    "pre_spill_bytes": 706190,
+    "fingerprint": "5229d4738bc21613508f25c573d4272b28b05320f67e7e98b7d7d9e60a8a542f",
+    "lower_bound_cycles": 89348,
+    "event": "evaluation",
+    "evaluation": 7,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 89897,
+    "added_copy_bytes": 8196,
+    "spill_bytes": 0,
+    "peak_l1_bytes": 229376,
+    "peak_ub_bytes": 110620,
+    "evaluation_s": 0.2003610000028857,
+    "elapsed_s": 1.7157505999966816,
+    "best_cycles": 89756,
+    "best_added_bytes": 0
+  }
+]

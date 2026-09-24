@@ -1,0 +1,25 @@
+{
+  "schema": "q2-cold-checkpoint-v1",
+  "complete_cases": 75,
+  "case_range": "case_001 through case_075 ONLY",
+  "cold_start": true,
+  "official_rechecked_cases": 75,
+  "means": {
+    "2": {
+      "cold_speedup": 2.0355686120586913,
+      "baseline_speedup": 1.7043664223059487
+    },
+    "3": {
+      "cold_speedup": 2.8494426423529253,
+      "baseline_speedup": 2.3063061271998553
+    },
+    "4": {
+      "cold_speedup": 3.586478077127507,
+      "baseline_speedup": 2.83535546117062
+    },
+    "5": {
+      "cold_speedup": 4.170842667709463,
+      "baseline_speedup": 3.2711040688003967
+    }
+  }
+}

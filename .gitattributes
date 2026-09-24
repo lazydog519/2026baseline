@@ -1,0 +1,5 @@
+# Preserve official attachments and frozen experiment hashes byte for byte.
+# Keep other documentation under the user's normal Git text settings.
+project/official/** -text
+project/solution/** -text
+solution/** -text

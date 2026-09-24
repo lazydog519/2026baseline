@@ -29,6 +29,12 @@ def with_heft(make, cross_wait=1000, same_wait=100, bandwidth=60):
 
 
 STRATEGIES = {"first_join": first_join_plan,
+              **{f"fork_join_gap_{gap}": partial(fork_join_plan,
+                                                   min_band_depth=gap)
+                 for gap in (4, 8, 16, 32, 64, 128)},
+              **{f"fork_join_gap_{gap}_heft": with_heft(partial(
+                  fork_join_plan, min_band_depth=gap))
+                 for gap in (4, 8, 16, 32, 64, 128)},
               **{f"baseline_k{k}": limited(baseline_plan, k)
                  for k in (2, 3, 4)},
               "terminal_branch": terminal_branch_plan,

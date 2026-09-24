@@ -40,9 +40,17 @@ def main():
     done = len(rows)
     if done > expected:
         raise RuntimeError(f"unexpected job count {done}")
-    for filename in ("技术思路稿-基线.md", "技术思路稿-问题一优化.md"):
-        copy(src / filename, dst / filename)
+    for filename in ("技术思路稿-基线.md", "技术思路稿-问题一优化.md",
+                     "技术思路稿-问题二优化.md", "技术思路稿-问题二独立求解.md"):
+        if (src / filename).is_file():
+            copy(src / filename, dst / filename)
+            if filename == "技术思路稿-问题二独立求解.md":
+                report = dst / filename
+                report.write_text(report.read_text(encoding="utf-8").replace(
+                    "](q2_cold/", "](project/q2_cold/"), encoding="utf-8")
     for item in (src / "solution").glob("*.py"):
+        copy(item, dst / "solution" / item.name)
+    for item in (src / "solution").glob("*.json"):
         copy(item, dst / "solution" / item.name)
     selected = {
         "README.md",
@@ -84,6 +92,16 @@ def main():
                               "result.json.gz")
                     if not result.is_file():
                         raise RuntimeError(f"missing candidate result: {result}")
+                    complete_results.add(result.resolve())
+    for summary in (src / "q2_optimization").glob("**/candidate_summary.csv"):
+        with summary.open(encoding="utf-8", newline="") as fp:
+            for row in csv.DictReader(fp):
+                if row["status"] == "ok":
+                    result = (summary.parent / row["case"] /
+                              f"n{row['cores']}" / row["strategy"] /
+                              "result.json.gz")
+                    if not result.is_file():
+                        raise RuntimeError(f"missing Q2 candidate result: {result}")
                     complete_results.add(result.resolve())
     for item in src.rglob("*"):
         if (not item.is_file() or "__pycache__" in item.parts or
@@ -134,6 +152,37 @@ def main():
         snapshot["q1_five_core_mean_speedup"] = q1_metrics[
             "arithmetic_mean_speedup"]["5"]
         snapshot["complete"] &= q1_complete
+    q2_final = src / "q2_optimization" / "final" / "aggregate.json"
+    if q2_final.is_file():
+        for name in ("aggregate.json", "per_case_metrics.csv",
+                     "mean_speedup.png", "mean_speedup.pdf"):
+            copy(q2_final.parent / name, dst / "results" / "q2_optimized" / name)
+        q2_metrics = json.loads(q2_final.read_text(encoding="utf-8"))
+        (dst / "results" / "q2_optimized" / "README.md").write_text(
+            "# 历史离线选优\n\n本目录属于旧的多轮离线实验，不能代表当前独立求解算法。"
+            "当前统一预算、独立启动结果见 ../q2_cold/，并以其 aggregate.json 中的复核状态为准。\n",
+            encoding="utf-8")
+        q2_complete = (q2_metrics["complete_cases"] == 100 and
+                       q2_metrics["missing_jobs"] == 0 and
+                       q2_metrics["evaluated_selections"] == 400 and
+                       q2_metrics["official_recheck"])
+        snapshot["q2_complete"] = q2_complete
+        snapshot["q2_five_core_mean_speedup"] = q2_metrics[
+            "arithmetic_mean_speedup"]["5"]
+        snapshot["complete"] &= q2_complete
+    q2_cold = src / "q2_cold" / "final" / "aggregate.json"
+    if q2_cold.is_file():
+        cold = json.loads(q2_cold.read_text(encoding="utf-8"))
+        cold_complete = (cold["complete_cases"] == 100 and cold["missing_jobs"] == 0
+                         and cold["rechecked_jobs"] == 400 and cold["cold_start"])
+        snapshot["q2_historical_selection_complete"] = snapshot.get("q2_complete", False)
+        snapshot["q2_complete"] = cold_complete
+        snapshot["q2_cold_start"] = True
+        snapshot["q2_five_core_mean_speedup"] = cold["arithmetic_mean_speedup"]["5"]
+        snapshot["complete"] = done == expected and snapshot.get("q1_complete", True) and cold_complete
+        for item in q2_cold.parent.iterdir():
+            if item.is_file():
+                copy(item, dst / "results" / "q2_cold" / item.name)
     (dst / "results" / "snapshot.json").write_text(
         json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     q1_text = ("\n问题一优化：见 [`技术思路稿-问题一优化.md`](技术思路稿-问题一优化.md)、"
@@ -141,8 +190,23 @@ def main():
                "和 [`project/solution/q1_submit.py`](project/solution/q1_submit.py)。"
                f"5 核逐例平均加速比为 **{snapshot['q1_five_core_mean_speedup']:.6f}**。\n"
                if "q1_five_core_mean_speedup" in snapshot else "")
+    q2_text = ("\n问题二优化：见 [`技术思路稿-问题二优化.md`](技术思路稿-问题二优化.md)、"
+               "[`project/q2_optimization/final/`](project/q2_optimization/final/) "
+               "和 [`project/solution/q2_submit.py`](project/solution/q2_submit.py)。"
+               f"5 核逐例平均加速比为 **{snapshot['q2_five_core_mean_speedup']:.6f}**。\n"
+               if "q2_five_core_mean_speedup" in snapshot else "")
+    if snapshot.get("q2_cold_start"):
+        q2_text = ("\n问题二当前提交版：从输入图独立求解，不读取历史方案。见 "
+                   "[`技术思路稿-问题二独立求解.md`](技术思路稿-问题二独立求解.md)、"
+                   "[`results/q2_cold/`](results/q2_cold/) 和 "
+                   "[`独立代码包`](project/q2_cold/submission_q2.zip)。"
+                   f"100 例 5 核平均加速比 **{snapshot['q2_five_core_mean_speedup']:.6f}**。"
+                   "400 份最终方案已由原评估器重新核验。\n\n"
+                   "运行入口：`python project/solution/q2_submit.py 输入图.json -n 5 --config project/official/data/config.txt`。"
+                   "旧 `q2_optimization/` 为不同预算的历史离线实验，不作为当前独立求解成绩。"
+                   "问题一现有 submit 仍为历史方案提取入口，本次仅改造问题二。\n")
     (dst / "README.md").write_text(
-        "# 2026 华为杯 A 题：官方基线与问题一优化\n\n"
+        "# 2026 华为杯 A 题：官方基线与问题一、二优化\n\n"
         f"当前快照：**{done}/{expected}** 组评测成功"
         + ("，100 例已齐全。\n\n" if done == expected else "，后台仍在运行。\n\n")
         + "`solution/` 是方案生成与评测代码；`results/summary.csv` 为已完成组合的真实官方评测摘要，"
@@ -151,7 +215,7 @@ def main():
         "`project/related_outputs/` 保存此前的 A 题导读和开源复用评估；"
         "不包含其他赛题和两套第三方仓库源码。运行中的结果仅在官方评测写入成功状态后复制。"
         "评测逻辑和配置未改动；详见 `技术思路稿-基线.md` 与 `original_runs/README.md`。\n"
-        + q1_text,
+        + q1_text + q2_text,
         encoding="utf-8")
     print(json.dumps(snapshot, ensure_ascii=False))
 

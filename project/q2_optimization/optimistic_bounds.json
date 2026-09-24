@@ -1,0 +1,7 @@
+{
+  "core_count": 5,
+  "cases": 100,
+  "mean_speedup_upper_bound": 6.112652570564045,
+  "cases_with_upper_bound_below_6": 56,
+  "method": "max(longest compute path, PIPE_M work/5, PIPE_V work/5, original DDR bytes/60)"
+}

@@ -1,0 +1,408 @@
+[
+  {
+    "name": "base_w0_k2",
+    "family": "structure",
+    "descriptor": [
+      "base",
+      0,
+      2
+    ],
+    "proxy_cycles": 2618400,
+    "pre_spill_bytes": 13401600,
+    "fingerprint": "20fb57f23e734ea53aedacf6f2204841fd6e618a79cfdcc1c936bcfba8a57292",
+    "lower_bound_cycles": 2618400,
+    "event": "evaluation",
+    "evaluation": 1,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 2854809,
+    "added_copy_bytes": 0,
+    "spill_bytes": 0,
+    "peak_l1_bytes": 7680,
+    "peak_ub_bytes": 19968,
+    "evaluation_s": 7.20296899999812,
+    "elapsed_s": 7.908963499998208,
+    "best_cycles": 2854809,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "band_w2_k2",
+    "family": "structure",
+    "descriptor": [
+      "band",
+      2,
+      2
+    ],
+    "proxy_cycles": 1310400,
+    "pre_spill_bytes": 17879040,
+    "fingerprint": "761de28ad47ff61987383dad9bf6f3ff4b062efddcaa2b542623d5e8631b57d8",
+    "lower_bound_cycles": 1310400,
+    "event": "evaluation",
+    "evaluation": 2,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 2228607,
+    "added_copy_bytes": 53228544,
+    "spill_bytes": 48751104,
+    "peak_l1_bytes": 523776,
+    "peak_ub_bytes": 130560,
+    "evaluation_s": 19.662388400000054,
+    "elapsed_s": 28.594299399999727,
+    "best_cycles": 2228607,
+    "best_added_bytes": 53228544
+  },
+  {
+    "event": "bound_pruned",
+    "name": "band_w2_k1",
+    "lower_bound_cycles": 2618400,
+    "incumbent_cycles": 2228607
+  },
+  {
+    "name": "data_w2_k2",
+    "family": "structure",
+    "descriptor": [
+      "data",
+      2,
+      2
+    ],
+    "proxy_cycles": 1310100,
+    "pre_spill_bytes": 23706624,
+    "fingerprint": "b3292dfe9b0be9d066c7bd36df24cd97cf523baad1c3b95fda358a2c4d201eb4",
+    "lower_bound_cycles": 1310100,
+    "event": "evaluation",
+    "evaluation": 3,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 2145735,
+    "added_copy_bytes": 48709632,
+    "spill_bytes": 38404608,
+    "peak_l1_bytes": 523776,
+    "peak_ub_bytes": 130560,
+    "evaluation_s": 19.045447799999238,
+    "elapsed_s": 57.127372099999775,
+    "best_cycles": 2145735,
+    "best_added_bytes": 48709632
+  },
+  {
+    "event": "bound_pruned",
+    "name": "data_w2_k1",
+    "lower_bound_cycles": 2618400,
+    "incumbent_cycles": 2145735
+  },
+  {
+    "name": "eft_placement",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 1310100,
+    "pre_spill_bytes": 23697408,
+    "fingerprint": "37ce89b85d854083291b4fd4201dde509e322851e03ed33db6d2da0d3b7c8864",
+    "lower_bound_cycles": 1310100,
+    "event": "evaluation",
+    "evaluation": 4,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 2146117,
+    "added_copy_bytes": 48703488,
+    "spill_bytes": 38407680,
+    "peak_l1_bytes": 523776,
+    "peak_ub_bytes": 130560,
+    "evaluation_s": 18.72891040000104,
+    "elapsed_s": 83.05322520000118,
+    "best_cycles": 2145735,
+    "best_added_bytes": 48709632
+  },
+  {
+    "name": "data_w4_k2",
+    "family": "structure",
+    "descriptor": [
+      "data",
+      4,
+      2
+    ],
+    "proxy_cycles": 1310100,
+    "pre_spill_bytes": 22643712,
+    "fingerprint": "73432333b15496bb577bb4b71bf994975d38359647b3b455a0b77ff8d879d78e",
+    "lower_bound_cycles": 1310100,
+    "event": "evaluation",
+    "evaluation": 5,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 1625119,
+    "added_copy_bytes": 16422912,
+    "spill_bytes": 7180800,
+    "peak_l1_bytes": 523776,
+    "peak_ub_bytes": 130560,
+    "evaluation_s": 12.209694900000613,
+    "elapsed_s": 95.28640369999994,
+    "best_cycles": 1625119,
+    "best_added_bytes": 16422912
+  },
+  {
+    "event": "bound_pruned",
+    "name": "data_w4_k1",
+    "lower_bound_cycles": 2618400,
+    "incumbent_cycles": 1625119
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s2_c1",
+    "lower_bound_cycles": 1962900,
+    "incumbent_cycles": 1625119
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s2_r3_d6_c1",
+    "lower_bound_cycles": 1635600,
+    "incumbent_cycles": 1625119
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s0_c1",
+    "lower_bound_cycles": 1962900,
+    "incumbent_cycles": 1625119
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s0_d2_c1",
+    "lower_bound_cycles": 1635600,
+    "incumbent_cycles": 1625119
+  },
+  {
+    "name": "eft_placement",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 1309200,
+    "pre_spill_bytes": 22629888,
+    "fingerprint": "6e1d979ec72e5e8f2ded349ff7efae9494e3281ed78783dc02532043a8ece23c",
+    "lower_bound_cycles": 1309200,
+    "event": "evaluation",
+    "evaluation": 6,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 1624309,
+    "added_copy_bytes": 16406016,
+    "spill_bytes": 7177728,
+    "peak_l1_bytes": 523776,
+    "peak_ub_bytes": 130560,
+    "evaluation_s": 12.388251199998194,
+    "elapsed_s": 117.21165069999915,
+    "best_cycles": 1624309,
+    "best_added_bytes": 16406016
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s2_c1",
+    "lower_bound_cycles": 1963800,
+    "incumbent_cycles": 1624309
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s2_r3_d6_c1",
+    "lower_bound_cycles": 1636500,
+    "incumbent_cycles": 1624309
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s3_c0",
+    "lower_bound_cycles": 1963500,
+    "incumbent_cycles": 1624309
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s3_r3_d6_c0",
+    "lower_bound_cycles": 1636500,
+    "incumbent_cycles": 1624309
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s0_c1",
+    "lower_bound_cycles": 1963800,
+    "incumbent_cycles": 1624309
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s0_d2_c1",
+    "lower_bound_cycles": 1636500,
+    "incumbent_cycles": 1624309
+  },
+  {
+    "name": "data_w8_k2",
+    "family": "structure",
+    "descriptor": [
+      "data",
+      8,
+      2
+    ],
+    "proxy_cycles": 1309200,
+    "pre_spill_bytes": 13628928,
+    "fingerprint": "c555ca46e7330f30bbef74f1ec8ae10a71221b434c024cae758040e9cbdcd201",
+    "lower_bound_cycles": 1309200,
+    "event": "evaluation",
+    "evaluation": 7,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 1430904,
+    "added_copy_bytes": 227328,
+    "spill_bytes": 0,
+    "peak_l1_bytes": 12288,
+    "peak_ub_bytes": 64512,
+    "evaluation_s": 9.08590919999915,
+    "elapsed_s": 134.25123929999972,
+    "best_cycles": 1430904,
+    "best_added_bytes": 227328
+  },
+  {
+    "event": "bound_pruned",
+    "name": "data_w8_k1",
+    "lower_bound_cycles": 2618400,
+    "incumbent_cycles": 1430904
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s0_c1",
+    "lower_bound_cycles": 2618400,
+    "incumbent_cycles": 1430904
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s0_d6_c1",
+    "lower_bound_cycles": 1636500,
+    "incumbent_cycles": 1430904
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r3_d4_c1",
+    "lower_bound_cycles": 1963800,
+    "incumbent_cycles": 1430904
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s1_c0",
+    "lower_bound_cycles": 2617800,
+    "incumbent_cycles": 1430904
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s1_d6_c0",
+    "lower_bound_cycles": 1636800,
+    "incumbent_cycles": 1430904
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r3_d4_c0",
+    "lower_bound_cycles": 1963800,
+    "incumbent_cycles": 1430904
+  },
+  {
+    "name": "eft_placement",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 1309200,
+    "pre_spill_bytes": 13625856,
+    "fingerprint": "48241c53490ace1e6633f6916a472597c9d925c5fec307da12230b5c6c04fe83",
+    "lower_bound_cycles": 1309200,
+    "event": "evaluation",
+    "evaluation": 8,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 1430440,
+    "added_copy_bytes": 224256,
+    "spill_bytes": 0,
+    "peak_l1_bytes": 12288,
+    "peak_ub_bytes": 64512,
+    "evaluation_s": 8.984929399997782,
+    "elapsed_s": 153.79764720000094,
+    "best_cycles": 1430440,
+    "best_added_bytes": 224256
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s0_c1",
+    "lower_bound_cycles": 2618400,
+    "incumbent_cycles": 1430440
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s0_d6_c1",
+    "lower_bound_cycles": 1636500,
+    "incumbent_cycles": 1430440
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r3_d4_c1",
+    "lower_bound_cycles": 1963800,
+    "incumbent_cycles": 1430440
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s1_c0",
+    "lower_bound_cycles": 2617800,
+    "incumbent_cycles": 1430440
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s1_d6_c0",
+    "lower_bound_cycles": 1636800,
+    "incumbent_cycles": 1430440
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r3_d4_c0",
+    "lower_bound_cycles": 1963800,
+    "incumbent_cycles": 1430440
+  },
+  {
+    "name": "band_w8_k2",
+    "family": "structure",
+    "descriptor": [
+      "band",
+      8,
+      2
+    ],
+    "proxy_cycles": 1309200,
+    "pre_spill_bytes": 16786944,
+    "fingerprint": "7c9a0d3f004b389366de65549d87ef28cb386366ff799d12a4d087249c528d8c",
+    "lower_bound_cycles": 1309200,
+    "event": "evaluation",
+    "evaluation": 9,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 1481164,
+    "added_copy_bytes": 6226944,
+    "spill_bytes": 2841600,
+    "peak_l1_bytes": 12288,
+    "peak_ub_bytes": 130560,
+    "evaluation_s": 10.911360699999932,
+    "elapsed_s": 172.7243196999989,
+    "best_cycles": 1430440,
+    "best_added_bytes": 224256
+  },
+  {
+    "event": "bound_pruned",
+    "name": "band_w8_k1",
+    "lower_bound_cycles": 2618400,
+    "incumbent_cycles": 1430440
+  },
+  {
+    "name": "split_s0_d6_c0",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 1309200,
+    "pre_spill_bytes": 13625856,
+    "fingerprint": "02fc14d6ce8e08320f2651ee94e96f4d435bd1a79752671ea990c7ef1cf3abef",
+    "lower_bound_cycles": 1309200,
+    "event": "evaluation",
+    "evaluation": 10,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 1506550,
+    "added_copy_bytes": 7824384,
+    "spill_bytes": 7600128,
+    "peak_l1_bytes": 523776,
+    "peak_ub_bytes": 130560,
+    "evaluation_s": 8.179219000001467,
+    "elapsed_s": 182.03979439999966,
+    "best_cycles": 1430440,
+    "best_added_bytes": 224256
+  }
+]

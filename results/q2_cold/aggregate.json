@@ -1,0 +1,55 @@
+{
+  "schema": "q2-cold-audit-v1",
+  "complete_cases": 100,
+  "missing_jobs": 0,
+  "evaluated_selections": 400,
+  "official_recheck": true,
+  "rechecked_jobs": 400,
+  "official_files_unchanged": 114,
+  "arithmetic_mean_speedup": {
+    "1": 1.0,
+    "2": 2.07575955962006,
+    "3": 2.9136687077978882,
+    "4": 3.6737125313495618,
+    "5": 4.246277560520675
+  },
+  "baseline_mean_speedup": {
+    "1": 1.0,
+    "2": 1.7192038308333841,
+    "3": 2.3343109799038557,
+    "4": 2.8733901489079687,
+    "5": 3.325143886029546
+  },
+  "improved_cases": {
+    "2": 79,
+    "3": 87,
+    "4": 80,
+    "5": 82
+  },
+  "median_wall_seconds": {
+    "2": 21.802042049999727,
+    "3": 26.009917050001604,
+    "4": 22.713416350001353,
+    "5": 30.76181820000056
+  },
+  "max_wall_seconds": 209.4678473999993,
+  "time_capped_jobs": 48,
+  "total_official_search_evaluations": 8861,
+  "total_pruned_candidates": 6383,
+  "infeasible_candidates": 0,
+  "cold_start": true,
+  "search_config": {
+    "max_evaluations": 24,
+    "max_seconds": 180,
+    "elite_structures": 3,
+    "heavy_groups": 3,
+    "coarse_valley_depth": 6,
+    "max_band_depth": 64,
+    "random_seed": null,
+    "randomness": "none; deterministic priority and tie-breaking",
+    "time_unit": "cycles; wall-clock budget in seconds",
+    "data_unit": "bytes",
+    "candidate_selection": "official Makespan minimum, ties by added DDR bytes",
+    "historical_results": "for comparison only; never read by solver"
+  }
+}

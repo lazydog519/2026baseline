@@ -1,4 +1,4 @@
-# 2026 华为杯 A 题：官方基线与问题一优化
+# 2026 华为杯 A 题：官方基线与问题一、二优化
 
 当前快照：**1500/1500** 组评测成功，100 例已齐全。
 
@@ -7,3 +7,7 @@
 `project/` 保存 A 题项目目录的完整快照，`project/source_attachment/` 保存原始 A 题 DOCX/ZIP，`project/related_outputs/` 保存此前的 A 题导读和开源复用评估；不包含其他赛题和两套第三方仓库源码。运行中的结果仅在官方评测写入成功状态后复制。评测逻辑和配置未改动；详见 `技术思路稿-基线.md` 与 `original_runs/README.md`。
 
 问题一优化：见 [`技术思路稿-问题一优化.md`](技术思路稿-问题一优化.md)、[`project/q1_optimization/final/`](project/q1_optimization/final/) 和 [`project/solution/q1_submit.py`](project/solution/q1_submit.py)。5 核逐例平均加速比为 **3.947986**。
+
+问题二当前提交版：从输入图独立求解，不读取历史方案。见 [`技术思路稿-问题二独立求解.md`](技术思路稿-问题二独立求解.md)、[`results/q2_cold/`](results/q2_cold/) 和 [`独立代码包`](project/q2_cold/submission_q2.zip)。100 例 5 核平均加速比 **4.246278**。400 份最终方案已由原评估器重新核验。
+
+运行入口：`python project/solution/q2_submit.py 输入图.json -n 5 --config project/official/data/config.txt`。旧 `q2_optimization/` 为不同预算的历史离线实验，不作为当前独立求解成绩。问题一现有 submit 仍为历史方案提取入口，本次仅改造问题二。

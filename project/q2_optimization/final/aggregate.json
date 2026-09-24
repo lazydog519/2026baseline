@@ -1,0 +1,29 @@
+{
+  "schema": "q2-selection-v1",
+  "complete_cases": 100,
+  "missing_jobs": 0,
+  "evaluated_selections": 400,
+  "arithmetic_mean_speedup": {
+    "1": 1.0,
+    "2": 1.9940126511115954,
+    "3": 2.8260264399802573,
+    "4": 3.5632709265181894,
+    "5": 4.205950754464956
+  },
+  "baseline_arithmetic_mean_speedup": {
+    "1": 1.0,
+    "2": 1.7192038308333841,
+    "3": 2.3343109799038557,
+    "4": 2.8733901489079687,
+    "5": 3.325143886029546
+  },
+  "improved_cases_by_cores": {
+    "2": 57,
+    "3": 58,
+    "4": 56,
+    "5": 64
+  },
+  "official_config_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "selection_rule": "minimum official makespan; tie: minimum added COPY bytes",
+  "official_recheck": false
+}

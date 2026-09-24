@@ -156,16 +156,22 @@ def terminal_branch_plan(graph, num_cores):
     return {"node_to_subgraph": mapping, "core_schedules": schedules}
 
 
-def fork_join_plan(graph, num_cores):
-    """Partition each fork/join epoch while preserving its global DAG order."""
+def fork_join_plan(graph, num_cores, min_band_depth=1):
+    """Partition fork/join epochs; coalesce short epochs to limit DDR traffic."""
     ops, pred, succ = compute_dag(graph)
     _, depth = topological_depth(ops, pred, succ)
     width = defaultdict(int)
     for level in depth.values():
         width[level] += 1
     last = max(width)
-    boundaries = [d for d in range(1, last)
-                  if width[d] == 1 and width[d + 1] > 1]
+    boundaries = []
+    previous = 0
+    for d in range(1, last):
+        if (width[d] == 1 and width[d + 1] > 1
+                and d - previous >= min_band_depth
+                and last - d >= min_band_depth):
+            boundaries.append(d)
+            previous = d
     if not boundaries:
         return baseline_plan(graph, num_cores)
     boundaries.append(last)
