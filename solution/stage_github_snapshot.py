@@ -206,7 +206,7 @@ def main():
                    "旧 `q2_optimization/` 为不同预算的历史离线实验，不作为当前独立求解成绩。"
                    "问题一现有 submit 仍为历史方案提取入口，本次仅改造问题二。\n")
     (dst / "README.md").write_text(
-        "# 2026 华为杯 A 题：官方基线与问题一、二优化\n\n"
+        "# 2026 官方基线与问题一、二优化\n\n"
         f"当前快照：**{done}/{expected}** 组评测成功"
         + ("，100 例已齐全。\n\n" if done == expected else "，后台仍在运行。\n\n")
         + "`solution/` 是方案生成与评测代码；`results/summary.csv` 为已完成组合的真实官方评测摘要，"
