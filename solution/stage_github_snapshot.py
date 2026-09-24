@@ -40,7 +40,7 @@ def main():
     done = len(rows)
     if done > expected:
         raise RuntimeError(f"unexpected job count {done}")
-    for filename in ("技术思路稿-基线.md",):
+    for filename in ("技术思路稿-基线.md", "技术思路稿-问题一优化.md"):
         copy(src / filename, dst / filename)
     for item in (src / "solution").glob("*.py"):
         copy(item, dst / "solution" / item.name)
@@ -74,8 +74,20 @@ def main():
         (folder / row["case"] / f"{row['variant']}_n{row['cores']}" / "result.json.gz").resolve()
         for row, folder in rows.values()
     }
+    candidate_summary = src / "q1_optimization" / "candidate_summary.csv"
+    if candidate_summary.is_file():
+        with candidate_summary.open(encoding="utf-8", newline="") as fp:
+            for row in csv.DictReader(fp):
+                if row["status"] == "ok":
+                    result = (src / "q1_optimization" / row["case"] /
+                              f"n{row['cores']}" / row["strategy"] /
+                              "result.json.gz")
+                    if not result.is_file():
+                        raise RuntimeError(f"missing candidate result: {result}")
+                    complete_results.add(result.resolve())
     for item in src.rglob("*"):
-        if not item.is_file() or "__pycache__" in item.parts or item.suffix == ".pyc":
+        if (not item.is_file() or "__pycache__" in item.parts or
+                item.suffix == ".pyc" or item.name.startswith("~$")):
             continue
         if item.name == "result.json.gz" and item.resolve() not in complete_results:
             continue
@@ -88,15 +100,18 @@ def main():
         if folder == src or not folder.is_dir():
             continue
         for item in folder.rglob("*"):
-            if item.is_file() and "__pycache__" not in item.parts:
+            if (item.is_file() and "__pycache__" not in item.parts and
+                    not item.name.startswith("~$")):
                 copy(item, dst / "project" / "related_outputs" / folder.name /
                      item.relative_to(folder))
     if args.a_source:
         a_dir = args.a_source.resolve()
-        for item in a_dir.rglob("*"):
-            if item.is_file():
+        # The extracted bundle already lives in project/official; retain its
+        # original ZIP and question DOCX without another 100-case copy.
+        for item in a_dir.iterdir():
+            if item.is_file() and not item.name.startswith("~$"):
                 copy(item, dst / "project" / "source_attachment" / "A题" /
-                     item.relative_to(a_dir))
+                     item.name)
         outer_zip = a_dir.parent / "A题.zip"
         if outer_zip.is_file():
             copy(outer_zip, dst / "project" / "source_attachment" / outer_zip.name)
@@ -109,10 +124,25 @@ def main():
     snapshot = {"generated_utc": datetime.now(timezone.utc).isoformat(),
                 "successful_jobs": done, "expected_jobs": expected,
                 "complete": done == expected}
+    q1_final = src / "q1_optimization" / "final" / "aggregate.json"
+    if q1_final.is_file():
+        q1_metrics = json.loads(q1_final.read_text(encoding="utf-8"))
+        q1_complete = (q1_metrics["complete_cases"] == 100 and
+                       q1_metrics["missing_jobs"] == 0 and
+                       q1_metrics["evaluated_selections"] == 400)
+        snapshot["q1_complete"] = q1_complete
+        snapshot["q1_five_core_mean_speedup"] = q1_metrics[
+            "arithmetic_mean_speedup"]["5"]
+        snapshot["complete"] &= q1_complete
     (dst / "results" / "snapshot.json").write_text(
         json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    q1_text = ("\n问题一优化：见 [`技术思路稿-问题一优化.md`](技术思路稿-问题一优化.md)、"
+               "[`project/q1_optimization/final/`](project/q1_optimization/final/) "
+               "和 [`project/solution/q1_submit.py`](project/solution/q1_submit.py)。"
+               f"5 核逐例平均加速比为 **{snapshot['q1_five_core_mean_speedup']:.6f}**。\n"
+               if "q1_five_core_mean_speedup" in snapshot else "")
     (dst / "README.md").write_text(
-        "# 2026 华为杯 A 题：官方评测基线\n\n"
+        "# 2026 华为杯 A 题：官方基线与问题一优化\n\n"
         f"当前快照：**{done}/{expected}** 组评测成功"
         + ("，100 例已齐全。\n\n" if done == expected else "，后台仍在运行。\n\n")
         + "`solution/` 是方案生成与评测代码；`results/summary.csv` 为已完成组合的真实官方评测摘要，"
@@ -120,7 +150,8 @@ def main():
         "`project/` 保存 A 题项目目录的完整快照，`project/source_attachment/` 保存原始 A 题 DOCX/ZIP，"
         "`project/related_outputs/` 保存此前的 A 题导读和开源复用评估；"
         "不包含其他赛题和两套第三方仓库源码。运行中的结果仅在官方评测写入成功状态后复制。"
-        "评测逻辑和配置未改动；详见 `技术思路稿-基线.md` 与 `original_runs/README.md`。\n",
+        "评测逻辑和配置未改动；详见 `技术思路稿-基线.md` 与 `original_runs/README.md`。\n"
+        + q1_text,
         encoding="utf-8")
     print(json.dumps(snapshot, ensure_ascii=False))
 

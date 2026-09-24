@@ -1,0 +1,15 @@
+{
+  "schema": "q1-search-v1",
+  "official_config": "../official/data/config.txt",
+  "core_count_range": [2, 5],
+  "tensor_size_unit": "bytes",
+  "ddr_bandwidth_unit": "bytes/cycle",
+  "all_time_values_unit": "cycles",
+  "affinity_wait_fractions": [0.25, 1.0],
+  "band_widths": [4, 8, 16, 32],
+  "valley_min_band_depths": [4, 6, 8, 10, 12, 14, 16, 20, 24, 32, 40, 48, 64],
+  "random_seed": null,
+  "randomness": "none; all candidate generators and tie breaks are deterministic",
+  "selection_rule": "minimum official makespan, then minimum added COPY bytes",
+  "intermediate_result_schema": "candidate_summary.csv plus case/n/strategy plan and official result.json.gz"
+}
