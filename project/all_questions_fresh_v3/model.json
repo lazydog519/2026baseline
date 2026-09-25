@@ -1,0 +1,46 @@
+{
+  "solver_version": "fresh-all-20260926-v3",
+  "features": [
+    "resource_floor",
+    "nominal_schedule_excess",
+    "estimated_ddr_time",
+    "logical_memory_excess_time",
+    "estimated_l2_time"
+  ],
+  "weights": {
+    "1": [
+      1.0983985815856214,
+      0.8583664813639765,
+      0.24707068489404604,
+      2.1420748007106165,
+      0.0
+    ],
+    "2": [
+      1.0116471278255614,
+      1.105876167042144,
+      0.2882489487450999,
+      2.145744659928844,
+      0.0
+    ],
+    "3": [
+      1.003991836171531,
+      1.1198716567501967,
+      0.29560345924244996,
+      1.3139238197293353,
+      0.6112696843048736
+    ]
+  },
+  "solver_sha256": {
+    "solver.py": "268e9cc9bc1df5aa22333a0ad6baae6253fe8207cd67cffcac79a60da4fe7b01",
+    "mechanism.py": "7e2dfb0e3afd31a76c02ea72e24ab27a3316ffa5c451f6716f5f050192678aa8",
+    "stage_candidates.py": "1f4a6217454f843699fabe53393fe46a3bbe03d45788d227ee039b009164f7ff"
+  },
+  "hardware_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "fit": {
+    "lambda": 0.01,
+    "constraint": "nonnegative coefficients",
+    "seed": null
+  },
+  "training_labels_sha256": "864e65d04fd983c68d1ce992e3abe5eb6c2818007801a06f1e39233af653b73f",
+  "origin": "new labels for all three scenes, current round only"
+}

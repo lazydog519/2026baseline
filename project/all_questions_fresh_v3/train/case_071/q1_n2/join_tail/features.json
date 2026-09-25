@@ -1,0 +1,82 @@
+{
+  "name": "join_tail",
+  "features": [
+    15082,
+    3659.7999999999993,
+    2576.8333333333335,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 154610,
+    "cross_task_copy_bytes": 22688,
+    "minimum_ddr_bytes": 154610,
+    "physical_lower_bound_cycles": 15082,
+    "logical_peak_bytes": [
+      {
+        "task": 11,
+        "L1": 27648,
+        "UB": 19298
+      },
+      {
+        "task": 6,
+        "L1": 2304,
+        "UB": 4608
+      },
+      {
+        "task": 7,
+        "L1": 2304,
+        "UB": 4608
+      },
+      {
+        "task": 8,
+        "L1": 2304,
+        "UB": 4608
+      },
+      {
+        "task": 9,
+        "L1": 1536,
+        "UB": 3072
+      },
+      {
+        "task": 10,
+        "L1": 1536,
+        "UB": 3072
+      },
+      {
+        "task": 0,
+        "L1": 4800,
+        "UB": 98
+      },
+      {
+        "task": 1,
+        "L1": 4800,
+        "UB": 0
+      },
+      {
+        "task": 2,
+        "L1": 4800,
+        "UB": 96
+      },
+      {
+        "task": 3,
+        "L1": 4800,
+        "UB": 98
+      },
+      {
+        "task": 4,
+        "L1": 4800,
+        "UB": 0
+      },
+      {
+        "task": 5,
+        "L1": 4800,
+        "UB": 96
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 18741.8,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

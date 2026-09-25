@@ -1,0 +1,18 @@
+{
+  "case": "case_040",
+  "question": 1,
+  "cores": 5,
+  "name": "component_vector_coalesced",
+  "path": "train/case_040/q1_n5/component_vector_coalesced",
+  "plan_sha256": "2aa860abbd24eb7a8076e65af27a1e771704dbb2905b5e35fb44f4d67f3fb90b",
+  "status": "ok",
+  "makespan": 110337,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 911238,
+    "scheduled_copy_bytes": 977286,
+    "added_copy_bytes": 66048,
+    "partition_added_copy_bytes": 66048,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 2.235089699999662
+}

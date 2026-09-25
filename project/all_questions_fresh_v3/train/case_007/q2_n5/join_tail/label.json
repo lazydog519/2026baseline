@@ -1,0 +1,18 @@
+{
+  "case": "case_007",
+  "question": 2,
+  "cores": 5,
+  "name": "join_tail",
+  "path": "train/case_007/q2_n5/join_tail",
+  "plan_sha256": "c2174d59f9c4e799465a824b1df739357631c4bb3c82baa860b01713334aed1a",
+  "status": "ok",
+  "makespan": 451513,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 1732608,
+    "scheduled_copy_bytes": 13722624,
+    "added_copy_bytes": 11990016,
+    "partition_added_copy_bytes": 11990016,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 1.6593660000071395
+}

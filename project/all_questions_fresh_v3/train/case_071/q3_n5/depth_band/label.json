@@ -1,0 +1,27 @@
+{
+  "case": "case_071",
+  "question": 3,
+  "cores": 5,
+  "name": "depth_band",
+  "path": "train/case_071/q3_n5/depth_band",
+  "plan_sha256": "e3bafb3914a327465d894c9393fc044cdeb70a52b17eb0baeb59e11da26f3a39",
+  "status": "ok",
+  "makespan": 7465,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 121446,
+    "scheduled_copy_bytes": 318936,
+    "added_copy_bytes": 197490,
+    "partition_added_copy_bytes": 197490,
+    "spill_added_copy_bytes": 0
+  },
+  "cache_stats": {
+    "copy_in_hits": 36,
+    "copy_in_misses": 86,
+    "hit_bytes": 48210,
+    "miss_bytes": 200550,
+    "hits": 36,
+    "accesses": 122,
+    "hit_rate": 0.19380125422093583
+  },
+  "seconds": 0.11566320000565611
+}

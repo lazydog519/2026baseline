@@ -1,0 +1,185 @@
+{
+  "solver_version": "fresh-all-20260926-v3",
+  "selected": "component_scalar",
+  "method": "component_scalar",
+  "question": 3,
+  "official_calls": 0,
+  "graph_sha256": "578fceeb9f66a3c083b9f27d8464cf75c1e7602cbc7290920c02aa1aef7ca352",
+  "model_sha256": "bf6a2c972dae77c6736c48e14d42f7be4d5d0be3255b3cb54b698edc62e2ff6a",
+  "plan_sha256": "9ee016a042d1cbe8fff75c8fd15a44e8768a6ed8eaf878163d0be310697003e9",
+  "generation_seconds": 0.12942139999358915,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "depth_band",
+      "features": [
+        80400,
+        10080,
+        27571.2,
+        0.0,
+        18.432
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 1658880,
+        "cross_task_copy_bytes": 430080,
+        "minimum_ddr_bytes": 1654272,
+        "physical_lower_bound_cycles": 80400,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 7680,
+            "UB": 58368
+          },
+          {
+            "task": 1,
+            "L1": 7680,
+            "UB": 52224
+          },
+          {
+            "task": 2,
+            "L1": 7680,
+            "UB": 49152
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 90480,
+        "cache_request_proxy": {
+          "hit_bytes": 4608,
+          "read_bytes": 1442304,
+          "ddr_bytes": 1654272,
+          "hits": 1,
+          "insertions": 538,
+          "evictions": 128,
+          "trace_end": 90505.6
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "mask_band",
+      "features": [
+        81600,
+        7666.399999999994,
+        27724.8,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 1663488,
+        "cross_task_copy_bytes": 439296,
+        "minimum_ddr_bytes": 1663488,
+        "physical_lower_bound_cycles": 81600,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 311808,
+            "UB": 102912
+          },
+          {
+            "task": 1,
+            "L1": 307200,
+            "UB": 101376
+          },
+          {
+            "task": 2,
+            "L1": 307200,
+            "UB": 101376
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 89266.4,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 1442304,
+          "ddr_bytes": 1663488,
+          "hits": 0,
+          "insertions": 541,
+          "evictions": 130,
+          "trace_end": 89292.0
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_scalar",
+      "features": [
+        240000,
+        28800,
+        20403.2,
+        2935.4666666666667,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 1224192,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 1224192,
+        "physical_lower_bound_cycles": 240000,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 7680,
+            "UB": 307200
+          }
+        ],
+        "logical_excess_bytes": 176128,
+        "nominal_compute_end": 268800,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 1222656,
+          "ddr_bytes": 1224192,
+          "hits": 0,
+          "insertions": 398,
+          "evictions": 58,
+          "trace_end": 268825.6
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        80400,
+        13092,
+        27212.8,
+        401.06666666666666,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 1632768,
+        "cross_task_copy_bytes": 408576,
+        "minimum_ddr_bytes": 1632768,
+        "physical_lower_bound_cycles": 80400,
+        "logical_peak_bytes": [
+          {
+            "task": 1,
+            "L1": 7680,
+            "UB": 1536
+          },
+          {
+            "task": 2,
+            "L1": 7680,
+            "UB": 155136
+          },
+          {
+            "task": 0,
+            "L1": 7680,
+            "UB": 1536
+          }
+        ],
+        "logical_excess_bytes": 24064,
+        "nominal_compute_end": 93492,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 1426944,
+          "ddr_bytes": 1632768,
+          "hits": 0,
+          "insertions": 531,
+          "evictions": 125,
+          "trace_end": 93517.6
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}

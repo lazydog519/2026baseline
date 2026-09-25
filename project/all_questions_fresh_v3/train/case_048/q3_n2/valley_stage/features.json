@@ -1,0 +1,40 @@
+{
+  "name": "valley_stage",
+  "features": [
+    98312,
+    26848.06666666665,
+    14474.766666666666,
+    0.0,
+    450.584
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 981132,
+    "cross_task_copy_bytes": 453632,
+    "minimum_ddr_bytes": 868422,
+    "physical_lower_bound_cycles": 98312,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 10880,
+        "UB": 10310
+      },
+      {
+        "task": 1,
+        "L1": 13952,
+        "UB": 11334
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 125160.06666666665,
+    "cache_request_proxy": {
+      "hit_bytes": 112646,
+      "read_bytes": 749708,
+      "ddr_bytes": 868486,
+      "hits": 40,
+      "insertions": 361,
+      "evictions": 0,
+      "trace_end": 125168.59999999999
+    },
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

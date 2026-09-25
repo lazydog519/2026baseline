@@ -1,0 +1,27 @@
+{
+  "case": "case_066",
+  "question": 3,
+  "cores": 2,
+  "name": "mask_band",
+  "path": "train/case_066/q3_n2/mask_band",
+  "plan_sha256": "2397617efc5ffe8566cbd00dd3893ac50759634beb73de85df7398093dd01f0d",
+  "status": "ok",
+  "makespan": 195707,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 1107034,
+    "scheduled_copy_bytes": 1966714,
+    "added_copy_bytes": 859680,
+    "partition_added_copy_bytes": 859680,
+    "spill_added_copy_bytes": 0
+  },
+  "cache_stats": {
+    "copy_in_hits": 56,
+    "copy_in_misses": 397,
+    "hit_bytes": 471418,
+    "miss_bytes": 1221248,
+    "hits": 56,
+    "accesses": 453,
+    "hit_rate": 0.2785062144569572
+  },
+  "seconds": 1.3478306000033626
+}

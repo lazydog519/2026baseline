@@ -1,0 +1,18 @@
+{
+  "case": "case_082",
+  "question": 2,
+  "cores": 2,
+  "name": "shared_prefix",
+  "path": "train/case_082/q2_n2/shared_prefix",
+  "plan_sha256": "55f26cc8e04e05efa75fcd01544ce225330d1804a977fb5c6bcb4fb547ed950a",
+  "status": "ok",
+  "makespan": 724365,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 592006,
+    "scheduled_copy_bytes": 797194,
+    "added_copy_bytes": 205188,
+    "partition_added_copy_bytes": 205188,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 0.64418139999907
+}

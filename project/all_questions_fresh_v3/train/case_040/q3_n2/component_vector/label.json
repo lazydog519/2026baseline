@@ -1,0 +1,27 @@
+{
+  "case": "case_040",
+  "question": 3,
+  "cores": 2,
+  "name": "component_vector",
+  "path": "train/case_040/q3_n2/component_vector",
+  "plan_sha256": "886cfcd98e34ccd8eb4b755ba6b95d863b6dcd29827b633083b56749d85c5811",
+  "status": "ok",
+  "makespan": 149591,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 911238,
+    "scheduled_copy_bytes": 923526,
+    "added_copy_bytes": 12288,
+    "partition_added_copy_bytes": 12288,
+    "spill_added_copy_bytes": 0
+  },
+  "cache_stats": {
+    "copy_in_hits": 0,
+    "copy_in_misses": 272,
+    "hit_bytes": 0,
+    "miss_bytes": 923462,
+    "hits": 0,
+    "accesses": 272,
+    "hit_rate": 0.0
+  },
+  "seconds": 0.5225022999948123
+}

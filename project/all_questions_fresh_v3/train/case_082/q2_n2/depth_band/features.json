@@ -1,0 +1,32 @@
+{
+  "name": "depth_band",
+  "features": [
+    567232,
+    125167,
+    9967.066666666668,
+    943.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 598024,
+    "cross_task_copy_bytes": 5888,
+    "minimum_ddr_bytes": 598024,
+    "physical_lower_bound_cycles": 567232,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 76672,
+        "UB": 187652
+      },
+      {
+        "task": 1,
+        "L1": 8832,
+        "UB": 130
+      }
+    ],
+    "logical_excess_bytes": 56580,
+    "nominal_compute_end": 692399,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

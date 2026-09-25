@@ -1,0 +1,32 @@
+{
+  "name": "shared_prefix",
+  "features": [
+    6420,
+    4442.6,
+    3924.9666666666667,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 235498,
+    "cross_task_copy_bytes": 52608,
+    "minimum_ddr_bytes": 235498,
+    "physical_lower_bound_cycles": 6420,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 35424,
+        "UB": 13156
+      },
+      {
+        "task": 1,
+        "L1": 51168,
+        "UB": 11620
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 10862.6,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "case": "case_009",
+  "question": 1,
+  "cores": 5,
+  "name": "component_affinity",
+  "path": "train/case_009/q1_n5/component_affinity",
+  "plan_sha256": "25d2aa366fbec58e842ff0b0ea9ad5565bd1c428f66d8f8b187a88b95128ea58",
+  "status": "ok",
+  "makespan": 92225,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 495332,
+    "scheduled_copy_bytes": 667364,
+    "added_copy_bytes": 172032,
+    "partition_added_copy_bytes": 172032,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 4.848230699994019
+}

@@ -1,0 +1,18 @@
+{
+  "case": "case_009",
+  "question": 2,
+  "cores": 5,
+  "name": "component_vector_reuse_order",
+  "path": "train/case_009/q2_n5/component_vector_reuse_order",
+  "plan_sha256": "e5fc45e481969fb965d51fa58b663e90f775bca25e9538feada4dd30a85c0570",
+  "status": "ok",
+  "makespan": 92225,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 495332,
+    "scheduled_copy_bytes": 544484,
+    "added_copy_bytes": 49152,
+    "partition_added_copy_bytes": 49152,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 1.283272400003625
+}

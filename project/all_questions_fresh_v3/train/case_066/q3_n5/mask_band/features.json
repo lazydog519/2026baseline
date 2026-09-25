@@ -1,0 +1,55 @@
+{
+  "name": "mask_band",
+  "features": [
+    80846,
+    27473.600000000006,
+    41389.63333333333,
+    0.0,
+    4201.312
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 3533706,
+    "cross_task_copy_bytes": 1587876,
+    "minimum_ddr_bytes": 2358414,
+    "physical_lower_bound_cycles": 80846,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 50688,
+        "UB": 33990
+      },
+      {
+        "task": 1,
+        "L1": 63488,
+        "UB": 45524
+      },
+      {
+        "task": 2,
+        "L1": 44544,
+        "UB": 17330
+      },
+      {
+        "task": 3,
+        "L1": 50736,
+        "UB": 32546
+      },
+      {
+        "task": 4,
+        "L1": 49920,
+        "UB": 31826
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 108319.6,
+    "cache_request_proxy": {
+      "hit_bytes": 1050328,
+      "read_bytes": 2659850,
+      "ddr_bytes": 2483378,
+      "hits": 370,
+      "insertions": 934,
+      "evictions": 182,
+      "trace_end": 108319.63333333335
+    },
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

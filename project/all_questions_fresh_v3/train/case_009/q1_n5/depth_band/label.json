@@ -1,0 +1,18 @@
+{
+  "case": "case_009",
+  "question": 1,
+  "cores": 5,
+  "name": "depth_band",
+  "path": "train/case_009/q1_n5/depth_band",
+  "plan_sha256": "3fc8e10099d286c83a25e88b9c16bf26e903712f50878c49649e48d680a7d6bf",
+  "status": "ok",
+  "makespan": 91725,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 495332,
+    "scheduled_copy_bytes": 635354,
+    "added_copy_bytes": 140022,
+    "partition_added_copy_bytes": 140022,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 1.6992454999999609
+}

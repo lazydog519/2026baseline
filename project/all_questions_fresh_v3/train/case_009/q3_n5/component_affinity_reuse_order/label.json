@@ -1,0 +1,27 @@
+{
+  "case": "case_009",
+  "question": 3,
+  "cores": 5,
+  "name": "component_affinity_reuse_order",
+  "path": "train/case_009/q3_n5/component_affinity_reuse_order",
+  "plan_sha256": "e5beb57ccd82dea732f650eb5797a581824b9adee05ae538443278e794fdff8c",
+  "status": "ok",
+  "makespan": 92225,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 495332,
+    "scheduled_copy_bytes": 544484,
+    "added_copy_bytes": 49152,
+    "partition_added_copy_bytes": 49152,
+    "spill_added_copy_bytes": 0
+  },
+  "cache_stats": {
+    "copy_in_hits": 6,
+    "copy_in_misses": 318,
+    "hit_bytes": 49152,
+    "miss_bytes": 495194,
+    "hits": 6,
+    "accesses": 324,
+    "hit_rate": 0.09029551057599394
+  },
+  "seconds": 1.1455862000002526
+}

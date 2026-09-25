@@ -1,0 +1,27 @@
+{
+  "case": "case_082",
+  "question": 3,
+  "cores": 2,
+  "name": "valley_stage",
+  "path": "train/case_082/q3_n2/valley_stage",
+  "plan_sha256": "bc64722990be320fd351e58729f1b8458eee902c063c0bea9247b3f1d3038768",
+  "status": "ok",
+  "makespan": 359484,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 592006,
+    "scheduled_copy_bytes": 1305356,
+    "added_copy_bytes": 713350,
+    "partition_added_copy_bytes": 713350,
+    "spill_added_copy_bytes": 0
+  },
+  "cache_stats": {
+    "copy_in_hits": 22,
+    "copy_in_misses": 231,
+    "hit_bytes": 151558,
+    "miss_bytes": 847366,
+    "hits": 22,
+    "accesses": 253,
+    "hit_rate": 0.15172125206722434
+  },
+  "seconds": 0.8083871999988332
+}

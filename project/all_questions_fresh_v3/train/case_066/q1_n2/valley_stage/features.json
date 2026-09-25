@@ -1,0 +1,127 @@
+{
+  "name": "valley_stage",
+  "features": [
+    279793,
+    0,
+    27168.833333333332,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 1630130,
+    "cross_task_copy_bytes": 486912,
+    "minimum_ddr_bytes": 1630130,
+    "physical_lower_bound_cycles": 279793,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 8832,
+        "UB": 7728
+      },
+      {
+        "task": 2,
+        "L1": 20736,
+        "UB": 8224
+      },
+      {
+        "task": 3,
+        "L1": 20736,
+        "UB": 7456
+      },
+      {
+        "task": 1,
+        "L1": 9216,
+        "UB": 4928
+      },
+      {
+        "task": 6,
+        "L1": 1248,
+        "UB": 0
+      },
+      {
+        "task": 7,
+        "L1": 1248,
+        "UB": 0
+      },
+      {
+        "task": 9,
+        "L1": 20736,
+        "UB": 7456
+      },
+      {
+        "task": 4,
+        "L1": 8832,
+        "UB": 7728
+      },
+      {
+        "task": 20,
+        "L1": 110784,
+        "UB": 49378
+      },
+      {
+        "task": 8,
+        "L1": 20736,
+        "UB": 8224
+      },
+      {
+        "task": 11,
+        "L1": 5376,
+        "UB": 2080
+      },
+      {
+        "task": 12,
+        "L1": 5376,
+        "UB": 2592
+      },
+      {
+        "task": 5,
+        "L1": 9216,
+        "UB": 4928
+      },
+      {
+        "task": 10,
+        "L1": 1920,
+        "UB": 768
+      },
+      {
+        "task": 17,
+        "L1": 7680,
+        "UB": 3840
+      },
+      {
+        "task": 14,
+        "L1": 0,
+        "UB": 1056
+      },
+      {
+        "task": 15,
+        "L1": 0,
+        "UB": 1056
+      },
+      {
+        "task": 13,
+        "L1": 0,
+        "UB": 96
+      },
+      {
+        "task": 16,
+        "L1": 0,
+        "UB": 800
+      },
+      {
+        "task": 18,
+        "L1": 129600,
+        "UB": 49348
+      },
+      {
+        "task": 19,
+        "L1": 18816,
+        "UB": 0
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 277234.26666666666,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

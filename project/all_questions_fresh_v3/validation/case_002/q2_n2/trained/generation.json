@@ -1,0 +1,138 @@
+{
+  "solver_version": "fresh-all-20260926-v3",
+  "selected": "depth_band",
+  "method": "trained",
+  "question": 2,
+  "official_calls": 0,
+  "graph_sha256": "578fceeb9f66a3c083b9f27d8464cf75c1e7602cbc7290920c02aa1aef7ca352",
+  "model_sha256": "bf6a2c972dae77c6736c48e14d42f7be4d5d0be3255b3cb54b698edc62e2ff6a",
+  "plan_sha256": "0a146fe52fa8ba8678f4106f3b22d27e3376c666b57aa45162eb4ddd03ba76c7",
+  "generation_seconds": 0.11739759999909438,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "depth_band",
+      "features": [
+        120000,
+        14951.200000000012,
+        20864.0,
+        750.9333333333333,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 1251840,
+        "cross_task_copy_bytes": 27648,
+        "minimum_ddr_bytes": 1251840,
+        "physical_lower_bound_cycles": 120000,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 12288,
+            "UB": 153600
+          },
+          {
+            "task": 1,
+            "L1": 7680,
+            "UB": 153600
+          }
+        ],
+        "logical_excess_bytes": 45056,
+        "nominal_compute_end": 134951.2,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "mask_band",
+      "features": [
+        120900,
+        11266.400000000023,
+        33638.4,
+        750.9333333333333,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 2018304,
+        "cross_task_copy_bytes": 337920,
+        "minimum_ddr_bytes": 2018304,
+        "physical_lower_bound_cycles": 120900,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 238080,
+            "UB": 153600
+          },
+          {
+            "task": 1,
+            "L1": 236544,
+            "UB": 153600
+          }
+        ],
+        "logical_excess_bytes": 45056,
+        "nominal_compute_end": 132166.40000000002,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_scalar",
+      "features": [
+        240000,
+        28800,
+        20403.2,
+        2935.4666666666667,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 1224192,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 1224192,
+        "physical_lower_bound_cycles": 240000,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 7680,
+            "UB": 307200
+          }
+        ],
+        "logical_excess_bytes": 176128,
+        "nominal_compute_end": 268800,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        120000,
+        17964,
+        25472.0,
+        477.8666666666667,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 1528320,
+        "cross_task_copy_bytes": 304128,
+        "minimum_ddr_bytes": 1528320,
+        "physical_lower_bound_cycles": 120000,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 7680,
+            "UB": 1536
+          },
+          {
+            "task": 1,
+            "L1": 7680,
+            "UB": 159744
+          }
+        ],
+        "logical_excess_bytes": 28672,
+        "nominal_compute_end": 137964,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}

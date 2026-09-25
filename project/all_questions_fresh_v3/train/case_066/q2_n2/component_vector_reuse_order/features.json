@@ -1,0 +1,32 @@
+{
+  "name": "component_vector_reuse_order",
+  "features": [
+    202896,
+    39021,
+    18450.566666666666,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 1107034,
+    "cross_task_copy_bytes": 0,
+    "minimum_ddr_bytes": 1107034,
+    "physical_lower_bound_cycles": 202896,
+    "logical_peak_bytes": [
+      {
+        "task": 1,
+        "L1": 33936,
+        "UB": 18214
+      },
+      {
+        "task": 0,
+        "L1": 129600,
+        "UB": 71748
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 241917,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

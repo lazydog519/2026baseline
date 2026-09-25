@@ -1,0 +1,178 @@
+% UTF-8. Include in the existing Chinese thesis template.
+% Required packages: amsmath,amssymb,booktabs. Symbols match solver.py/mechanism.py.
+\section{场景约束下的结构候选与代价校准}
+
+\subsection{决策边界与统一记号}
+设计算操作集合为 $V$，张量集合为 $\mathcal T$，原始依赖图为
+$G=(V\cup\mathcal T,E)$。$d_v$ 表示操作 $v$ 的给定计算周期，
+$s_t$ 表示张量 $t$ 的字节数，$p(v)$ 为计算 Pipe 类型。
+切图映射为 $\phi:V\to\mathcal S$，子图到核心的映射为
+$\kappa:\mathcal S\to\{0,\ldots,n-1\}$，核心内子图序列记为 $\pi_c$。
+写 $c(v)=\kappa(\phi(v))$。各操作恰属一个子图，各非空子图在某个
+$\pi_c$ 中恰好出现一次；收缩后的子图依赖与核心顺序的并图必须无环。
+以上映射与序列是实际输出字段，算法不输出操作级发射时间或人为预取指令。
+
+三问的 Task 标识统一写作
+\begin{equation}
+ \tau_q(v)=
+ \begin{cases}\phi(v),&q=1,\\c(v),&q\in\{2,3\}.\end{cases}
+ \label{eq:fresh-task}
+\end{equation}
+固定容量为 $C_{\mathrm{L1}}=524288$ B、$C_{\mathrm{UB}}=131072$ B；
+DDR 带宽为 $B_D=60$ B/cycle。问题三另有容量
+$C_L=1048576$ B、带宽 $B_L=250$ B/cycle 的共享只读 FIFO Cache。
+容量与带宽分别限制驻留量和搬运速率，不能相互替代。
+
+\subsection{不同场景的边界搬运}
+对张量 $t$，以 $P_t$、$U_t$ 表示计算生产者和消费者集合。
+本次输入检查确认，每个张量至多存在一个计算生产者。
+令 $a_t=\mathbf1\{|P_t|>0\}$，$o_t$ 表示张量为原图输出或没有计算消费者，
+并定义接收 Task 集合和远端数
+\begin{equation}
+ D_t^{(q)}=\{\tau_q(v):v\in U_t\},\qquad
+ r_t^{(q)}=
+ \begin{cases}|D_t^{(q)}|,&a_t=0,\\
+ |D_t^{(q)}\setminus\{\tau_q(u)\}|,&P_t=\{u\}.
+ \end{cases}
+\end{equation}
+附件中场景 A 对生产者 Task 的输出边界写出一次；场景 B 对每条源核到
+目标核连接分别插入 COPY 对。因此，不计换入换出的写出次数为
+\begin{equation}
+ w_t^{(1)}=a_t\mathbf1\{r_t^{(1)}>0\ \lor\ o_t=1\},\qquad
+ w_t^{(q)}=a_t(r_t^{(q)}+o_t),\quad q\in\{2,3\}.
+ \label{eq:fresh-write-count}
+\end{equation}
+三个场景的无命中、无换入换出搬运量为
+\begin{equation}
+ Q_q^0=\sum_{t\in\mathcal T}s_t\bigl(w_t^{(q)}+r_t^{(q)}\bigr).
+ \label{eq:fresh-transfer}
+\end{equation}
+按目标 Task 去重可避免将同一 Task 内多个消费者重复计数，但不能删除
+附件明确构造的跨核写出。最终新增搬运量以官方返回的
+\texttt{added\_copy\_bytes} 为准，因为式~\eqref{eq:fresh-transfer} 不包括
+核内调度插入的换入换出。
+
+\subsection{同步、资源下界与片上压力}
+问题一中，Task $j$ 的激活时刻 $A_j$ 受所有前驱完成、同核前序完成
+加 $100$ 周期以及跨核前驱完成加 $1000$ 周期共同约束，取这些下界的
+最大值。问题二、三的目标 COPY\_IN 释放时刻满足
+\begin{equation}
+ R_{t,c}\ge F_{\mathrm{COPY\_OUT}(t,c)}+500.
+\end{equation}
+这些等待可以重叠，不能把所有边上的等待直接相加作为 Makespan。
+
+令 $W_{c,p}=\sum_{v:c(v)=c,p(v)=p}d_v$。以给定操作计算周期及必需同步
+构造依赖路径下界 $L_q^{\mathrm{dep}}$；问题一另用每个 Task 的
+\emph{最大 Pipe 工作量与内部关键路径的较大者} 作为 Task 时长下界，
+沿 Task 依赖和同核序列递推。设结果为 $L_1^{\mathrm{task}}$。
+对问题三，Cache 初始为空，大小不超过 $C_L$ 的张量至少首次读 DDR，
+超出容量者每次都读 DDR。于是
+\begin{equation}
+ Q_3^{\min}=\sum_t s_t\left[w_t^{(3)}+
+ \begin{cases}\mathbf1\{r_t^{(3)}>0\},&s_t\le C_L,\\
+ r_t^{(3)},&s_t>C_L.\end{cases}\right],\qquad
+ Q_q^{\min}=Q_q^0\quad(q=1,2).
+\end{equation}
+仅在本文的输入结构假设下，使用资源下界
+\begin{equation}
+ L_q=\max\left\{\max_{c,p}W_{c,p},L_q^{\mathrm{dep}},
+ \mathbf1\{q=1\}L_1^{\mathrm{task}},Q_q^{\min}/B_D\right\}.
+ \label{eq:fresh-floor}
+\end{equation}
+例如，$m$ 个等大搬运同时共享 DDR 时，最后完成时间至少为
+$ms/B_D$，不是 $m^2s/B_D$；后者对应另一种总完成时间统计量。
+
+对候选序列，张量从首次定义或本地首次使用到最后本地使用形成逻辑
+活跃区间 $I_{t,k}$，其中 $k$ 为 Task；附件给定的存储位置记为
+$\operatorname{pos}(t)\in\{\mathrm{L1},\mathrm{UB}\}$。分别估计 L1 与 UB 的逻辑峰值和超容量量
+\begin{equation}
+ \widehat H_{k,b}=\max_\ell\sum_{t:\,\ell\in I_{t,k},\,\operatorname{pos}(t)=b}s_t,
+ \qquad E_q=\sum_k\sum_{b\in\{\mathrm{L1},\mathrm{UB}\}}
+       (\widehat H_{k,b}-C_b)_+.
+ \label{eq:fresh-memory}
+\end{equation}
+其中 $k$ 按式~\eqref{eq:fresh-task} 取 Task。该量只筛查存储压力，
+不等于附录 C 经确定性拓扑序、换入换出及空间复用依赖处理后的实际峰值。
+特别地，$\widehat H_{k,b}<0.85C_b$ 不构成无换出证明。
+
+\subsection{问题三的 Cache 事件代理}
+先按原依赖、同核计算 Pipe 次序和跨核释放估计搬运请求时刻。
+在这个\emph{外生的估计请求序列}上，维护 FIFO 队列和两个带宽池。
+若池 $z\in\{D,L\}$ 内有 $m_z(t)$ 个在途搬运，则每个搬运剩余字节满足
+\begin{equation}
+ \frac{\mathrm d b_i(t)}{\mathrm dt}=-\frac{B_z}{m_z(t)}.
+ \label{eq:fresh-pool}
+\end{equation}
+查询发生在读请求发射时；未命中读完成后尝试插入；已有条目不重复插入；
+命中不刷新顺序；容量不足从队头淘汰；超过容量的张量不插入。
+缓存命中量记作 $\widehat Q_L$。这些状态转移对输入的请求轨迹精确，
+但轨迹未包含官方核内分配器的全部停顿，故 $\widehat Q_L$ 是预测特征，
+不能宣称其为真实命中量或精确存活窗口。此处也不假设 Core0 必须预热。
+
+\subsection{候选构造、校准与选择}
+候选族由弱连通分量的标量/双 Pipe 装箱、共享输入亲和装箱、
+汇合尾部聚合和共享前缀聚合组成。问题一加入同核子图合并候选，
+问题二、三加入独立分量的输入复用排序候选。若某个分量的两条 Pipe
+工作量较大者超过全图两条 Pipe 工作量较大者的 $1/n$，再生成三种
+输入派生的分带候选。
+令 $d(v)=1+\max_{u\in\operatorname{pred}(v)}d(u)$，无前驱时 $d(v)=1$，
+$D=\max_v d(v)$，$M(v)$ 是从 $v$ 可达的终端操作集合。基础分带号为
+\begin{equation}
+ b_h(v)=\left\lfloor\frac{d(v)-1}{h}\right\rfloor,
+ \qquad h\in\left\{\left\lceil\frac{D}{n}\right\rceil,
+                         \left\lceil\frac{D}{2n}\right\rceil\right\}.
+\end{equation}
+第一种按 $b_h$ 划带，第二种按 $(b_h,M(v))$ 划带。第三种在图层宽度
+$a_\ell=|\{v:d(v)=\ell\}|$ 的窄/宽状态转换处取边界，带内先分配
+通向多个局部汇点的共享祖先，再分配私有分支。带内子块以双 Pipe
+累积工作量最小为目标贪心放置，带间保持拓扑顺序。层宽阈值取本图
+层宽众数；不存在转换时不生成第三种候选。三种带宽与边界均由当前图
+确定，不读取旧方案或外部完成时间。每次最多 13 个结构候选，去重后
+计算特征，避免无界枚举。
+
+每一候选都检查操作覆盖、子图收缩依赖与核心内顺序合并后的任务图无环。
+只约束真实任务依赖，不强加“核心间依赖方向无环”，因为两个核心
+之间可存在合法的交错流水。小规模开发测试再以原版校验程序确认合法性。
+
+设估计的计算流水完成时间为 $\widehat T_q^{\mathrm{pipe}}$。
+采用统一量纲为周期的五维特征
+\begin{equation}
+ x_q=\left(L_q,(\widehat T_q^{\mathrm{pipe}}-L_q)_+,
+ \frac{Q_q^0-\widehat Q_L}{B_D},\frac{E_q}{B_D},
+ \frac{\widehat Q_L}{B_L}\right),
+ \label{eq:fresh-features}
+\end{equation}
+问题一、二取 $\widehat Q_L=0$。三问分别拟合全局非负系数
+$\theta_q$。开发样本按图与核数分组，使用组内候选共享的输入派生尺度
+$\ell_i=\max(1,\min_{P} L_q(P))$ 做归一化，再按列均方根标准化。
+令标准化特征为 $z_i$、目标为 $y_i=T_i/\ell_i$，拟合
+\begin{equation}
+ \min_{\beta_q\ge0}\sum_{i\in\mathcal D_q}(y_i-z_i^\mathsf T\beta_q)^2
+             +0.01\|\beta_q\|_2^2.
+\end{equation}
+反变换得到 $\theta_q$，冻结后按
+\begin{equation}
+ \widehat T_q(P)=\max\{L_q(P),x_q(P)^\mathsf T\theta_q\},\qquad
+ P_q^*=\arg\min_{P\in\mathcal P(G,n)}
+       (\widehat T_q(P),Q_q^0(P),\operatorname{name}(P))
+ \label{eq:fresh-selection}
+\end{equation}
+做字典序选择。资源下界防止统计拟合给出物理上不可能的低耗时预测；
+其余特征描述下界未覆盖的竞争与存储压力，不主张它们可直接相加为真实时间。
+
+\subsection{实验隔离与指标}
+开发阶段允许官方评估提供标签；冻结阶段仅携带三个推理源码和本轮参数，
+在改名输入的新进程中生成方案，再冻结方案摘要。此后才用未修改的官方
+程序验收，验收结果不回流到这一版本的方案选择。
+输入、代码、参数及输出的 SHA256 用于溯源，不用于匹配某个 case 的答案。
+确定性构造重复运行检查输出一致性；没有随机搜索，故不虚构随机波动范围。
+
+以原图单核完成时间 $T_i^{\mathrm{ref}}$ 为参考，报告逐例加速比
+$S_{i,q,n}=T_i^{\mathrm{ref}}/T_{i,q,n}$ 的算术平均，不能以均值的比值代替。
+问题一、二题目要求的趋势图在单核点按定义取 $1$，保留另列的实际单核
+方案耗时以便核查。问题三的主要配对指标为
+\begin{equation}
+ G_{i,n}^{L2}=\frac{T_{i,2,n}(P_{i,3,n}^*)}{T_{i,3,n}(P_{i,3,n}^*)}.
+\end{equation}
+分子分母使用同一冻结方案，只切换评测场景；分别优化问题二与问题三的
+结果只能用于整体方案比较，不能作为纯 Cache 收益。

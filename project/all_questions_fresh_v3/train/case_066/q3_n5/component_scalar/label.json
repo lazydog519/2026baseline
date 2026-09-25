@@ -1,0 +1,27 @@
+{
+  "case": "case_066",
+  "question": 3,
+  "cores": 5,
+  "name": "component_scalar",
+  "path": "train/case_066/q3_n5/component_scalar",
+  "plan_sha256": "2af5faffc437285c8b025335b394b46effa329693b23b14182b834a5c3e6538d",
+  "status": "ok",
+  "makespan": 250415,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 1107034,
+    "scheduled_copy_bytes": 1136314,
+    "added_copy_bytes": 29280,
+    "partition_added_copy_bytes": 29280,
+    "spill_added_copy_bytes": 0
+  },
+  "cache_stats": {
+    "copy_in_hits": 6,
+    "copy_in_misses": 188,
+    "hit_bytes": 14160,
+    "miss_bytes": 1042236,
+    "hits": 6,
+    "accesses": 194,
+    "hit_rate": 0.013404064384946554
+  },
+  "seconds": 1.1167763999983435
+}

@@ -1,0 +1,13 @@
+{
+  "cases": 100,
+  "checks": 13185,
+  "failures": [],
+  "official_calls": 0,
+  "seconds": 241.50241970000206,
+  "solver_sha256": {
+    "solver.py": "268e9cc9bc1df5aa22333a0ad6baae6253fe8207cd67cffcac79a60da4fe7b01",
+    "mechanism.py": "7e2dfb0e3afd31a76c02ea72e24ab27a3316ffa5c451f6716f5f050192678aa8",
+    "stage_candidates.py": "1f4a6217454f843699fabe53393fe46a3bbe03d45788d227ee039b009164f7ff"
+  },
+  "meaning": "coverage/ordering/acyclicity only, not full memory or execution acceptance"
+}

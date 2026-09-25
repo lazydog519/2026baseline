@@ -1,0 +1,18 @@
+{
+  "case": "case_066",
+  "question": 2,
+  "cores": 2,
+  "name": "mask_band",
+  "path": "train/case_066/q2_n2/mask_band",
+  "plan_sha256": "2397617efc5ffe8566cbd00dd3893ac50759634beb73de85df7398093dd01f0d",
+  "status": "ok",
+  "makespan": 195713,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 1107034,
+    "scheduled_copy_bytes": 1966714,
+    "added_copy_bytes": 859680,
+    "partition_added_copy_bytes": 859680,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 1.3929367999953683
+}

@@ -1,0 +1,32 @@
+{
+  "name": "join_tail_coalesced",
+  "features": [
+    128944,
+    0,
+    18055.566666666666,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 1083334,
+    "cross_task_copy_bytes": 460512,
+    "minimum_ddr_bytes": 1083334,
+    "physical_lower_bound_cycles": 128944,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 30208,
+        "UB": 20480
+      },
+      {
+        "task": 1,
+        "L1": 14336,
+        "UB": 110634
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 117412.06666666667,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "component_affinity",
+  "features": [
+    94057,
+    8652,
+    16057.7,
+    0.0,
+    55.296
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 977286,
+    "cross_task_copy_bytes": 0,
+    "minimum_ddr_bytes": 911238,
+    "physical_lower_bound_cycles": 94057,
+    "logical_peak_bytes": [
+      {
+        "task": 2,
+        "L1": 26624,
+        "UB": 90112
+      },
+      {
+        "task": 3,
+        "L1": 44544,
+        "UB": 81920
+      },
+      {
+        "task": 4,
+        "L1": 28672,
+        "UB": 73728
+      },
+      {
+        "task": 1,
+        "L1": 35008,
+        "UB": 19014
+      },
+      {
+        "task": 0,
+        "L1": 245760,
+        "UB": 32794
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 102709,
+    "cache_request_proxy": {
+      "hit_bytes": 13824,
+      "read_bytes": 977222,
+      "ddr_bytes": 963462,
+      "hits": 1,
+      "insertions": 266,
+      "evictions": 0,
+      "trace_end": 102709.03333333334
+    },
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

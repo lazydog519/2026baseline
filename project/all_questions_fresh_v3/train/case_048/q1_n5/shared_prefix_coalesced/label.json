@@ -1,0 +1,18 @@
+{
+  "case": "case_048",
+  "question": 1,
+  "cores": 5,
+  "name": "shared_prefix_coalesced",
+  "path": "train/case_048/q1_n5/shared_prefix_coalesced",
+  "plan_sha256": "1de27dae1fdaa5309ab76de87ed2ae2a3576d8e346b1359d959fab1b14089c35",
+  "status": "ok",
+  "makespan": 212839,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 414790,
+    "scheduled_copy_bytes": 482642,
+    "added_copy_bytes": 67852,
+    "partition_added_copy_bytes": 67852,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 0.583304899992072
+}

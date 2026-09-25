@@ -1,0 +1,1750 @@
+{
+  "solver_version": "fresh-all-20260926-v3",
+  "selected": "component_scalar_coalesced",
+  "method": "trained",
+  "question": 1,
+  "official_calls": 0,
+  "graph_sha256": "23342b7c3e75f58cec3d0bdaff89bf8d6f18de4930d35ec2ceade91670f0a400",
+  "model_sha256": "bf6a2c972dae77c6736c48e14d42f7be4d5d0be3255b3cb54b698edc62e2ff6a",
+  "plan_sha256": "468edf106b443659edf5fac26153f5db9b5615126572017d6a8ea24f7791c658",
+  "generation_seconds": 0.09504739999829326,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        14566,
+        0,
+        7130.033333333334,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 427802,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 427802,
+        "physical_lower_bound_cycles": 14566,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 1,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 2,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 3,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 4,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 5,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 6,
+            "L1": 23040,
+            "UB": 4162
+          },
+          {
+            "task": 7,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 8,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 9,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 10,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 11,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 12,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 13,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 14,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 15,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 16,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 17,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 18,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 19,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 20,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 21,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 22,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 23,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 24,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 25,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 26,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 27,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 28,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 29,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 30,
+            "L1": 0,
+            "UB": 16390
+          },
+          {
+            "task": 31,
+            "L1": 4096,
+            "UB": 16390
+          },
+          {
+            "task": 32,
+            "L1": 0,
+            "UB": 16390
+          },
+          {
+            "task": 33,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 34,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 35,
+            "L1": 0,
+            "UB": 9216
+          },
+          {
+            "task": 36,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 37,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 38,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 39,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 40,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 41,
+            "L1": 4096,
+            "UB": 4160
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 13372,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_scalar_coalesced",
+      "features": [
+        8824,
+        4672,
+        5968.433333333333,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 358106,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 358106,
+        "physical_lower_bound_cycles": 8824,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 32256,
+            "UB": 24584
+          },
+          {
+            "task": 1,
+            "L1": 36864,
+            "UB": 16394
+          },
+          {
+            "task": 2,
+            "L1": 32256,
+            "UB": 24586
+          },
+          {
+            "task": 3,
+            "L1": 32256,
+            "UB": 36874
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 13496,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_vector",
+      "features": [
+        15731,
+        0,
+        7130.033333333334,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 427802,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 427802,
+        "physical_lower_bound_cycles": 15731,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 1,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 2,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 3,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 4,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 5,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 6,
+            "L1": 23040,
+            "UB": 4162
+          },
+          {
+            "task": 7,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 8,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 9,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 10,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 11,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 12,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 13,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 14,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 15,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 16,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 17,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 18,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 19,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 20,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 21,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 22,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 23,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 24,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 25,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 26,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 27,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 28,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 29,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 30,
+            "L1": 0,
+            "UB": 16390
+          },
+          {
+            "task": 31,
+            "L1": 4096,
+            "UB": 16390
+          },
+          {
+            "task": 32,
+            "L1": 0,
+            "UB": 16390
+          },
+          {
+            "task": 33,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 34,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 35,
+            "L1": 0,
+            "UB": 9216
+          },
+          {
+            "task": 36,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 37,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 38,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 39,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 40,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 41,
+            "L1": 4096,
+            "UB": 4160
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 14179,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_vector_coalesced",
+      "features": [
+        8828,
+        5488,
+        5963.633333333333,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 357818,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 357818,
+        "physical_lower_bound_cycles": 8828,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 32256,
+            "UB": 24584
+          },
+          {
+            "task": 1,
+            "L1": 32256,
+            "UB": 36872
+          },
+          {
+            "task": 2,
+            "L1": 32256,
+            "UB": 24588
+          },
+          {
+            "task": 3,
+            "L1": 36864,
+            "UB": 2354
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 14316,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_affinity",
+      "features": [
+        15072,
+        0,
+        7130.033333333334,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 427802,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 427802,
+        "physical_lower_bound_cycles": 15072,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 1,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 2,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 3,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 4,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 5,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 6,
+            "L1": 23040,
+            "UB": 4162
+          },
+          {
+            "task": 7,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 8,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 9,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 10,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 11,
+            "L1": 0,
+            "UB": 24582
+          },
+          {
+            "task": 12,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 13,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 14,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 15,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 16,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 17,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 18,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 19,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 20,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 21,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 22,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 23,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 24,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 25,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 26,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 27,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 28,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 29,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 30,
+            "L1": 0,
+            "UB": 16390
+          },
+          {
+            "task": 31,
+            "L1": 4096,
+            "UB": 16390
+          },
+          {
+            "task": 32,
+            "L1": 0,
+            "UB": 16390
+          },
+          {
+            "task": 33,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 34,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 35,
+            "L1": 0,
+            "UB": 9216
+          },
+          {
+            "task": 36,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 37,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 38,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 39,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 40,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 41,
+            "L1": 4096,
+            "UB": 4160
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 13827,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_affinity_coalesced",
+      "features": [
+        8836,
+        5188,
+        5966.033333333334,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 357962,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 357962,
+        "physical_lower_bound_cycles": 8836,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 32256,
+            "UB": 24584
+          },
+          {
+            "task": 1,
+            "L1": 32256,
+            "UB": 24584
+          },
+          {
+            "task": 2,
+            "L1": 32256,
+            "UB": 24586
+          },
+          {
+            "task": 3,
+            "L1": 36864,
+            "UB": 8196
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 14024,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        41506,
+        0,
+        15208.566666666668,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 912514,
+        "cross_task_copy_bytes": 361832,
+        "minimum_ddr_bytes": 912514,
+        "physical_lower_bound_cycles": 41506,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 3,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 6,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 9,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 12,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 15,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 18,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 21,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 24,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 1,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 4,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 7,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 10,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 13,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 16,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 19,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 22,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 25,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 2,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 5,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 8,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 11,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 14,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 17,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 20,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 23,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 26,
+            "L1": 13824,
+            "UB": 0
+          },
+          {
+            "task": 98,
+            "L1": 50688,
+            "UB": 49166
+          },
+          {
+            "task": 27,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 30,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 28,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 31,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 32,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 29,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 33,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 36,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 34,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 37,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 35,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 38,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 42,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 39,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 40,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 43,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 41,
+            "L1": 0,
+            "UB": 4098
+          },
+          {
+            "task": 44,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 45,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 46,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 47,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 48,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 49,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 50,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 51,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 52,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 53,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 54,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 55,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 56,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 57,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 58,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 59,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 60,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 61,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 62,
+            "L1": 2688,
+            "UB": 1200
+          },
+          {
+            "task": 67,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 63,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 64,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 68,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 65,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 69,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 66,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 70,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 75,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 71,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 72,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 76,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 73,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 77,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 74,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 78,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 83,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 79,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 80,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 84,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 81,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 85,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 82,
+            "L1": 0,
+            "UB": 2050
+          },
+          {
+            "task": 86,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 87,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 88,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 89,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 90,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 91,
+            "L1": 0,
+            "UB": 4096
+          },
+          {
+            "task": 92,
+            "L1": 4096,
+            "UB": 2112
+          },
+          {
+            "task": 93,
+            "L1": 4096,
+            "UB": 2112
+          },
+          {
+            "task": 94,
+            "L1": 4096,
+            "UB": 2112
+          },
+          {
+            "task": 95,
+            "L1": 4096,
+            "UB": 2112
+          },
+          {
+            "task": 96,
+            "L1": 4096,
+            "UB": 2112
+          },
+          {
+            "task": 97,
+            "L1": 4096,
+            "UB": 2112
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 26903.6,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail_coalesced",
+      "features": [
+        29766,
+        0,
+        12329.366666666667,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 739762,
+        "cross_task_copy_bytes": 361832,
+        "minimum_ddr_bytes": 739762,
+        "physical_lower_bound_cycles": 29766,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 13824,
+            "UB": 4096
+          },
+          {
+            "task": 1,
+            "L1": 13824,
+            "UB": 4096
+          },
+          {
+            "task": 2,
+            "L1": 13824,
+            "UB": 16384
+          },
+          {
+            "task": 3,
+            "L1": 50688,
+            "UB": 49166
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 26903.6,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "shared_prefix",
+      "features": [
+        15742,
+        0,
+        9589.433333333332,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 575366,
+        "cross_task_copy_bytes": 108,
+        "minimum_ddr_bytes": 575366,
+        "physical_lower_bound_cycles": 15742,
+        "logical_peak_bytes": [
+          {
+            "task": 1,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 2,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 3,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 4,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 5,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 6,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 7,
+            "L1": 23040,
+            "UB": 4162
+          },
+          {
+            "task": 8,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 9,
+            "L1": 23040,
+            "UB": 98
+          },
+          {
+            "task": 0,
+            "L1": 0,
+            "UB": 16388
+          },
+          {
+            "task": 10,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 11,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 12,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 13,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 14,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 15,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 16,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 17,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 18,
+            "L1": 0,
+            "UB": 12288
+          },
+          {
+            "task": 19,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 20,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 21,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 22,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 23,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 24,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 25,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 26,
+            "L1": 4240,
+            "UB": 4096
+          },
+          {
+            "task": 27,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 28,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 29,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 30,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 31,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 32,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 33,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 34,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 35,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 36,
+            "L1": 2688,
+            "UB": 2352
+          },
+          {
+            "task": 37,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 38,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 39,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 40,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 41,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 42,
+            "L1": 4096,
+            "UB": 6144
+          },
+          {
+            "task": 43,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 44,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 45,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 46,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 47,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 48,
+            "L1": 0,
+            "UB": 6144
+          },
+          {
+            "task": 49,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 50,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 51,
+            "L1": 0,
+            "UB": 9216
+          },
+          {
+            "task": 52,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 53,
+            "L1": 0,
+            "UB": 8192
+          },
+          {
+            "task": 54,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 55,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 56,
+            "L1": 4096,
+            "UB": 4160
+          },
+          {
+            "task": 57,
+            "L1": 4096,
+            "UB": 4160
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 13877,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "shared_prefix_coalesced",
+      "features": [
+        17442,
+        49.0666666666657,
+        7573.766666666666,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 454426,
+        "cross_task_copy_bytes": 64,
+        "minimum_ddr_bytes": 454426,
+        "physical_lower_bound_cycles": 17442,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 32256,
+            "UB": 20486
+          },
+          {
+            "task": 1,
+            "L1": 32256,
+            "UB": 24584
+          },
+          {
+            "task": 2,
+            "L1": 32256,
+            "UB": 28678
+          },
+          {
+            "task": 3,
+            "L1": 36864,
+            "UB": 26630
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 17491.066666666666,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}

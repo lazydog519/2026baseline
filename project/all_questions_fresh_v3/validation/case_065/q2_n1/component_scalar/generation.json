@@ -1,0 +1,96 @@
+{
+  "solver_version": "fresh-all-20260926-v3",
+  "selected": "component_scalar",
+  "method": "component_scalar",
+  "question": 2,
+  "official_calls": 0,
+  "graph_sha256": "23342b7c3e75f58cec3d0bdaff89bf8d6f18de4930d35ec2ceade91670f0a400",
+  "model_sha256": "bf6a2c972dae77c6736c48e14d42f7be4d5d0be3255b3cb54b698edc62e2ff6a",
+  "plan_sha256": "e8aff2b2c3dbf6f5fc7370a9b867ae2929770d0eb8715eef0e0777c699da384c",
+  "generation_seconds": 0.039913100001285784,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        29518,
+        23086,
+        5270.033333333334,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 316202,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 316202,
+        "physical_lower_bound_cycles": 29518,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 32256,
+            "UB": 24582
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 52604,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        29518,
+        22232,
+        5270.033333333334,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 316202,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 316202,
+        "physical_lower_bound_cycles": 29518,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 133632,
+            "UB": 130230
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 51750,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "shared_prefix",
+      "features": [
+        29518,
+        18514,
+        5270.033333333334,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 316202,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 316202,
+        "physical_lower_bound_cycles": 29518,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 32256,
+            "UB": 73752
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 48032,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}
