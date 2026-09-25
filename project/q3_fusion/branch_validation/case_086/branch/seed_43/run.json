@@ -1,0 +1,66 @@
+{
+  "version": "q3-root-separator-pilot-v1",
+  "method": "unsga3_npu",
+  "seed": 43,
+  "cores": 5,
+  "pymoo_version": "0.6.1.6",
+  "input_sha256": "e434d0ae7cf44c6535dc0db3edde7e3a98e225fe5ed3adbc5b518ab8b7193d03",
+  "hardware_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "official_calls": 30,
+  "feasible_evaluations": 30,
+  "invalid_records": 0,
+  "proposals": 40,
+  "generations": 4,
+  "initial_population_hashes": [
+    "09b9020a90f395bd6c57a70fac622f20836fc1e334536ca42e5bc3502ac0111e",
+    "b1821a96ddc7686cf1cb3100041872f6a85e906207ea69b02dbd1687d63d048f",
+    "847d91aa15d1e629705bde9e57bbaae84b900dd7729a42651c2f32a0ed23601d",
+    "6492c2b4e2575224809226120f73e9a8535a6e169d44ba406388139fc4aa100d",
+    "e432218227a4bbf64b591125aee773dff957e5f4864586fde442d6994bb5b761",
+    "47aaf9b507c28e3c777ab5a672a1b621e7c98312f6d55d9e4718ee81ced05728"
+  ],
+  "construction_best": 83751,
+  "makespan": 60606,
+  "improvement_ratio": 1.381892881892882,
+  "added_copy_bytes": 887704,
+  "cache_miss_bytes": 603686,
+  "hit_rate": 0.3600669099111896,
+  "cold_start": true,
+  "historical_plans_read": false,
+  "empty_l2_each_evaluation": true,
+  "elapsed_seconds": 28.802889800004777,
+  "configuration": {
+    "version": "q3-root-separator-pilot-v1",
+    "cases": [
+      "case_005",
+      "case_044",
+      "case_071",
+      "case_074",
+      "case_082"
+    ],
+    "cores": [
+      5
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "official_budget": 30,
+    "population": 6,
+    "offspring_batch": 6,
+    "reference_partitions": 2,
+    "max_proposals_per_budget": 60,
+    "max_subgraphs": 256,
+    "crossover_probability": 0.35,
+    "split_cut_candidates": 5,
+    "mutation_types": [
+      "move",
+      "split",
+      "merge",
+      "order"
+    ],
+    "scope": "mechanism-derived development pilot; input-selected cases 005 and 071 now used to derive operator, not held out"
+  },
+  "variant": "root_separator_unsga3"
+}

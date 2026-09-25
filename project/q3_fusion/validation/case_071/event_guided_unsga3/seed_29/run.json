@@ -1,0 +1,64 @@
+{
+  "version": "q3-event-guided-pilot-v1",
+  "method": "unsga3_npu",
+  "seed": 29,
+  "cores": 5,
+  "pymoo_version": "0.6.1.6",
+  "input_sha256": "e7e23f0bd111926031018554dc420bcb4f783ca862d0350f0468a18707c4391d",
+  "hardware_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "official_calls": 30,
+  "feasible_evaluations": 30,
+  "invalid_records": 0,
+  "proposals": 38,
+  "generations": 4,
+  "initial_population_hashes": [
+    "2edeb827d2976154ee6bd24660b9b5e172fb39869fd044aff760cddb5fa5322d",
+    "56bc4831fc72ad282b381444f1dd6ff296bb3dfa4dfc911f5cd4090609b6e5ce",
+    "7d3fc2a7730f7cfb036fa6d562f73415b2a8d8235721fcfcb9a2d6b235060815",
+    "9ad9d814655c4419164ef253e3ad9bb117e6f5e051519b7e0c27ecbe44595c2b",
+    "96f4bb23528f89d209f7dbb13f584d550008ad0cec9421e4e49d635d42e81f1c",
+    "039ade2f274c2e0f27cbd9abf4ae8df1a12478d304a7ec7776e51dcf1e063b27"
+  ],
+  "construction_best": 10586,
+  "makespan": 10360,
+  "improvement_ratio": 1.021814671814672,
+  "added_copy_bytes": 225330,
+  "cache_miss_bytes": 199160,
+  "hit_rate": 0.2419536554916111,
+  "cold_start": true,
+  "historical_plans_read": false,
+  "empty_l2_each_evaluation": true,
+  "elapsed_seconds": 2.8001728000090225,
+  "configuration": {
+    "version": "q3-event-guided-pilot-v1",
+    "cases": [
+      "case_044",
+      "case_074",
+      "case_082"
+    ],
+    "cores": [
+      5
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "official_budget": 30,
+    "population": 6,
+    "offspring_batch": 6,
+    "reference_partitions": 2,
+    "max_proposals_per_budget": 60,
+    "max_subgraphs": 256,
+    "crossover_probability": 0.35,
+    "split_cut_candidates": 5,
+    "mutation_types": [
+      "move",
+      "split",
+      "merge",
+      "order"
+    ],
+    "scope": "development pilot, paired against prior equal-budget U-NSGA-III"
+  },
+  "variant": "event_guided_unsga3"
+}

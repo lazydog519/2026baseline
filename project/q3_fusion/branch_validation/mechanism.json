@@ -1,0 +1,144 @@
+{
+  "scope": "one root-separator mutation in a cold-start run; no crossover",
+  "case": "case_044",
+  "cores": 5,
+  "seed": 29,
+  "selected_evaluation": 25,
+  "parent_index": 23,
+  "tensor_id": 1000000049,
+  "tensor_size_bytes": 73728,
+  "mutation": {
+    "generation": 4,
+    "parent": 23,
+    "donor": 16,
+    "operator": "root_separator_branch_split",
+    "parent_subgraph": 9,
+    "entry_ops": 3,
+    "independent_branches": 3,
+    "destinations": [
+      [
+        53,
+        1,
+        12
+      ],
+      [
+        54,
+        3,
+        12
+      ],
+      [
+        55,
+        4,
+        12
+      ]
+    ],
+    "crossover": null
+  },
+  "graph_sha256": "9abd4468a4be365e384de47431ac914ee44fd6e7b6221dffc584561f388cd57e",
+  "parent": {
+    "makespan": 58819,
+    "no_l2_same_plan": 83098,
+    "added_copy_bytes": 3666944,
+    "cache_miss_bytes": 3057984,
+    "cache_hit_bytes": 1546272,
+    "cross_transfers": 20,
+    "core_finish": [
+      58819,
+      54804,
+      55804,
+      55507,
+      55598
+    ],
+    "tensor_events": [
+      {
+        "time": 7290,
+        "event": "miss",
+        "core": 2,
+        "bytes": 73728
+      },
+      {
+        "time": 8359,
+        "event": "miss",
+        "core": 3,
+        "bytes": 73728
+      },
+      {
+        "time": 8437,
+        "event": "miss",
+        "core": 4,
+        "bytes": 73728
+      },
+      {
+        "time": 8917,
+        "event": "miss",
+        "core": 0,
+        "bytes": 73728
+      },
+      {
+        "time": 11535,
+        "event": "miss",
+        "core": 1,
+        "bytes": 73728
+      },
+      {
+        "time": 11660,
+        "event": "insert",
+        "core": 2,
+        "bytes": 73728
+      }
+    ]
+  },
+  "child": {
+    "makespan": 27784,
+    "no_l2_same_plan": 82853,
+    "added_copy_bytes": 3692800,
+    "cache_miss_bytes": 1021920,
+    "cache_hit_bytes": 3592832,
+    "cross_transfers": 29,
+    "core_finish": [
+      27576,
+      27704,
+      24967,
+      27757,
+      27784
+    ],
+    "tensor_events": [
+      {
+        "time": 7380,
+        "event": "miss",
+        "core": 2,
+        "bytes": 73728
+      },
+      {
+        "time": 8609,
+        "event": "insert",
+        "core": 2,
+        "bytes": 73728
+      },
+      {
+        "time": 8914,
+        "event": "hit",
+        "core": 1,
+        "bytes": 73728
+      },
+      {
+        "time": 9057,
+        "event": "hit",
+        "core": 3,
+        "bytes": 73728
+      },
+      {
+        "time": 9130,
+        "event": "hit",
+        "core": 4,
+        "bytes": 73728
+      },
+      {
+        "time": 10812,
+        "event": "hit",
+        "core": 0,
+        "bytes": 73728
+      }
+    ]
+  }
+}

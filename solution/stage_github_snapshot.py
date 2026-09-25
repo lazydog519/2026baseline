@@ -105,6 +105,11 @@ def main():
                     if not result.is_file():
                         raise RuntimeError(f"missing Q2 candidate result: {result}")
                     complete_results.add(result.resolve())
+    # Problem 3 searches write run.json after the plan and gzip result.
+    for q3_name in ("q3_nsga", "q3_fusion"):
+        for result in (src / q3_name).rglob("result.json.gz"):
+            if (result.parent / "run.json").is_file() and (result.parent / "plan.json").is_file():
+                complete_results.add(result.resolve())
     for item in src.rglob("*"):
         if (not item.is_file() or "__pycache__" in item.parts or
                 item.suffix == ".pyc" or item.name.startswith("~$")):
@@ -229,8 +234,22 @@ def main():
                    "运行入口：`python project/solution/q2_submit.py 输入图.json -n 5 --config project/official/data/config.txt`。"
                    "旧 `q2_optimization/` 为不同预算的历史离线实验，不作为当前独立求解成绩。"
                    "\n")
+    q3_text = ""
+    q3_summary = src / "q3_fusion" / "branch_validation" / "summary.json"
+    if q3_summary.is_file():
+        third = json.loads(q3_summary.read_text(encoding="utf-8"))
+        q3_text = (
+            "\n问题三当前结构算法：见 "
+            "[`论文方法稿`](project/q3_fusion/第三问-分支分离与缓存协同-论文方法稿.md)、"
+            "[`独立代码包`](project/q3_fusion/q3_branch_code_only.zip)、"
+            "[`配对实验与复核`](project/q3_fusion/branch_validation/) 和 "
+            "[`可视化`](project/q3_fusion/figures/)。"
+            f"所选 7 例、5 核、每例 3 种子的等预算配对缩短率均值 "
+            f"**{third['mean_paired_reduction_percent']:.2f}%**；"
+            "这不是 100 例或 1～5 核的全量成绩。\n"
+        )
     (dst / "README.md").write_text(
-        "# 2026 官方基线与问题一、二优化\n\n"
+        "# 2026 A题方案与验证\n\n"
         f"当前快照：**{done}/{expected}** 组评测成功"
         + ("，100 例已齐全。\n\n" if done == expected else "，后台仍在运行。\n\n")
         + "`solution/` 是方案生成与评测代码；`results/summary.csv` 为已完成组合的真实官方评测摘要，"
@@ -239,7 +258,7 @@ def main():
         "`project/related_outputs/` 保存此前的 A 题导读和开源复用评估；"
         "不包含其他赛题和两套第三方仓库源码。运行中的结果仅在官方评测写入成功状态后复制。"
         "评测逻辑和配置未改动；详见 `技术思路稿-基线.md` 与 `original_runs/README.md`。\n"
-        + q1_text + q2_text,
+        + q1_text + q2_text + q3_text,
         encoding="utf-8")
     print(json.dumps(snapshot, ensure_ascii=False))
 

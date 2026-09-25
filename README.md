@@ -1,6 +1,6 @@
-# 2026 A 题：问题一、二独立求解与第三问方法验证
+# 2026 A题方案与验证
 
-历史三问基础实验：**1500/1500** 组评测成功。后续改进各自的完成范围见下文，第三问新方法尚未全量验证。
+当前快照：**1500/1500** 组评测成功，100 例已齐全。
 
 `solution/` 是方案生成与评测代码；`results/summary.csv` 为已完成组合的真实官方评测摘要，`results/raw/` 保留相应方案及评测返回 JSON（gzip）。完整结果时另有逐例统计和图。
 
@@ -14,8 +14,4 @@
 
 运行入口：`python project/solution/q2_submit.py 输入图.json -n 5 --config project/official/data/config.txt`。旧 `q2_optimization/` 为不同预算的历史离线实验，不作为当前独立求解成绩。
 
-第三问当前为**方法与小样本验证**：7 例 × 1/2/5 核，共 21 组；采用同一方案有/无 L2 配对。确认组三例五核比值均值 **1.007435**，不是全量或多核对单核的均值。4 个事件反馈候选未胜出，尚不声称该局部策略有效。114 份官方文件未修改，独立改名输入复现通过。
-
-见 [第三问论文方法稿](project/q3_design/第三问论文方法稿.md)、[公式](project/q3_design/模型与算法公式.tex)、[纯代码包](project/q3_design/q3_prototype_code.zip)、[21 组结果](project/q3_design/pilot_metrics_all.csv) 与 [两幅图表](project/q3_design/figures/)。未启动全量优化。
-
-第三问新增 **NSGA-III / U-NSGA-III 的 NPU 离散适配测试**：3 例、固定 5 核、3 种子、3 方法，共 27 次独立搜索；每次同为 30 次原评估。加入拆分、合并、通信亲和迁移及拓扑修复。工程组并非稳定占优，保留全部负结果；未全量运行。见 [设计与三组结果](project/q3_nsga/README.md)、[代码包](project/q3_nsga/q3_nsga_code.zip)、[均值与范围](project/q3_nsga/summary.csv)、[搜索过程](project/q3_nsga/convergence.png)。
+问题三当前结构算法：见 [`论文方法稿`](project/q3_fusion/第三问-分支分离与缓存协同-论文方法稿.md)、[`独立代码包`](project/q3_fusion/q3_branch_code_only.zip)、[`配对实验与复核`](project/q3_fusion/branch_validation/) 和 [`可视化`](project/q3_fusion/figures/)。所选 7 例、5 核、每例 3 种子的等预算配对缩短率均值 **25.78%**；这不是 100 例或 1～5 核的全量成绩。

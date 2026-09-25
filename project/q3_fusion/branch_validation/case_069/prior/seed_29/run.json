@@ -1,0 +1,75 @@
+{
+  "version": "q3-nsga-pilot-v1",
+  "method": "unsga3_npu",
+  "seed": 29,
+  "cores": 5,
+  "pymoo_version": "0.6.1.6",
+  "input_sha256": "adcb7dde88ba19f86e451149ff27083546c2c3d4a75052cf1cb9e727897bdcb7",
+  "hardware_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "official_calls": 30,
+  "feasible_evaluations": 30,
+  "invalid_records": 0,
+  "proposals": 45,
+  "generations": 4,
+  "initial_population_hashes": [
+    "4d51f414e9e059ecbc4ee159f51cda22d683e61a10bcf2c0467c9741995ba48f",
+    "e3990ee6395225944c3ac2aea53830812454f87e39d91c25874618017836b85f",
+    "03e7d0237708bb7a34608c12d2fa3017d6cd6a4f5a02da5942043a2159ccd27a",
+    "03681a4389bf1600958a237d042331d5edf0fc9b5ac887186647b089268006f1",
+    "a82ee32f6edb64ae4742bb0241b2eb430e09180767f0577fa3296e65ddab2710",
+    "9beb98e3461b156653ca5e45658550f2b662907842f817f7416d2c472f776565"
+  ],
+  "construction_best": 14028,
+  "makespan": 13116,
+  "improvement_ratio": 1.069533394327539,
+  "added_copy_bytes": 318034,
+  "cache_miss_bytes": 217864,
+  "hit_rate": 0.30291550413392376,
+  "cold_start": true,
+  "historical_plans_read": false,
+  "empty_l2_each_evaluation": true,
+  "elapsed_seconds": 4.614653700002236,
+  "configuration": {
+    "version": "q3-nsga-pilot-v1",
+    "cases": [
+      "case_044",
+      "case_074",
+      "case_082"
+    ],
+    "cores": [
+      5
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "methods": [
+      "nsga3_generic",
+      "nsga3_npu",
+      "unsga3_npu"
+    ],
+    "official_budget": 30,
+    "population": 6,
+    "offspring_batch": 6,
+    "reference_partitions": 2,
+    "max_proposals_per_budget": 60,
+    "max_subgraphs": 256,
+    "crossover_probability": 0.35,
+    "split_cut_candidates": 5,
+    "mutation_types": [
+      "move",
+      "split",
+      "merge",
+      "order"
+    ],
+    "workers": 2,
+    "objectives": [
+      "official_makespan_cycles",
+      "official_added_copy_bytes",
+      "official_cache_miss_bytes"
+    ],
+    "final_selection": "lexicographic makespan, added_copy_bytes",
+    "scope": "exploratory simplified test on previously inspected cases; not held-out or full data"
+  }
+}

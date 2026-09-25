@@ -1,0 +1,110 @@
+% 可直接纳入 gmcmthesis 正文；请按实际章节重新编号。
+% 数据口径：cycles、bytes、bytes/cycle；样本实验只有 7 例、5 核。
+\subsection{场景 B 下共享只读缓存的决策模型}
+设 $D=(V,E_D)$ 为由原图直接操作边及操作--张量--操作边构造的辅助计算
+有向无环图；经过 COPY 节点的更长依赖链由原评测器检查。方案
+$P=(\phi,\kappa,\pi)$ 分别指定操作所属子图、子图所属
+核心及核内子图顺序。可行集 $\mathcal F$ 包含题目规定的唯一分配、无环、
+跨核 COPY 依赖、Pipe 次序、片上容量及共享缓存约束。
+\begin{equation}
+  \min_{P\in\mathcal F} T(P),\qquad T(P)=F_3(P),
+  \label{eq:q3_main}
+\end{equation}
+其中 $F_3$ 是原问题三评测器，不以近似代理代替。
+
+仅计 PIPE\_M 与 PIPE\_V 的计算操作，可以得到一个保守下界：
+\begin{equation}
+  L_{\mathrm{comp}}=
+  \max\left\{
+    \max_{p\in\{\mathrm M,\mathrm V\}}
+      \frac{\sum_{v:p(v)=p}c_v}{n},
+    \max_{\gamma\in\operatorname{Path}(D)}
+      \sum_{v\in\gamma}c_v
+  \right\}.
+  \label{eq:q3_work_lb}
+\end{equation}
+该式不含 COPY、FIFO 和共享带宽，因此仅用于诊断搜索余量。
+
+\subsection{入口--分支分离}
+对当前子图 $S$，先取其诱导子图的局部入口
+\begin{equation}
+  R(S)=\{v\in S:\operatorname{pred}_{D[S]}(v)=\varnothing\}.
+  \label{eq:q3_roots}
+\end{equation}
+删除入口后，在 $D[S\setminus R(S)]$ 中忽略边方向求弱连通分量
+$C_1,\ldots,C_m$。若 $m\ge2$，则
+\begin{equation}
+  S=R(S)\,\dot\cup\,C_1\,\dot\cup\cdots\dot\cup\,C_m.
+  \label{eq:q3_branch_partition}
+\end{equation}
+任意两个不同 $C_j$ 之间在辅助 DAG 中不存在直接边；
+但经 COPY 节点及外部子图的组合仍可能产生环，故必须经完整拓扑修复
+和原评测器检查。
+入口留在原核，对分支定义
+\begin{equation}
+ W_{jp}=\sum_{\substack{v\in C_j\\p(v)=p}}c_v,\qquad
+ \kappa(C_j)=\arg\min_{k}
+   \max_{p\in\{\mathrm M,\mathrm V\}}
+   \left(L_{kp}+W_{jp}\right),
+ \label{eq:q3_branch_lpt}
+\end{equation}
+其中 $L_{kp}$ 为当前已经装入核心 $k$、Pipe $p$ 的工作量。
+式~\eqref{eq:q3_branch_lpt} 仅排序候选，不给出准确完工时间。
+
+为优先测试晚完工核心上的可分支工作，令
+\begin{equation}
+ q(S)=
+ \begin{cases}
+  1.5\sum_{v\in S\setminus R(S)}c_v,
+   &\kappa(S)=k_{\mathrm{last}},\\
+  \sum_{v\in S\setminus R(S)}c_v,
+   &\text{其他核心}.
+ \end{cases}
+ \label{eq:q3_branch_priority}
+\end{equation}
+这里 $k_{\mathrm{last}}$ 由原评测器的核心时间线求得。
+$1.5$ 是本轮固定的候选排序系数，并非题给硬件参数或关键路径定理。
+
+\subsection{FIFO 事件窗口与配置对照}
+以原评测器的事件顺序编号 $e$，$Q_e$ 是事件前的 FIFO 队列，
+$x_r$ 为 COPY\_IN 请求 $r$ 的逻辑张量，则
+\begin{equation}
+ h_r=\mathbf 1\{x_r\in Q_{e(r)}\},\qquad
+ B_r^{\mathrm{pool}}=
+ \begin{cases}
+ 250~\mathrm{B/cycle},&h_r=1,\\
+ 60~\mathrm{B/cycle},&h_r=0.
+ \end{cases}
+ \label{eq:q3_cache_path}
+\end{equation}
+同一池的并发请求共享该带宽，命中不更新 FIFO 顺序。每个 COPY\_IN
+完成时如张量已不驻留，则按原程序检查容量并尝试插入；即便发射时命中，
+在途期间也可能被淘汰。
+若张量经历多次填充--淘汰，令
+\begin{equation}
+ \mathcal W_x=
+ \bigcup_j
+ \left[e_{\mathrm{ins}}^{(j)}(x),
+       e_{\mathrm{evict}}^{(j)}(x)\right),
+ \qquad
+ h_r=1\ \Longleftrightarrow\ e(r)\in\mathcal W_{x_r}.
+ \label{eq:q3_fifo_window}
+\end{equation}
+事件窗口只描述已评估方案，不能作为新候选的固定先验。
+对同一方案 $P$ 分别调用原问题二和三评测器，定义
+\begin{equation}
+ R_2(P)=\frac{F_2(P)}{F_3(P)}.
+ \label{eq:q3_l2_paired}
+\end{equation}
+这度量固定调度的 L2 配置收益，与搜索算法之间的改善分开报告。
+
+\subsection{搜索准则}
+参考方向环境选择保留向量
+\begin{equation}
+ \mathbf f(P)=\bigl(T(P),A(P),M(P)\bigr),
+ \label{eq:q3_search_vector}
+\end{equation}
+其中 $A$ 为官方新增 COPY 字节、$M$ 为官方缓存未命中字节。
+终选按 $(T,A)$ 字典序；辅助量不代替
+式~\eqref{eq:q3_main} 的原目标。每个核数和算例都从原输入独立构造
+初始种群，随机种子固定，L2 为空；每个候选调用未修改的原评测器。

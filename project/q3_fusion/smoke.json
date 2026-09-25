@@ -1,0 +1,31 @@
+{
+  "version": "q3-event-guided-smoke-v1",
+  "cases": [
+    "case_044",
+    "case_074",
+    "case_082"
+  ],
+  "cores": [
+    5
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "official_budget": 8,
+  "population": 6,
+  "offspring_batch": 6,
+  "reference_partitions": 2,
+  "max_proposals_per_budget": 60,
+  "max_subgraphs": 256,
+  "crossover_probability": 0.35,
+  "split_cut_candidates": 5,
+  "mutation_types": [
+    "move",
+    "split",
+    "merge",
+    "order"
+  ],
+  "scope": "development pilot, paired against prior equal-budget U-NSGA-III"
+}

@@ -1,0 +1,28 @@
+{
+  "source_sha256": {
+    "q3_fusion\\solve.py": "b2acaef77bed6c2bee3ffed20f7fa430cd1c374e432ec9b1aa73f3e0161f2805",
+    "q3_fusion\\experiment.json": "85301022758a00de7497420af93893a1cf2d0122fd1aa1a049660f317f1a5f96",
+    "q3_nsga\\solve.py": "a22342f5dc09febec7eb54a83c8cc33e468cd1cf1ccae09c2c878735f3375db1",
+    "q3_nsga\\experiment.json": "dce90e1e3cac820747ad5f84e617d4142625798d79a04654d388a540f76c20b3",
+    "q3_design\\q3_pilot_solver.py": "6ccdb5d61763d3ee0516da933f1818ad36993eb08b655309463d2ddcf8f04b7c",
+    "solution\\baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "solution\\q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79"
+  },
+  "development": [
+    "case_044",
+    "case_074",
+    "case_082"
+  ],
+  "holdout": [
+    "case_005",
+    "case_071"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "cores": 5,
+  "official_budget_per_search": 30,
+  "holdout_selection": "top static compute-bound gap among unseen small/large cases"
+}
