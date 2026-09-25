@@ -1,0 +1,182 @@
+{
+  "n_cases": 100,
+  "fields": {
+    "compute_ops": {
+      "n": 100,
+      "min": 552.0,
+      "q1": 1110.75,
+      "median": 3720.5,
+      "mean": 6345.06,
+      "q3": 7096.0,
+      "max": 35705.0
+    },
+    "weak_components": {
+      "n": 100,
+      "min": 1.0,
+      "q1": 17.5,
+      "median": 39.5,
+      "mean": 146.97,
+      "q3": 107.25,
+      "max": 2666.0
+    },
+    "largest_component_fraction": {
+      "n": 100,
+      "min": 0.00037509377344336085,
+      "q1": 0.015625,
+      "median": 0.12202380952380952,
+      "mean": 0.3293265066969822,
+      "q3": 0.728837095512293,
+      "max": 1.0
+    },
+    "vector_share": {
+      "n": 100,
+      "min": 0.03852428624397479,
+      "q1": 0.11524000120376779,
+      "median": 0.32310501741802666,
+      "mean": 0.3662804999891231,
+      "q3": 0.5243444894233565,
+      "max": 1.0
+    },
+    "compute_cycles": {
+      "n": 100,
+      "min": 23052.0,
+      "q1": 162732.75,
+      "median": 509952.0,
+      "mean": 3179741.84,
+      "q3": 1848864.0,
+      "max": 61275840.0
+    },
+    "critical_path_cycles": {
+      "n": 100,
+      "min": 400.0,
+      "q1": 2500.5,
+      "median": 6140.0,
+      "mean": 39921.77,
+      "q3": 24796.5,
+      "max": 863040.0
+    },
+    "shared_input_tensors": {
+      "n": 100,
+      "min": 0.0,
+      "q1": 55.5,
+      "median": 110.5,
+      "mean": 318.41,
+      "q3": 427.5,
+      "max": 2669.0
+    },
+    "dag_edges": {
+      "n": 100,
+      "min": 400.0,
+      "q1": 1266.25,
+      "median": 4017.0,
+      "mean": 7406.41,
+      "q3": 8269.75,
+      "max": 38493.0
+    },
+    "graph_depth_ops": {
+      "n": 100,
+      "min": 3.0,
+      "q1": 22.0,
+      "median": 47.5,
+      "mean": 131.31,
+      "q3": 136.5,
+      "max": 2440.0
+    },
+    "tensor_count": {
+      "n": 100,
+      "min": 816.0,
+      "q1": 1593.25,
+      "median": 4590.5,
+      "mean": 7477.86,
+      "q3": 8004.0,
+      "max": 40287.0
+    },
+    "total_tensor_bytes": {
+      "n": 100,
+      "min": 325708.0,
+      "q1": 3921341.0,
+      "median": 9366784.0,
+      "mean": 29375957.16,
+      "q3": 24141591.0,
+      "max": 360593104.0
+    },
+    "input_tensor_count": {
+      "n": 100,
+      "min": 12.0,
+      "q1": 130.0,
+      "median": 254.0,
+      "mean": 486.68,
+      "q3": 556.5,
+      "max": 4362.0
+    },
+    "input_tensor_bytes": {
+      "n": 100,
+      "min": 35622.0,
+      "q1": 435535.0,
+      "median": 1063082.0,
+      "mean": 2083082.98,
+      "q3": 2428224.0,
+      "max": 13400064.0
+    },
+    "output_tensor_count": {
+      "n": 100,
+      "min": 1.0,
+      "q1": 19.5,
+      "median": 62.0,
+      "mean": 159.44,
+      "q3": 126.5,
+      "max": 2666.0
+    },
+    "output_tensor_bytes": {
+      "n": 100,
+      "min": 2.0,
+      "q1": 271.5,
+      "median": 16689.0,
+      "mean": 324217.56,
+      "q3": 160768.0,
+      "max": 4094976.0
+    },
+    "matrix_cycles": {
+      "n": 100,
+      "min": 0.0,
+      "q1": 63177.0,
+      "median": 256920.0,
+      "mean": 2728477.23,
+      "q3": 1345339.0,
+      "max": 58915232.0
+    },
+    "vector_cycles": {
+      "n": 100,
+      "min": 9988.0,
+      "q1": 58334.0,
+      "median": 144314.5,
+      "mean": 451264.61,
+      "q3": 347998.5,
+      "max": 7714975.0
+    },
+    "work_span_parallelism": {
+      "n": 100,
+      "min": 3.417535545023697,
+      "q1": 20.19866714813885,
+      "median": 43.12548986077266,
+      "mean": 416.2227747368501,
+      "q3": 305.1681921850402,
+      "max": 6258.780160857908
+    }
+  },
+  "counts": {
+    "single_component": 16,
+    "multiple_components": 84,
+    "at_least_five_components": 84,
+    "shared_input_nonzero": 97,
+    "vector_share_over_half": 28,
+    "sha_and_profile_verified": 100
+  },
+  "provenance": {
+    "input_profiles": "input_profiles.csv",
+    "raw_graphs": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project/official/data",
+    "hash_profile_checks": "100/100 pass",
+    "statistics_use_evaluator_outputs": false,
+    "log_transform": "figures only; source-scale values retained"
+  }
+}
