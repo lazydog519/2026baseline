@@ -1,0 +1,59 @@
+{
+  "aggregate": {
+    "schema": "q2-incremental-audit-v1",
+    "complete_cases": 100,
+    "selected_jobs": 400,
+    "seed_improving_pairs": 20,
+    "neighbor_candidates": 40,
+    "neighbor_ok": 40,
+    "official_new_candidate_evaluations": 40,
+    "seed_candidate_evaluations_reused": 20,
+    "cold_selections_retained": 380,
+    "incremental_evaluation_wall_seconds_estimate": 100.6,
+    "official_files_unchanged": 114,
+    "arithmetic_mean_speedup": {
+      "1": 1.0,
+      "2": 2.0760052295431,
+      "3": 2.9222487692163726,
+      "4": 3.6790011513765415,
+      "5": 4.253853672468001
+    },
+    "improved_vs_cold": {
+      "1": 0,
+      "2": 2,
+      "3": 4,
+      "4": 5,
+      "5": 9
+    },
+    "selected_sources": {
+      "1": {
+        "cold": 0,
+        "first_range": 0,
+        "neighbor": 0
+      },
+      "2": {
+        "cold": 98,
+        "first_range": 1,
+        "neighbor": 1
+      },
+      "3": {
+        "cold": 96,
+        "first_range": 1,
+        "neighbor": 3
+      },
+      "4": {
+        "cold": 95,
+        "first_range": 3,
+        "neighbor": 2
+      },
+      "5": {
+        "cold": 91,
+        "first_range": 3,
+        "neighbor": 6
+      }
+    }
+  },
+  "n_final_jobs": 400,
+  "n_cold_jobs": 400,
+  "n_neighbor_candidates": 40
+}

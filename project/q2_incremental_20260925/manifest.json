@@ -1,0 +1,490 @@
+{
+  "schema": "q2-incremental-refine-v1",
+  "source_search": "project/q2_optimization/band/candidate_summary.csv",
+  "baseline": "project/q2_cold/final/per_case_metrics.csv",
+  "seed_pairs": 20,
+  "candidate_count": 40,
+  "workers": 3,
+  "tasks": [
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_006",
+      "cores": 5,
+      "active": 5,
+      "width": 7,
+      "seed_width": 8,
+      "seed_score": [
+        27575,
+        259884
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_006",
+      "cores": 5,
+      "active": 5,
+      "width": 9,
+      "seed_width": 8,
+      "seed_score": [
+        27575,
+        259884
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_011",
+      "cores": 5,
+      "active": 5,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        45978,
+        2101248
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_011",
+      "cores": 5,
+      "active": 5,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        45978,
+        2101248
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_012",
+      "cores": 3,
+      "active": 3,
+      "width": 7,
+      "seed_width": 8,
+      "seed_score": [
+        20332,
+        191960
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_012",
+      "cores": 3,
+      "active": 3,
+      "width": 9,
+      "seed_width": 8,
+      "seed_score": [
+        20332,
+        191960
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_012",
+      "cores": 4,
+      "active": 4,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        16548,
+        172336
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_012",
+      "cores": 4,
+      "active": 4,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        16548,
+        172336
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_014",
+      "cores": 2,
+      "active": 2,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        8810735,
+        68201188
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_014",
+      "cores": 2,
+      "active": 2,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        8810735,
+        68201188
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_014",
+      "cores": 3,
+      "active": 3,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        5929977,
+        73513820
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_014",
+      "cores": 3,
+      "active": 3,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        5929977,
+        73513820
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_014",
+      "cores": 4,
+      "active": 4,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        4484418,
+        77920772
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_014",
+      "cores": 4,
+      "active": 4,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        4484418,
+        77920772
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_014",
+      "cores": 5,
+      "active": 5,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        3643027,
+        84785044
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_014",
+      "cores": 5,
+      "active": 5,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        3643027,
+        84785044
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_031",
+      "cores": 4,
+      "active": 4,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        363420,
+        8740064
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_031",
+      "cores": 4,
+      "active": 4,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        363420,
+        8740064
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_033",
+      "cores": 2,
+      "active": 2,
+      "width": 7,
+      "seed_width": 8,
+      "seed_score": [
+        893740,
+        6290596
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_033",
+      "cores": 2,
+      "active": 2,
+      "width": 9,
+      "seed_width": 8,
+      "seed_score": [
+        893740,
+        6290596
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_033",
+      "cores": 5,
+      "active": 5,
+      "width": 7,
+      "seed_width": 8,
+      "seed_score": [
+        358066,
+        9318688
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_033",
+      "cores": 5,
+      "active": 5,
+      "width": 9,
+      "seed_width": 8,
+      "seed_score": [
+        358066,
+        9318688
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_035",
+      "cores": 3,
+      "active": 3,
+      "width": 7,
+      "seed_width": 8,
+      "seed_score": [
+        80298,
+        1106104
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_035",
+      "cores": 3,
+      "active": 3,
+      "width": 9,
+      "seed_width": 8,
+      "seed_score": [
+        80298,
+        1106104
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_055",
+      "cores": 4,
+      "active": 4,
+      "width": 7,
+      "seed_width": 8,
+      "seed_score": [
+        30952,
+        514712
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_055",
+      "cores": 4,
+      "active": 4,
+      "width": 9,
+      "seed_width": 8,
+      "seed_score": [
+        30952,
+        514712
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_055",
+      "cores": 5,
+      "active": 5,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        26682,
+        601664
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_055",
+      "cores": 5,
+      "active": 5,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        26682,
+        601664
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_065",
+      "cores": 5,
+      "active": 5,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        11645,
+        175696
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_065",
+      "cores": 5,
+      "active": 5,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        11645,
+        175696
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_070",
+      "cores": 3,
+      "active": 3,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        42239,
+        373256
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_070",
+      "cores": 3,
+      "active": 3,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        42239,
+        373256
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_070",
+      "cores": 4,
+      "active": 4,
+      "width": 3,
+      "seed_width": 4,
+      "seed_score": [
+        33350,
+        811200
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_070",
+      "cores": 4,
+      "active": 4,
+      "width": 5,
+      "seed_width": 4,
+      "seed_score": [
+        33350,
+        811200
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_076",
+      "cores": 5,
+      "active": 5,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        1231409,
+        37485724
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_076",
+      "cores": 5,
+      "active": 5,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        1231409,
+        37485724
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_080",
+      "cores": 5,
+      "active": 3,
+      "width": 3,
+      "seed_width": 4,
+      "seed_score": [
+        100247,
+        3637248
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_080",
+      "cores": 5,
+      "active": 3,
+      "width": 5,
+      "seed_width": 4,
+      "seed_score": [
+        100247,
+        3637248
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_091",
+      "cores": 5,
+      "active": 5,
+      "width": 11,
+      "seed_width": 12,
+      "seed_score": [
+        1859555,
+        71533068
+      ]
+    },
+    {
+      "project": "/media/4t_1/shhliu/hanhp/huawei-cup-2026-a-baseline/project",
+      "case": "case_091",
+      "cores": 5,
+      "active": 5,
+      "width": 13,
+      "seed_width": 12,
+      "seed_score": [
+        1859555,
+        71533068
+      ]
+    }
+  ]
+}
