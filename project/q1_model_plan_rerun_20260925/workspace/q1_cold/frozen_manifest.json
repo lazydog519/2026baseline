@@ -1,0 +1,18 @@
+{
+  "schema": "q1-model-plan-rerun-v1",
+  "source": "project/solution frozen v5",
+  "changes": {
+    "sink_bit[oid].bit_count()": "bin(sink_bit[oid]).count(\"1\")",
+    "k[1].bit_count()": "bin(k[1]).count(\"1\")",
+    "mask[oid].bit_count()": "bin(mask[oid]).count(\"1\")"
+  },
+  "files": {
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "q1_optimized.py": "8b7e2dc46a8f0fb4f822983949a3e529ff1adabba1fe113ab1e8c4c977888650",
+    "q1_cold.py": "6df6735fefb36372d5ab861d059db3a304ce81a882163b3b0b19b30f97cbfb29",
+    "q1_cold_config.json": "6ed57a985ffd781e88c1c1f8cee7e67b6b78d733b36158787d4d0853f3a15b48",
+    "q1_submit.py": "87dfb13feebc31ab60f50195daf3a2ff5675c5295887e30cba5234fac736e1ae"
+  },
+  "python": "3.8.10",
+  "official_config_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9"
+}

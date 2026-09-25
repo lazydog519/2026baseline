@@ -1,0 +1,22 @@
+{
+  "expected_jobs": 400,
+  "finished_jobs": 400,
+  "failed": [],
+  "means": {
+    "2": 1.890839285352795,
+    "3": 2.623565520857705,
+    "4": 3.25493480663082,
+    "5": 3.7863863185912505
+  },
+  "baseline_means": {
+    "2": 1.7192038308333841,
+    "3": 2.3343109799038557,
+    "4": 2.8733901489079687,
+    "5": 3.324936437310409
+  },
+  "official_evaluations": 1036,
+  "total_solver_process_seconds": 58559.39911802171,
+  "resumed_complete_jobs": 84,
+  "new_official_evaluations": 849,
+  "scope": "These means describe this listed sample only, unless all 100 cases were run."
+}
