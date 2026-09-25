@@ -1,0 +1,28 @@
+% 第三问可复用公式。单位：周期、字节；p 为 PIPE_M/PIPE_V。
+\begin{align}
+P^* &\in \arg\min_{P\in\mathcal F(G,\theta)} T_3(G,P;\theta),
+& P&=(\phi,\kappa,\{\pi_c\}_{c=0}^{n-1}), \\
+w_{jp} &= \sum_{o\in C_j,\;p(o)=p} t_o,
+&c_j^*&=\arg\min_c^{\rm lex}
+\left(\max_p[L_{cp}+w_{jp}],\;\sum_p[L_{cp}+w_{jp}],\;c\right), \\
+\underline T(P)&=\max\!\left\{
+\max_{Q\text{ 为原计算 DAG 路径}}\sum_{o\in Q}t_o,
+\quad\max_{c,p}\sum_{\kappa(\phi(o))=c,\,p(o)=p}t_o
+\right\}, \\
+m_x^{\rm evict}&=\min\left\{m>j:
+\sum_{\ell=j+1}^{m}b_\ell>C-b_x\right\}, \\
+\eta_n&=\frac{T_1^{L2}}{nT_{\rm greedy}},
+&\eta_n&<0.75\quad\Longrightarrow\quad\text{条件式 U-NSGA-III 搜索}, \\
+F(P)&=\left(T_3(P),D_{\rm add}(P),B_{\rm miss}(P)\right),
+&P_{\rm submit}&=\arg\min_{P\in\mathcal C_i}^{\rm lex}
+\left(T_3(P),D_{\rm add}(P)\right), \\
+s_i(n)&=\frac{T_i^{\rm ref}}{T_{i,n}^{L2}},
+&\bar s(n)&=\frac1{100}\sum_{i=1}^{100}s_i(n), \\
+r_i(n)&=\frac{T_i^{\rm no\,L2}(P_{i,n}^*)}{T_i^{L2}(P_{i,n}^*)}.
+\end{align}
+
+% 注：仅 compute-path 与逐核逐管线工作量是剪枝下界。
+% 通信字节/DDR 时间仅用于候选排序；有 L2 命中时它们不是严格下界。
+% FIFO 公式中的 j,m 是原评测器成功插入事件的顺序编号；命中不刷新顺序。
+% C_i 是该 case 中实际产生且经原评测器判定可行的候选集合。
+% 所有内存补边、COPY 和可行性检查仍由附件原评测器完成。

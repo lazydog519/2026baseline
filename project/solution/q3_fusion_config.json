@@ -1,0 +1,19 @@
+{
+  "version": "q3-cold-fusion-v2",
+  "max_feedback_evaluations": 4,
+  "max_target_tensors": 8,
+  "normalized_efficiency_gate": 0.75,
+  "branch_seed": 17,
+  "branch_search": {
+    "version": "q3-branch-search-v2",
+    "official_budget": 30,
+    "population": 6,
+    "offspring_batch": 6,
+    "reference_partitions": 2,
+    "max_proposals_per_budget": 60,
+    "max_subgraphs": 256,
+    "crossover_probability": 0.35,
+    "split_cut_candidates": 5,
+    "mutation_types": ["move", "split", "merge", "order"]
+  }
+}

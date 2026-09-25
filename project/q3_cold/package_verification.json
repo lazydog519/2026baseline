@@ -1,0 +1,45 @@
+{
+  "schema": "q3-isolated-package-v1",
+  "zip_file": "submission_q3.zip",
+  "zip_sha256": "6fdb7b3282d2bd4e6abb211dc498bdac8ab1b32a593488fbc9a7c5bcf3f98efb",
+  "files": {
+    "solution/baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "solution/q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "solution/q3_cold.py": "43ca63bc18a88ac24570f9233fda399ef07be7e53343eb4a77c897874859a3e8",
+    "solution/q3_cold_config.json": "675898d18e04705857330b6d3ec88b834edb106780c122c78b5478d13933b4b3",
+    "solution/q3_fusion_submit.py": "f3fa5ccb1e60fbe21d580143c5336c18488be2e16a137e16ef8bd5234c8dc5eb",
+    "solution/q3_fusion_config.json": "17d14da3863aeec6b2e63b8681786ca2e9c4e4b432710997f6aac858a8cb029c",
+    "q3_design/q3_pilot_solver.py": "6ccdb5d61763d3ee0516da933f1818ad36993eb08b655309463d2ddcf8f04b7c",
+    "q3_nsga/solve.py": "a22342f5dc09febec7eb54a83c8cc33e468cd1cf1ccae09c2c878735f3375db1",
+    "q3_fusion/solve.py": "b2acaef77bed6c2bee3ffed20f7fa430cd1c374e432ec9b1aa73f3e0161f2805",
+    "q3_fusion/branch_solver.py": "34ad27d75ea7bbffbbcbf4096578dfd7e7094dd15d2d7006af603fcec0daca3e",
+    "q3_fusion/branch_experiment.json": "1685cfe94213df9f74ce7d772874ae12db247daf5431907694b88f44dd85202e",
+    "official/data/config.txt": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+    "official/code/contest_io.py": "d5936908e4c261c7003b78e783f30bd7d65cb38d6b53a269ea67f0103cac848e",
+    "official/code/evaluation_validation.py": "103206b8c5c25e37de50cc3193de3989d7c1e01d4a11cc5f509dedd8f9be9a64",
+    "official/code/multicore_cut_evaluate_problem_1.py": "2095f188a6c24ce3899f156bef21d50dcd87cbd9368488046b1e77e2bf91af3f",
+    "official/code/multicore_cut_evaluate_problem_2.py": "0b39f84d5ec0a7fba9a4c92a598a9044b97ab79c71393824c1ba130ecfe6c464",
+    "official/code/multicore_cut_evaluate_problem_3.py": "eab1504dead881f4b67c0f0498cbc2dbbd9039dc3c9d198c6af58773c127eeb0",
+    "official/code/schedule_step1.py": "d8fe721ff3dbe036e34a20c00cce6430960860000a49eb467e63465f76b84034",
+    "official/code/schedule_step2.py": "2836baac176f4e0bdd9eec59b8d9ce254e209e5f7a251e23837ab684312fa0c3",
+    "official/code/schedule_step3.py": "50053db0436f1d166dd75436693ba3af49b5c339576beb6e7299477f6b69fc7a",
+    "official/code/singlecore_evaluate.py": "446b753ee134ef1fec8e052356bb077a2602fbe95572ccd3dddd7928e894b77a",
+    "official/code/stub_multicore_cut_and_schedule.py": "0a3a3b79b5173b466fc05fc8d33b72d11d90b4df78995435853d91c632a35892"
+  },
+  "isolation_checks": [
+    {
+      "case": "case_001",
+      "cores": 5,
+      "reproduced_cycles": 47502,
+      "identical_plan": true,
+      "renamed_input": true
+    },
+    {
+      "case": "case_044",
+      "cores": 5,
+      "reproduced_cycles": 28257,
+      "identical_plan": true,
+      "renamed_input": true
+    }
+  ]
+}

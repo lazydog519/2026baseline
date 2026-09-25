@@ -1,0 +1,19 @@
+{
+  "schema": "q3-cold-fusion-frozen-v2",
+  "fixed_policy": "solution/q3_fusion_config.json",
+  "stage1": "q3_cold/full5 and q3_cold/full1to4",
+  "stage2": "q3_cold/fusion_full and fusion_full1to4",
+  "official_manifest_sha256": "5c344fcef6bdc16bff1319e9e734fcb7da7986f376da7964ce55df86643de1a1",
+  "source_sha256": {
+    "solution/q3_cold.py": "43ca63bc18a88ac24570f9233fda399ef07be7e53343eb4a77c897874859a3e8",
+    "solution/q3_cold_config.json": "675898d18e04705857330b6d3ec88b834edb106780c122c78b5478d13933b4b3",
+    "solution/q3_fusion_submit.py": "f3fa5ccb1e60fbe21d580143c5336c18488be2e16a137e16ef8bd5234c8dc5eb",
+    "solution/q3_fusion_config.json": "17d14da3863aeec6b2e63b8681786ca2e9c4e4b432710997f6aac858a8cb029c",
+    "q3_design/q3_pilot_solver.py": "6ccdb5d61763d3ee0516da933f1818ad36993eb08b655309463d2ddcf8f04b7c",
+    "q3_nsga/solve.py": "a22342f5dc09febec7eb54a83c8cc33e468cd1cf1ccae09c2c878735f3375db1",
+    "q3_fusion/solve.py": "b2acaef77bed6c2bee3ffed20f7fa430cd1c374e432ec9b1aa73f3e0161f2805",
+    "q3_fusion/branch_solver.py": "34ad27d75ea7bbffbbcbf4096578dfd7e7094dd15d2d7006af603fcec0daca3e",
+    "solution/baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "solution/q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79"
+  }
+}
