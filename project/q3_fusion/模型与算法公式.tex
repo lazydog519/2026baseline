@@ -40,7 +40,7 @@ $C_1,\ldots,C_m$。若 $m\ge2$，则
 任意两个不同 $C_j$ 之间在辅助 DAG 中不存在直接边；
 但经 COPY 节点及外部子图的组合仍可能产生环，故必须经完整拓扑修复
 和原评测器检查。
-入口留在原核，对分支定义
+入口留在当前候选中子图 $S$ 已选定的核心，对分支定义
 \begin{equation}
  W_{jp}=\sum_{\substack{v\in C_j\\p(v)=p}}c_v,\qquad
  \kappa(C_j)=\arg\min_{k}
