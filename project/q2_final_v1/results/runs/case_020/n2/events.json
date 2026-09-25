@@ -1,0 +1,324 @@
+[
+  {
+    "name": "base_w0_k2",
+    "family": "structure",
+    "descriptor": [
+      "base",
+      0,
+      2
+    ],
+    "proxy_cycles": 266304,
+    "pre_spill_bytes": 2359296,
+    "fingerprint": "b5aa4bc571e7d6b6cb2edd77dc638955745ac3971fed1947f40d1b1cad2dbc7c",
+    "locality_ratio": 1.0,
+    "internalized_bytes": 33030144,
+    "locality_deficit": 0.0,
+    "lower_bound_cycles": 266304,
+    "event": "evaluation",
+    "evaluation": 1,
+    "status": "ok",
+    "accepted": true,
+    "makespan_cycles": 266580,
+    "added_copy_bytes": 0,
+    "spill_bytes": 0,
+    "peak_l1_bytes": 0,
+    "peak_ub_bytes": 32768,
+    "buffer85_ok": true,
+    "evaluation_s": 2.1159758429857902,
+    "elapsed_s": 4.07354985101847,
+    "best_cycles": 266580,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "valley_w1_k2",
+    "family": "structure",
+    "descriptor": [
+      "valley",
+      1,
+      2
+    ],
+    "proxy_cycles": 271974.4,
+    "pre_spill_bytes": 16318464,
+    "fingerprint": "4e742c047ada8538326129962591f95fa1835f892c1e16fb6b8feb0ceeefc60e",
+    "locality_ratio": 0.7976190476190477,
+    "internalized_bytes": 26345472,
+    "locality_deficit": 0.052380952380952306,
+    "lower_bound_cycles": 271974.4,
+    "event": "evaluation",
+    "evaluation": 2,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 685296,
+    "added_copy_bytes": 35995648,
+    "spill_bytes": 22036480,
+    "peak_l1_bytes": 0,
+    "peak_ub_bytes": 131072,
+    "buffer85_ok": false,
+    "evaluation_s": 4.759334805014078,
+    "elapsed_s": 9.06292419298552,
+    "best_cycles": 266580,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "valley_w6_k2",
+    "family": "structure",
+    "descriptor": [
+      "valley",
+      6,
+      2
+    ],
+    "proxy_cycles": 266304,
+    "pre_spill_bytes": 4718592,
+    "fingerprint": "2444736c6ccf5ff32992e86eabb31c550bd8acb16afb3caae00fb7d8b8e82945",
+    "locality_ratio": 0.9523809523809523,
+    "internalized_bytes": 31457280,
+    "locality_deficit": 0.0,
+    "lower_bound_cycles": 266304,
+    "event": "evaluation",
+    "evaluation": 3,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 432238,
+    "added_copy_bytes": 19136512,
+    "spill_bytes": 16777216,
+    "peak_l1_bytes": 0,
+    "peak_ub_bytes": 131072,
+    "buffer85_ok": false,
+    "evaluation_s": 3.308354616048746,
+    "elapsed_s": 12.59745349601144,
+    "best_cycles": 266580,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "band_w2_k2",
+    "family": "structure",
+    "descriptor": [
+      "band",
+      2,
+      2
+    ],
+    "proxy_cycles": 266304,
+    "pre_spill_bytes": 5308416,
+    "fingerprint": "002be7670767156cae8f32e9b33c4a9d32165f91be5d3c3c472a13dd034ca607",
+    "locality_ratio": 0.9583333333333334,
+    "internalized_bytes": 31653888,
+    "locality_deficit": 0.0,
+    "lower_bound_cycles": 266304,
+    "event": "evaluation",
+    "evaluation": 4,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 785329,
+    "added_copy_bytes": 38395904,
+    "spill_bytes": 35446784,
+    "peak_l1_bytes": 0,
+    "peak_ub_bytes": 131072,
+    "buffer85_ok": false,
+    "evaluation_s": 4.666388981975615,
+    "elapsed_s": 17.473211509000976,
+    "best_cycles": 266580,
+    "best_added_bytes": 0
+  },
+  {
+    "event": "bound_pruned",
+    "name": "base_w0_k1",
+    "lower_bound_cycles": 532608,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "valley_w6_k1",
+    "lower_bound_cycles": 532608,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "valley_w1_k1",
+    "lower_bound_cycles": 532608,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s0_c1",
+    "lower_bound_cycles": 532608,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s0_d12_c1",
+    "lower_bound_cycles": 368448,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r49_d7_c1",
+    "lower_bound_cycles": 267824,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r49_d13_c1",
+    "lower_bound_cycles": 267216,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r49_d19_c1",
+    "lower_bound_cycles": 266684,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r201_d7_c1",
+    "lower_bound_cycles": 267824,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r201_d13_c1",
+    "lower_bound_cycles": 267216,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s0_r201_d19_c1",
+    "lower_bound_cycles": 266684,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "move_s1_c0",
+    "lower_bound_cycles": 532608,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "split_s1_d12_c0",
+    "lower_bound_cycles": 368448,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r125_d7_c0",
+    "lower_bound_cycles": 267824,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r125_d13_c0",
+    "lower_bound_cycles": 267216,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r125_d19_c0",
+    "lower_bound_cycles": 266684,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r277_d7_c0",
+    "lower_bound_cycles": 267824,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r277_d13_c0",
+    "lower_bound_cycles": 267216,
+    "incumbent_cycles": 266580
+  },
+  {
+    "event": "bound_pruned",
+    "name": "chain_s1_r277_d19_c0",
+    "lower_bound_cycles": 266684,
+    "incumbent_cycles": 266580
+  },
+  {
+    "name": "valley_w2_k2",
+    "family": "structure",
+    "descriptor": [
+      "valley",
+      2,
+      2
+    ],
+    "proxy_cycles": 266304,
+    "pre_spill_bytes": 13959168,
+    "fingerprint": "aa2b6e9e3bfd4514740ee944a5d6d5ab8231d04ab4e0af92d6c3670860a6eb23",
+    "locality_ratio": 0.8214285714285714,
+    "internalized_bytes": 27131904,
+    "locality_deficit": 0.02857142857142858,
+    "lower_bound_cycles": 266304,
+    "event": "evaluation",
+    "evaluation": 5,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 591029,
+    "added_copy_bytes": 31178752,
+    "spill_bytes": 19578880,
+    "peak_l1_bytes": 0,
+    "peak_ub_bytes": 131072,
+    "buffer85_ok": false,
+    "evaluation_s": 4.301301922008861,
+    "elapsed_s": 25.729400574986357,
+    "best_cycles": 266580,
+    "best_added_bytes": 0
+  },
+  {
+    "event": "bound_pruned",
+    "name": "valley_w2_k1",
+    "lower_bound_cycles": 532608,
+    "incumbent_cycles": 266580
+  },
+  {
+    "name": "split_s0_d12_c0",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 266304,
+    "pre_spill_bytes": 2359296,
+    "fingerprint": "8c1cada55ee840498b265981e9a6fe692aa2d1671aca0f289509c26e2a1d4cca",
+    "locality_ratio": 1.0,
+    "internalized_bytes": 33030144,
+    "locality_deficit": 0.0,
+    "lower_bound_cycles": 266304,
+    "event": "evaluation",
+    "evaluation": 6,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 267106,
+    "added_copy_bytes": 2752512,
+    "spill_bytes": 2752512,
+    "peak_l1_bytes": 0,
+    "peak_ub_bytes": 131072,
+    "buffer85_ok": false,
+    "evaluation_s": 2.106741242983844,
+    "elapsed_s": 28.16434121999191,
+    "best_cycles": 266580,
+    "best_added_bytes": 0
+  },
+  {
+    "name": "split_s1_d12_c1",
+    "family": "local",
+    "descriptor": null,
+    "proxy_cycles": 266304,
+    "pre_spill_bytes": 2359296,
+    "fingerprint": "a50be55509f75593307749077e25ba0d8feb0b0ea81a445f0a70d2523ce3d3b3",
+    "locality_ratio": 1.0,
+    "internalized_bytes": 33030144,
+    "locality_deficit": 0.0,
+    "lower_bound_cycles": 266304,
+    "event": "evaluation",
+    "evaluation": 7,
+    "status": "ok",
+    "accepted": false,
+    "makespan_cycles": 267106,
+    "added_copy_bytes": 2752512,
+    "spill_bytes": 2752512,
+    "peak_l1_bytes": 0,
+    "peak_ub_bytes": 131072,
+    "buffer85_ok": false,
+    "evaluation_s": 2.2036579310079105,
+    "elapsed_s": 30.384010043984745,
+    "best_cycles": 266580,
+    "best_added_bytes": 0
+  }
+]

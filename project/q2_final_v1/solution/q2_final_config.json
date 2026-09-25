@@ -1,0 +1,16 @@
+{
+  "max_evaluations": 8,
+  "max_seconds": 180,
+  "elite_structures": 3,
+  "heavy_groups": 3,
+  "coarse_valley_depth": 6,
+  "max_band_depth": 64,
+  "random_seed": null,
+  "randomness": "none; deterministic priority and tie-breaking",
+  "time_unit": "cycles; wall-clock budget in seconds",
+  "data_unit": "bytes",
+  "candidate_selection": "official Makespan minimum, ties by added DDR bytes",
+  "historical_results": "for comparison only; never read by solver",
+  "version": "q2-cilc-v1",
+  "locality_target": 0.85
+}

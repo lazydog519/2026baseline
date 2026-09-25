@@ -1,0 +1,54 @@
+{
+  "schema": "q2-cilc-v1",
+  "complete_cases": 100,
+  "selected_jobs": 400,
+  "cold_start": true,
+  "q1_results_read": false,
+  "locality_target": 0.85,
+  "mean_speedup": {
+    "2": 2.06176509292981,
+    "3": 2.8880006108336453,
+    "4": 3.635568669758986,
+    "5": 4.180460960096905
+  },
+  "initial_mean_speedup": {
+    "2": 1.7192038308333841,
+    "3": 2.3343109799038557,
+    "4": 2.8733901489079687,
+    "5": 3.325143886029546
+  },
+  "improved_vs_initial": {
+    "2": 75,
+    "3": 70,
+    "4": 67,
+    "5": 70
+  },
+  "median_wall_seconds": {
+    "2": 14.40535232948605,
+    "3": 17.151344607002102,
+    "4": 16.58029586551129,
+    "5": 18.419239494513022
+  },
+  "total_evaluations": 3129,
+  "mean_locality_ratio": {
+    "2": 0.9589359624661474,
+    "3": 0.9535498849261584,
+    "4": 0.9524324393755168,
+    "5": 0.9538990090351117
+  },
+  "buffer85_ok_cases": {
+    "2": 55,
+    "3": 61,
+    "4": 70,
+    "5": 64
+  },
+  "total_spill_bytes": {
+    "2": 492282844,
+    "3": 429650484,
+    "4": 371797102,
+    "5": 318044576
+  },
+  "official_evaluated": true,
+  "official_evaluator": "unchanged problem-2 evaluator; each selected plan accepted only from official simulation",
+  "singlecore_reference": "results/singlecore_reference.csv; copied from Q2 cold single-core official evaluations; no Q1 outputs read"
+}
