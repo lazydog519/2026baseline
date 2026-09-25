@@ -42,7 +42,7 @@ def main():
         raise RuntimeError(f"unexpected job count {done}")
     for filename in ("技术思路稿-基线.md", "技术思路稿-问题一优化.md",
                      "技术思路稿-问题二优化.md", "技术思路稿-问题二独立求解.md",
-                     "技术思路稿-问题一独立求解.md"):
+                     "技术思路稿-问题一独立求解.md", "技术思路稿-问题三独立求解.md"):
         if (src / filename).is_file():
             copy(src / filename, dst / filename)
             if filename in ("技术思路稿-问题一独立求解.md", "技术思路稿-问题二独立求解.md"):
@@ -106,7 +106,7 @@ def main():
                         raise RuntimeError(f"missing Q2 candidate result: {result}")
                     complete_results.add(result.resolve())
     # Problem 3 searches write run.json after the plan and gzip result.
-    for q3_name in ("q3_nsga", "q3_fusion"):
+    for q3_name in ("q3_nsga", "q3_fusion", "q3_cold"):
         for result in (src / q3_name).rglob("result.json.gz"):
             if (result.parent / "run.json").is_file() and (result.parent / "plan.json").is_file():
                 complete_results.add(result.resolve())
@@ -248,6 +248,30 @@ def main():
             f"**{third['mean_paired_reduction_percent']:.2f}%**；"
             "这不是 100 例或 1～5 核的全量成绩。\n"
         )
+    q3_final = src / "q3_cold" / "final" / "aggregate.json"
+    if q3_final.is_file():
+        third = json.loads(q3_final.read_text(encoding="utf-8"))
+        q3_complete = (third["complete_cases"] == 100 and
+                       third["missing_jobs"] == 0 and
+                       third["rechecked_jobs"] == 500 and
+                       third["official_files_unchanged"] == 114)
+        snapshot["q3_complete"] = q3_complete
+        snapshot["q3_five_core_mean_speedup"] = third["arithmetic_mean_speedup"]["5"]
+        snapshot["complete"] &= q3_complete
+        q3_text = (
+            "\n问题三独立提交版：见 "
+            "[`技术思路稿-问题三独立求解.md`](技术思路稿-问题三独立求解.md)、"
+            "[`100 例逐核复核`](project/q3_cold/final/)、"
+            "[`代码包`](project/q3_cold/submission_q3.zip) 和 "
+            "[`结果图`](project/q3_cold/figures/)。"
+            f"100 例五核平均加速比 **{snapshot['q3_five_core_mean_speedup']:.6f}**；"
+            "500 份最终方案均由未改动的原评估器复核。"
+            "运行入口：`python project/solution/q3_fusion_submit.py 输入图.json -n 5 "
+            "--config project/official/data/config.txt`。"
+            "早期 `q3_fusion/branch_validation/` 仅为开发样本，不代表全量成绩。\n"
+        )
+    (dst / "results" / "snapshot.json").write_text(
+        json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (dst / "README.md").write_text(
         "# 2026 A题方案与验证\n\n"
         f"当前快照：**{done}/{expected}** 组评测成功"

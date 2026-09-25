@@ -1,0 +1,30 @@
+{
+  "schema": "q3-cold-fusion-audit-v1",
+  "complete_cases": 7,
+  "selected_cores": [
+    5
+  ],
+  "expected_jobs": 7,
+  "missing_jobs": 0,
+  "rechecked_jobs": 7,
+  "official_files_unchanged": 114,
+  "arithmetic_mean_speedup": {
+    "5": 3.9382746505160813
+  },
+  "arithmetic_mean_same_plan_l2_gain": {
+    "5": 1.3304693105079064
+  },
+  "q2_five_core_comparison": 4.246277560520675,
+  "branch_called_jobs": 4,
+  "branch_selected_jobs": 1,
+  "feedback_selected_jobs": 0,
+  "source_sha256": {
+    "solution\\q3_cold.py": "43ca63bc18a88ac24570f9233fda399ef07be7e53343eb4a77c897874859a3e8",
+    "solution\\q3_cold_config.json": "675898d18e04705857330b6d3ec88b834edb106780c122c78b5478d13933b4b3",
+    "solution\\q3_fusion_submit.py": "77473cfa7f8cfd4e71c9bc2214d50c00d5e9bdd24cbd664c534552a2e1f66bdc",
+    "q3_fusion\\branch_solver.py": "34ad27d75ea7bbffbbcbf4096578dfd7e7094dd15d2d7006af603fcec0daca3e",
+    "q3_fusion\\solve.py": "b2acaef77bed6c2bee3ffed20f7fa430cd1c374e432ec9b1aa73f3e0161f2805",
+    "q3_nsga\\solve.py": "a22342f5dc09febec7eb54a83c8cc33e468cd1cf1ccae09c2c878735f3375db1",
+    "q3_design\\q3_pilot_solver.py": "6ccdb5d61763d3ee0516da933f1818ad36993eb08b655309463d2ddcf8f04b7c"
+  }
+}

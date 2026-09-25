@@ -14,4 +14,4 @@
 
 运行入口：`python project/solution/q2_submit.py 输入图.json -n 5 --config project/official/data/config.txt`。旧 `q2_optimization/` 为不同预算的历史离线实验，不作为当前独立求解成绩。
 
-问题三当前独立求解版：见 [`技术思路稿`](技术思路稿-问题三独立求解.md)、[`五核 100 例官方复核`](project/q3_cold/final5/aggregate.json)、[`独立代码包`](project/q3_cold/submission_q3.zip)、[`公式`](project/q3_cold/模型与算法公式.tex) 和 [`结果口径`](project/q3_cold/README.md)。五核 100 例逐例加速比的算术平均为 **4.395999**，高于问题二的 4.246278；100 份方案已由原版有/无 L2 评测器独立复核。1～4 核仍在运行，完整的 500 份方案复核和图表将在完成后补入。早期 `project/q3_fusion/branch_validation/` 仅是开发样本，不代表全量成绩。
+问题三独立提交版：见 [`技术思路稿-问题三独立求解.md`](技术思路稿-问题三独立求解.md)、[`100 例逐核复核`](project/q3_cold/final/)、[`代码包`](project/q3_cold/submission_q3.zip) 和 [`结果图`](project/q3_cold/figures/)。100 例五核平均加速比 **4.395999**；500 份最终方案均由未改动的原评估器复核。运行入口：`python project/solution/q3_fusion_submit.py 输入图.json -n 5 --config project/official/data/config.txt`。早期 `q3_fusion/branch_validation/` 仅为开发样本，不代表全量成绩。

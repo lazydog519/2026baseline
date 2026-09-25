@@ -1,0 +1,3 @@
+case,cores,singlecore_reference_cycles,first_stage_cycles,q3_l2_cycles,same_plan_no_l2_cycles,first_stage_speedup,speedup_vs_reference,same_plan_l2_gain,added_copy_bytes,spill_added_copy_bytes,peak_l1_bytes,peak_ub_bytes,cache_hit_rate,cache_hit_bytes,cache_miss_bytes,official_search_calls,invalid_candidates,selected,branch_called,plan_sha256
+case_001,5,233110.0,47502,47502,47502,4.9073723211654245,4.9073723211654245,1.0,4608,0,13440,8192,0.0,0,824960,24,0,greedy,False,8bbb5cdc53db45251b1d0840f587de58fd1d232ff41cadc1bab3b9d244fbe497
+case_044,5,154407.0,41678,28257,85501,3.7047603051969866,5.464380507484871,3.025834306543511,3755904,0,376832,0,0.7855713612554719,3681024,1004768,54,0,branch,True,230a22e4d387d45153fdcbf444552b8a1bef7b65036cab6433aee9f80e9ec0c4

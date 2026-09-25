@@ -1,0 +1,159 @@
+{
+  "schema": "q3-cold-fusion-v2",
+  "cold_start": true,
+  "no_historical_plans_read": true,
+  "cores": 4,
+  "stage1_cycles": 9200,
+  "final_cycles": 9200,
+  "same_plan_no_l2_cycles": 9592,
+  "cache_hit_rate": 0.2805420227351383,
+  "cache_miss_bytes": 216200,
+  "added_copy_bytes": 262578,
+  "reference_single_core_l2": 25144,
+  "decision_efficiency": 0.6832608695652174,
+  "efficiency_gate": 0.75,
+  "fixed_policy": {
+    "version": "q3-cold-fusion-v2",
+    "max_feedback_evaluations": 4,
+    "max_target_tensors": 8,
+    "normalized_efficiency_gate": 0.75,
+    "branch_seed": 17,
+    "branch_search": {
+      "version": "q3-branch-search-v2",
+      "official_budget": 30,
+      "population": 6,
+      "offspring_batch": 6,
+      "reference_partitions": 2,
+      "max_proposals_per_budget": 60,
+      "max_subgraphs": 256,
+      "crossover_probability": 0.35,
+      "split_cut_candidates": 5,
+      "mutation_types": [
+        "move",
+        "split",
+        "merge",
+        "order"
+      ]
+    }
+  },
+  "feedback_evaluations": [
+    {
+      "operator": "natural_stagger",
+      "plan_sha256": "aaa5634c87631e75618d12e49e9389d92a518843131ab447f4ce03e625edf99b",
+      "detail": {
+        "tensor_id": 1000000042,
+        "core": 2,
+        "target_sg": 18,
+        "moved_sg": 22,
+        "proxy_gap_cycles": 326.6333333333333
+      },
+      "status": "feasible",
+      "makespan": 13563,
+      "cache_hit_rate": 0.36871389399142773
+    },
+    {
+      "operator": "natural_stagger",
+      "plan_sha256": "bcd943863f56608995afdd1780bf16dee398263f4ca591f9cc5726d8982e1928",
+      "detail": {
+        "tensor_id": 1000000036,
+        "core": 1,
+        "target_sg": 17,
+        "moved_sg": 21,
+        "proxy_gap_cycles": 538.4333333333333
+      },
+      "status": "feasible",
+      "makespan": 13933,
+      "cache_hit_rate": 0.38021457285094373
+    }
+  ],
+  "branch_search": {
+    "version": "q3-branch-search-v2",
+    "method": "unsga3_npu",
+    "seed": 17,
+    "cores": 4,
+    "pymoo_version": "0.6.1.6",
+    "input_sha256": "adcb7dde88ba19f86e451149ff27083546c2c3d4a75052cf1cb9e727897bdcb7",
+    "hardware_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+    "official_calls": 30,
+    "feasible_evaluations": 30,
+    "invalid_records": 0,
+    "proposals": 38,
+    "generations": 4,
+    "initial_population_hashes": [
+      "1451d0fda429b94eb7aba57e0dcf06215ae7cdc46303042ec79e5c9eb2e95e85",
+      "54f21ef14c75f5077e43e6baa30810590a5ec9a42fa54b106c129747c3cc0f34",
+      "8b5cb006e0f1ec84aee4ce2e46a6158e5cce5e9b1c5eb42767e7f5e1438c2b0e",
+      "a3fbc31a49eba3f5a81951e84cbf14d0bafd6865c4be4e4a78e6b52dc0eb0bca",
+      "0ae43ad7cfb442f112ff238819e1d53ef5a5980c3282cd6df6d805f5a7c59ee9",
+      "e64a0b77013c5e404bad96e987e8483b5fecbd1d575972c86fd2f5fe1978540a"
+    ],
+    "construction_best": 13963,
+    "makespan": 10882,
+    "improvement_ratio": 1.283128101451939,
+    "added_copy_bytes": 370028,
+    "cache_miss_bytes": 246502,
+    "hit_rate": 0.2941637984846836,
+    "cold_start": true,
+    "historical_plans_read": false,
+    "empty_l2_each_evaluation": true,
+    "elapsed_seconds": 7.184827900011442,
+    "configuration": {
+      "version": "q3-branch-search-v2",
+      "official_budget": 30,
+      "population": 6,
+      "offspring_batch": 6,
+      "reference_partitions": 2,
+      "max_proposals_per_budget": 60,
+      "max_subgraphs": 256,
+      "crossover_probability": 0.35,
+      "split_cut_candidates": 5,
+      "mutation_types": [
+        "move",
+        "split",
+        "merge",
+        "order"
+      ]
+    },
+    "accepted": false
+  },
+  "final_plan_sha256": "2cc9edc5dae52a7ff909695982d117957f5fb591d70172bdf49a1fb53a81efbe",
+  "greedy_report": {
+    "schema": "q3-cold-fusion-v1",
+    "cold_start": true,
+    "graph_sha256": "e212038a9a0c2fe67b2ab06144bf29d52eab936ab8e137aa7dabba95c92cf07e",
+    "config_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+    "search_config": {
+      "max_evaluations": 24,
+      "max_seconds": 180,
+      "elite_structures": 3,
+      "heavy_groups": 3,
+      "branch_groups": 2,
+      "coarse_valley_depth": 6,
+      "max_band_depth": 64,
+      "random_seed": null,
+      "randomness": "none; deterministic ordering and tie-breaking",
+      "time_unit": "cycles; wall-clock budget in seconds",
+      "data_unit": "bytes",
+      "candidate_selection": "official Q3 Makespan minimum, ties by added DDR bytes",
+      "historical_results": "diagnostic comparison only; never read by solver"
+    },
+    "cores": 4,
+    "initial_cycles": 25144,
+    "makespan_cycles": 9200,
+    "added_copy_bytes": 262578,
+    "evaluations": 24,
+    "elapsed_s": 4.778587599997991,
+    "invalid_candidates": 0,
+    "duplicates_skipped": 8,
+    "bound_pruned": 1,
+    "selected": "valley_w1_k4",
+    "selected_fingerprint": "2cc9edc5dae52a7ff909695982d117957f5fb591d70172bdf49a1fb53a81efbe",
+    "initial_width": 2,
+    "cache_hit_rate": 0.2805420227351383,
+    "cache_miss_bytes": 216200,
+    "stop_reason": "evaluation_budget",
+    "time_budget_semantics": "Stop before the next evaluation; an in-flight official evaluation completes.",
+    "io_contract": "input graph + official code/config + fixed search parameters; no saved plans read"
+  },
+  "experimental_resume": "stage 1 generated by this frozen experiment"
+}
