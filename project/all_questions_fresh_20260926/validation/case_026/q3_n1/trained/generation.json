@@ -1,0 +1,85 @@
+{
+  "solver_version": "fresh-all-20260926-v2",
+  "selected": "component_scalar",
+  "method": "trained",
+  "question": 3,
+  "official_calls": 0,
+  "graph_sha256": "0ed6209c59170dc0da94703702b17402cee14c1a61624e666ed8938637b6765b",
+  "model_sha256": "c4298d6b1054adc7979663b5cb97378eb5f79806faa3886182f4156dd3f08efc",
+  "plan_sha256": "5d6e0f23644ab24397b85b57dd5fb2670ea89fbabbf0c7df5d56f7e7795a064d",
+  "generation_seconds": 0.030053800001041964,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        70768,
+        24052,
+        8814.233333333334,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 528854,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 528854,
+        "physical_lower_bound_cycles": 70768,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 163840,
+            "UB": 57346
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 94820,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 488886,
+          "ddr_bytes": 528854,
+          "hits": 0,
+          "insertions": 102,
+          "evictions": 0,
+          "trace_end": 94820.03333333334
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        70768,
+        30598,
+        8814.233333333334,
+        3823.266666666667,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 528854,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 528854,
+        "physical_lower_bound_cycles": 70768,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 297984,
+            "UB": 360468
+          }
+        ],
+        "logical_excess_bytes": 229396,
+        "nominal_compute_end": 101366,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 488886,
+          "ddr_bytes": 528854,
+          "hits": 0,
+          "insertions": 102,
+          "evictions": 0,
+          "trace_end": 101366.03333333334
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}

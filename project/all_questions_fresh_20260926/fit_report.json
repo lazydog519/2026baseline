@@ -1,0 +1,221 @@
+{
+  "1": {
+    "labels": 68,
+    "weights": [
+      1.1197605630262566,
+      0.8973876320614079,
+      0.172903619587355,
+      2.1664827420265884,
+      0.0
+    ],
+    "group_cv": [
+      {
+        "case": "case_029",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "relative_regret": 0.04394319980253503
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "relative_regret": 0.05147811649679479
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "relative_regret": 0.04847805835997887
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_007",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "relative_regret": 0.008437584375843743
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "relative_regret": 0.0054171676783982825
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "relative_regret": 0.0
+      }
+    ],
+    "mean_group_cv_regret": 0.013146177226129227
+  },
+  "2": {
+    "labels": 36,
+    "weights": [
+      1.0082896395671272,
+      1.0787881001312274,
+      0.39153428661081163,
+      1.8288731619315275,
+      0.0
+    ],
+    "group_cv": [
+      {
+        "case": "case_029",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_007",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "relative_regret": 0.007946731498448711
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "relative_regret": 0.004900177694157071
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "relative_regret": 0.0
+      }
+    ],
+    "mean_group_cv_regret": 0.0010705757660504818
+  },
+  "3": {
+    "labels": 36,
+    "weights": [
+      0.9605372615975145,
+      1.2232050486946555,
+      0.16583751958393234,
+      1.9649962244675208,
+      5.599021541380169
+    ],
+    "group_cv": [
+      {
+        "case": "case_029",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_007",
+        "cores": 2,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "relative_regret": 0.007946731498448711
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "relative_regret": 0.0
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "relative_regret": 0.004900177694157071
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "relative_regret": 0.0
+      }
+    ],
+    "mean_group_cv_regret": 0.0010705757660504818
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "component_scalar_coalesced",
+  "features": [
+    490392,
+    16716,
+    29337.6,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 1760256,
+    "cross_task_copy_bytes": 0,
+    "minimum_ddr_bytes": 1760256,
+    "physical_lower_bound_cycles": 490392,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 35328,
+        "UB": 6144
+      },
+      {
+        "task": 1,
+        "L1": 35328,
+        "UB": 6144
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 507108,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

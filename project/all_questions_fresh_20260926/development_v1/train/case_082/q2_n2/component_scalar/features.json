@@ -1,0 +1,27 @@
+{
+  "name": "component_scalar",
+  "features": [
+    567936,
+    134475,
+    9866.766666666666,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 592006,
+    "cross_task_copy_bytes": 0,
+    "minimum_ddr_bytes": 592006,
+    "physical_lower_bound_cycles": 567936,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 76672,
+        "UB": 76358
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 702411,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

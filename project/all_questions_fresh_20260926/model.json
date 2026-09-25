@@ -1,0 +1,45 @@
+{
+  "solver_version": "fresh-all-20260926-v2",
+  "features": [
+    "resource_floor",
+    "nominal_schedule_excess",
+    "estimated_ddr_time",
+    "logical_memory_excess_time",
+    "estimated_l2_time"
+  ],
+  "weights": {
+    "1": [
+      1.1197605630262566,
+      0.8973876320614079,
+      0.172903619587355,
+      2.1664827420265884,
+      0.0
+    ],
+    "2": [
+      1.0082896395671272,
+      1.0787881001312274,
+      0.39153428661081163,
+      1.8288731619315275,
+      0.0
+    ],
+    "3": [
+      0.9605372615975145,
+      1.2232050486946555,
+      0.16583751958393234,
+      1.9649962244675208,
+      5.599021541380169
+    ]
+  },
+  "solver_sha256": {
+    "solver.py": "156dc6991418d71d0543fd17d0a9e367ddf22ac5577236c2f6a1aabf7845b13e",
+    "mechanism.py": "7e2dfb0e3afd31a76c02ea72e24ab27a3316ffa5c451f6716f5f050192678aa8"
+  },
+  "hardware_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "fit": {
+    "lambda": 0.01,
+    "constraint": "nonnegative coefficients",
+    "seed": null
+  },
+  "training_labels_sha256": "debbb39505f61a4520fc835162e5957445fc0d38650a87061ddf0868437f270e",
+  "origin": "new labels for all three scenes, current round only"
+}

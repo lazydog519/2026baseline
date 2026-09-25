@@ -1,0 +1,55 @@
+{
+  "name": "component_scalar",
+  "features": [
+    195804,
+    6696,
+    30720.0,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 1843200,
+    "cross_task_copy_bytes": 0,
+    "minimum_ddr_bytes": 1732608,
+    "physical_lower_bound_cycles": 195804,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 35328,
+        "UB": 6144
+      },
+      {
+        "task": 1,
+        "L1": 35328,
+        "UB": 6144
+      },
+      {
+        "task": 2,
+        "L1": 35328,
+        "UB": 6144
+      },
+      {
+        "task": 3,
+        "L1": 35328,
+        "UB": 6144
+      },
+      {
+        "task": 4,
+        "L1": 35328,
+        "UB": 6144
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 202500,
+    "cache_request_proxy": {
+      "hit_bytes": 0,
+      "read_bytes": 990720,
+      "ddr_bytes": 1843200,
+      "hits": 0,
+      "insertions": 558,
+      "evictions": 0,
+      "trace_end": 202628.0
+    },
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

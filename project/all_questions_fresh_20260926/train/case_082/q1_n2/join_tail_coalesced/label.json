@@ -1,0 +1,18 @@
+{
+  "case": "case_082",
+  "question": 1,
+  "cores": 2,
+  "name": "join_tail_coalesced",
+  "path": "train/case_082/q1_n2/join_tail_coalesced",
+  "plan_sha256": "1efc92edc1c76a5efa2133577b5c4203bec5410e441fd78737ddac401f4c919b",
+  "status": "ok",
+  "makespan": 722037,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 592006,
+    "scheduled_copy_bytes": 681896,
+    "added_copy_bytes": 89890,
+    "partition_added_copy_bytes": 89890,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 3.2735688999964623
+}

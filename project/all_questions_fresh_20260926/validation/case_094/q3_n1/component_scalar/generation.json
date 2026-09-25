@@ -1,0 +1,120 @@
+{
+  "solver_version": "fresh-all-20260926-v2",
+  "selected": "component_scalar",
+  "method": "component_scalar",
+  "question": 3,
+  "official_calls": 0,
+  "graph_sha256": "06e7b0eb1eecb9a98b6691dfe5f8039c6f7b21ab0f3ea8e6a072ade002a68fec",
+  "model_sha256": "c4298d6b1054adc7979663b5cb97378eb5f79806faa3886182f4156dd3f08efc",
+  "plan_sha256": "e5d1655eb903efd8b5aae60095f61dfde6040cd588b73b201dfa94181b82dcd1",
+  "generation_seconds": 0.03597070000250824,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        70944,
+        21456,
+        8778.2,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 526692,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 526692,
+        "physical_lower_bound_cycles": 70944,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 69120,
+            "UB": 40960
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 92400,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 471328,
+          "ddr_bytes": 526692,
+          "hits": 0,
+          "insertions": 104,
+          "evictions": 0,
+          "trace_end": 92400.03333333334
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_vector_reuse_order",
+      "features": [
+        70944,
+        5044,
+        8778.2,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 526692,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 526692,
+        "physical_lower_bound_cycles": 70944,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 69120,
+            "UB": 40960
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 75988,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 471328,
+          "ddr_bytes": 526692,
+          "hits": 0,
+          "insertions": 104,
+          "evictions": 0,
+          "trace_end": 75988.03333333334
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        70944,
+        13472,
+        8778.2,
+        2918.4,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 526692,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 526692,
+        "physical_lower_bound_cycles": 70944,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 355584,
+            "UB": 306176
+          }
+        ],
+        "logical_excess_bytes": 175104,
+        "nominal_compute_end": 84416,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 471328,
+          "ddr_bytes": 526692,
+          "hits": 0,
+          "insertions": 104,
+          "evictions": 0,
+          "trace_end": 84416.03333333334
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}

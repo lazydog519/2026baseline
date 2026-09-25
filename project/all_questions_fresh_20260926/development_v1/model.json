@@ -1,0 +1,44 @@
+{
+  "solver_version": "fresh-all-20260926-v1",
+  "features": [
+    "resource_floor",
+    "nominal_schedule_excess",
+    "estimated_ddr_time",
+    "logical_memory_excess_time",
+    "estimated_l2_time"
+  ],
+  "weights": {
+    "1": [
+      1.1211112784668251,
+      0.8968801198316679,
+      0.17062850510245905,
+      2.1748646535261815,
+      0.0
+    ],
+    "2": [
+      1.0084753098882253,
+      1.078735135375736,
+      0.3912225738112591,
+      1.8285780917839822,
+      0.0
+    ],
+    "3": [
+      0.9606020936092806,
+      1.2232760672623544,
+      0.16542471376481127,
+      1.9660424663732832,
+      5.60317341179408
+    ]
+  },
+  "solver_sha256": {
+    "solver.py": "c50fe9c144001c889fece27e695d98825de0c1b780bbb686da78fc624a1f82c1",
+    "mechanism.py": "ffd05d0c347439b40381b3c688a3d55154923ef99e624d61a89d05e076febd0f"
+  },
+  "fit": {
+    "lambda": 0.01,
+    "constraint": "nonnegative coefficients",
+    "seed": null
+  },
+  "training_labels_sha256": "debbb39505f61a4520fc835162e5957445fc0d38650a87061ddf0868437f270e",
+  "origin": "new labels for all three scenes, current round only"
+}

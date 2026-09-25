@@ -1,0 +1,18 @@
+{
+  "case": "case_040",
+  "question": 1,
+  "cores": 2,
+  "name": "component_scalar_coalesced",
+  "path": "train/case_040/q1_n2/component_scalar_coalesced",
+  "plan_sha256": "4311acce938062b691ef9b3994de68ef567ef273d34cbca0e01166b5834eedc9",
+  "status": "ok",
+  "makespan": 137746,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 911238,
+    "scheduled_copy_bytes": 964998,
+    "added_copy_bytes": 53760,
+    "partition_added_copy_bytes": 53760,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 1.7776320999983
+}

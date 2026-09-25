@@ -1,0 +1,18 @@
+{
+  "case": "case_040",
+  "question": 2,
+  "cores": 5,
+  "name": "component_vector",
+  "path": "train/case_040/q2_n5/component_vector",
+  "plan_sha256": "97e1ad4b7f45e08c87c1b407e4a3939e85066200dddb0e02f138ea1ac6d906eb",
+  "status": "ok",
+  "makespan": 110337,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 911238,
+    "scheduled_copy_bytes": 977286,
+    "added_copy_bytes": 66048,
+    "partition_added_copy_bytes": 66048,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 0.5541245999920648
+}

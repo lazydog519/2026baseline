@@ -1,0 +1,123 @@
+{
+  "solver_version": "fresh-all-20260926-v2",
+  "selected": "component_scalar",
+  "method": "trained",
+  "question": 2,
+  "official_calls": 0,
+  "graph_sha256": "06b73d07c450878db8f6dace8ed08e362b45f5dd6e06fb80b098f165190f222a",
+  "model_sha256": "c4298d6b1054adc7979663b5cb97378eb5f79806faa3886182f4156dd3f08efc",
+  "plan_sha256": "8763731649897e6042854bd71b83de21b90f140aad885ebca1e4d83e31e0063d",
+  "generation_seconds": 0.34365759999491274,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        119992,
+        27311,
+        8255.533333333333,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 495332,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 495332,
+        "physical_lower_bound_cycles": 119992,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 38400,
+            "UB": 32774
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 147303,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "component_vector_reuse_order",
+      "features": [
+        119992,
+        27799,
+        8255.533333333333,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 495332,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 495332,
+        "physical_lower_bound_cycles": 119992,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 38400,
+            "UB": 32774
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 147791,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        119992,
+        31650,
+        8255.533333333333,
+        1951.7666666666667,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 495332,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 495332,
+        "physical_lower_bound_cycles": 119992,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 123904,
+            "UB": 248178
+          }
+        ],
+        "logical_excess_bytes": 117106,
+        "nominal_compute_end": 151642,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "shared_prefix",
+      "features": [
+        119992,
+        27355,
+        8255.533333333333,
+        52.166666666666664,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 495332,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 495332,
+        "physical_lower_bound_cycles": 119992,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 38400,
+            "UB": 134202
+          }
+        ],
+        "logical_excess_bytes": 3130,
+        "nominal_compute_end": 147347,
+        "cache_request_proxy": null,
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}

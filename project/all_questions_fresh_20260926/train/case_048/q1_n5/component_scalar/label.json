@@ -1,0 +1,18 @@
+{
+  "case": "case_048",
+  "question": 1,
+  "cores": 5,
+  "name": "component_scalar",
+  "path": "train/case_048/q1_n5/component_scalar",
+  "plan_sha256": "b675540876c4c4daee372d760007e6721d7fc3f6e0048bb007199019e438733b",
+  "status": "ok",
+  "makespan": 222220,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 414790,
+    "scheduled_copy_bytes": 414790,
+    "added_copy_bytes": 0,
+    "partition_added_copy_bytes": 0,
+    "spill_added_copy_bytes": 0
+  },
+  "seconds": 0.7925915000087116
+}

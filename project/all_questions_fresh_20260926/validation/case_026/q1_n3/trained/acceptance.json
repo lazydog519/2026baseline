@@ -1,0 +1,21 @@
+{
+  "case": "case_026",
+  "question": 1,
+  "cores": 3,
+  "method": "trained",
+  "path": "validation/case_026/q1_n3/trained",
+  "plan_sha256": "5d16d69f82162aa590d3caa8eb685e4743cc508646e5f7cae91e067062b1ff74",
+  "status": "ok",
+  "makespan": 41655,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 528854,
+    "scheduled_copy_bytes": 624518,
+    "added_copy_bytes": 95664,
+    "partition_added_copy_bytes": 95664,
+    "spill_added_copy_bytes": 0
+  },
+  "reference_cycles": 99203,
+  "raw_speedup_vs_original_singlecore": 2.3815388308726444,
+  "generation_seconds": 0.07029410000541247,
+  "selected": "component_affinity_coalesced"
+}

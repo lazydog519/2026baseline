@@ -1,0 +1,40 @@
+{
+  "name": "join_tail",
+  "features": [
+    26397,
+    963.0666666666657,
+    7180.6,
+    0.0,
+    688.128
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 602868,
+    "cross_task_copy_bytes": 672,
+    "minimum_ddr_bytes": 430836,
+    "physical_lower_bound_cycles": 26397,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 0,
+        "UB": 10240
+      },
+      {
+        "task": 1,
+        "L1": 0,
+        "UB": 8196
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 27360.066666666666,
+    "cache_request_proxy": {
+      "hit_bytes": 172032,
+      "read_bytes": 430500,
+      "ddr_bytes": 430836,
+      "hits": 84,
+      "insertions": 336,
+      "evictions": 0,
+      "trace_end": 27394.2
+    },
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

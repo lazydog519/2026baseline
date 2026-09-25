@@ -1,0 +1,40 @@
+{
+  "name": "component_vector",
+  "features": [
+    97670,
+    44157,
+    15392.1,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 923526,
+    "cross_task_copy_bytes": 0,
+    "minimum_ddr_bytes": 911238,
+    "physical_lower_bound_cycles": 97670,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 245760,
+        "UB": 32794
+      },
+      {
+        "task": 1,
+        "L1": 35008,
+        "UB": 90112
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 141827,
+    "cache_request_proxy": {
+      "hit_bytes": 0,
+      "read_bytes": 923462,
+      "ddr_bytes": 923526,
+      "hits": 0,
+      "insertions": 266,
+      "evictions": 0,
+      "trace_end": 141827.03333333333
+    },
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}

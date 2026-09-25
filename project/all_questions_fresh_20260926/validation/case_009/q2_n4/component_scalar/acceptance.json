@@ -1,0 +1,21 @@
+{
+  "case": "case_009",
+  "question": 2,
+  "cores": 4,
+  "method": "component_scalar",
+  "path": "validation/case_009/q2_n4/component_scalar",
+  "plan_sha256": "efcdb522dd5c9d3f92910c9160988201e6c68f3a5abe7bfe07cf070bc84ff3d4",
+  "status": "ok",
+  "makespan": 92216,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 495332,
+    "scheduled_copy_bytes": 544484,
+    "added_copy_bytes": 49152,
+    "partition_added_copy_bytes": 49152,
+    "spill_added_copy_bytes": 0
+  },
+  "reference_cycles": 153261,
+  "raw_speedup_vs_original_singlecore": 1.6619783985425522,
+  "generation_seconds": 0.4656535999965854,
+  "selected": "component_scalar"
+}

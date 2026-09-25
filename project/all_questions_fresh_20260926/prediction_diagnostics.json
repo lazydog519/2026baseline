@@ -1,0 +1,1067 @@
+{
+  "post_freeze_only": true,
+  "used_to_select_or_refit": false,
+  "summary": {
+    "1": {
+      "mean_absolute_relative_error": 0.07573728921181039,
+      "five_core": [
+        {
+          "case": "case_009",
+          "question": 1,
+          "cores": 5,
+          "makespan": 92225,
+          "selected": "component_affinity_coalesced",
+          "predicted_cycles": 97482.24541764287,
+          "relative_prediction_error": 0.05700455860821774
+        },
+        {
+          "case": "case_019",
+          "question": 1,
+          "cores": 5,
+          "makespan": 24202,
+          "selected": "component_affinity_coalesced",
+          "predicted_cycles": 26672.455871537237,
+          "relative_prediction_error": 0.10207651729349787
+        },
+        {
+          "case": "case_026",
+          "question": 1,
+          "cores": 5,
+          "makespan": 44453,
+          "selected": "component_affinity_coalesced",
+          "predicted_cycles": 47847.12204210894,
+          "relative_prediction_error": 0.07635304798571396
+        },
+        {
+          "case": "case_066",
+          "question": 1,
+          "cores": 5,
+          "makespan": 252146,
+          "selected": "shared_prefix_coalesced",
+          "predicted_cycles": 242534.0174541383,
+          "relative_prediction_error": -0.03812070207681939
+        },
+        {
+          "case": "case_071",
+          "question": 1,
+          "cores": 5,
+          "makespan": 10042,
+          "selected": "shared_prefix_coalesced",
+          "predicted_cycles": 8669.042021431069,
+          "relative_prediction_error": -0.13672156727434093
+        },
+        {
+          "case": "case_094",
+          "question": 1,
+          "cores": 5,
+          "makespan": 21573,
+          "selected": "component_scalar_coalesced",
+          "predicted_cycles": 24595.721845816086,
+          "relative_prediction_error": 0.140115971159138
+        }
+      ]
+    },
+    "2": {
+      "mean_absolute_relative_error": 0.04295900486532057,
+      "five_core": [
+        {
+          "case": "case_009",
+          "question": 2,
+          "cores": 5,
+          "makespan": 92225,
+          "selected": "component_affinity",
+          "predicted_cycles": 91893.48677498076,
+          "relative_prediction_error": -0.0035946134455867584
+        },
+        {
+          "case": "case_019",
+          "question": 2,
+          "cores": 5,
+          "makespan": 24202,
+          "selected": "component_affinity",
+          "predicted_cycles": 25970.646612800803,
+          "relative_prediction_error": 0.07307853122885732
+        },
+        {
+          "case": "case_026",
+          "question": 2,
+          "cores": 5,
+          "makespan": 45534,
+          "selected": "component_affinity",
+          "predicted_cycles": 45994.82376903925,
+          "relative_prediction_error": 0.010120432403023072
+        },
+        {
+          "case": "case_066",
+          "question": 2,
+          "cores": 5,
+          "makespan": 251744,
+          "selected": "shared_prefix",
+          "predicted_cycles": 242446.83177106592,
+          "relative_prediction_error": -0.03693104196697472
+        },
+        {
+          "case": "case_071",
+          "question": 2,
+          "cores": 5,
+          "makespan": 9508,
+          "selected": "shared_prefix",
+          "predicted_cycles": 9332.53747600412,
+          "relative_prediction_error": -0.018454198989890647
+        },
+        {
+          "case": "case_094",
+          "question": 2,
+          "cores": 5,
+          "makespan": 23233,
+          "selected": "component_scalar",
+          "predicted_cycles": 26258.034235924308,
+          "relative_prediction_error": 0.13020420246736575
+        }
+      ]
+    },
+    "3": {
+      "mean_absolute_relative_error": 0.04182722412514399,
+      "five_core": [
+        {
+          "case": "case_009",
+          "question": 3,
+          "cores": 5,
+          "makespan": 92225,
+          "selected": "component_vector",
+          "predicted_cycles": 87409.64585279112,
+          "relative_prediction_error": -0.05221311083989033,
+          "predicted_cache_hit_bytes": 16384,
+          "actual_cache_hit_bytes": 49152
+        },
+        {
+          "case": "case_019",
+          "question": 3,
+          "cores": 5,
+          "makespan": 24202,
+          "selected": "component_affinity",
+          "predicted_cycles": 24993.629809290323,
+          "relative_prediction_error": 0.032709272344860985,
+          "predicted_cache_hit_bytes": 24576,
+          "actual_cache_hit_bytes": 8192
+        },
+        {
+          "case": "case_026",
+          "question": 3,
+          "cores": 5,
+          "makespan": 45097,
+          "selected": "component_affinity",
+          "predicted_cycles": 42458.437706576486,
+          "relative_prediction_error": -0.05850859909580497,
+          "predicted_cache_hit_bytes": 61056,
+          "actual_cache_hit_bytes": 61056
+        },
+        {
+          "case": "case_066",
+          "question": 3,
+          "cores": 5,
+          "makespan": 251738,
+          "selected": "shared_prefix",
+          "predicted_cycles": 241118.76914291419,
+          "relative_prediction_error": -0.042183662605907,
+          "predicted_cache_hit_bytes": 189312,
+          "actual_cache_hit_bytes": 136336
+        },
+        {
+          "case": "case_071",
+          "question": 3,
+          "cores": 5,
+          "makespan": 9247,
+          "selected": "shared_prefix",
+          "predicted_cycles": 8506.581594499727,
+          "relative_prediction_error": -0.08007120206556428,
+          "predicted_cache_hit_bytes": 9998,
+          "actual_cache_hit_bytes": 18638
+        },
+        {
+          "case": "case_094",
+          "question": 3,
+          "cores": 5,
+          "makespan": 23233,
+          "selected": "component_scalar",
+          "predicted_cycles": 24013.808150649253,
+          "relative_prediction_error": 0.033607719650895485,
+          "predicted_cache_hit_bytes": 101952,
+          "actual_cache_hit_bytes": 108384
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 1,
+      "makespan": 153261,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 162006.00335664596,
+      "relative_prediction_error": 0.05705954780828759
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 1,
+      "makespan": 81144,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 82266.13219139096,
+      "relative_prediction_error": 0.013828899134759931
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 1,
+      "makespan": 99203,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 106974.53677818434,
+      "relative_prediction_error": 0.07833973547356776
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 1,
+      "makespan": 359070,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 374697.2131872805,
+      "relative_prediction_error": 0.043521355689087216
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 1,
+      "makespan": 18919,
+      "selected": "component_scalar",
+      "predicted_cycles": 18999.420317437623,
+      "relative_prediction_error": 0.004250769989831538
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 1,
+      "makespan": 94892,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 101389.7975435706,
+      "relative_prediction_error": 0.06847571495564009
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 2,
+      "makespan": 92198,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 97340.60277247692,
+      "relative_prediction_error": 0.05577781266922188
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 2,
+      "makespan": 41382,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 43000.82994667149,
+      "relative_prediction_error": 0.03911918096446487
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 2,
+      "makespan": 55057,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 58519.62802071814,
+      "relative_prediction_error": 0.06289169443882048
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 2,
+      "makespan": 248146,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 265402.07174654806,
+      "relative_prediction_error": 0.06953999559351365
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 2,
+      "makespan": 14086,
+      "selected": "shared_prefix",
+      "predicted_cycles": 13383.119705519513,
+      "relative_prediction_error": -0.049899211591685866
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 2,
+      "makespan": 48073,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 52417.727322931874,
+      "relative_prediction_error": 0.090377703137559
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 3,
+      "makespan": 92207,
+      "selected": "component_affinity_coalesced",
+      "predicted_cycles": 97411.4240950599,
+      "relative_prediction_error": 0.05644283075102652
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 3,
+      "makespan": 28657,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 30602.305487021025,
+      "relative_prediction_error": 0.06788238430474314
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 3,
+      "makespan": 41655,
+      "selected": "component_affinity_coalesced",
+      "predicted_cycles": 47512.795603274826,
+      "relative_prediction_error": 0.14062646989016514
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 3,
+      "makespan": 248976,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 265437.4824078395,
+      "relative_prediction_error": 0.06611674381402022
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 3,
+      "makespan": 10410,
+      "selected": "shared_prefix",
+      "predicted_cycles": 9758.09798873277,
+      "relative_prediction_error": -0.06262267159147261
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 3,
+      "makespan": 32222,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 35957.15210137949,
+      "relative_prediction_error": 0.11591931293462521
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 4,
+      "makespan": 92216,
+      "selected": "component_affinity_coalesced",
+      "predicted_cycles": 97482.24541764287,
+      "relative_prediction_error": 0.057107719025363046
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 4,
+      "makespan": 24099,
+      "selected": "component_affinity_coalesced",
+      "predicted_cycles": 26609.10398532043,
+      "relative_prediction_error": 0.10415801424625215
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 4,
+      "makespan": 42226,
+      "selected": "component_vector_coalesced",
+      "predicted_cycles": 47729.409257893865,
+      "relative_prediction_error": 0.13033224217055528
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 4,
+      "makespan": 267772,
+      "selected": "shared_prefix_coalesced",
+      "predicted_cycles": 253351.90157298444,
+      "relative_prediction_error": -0.05385215193155202
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 4,
+      "makespan": 10436,
+      "selected": "shared_prefix",
+      "predicted_cycles": 9758.09798873277,
+      "relative_prediction_error": -0.06495803097616226
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 4,
+      "makespan": 24640,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 28794.94756906045,
+      "relative_prediction_error": 0.16862611887420642
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 5,
+      "makespan": 92225,
+      "selected": "component_affinity_coalesced",
+      "predicted_cycles": 97482.24541764287,
+      "relative_prediction_error": 0.05700455860821774
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 5,
+      "makespan": 24202,
+      "selected": "component_affinity_coalesced",
+      "predicted_cycles": 26672.455871537237,
+      "relative_prediction_error": 0.10207651729349787
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 5,
+      "makespan": 44453,
+      "selected": "component_affinity_coalesced",
+      "predicted_cycles": 47847.12204210894,
+      "relative_prediction_error": 0.07635304798571396
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 5,
+      "makespan": 252146,
+      "selected": "shared_prefix_coalesced",
+      "predicted_cycles": 242534.0174541383,
+      "relative_prediction_error": -0.03812070207681939
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 5,
+      "makespan": 10042,
+      "selected": "shared_prefix_coalesced",
+      "predicted_cycles": 8669.042021431069,
+      "relative_prediction_error": -0.13672156727434093
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 5,
+      "makespan": 21573,
+      "selected": "component_scalar_coalesced",
+      "predicted_cycles": 24595.721845816086,
+      "relative_prediction_error": 0.140115971159138
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 1,
+      "makespan": 153852,
+      "selected": "component_scalar",
+      "predicted_cycles": 153681.79658788114,
+      "relative_prediction_error": -0.0011062801401272582
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 1,
+      "makespan": 77162,
+      "selected": "join_tail",
+      "predicted_cycles": 76321.02361100008,
+      "relative_prediction_error": -0.010898841256057556
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 1,
+      "makespan": 96638,
+      "selected": "component_scalar",
+      "predicted_cycles": 100752.72715743065,
+      "relative_prediction_error": 0.04257876981550379
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 1,
+      "makespan": 358930,
+      "selected": "component_scalar",
+      "predicted_cycles": 361935.5791624852,
+      "relative_prediction_error": 0.008373719562269066
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 1,
+      "makespan": 18783,
+      "selected": "shared_prefix",
+      "predicted_cycles": 18829.74133302011,
+      "relative_prediction_error": 0.0024884913496303618
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 1,
+      "makespan": 92170,
+      "selected": "component_vector_reuse_order",
+      "predicted_cycles": 80410.47364123921,
+      "relative_prediction_error": -0.12758518345189096
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 2,
+      "makespan": 92198,
+      "selected": "component_scalar",
+      "predicted_cycles": 91572.74188738917,
+      "relative_prediction_error": -0.006781688459736923
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 2,
+      "makespan": 39502,
+      "selected": "component_scalar",
+      "predicted_cycles": 41919.25235944368,
+      "relative_prediction_error": 0.06119316387635254
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 2,
+      "makespan": 51691,
+      "selected": "component_scalar",
+      "predicted_cycles": 55966.90881748064,
+      "relative_prediction_error": 0.08272056678107664
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 2,
+      "makespan": 248146,
+      "selected": "component_scalar",
+      "predicted_cycles": 253897.354622231,
+      "relative_prediction_error": 0.023177301355778557
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 2,
+      "makespan": 13182,
+      "selected": "shared_prefix",
+      "predicted_cycles": 12802.602523468497,
+      "relative_prediction_error": -0.02878148054403762
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 2,
+      "makespan": 48939,
+      "selected": "component_scalar",
+      "predicted_cycles": 52398.429628511345,
+      "relative_prediction_error": 0.07068860476330419
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 3,
+      "makespan": 92207,
+      "selected": "component_affinity",
+      "predicted_cycles": 91733.11433118496,
+      "relative_prediction_error": -0.005139367605659473
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 3,
+      "makespan": 27997,
+      "selected": "component_scalar",
+      "predicted_cycles": 29788.263134774716,
+      "relative_prediction_error": 0.06398053844250162
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 3,
+      "makespan": 41982,
+      "selected": "component_affinity",
+      "predicted_cycles": 45237.753072448584,
+      "relative_prediction_error": 0.07755116651061367
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 3,
+      "makespan": 248979,
+      "selected": "component_scalar",
+      "predicted_cycles": 253977.5408441289,
+      "relative_prediction_error": 0.020076154391048595
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 3,
+      "makespan": 9835,
+      "selected": "shared_prefix",
+      "predicted_cycles": 9674.153203349926,
+      "relative_prediction_error": -0.016354529400109175
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 3,
+      "makespan": 37990,
+      "selected": "component_vector_reuse_order",
+      "predicted_cycles": 34091.795912404814,
+      "relative_prediction_error": -0.10261132107384008
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 4,
+      "makespan": 92216,
+      "selected": "component_affinity",
+      "predicted_cycles": 91893.48677498076,
+      "relative_prediction_error": -0.003497367322582212
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 4,
+      "makespan": 24099,
+      "selected": "component_affinity",
+      "predicted_cycles": 25827.188450186604,
+      "relative_prediction_error": 0.07171203992641195
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 4,
+      "makespan": 43828,
+      "selected": "component_vector",
+      "predicted_cycles": 45728.267226714604,
+      "relative_prediction_error": 0.043357379454107114
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 4,
+      "makespan": 264804,
+      "selected": "shared_prefix",
+      "predicted_cycles": 251190.18929004268,
+      "relative_prediction_error": -0.05141089526577136
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 4,
+      "makespan": 9795,
+      "selected": "shared_prefix",
+      "predicted_cycles": 9900.183827275214,
+      "relative_prediction_error": 0.01073852243748985
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 4,
+      "makespan": 28226,
+      "selected": "component_scalar",
+      "predicted_cycles": 30585.234991629986,
+      "relative_prediction_error": 0.0835837522720182
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 5,
+      "makespan": 92225,
+      "selected": "component_affinity",
+      "predicted_cycles": 91893.48677498076,
+      "relative_prediction_error": -0.0035946134455867584
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 5,
+      "makespan": 24202,
+      "selected": "component_affinity",
+      "predicted_cycles": 25970.646612800803,
+      "relative_prediction_error": 0.07307853122885732
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 5,
+      "makespan": 45534,
+      "selected": "component_affinity",
+      "predicted_cycles": 45994.82376903925,
+      "relative_prediction_error": 0.010120432403023072
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 5,
+      "makespan": 251744,
+      "selected": "shared_prefix",
+      "predicted_cycles": 242446.83177106592,
+      "relative_prediction_error": -0.03693104196697472
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 5,
+      "makespan": 9508,
+      "selected": "shared_prefix",
+      "predicted_cycles": 9332.53747600412,
+      "relative_prediction_error": -0.018454198989890647
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 5,
+      "makespan": 23233,
+      "selected": "component_scalar",
+      "predicted_cycles": 26258.034235924308,
+      "relative_prediction_error": 0.13020420246736575
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 1,
+      "makespan": 153852,
+      "selected": "component_scalar",
+      "predicted_cycles": 150032.8173493512,
+      "relative_prediction_error": -0.024823743926948083,
+      "predicted_cache_hit_bytes": 0,
+      "actual_cache_hit_bytes": 0
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 1,
+      "makespan": 77162,
+      "selected": "join_tail",
+      "predicted_cycles": 76611.4076252667,
+      "relative_prediction_error": -0.007135537890843979,
+      "predicted_cache_hit_bytes": 0,
+      "actual_cache_hit_bytes": 0
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 1,
+      "makespan": 96638,
+      "selected": "component_scalar",
+      "predicted_cycles": 98857.55935297077,
+      "relative_prediction_error": 0.022967769955615447,
+      "predicted_cache_hit_bytes": 0,
+      "actual_cache_hit_bytes": 0
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 1,
+      "makespan": 358930,
+      "selected": "component_scalar",
+      "predicted_cycles": 355974.79505683115,
+      "relative_prediction_error": -0.00823337403719071,
+      "predicted_cache_hit_bytes": 0,
+      "actual_cache_hit_bytes": 0
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 1,
+      "makespan": 18783,
+      "selected": "shared_prefix",
+      "predicted_cycles": 18497.187028969835,
+      "relative_prediction_error": -0.01521657727893122,
+      "predicted_cache_hit_bytes": 0,
+      "actual_cache_hit_bytes": 0
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 1,
+      "makespan": 92170,
+      "selected": "component_vector_reuse_order",
+      "predicted_cycles": 75769.95666680159,
+      "relative_prediction_error": -0.17793255216663129,
+      "predicted_cache_hit_bytes": 0,
+      "actual_cache_hit_bytes": 0
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 2,
+      "makespan": 92198,
+      "selected": "component_scalar",
+      "predicted_cycles": 86952.13897969312,
+      "relative_prediction_error": -0.05689777457544509,
+      "predicted_cache_hit_bytes": 0,
+      "actual_cache_hit_bytes": 0
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 2,
+      "makespan": 39502,
+      "selected": "component_scalar",
+      "predicted_cycles": 41513.729178503214,
+      "relative_prediction_error": 0.05092727402418151,
+      "predicted_cache_hit_bytes": 27168,
+      "actual_cache_hit_bytes": 2592
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 2,
+      "makespan": 51691,
+      "selected": "component_scalar",
+      "predicted_cycles": 52614.26321907442,
+      "relative_prediction_error": 0.017861198643369658,
+      "predicted_cache_hit_bytes": 20352,
+      "actual_cache_hit_bytes": 20352
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 2,
+      "makespan": 248146,
+      "selected": "component_scalar",
+      "predicted_cycles": 245679.64864512143,
+      "relative_prediction_error": -0.00993911388810853,
+      "predicted_cache_hit_bytes": 0,
+      "actual_cache_hit_bytes": 0
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 2,
+      "makespan": 13182,
+      "selected": "shared_prefix",
+      "predicted_cycles": 13458.043147702201,
+      "relative_prediction_error": 0.020940915468229404,
+      "predicted_cache_hit_bytes": 61444,
+      "actual_cache_hit_bytes": 61444
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 2,
+      "makespan": 48939,
+      "selected": "component_scalar",
+      "predicted_cycles": 50989.21627490863,
+      "relative_prediction_error": 0.04189330135288061,
+      "predicted_cache_hit_bytes": 50976,
+      "actual_cache_hit_bytes": 50976
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 3,
+      "makespan": 92207,
+      "selected": "component_affinity",
+      "predicted_cycles": 87502.54519329696,
+      "relative_prediction_error": -0.051020582024174366,
+      "predicted_cache_hit_bytes": 24576,
+      "actual_cache_hit_bytes": 24576
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 3,
+      "makespan": 27982,
+      "selected": "component_scalar",
+      "predicted_cycles": 29055.676547924762,
+      "relative_prediction_error": 0.03837025759147883,
+      "predicted_cache_hit_bytes": 29760,
+      "actual_cache_hit_bytes": 13376
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 3,
+      "makespan": 41959,
+      "selected": "component_affinity",
+      "predicted_cycles": 41338.66816071338,
+      "relative_prediction_error": -0.01478423792956507,
+      "predicted_cache_hit_bytes": 20352,
+      "actual_cache_hit_bytes": 13952
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 3,
+      "makespan": 248979,
+      "selected": "component_scalar",
+      "predicted_cycles": 245954.85175192336,
+      "relative_prediction_error": -0.012146198065204894,
+      "predicted_cache_hit_bytes": 12288,
+      "actual_cache_hit_bytes": 12288
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 3,
+      "makespan": 9834,
+      "selected": "shared_prefix",
+      "predicted_cycles": 9471.26698546206,
+      "relative_prediction_error": -0.03688560245453931,
+      "predicted_cache_hit_bytes": 35336,
+      "actual_cache_hit_bytes": 63176
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 3,
+      "makespan": 37987,
+      "selected": "component_vector_reuse_order",
+      "predicted_cycles": 32611.389629327205,
+      "relative_prediction_error": -0.1415118427533839,
+      "predicted_cache_hit_bytes": 89376,
+      "actual_cache_hit_bytes": 101664
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 4,
+      "makespan": 92216,
+      "selected": "component_affinity",
+      "predicted_cycles": 88052.9514069008,
+      "relative_prediction_error": -0.04514453666499518,
+      "predicted_cache_hit_bytes": 49152,
+      "actual_cache_hit_bytes": 49152
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 4,
+      "makespan": 24099,
+      "selected": "component_scalar",
+      "predicted_cycles": 25041.804071950806,
+      "relative_prediction_error": 0.039122124235478895,
+      "predicted_cache_hit_bytes": 29760,
+      "actual_cache_hit_bytes": 13376
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 4,
+      "makespan": 43824,
+      "selected": "component_vector",
+      "predicted_cycles": 41580.35372157813,
+      "relative_prediction_error": -0.05119674786468298,
+      "predicted_cache_hit_bytes": 22080,
+      "actual_cache_hit_bytes": 2880
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 4,
+      "makespan": 249809,
+      "selected": "component_affinity",
+      "predicted_cycles": 246003.77758194393,
+      "relative_prediction_error": -0.015232527323099099,
+      "predicted_cache_hit_bytes": 13584,
+      "actual_cache_hit_bytes": 13872
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 4,
+      "makespan": 9795,
+      "selected": "shared_prefix",
+      "predicted_cycles": 9718.232148266803,
+      "relative_prediction_error": -0.007837452958978752,
+      "predicted_cache_hit_bytes": 36108,
+      "actual_cache_hit_bytes": 42060
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 4,
+      "makespan": 28226,
+      "selected": "component_scalar",
+      "predicted_cycles": 29566.78902674981,
+      "relative_prediction_error": 0.047501914077439755,
+      "predicted_cache_hit_bytes": 115488,
+      "actual_cache_hit_bytes": 152640
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 5,
+      "makespan": 92225,
+      "selected": "component_vector",
+      "predicted_cycles": 87409.64585279112,
+      "relative_prediction_error": -0.05221311083989033,
+      "predicted_cache_hit_bytes": 16384,
+      "actual_cache_hit_bytes": 49152
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 5,
+      "makespan": 24202,
+      "selected": "component_affinity",
+      "predicted_cycles": 24993.629809290323,
+      "relative_prediction_error": 0.032709272344860985,
+      "predicted_cache_hit_bytes": 24576,
+      "actual_cache_hit_bytes": 8192
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 5,
+      "makespan": 45097,
+      "selected": "component_affinity",
+      "predicted_cycles": 42458.437706576486,
+      "relative_prediction_error": -0.05850859909580497,
+      "predicted_cache_hit_bytes": 61056,
+      "actual_cache_hit_bytes": 61056
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 5,
+      "makespan": 251738,
+      "selected": "shared_prefix",
+      "predicted_cycles": 241118.76914291419,
+      "relative_prediction_error": -0.042183662605907,
+      "predicted_cache_hit_bytes": 189312,
+      "actual_cache_hit_bytes": 136336
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 5,
+      "makespan": 9247,
+      "selected": "shared_prefix",
+      "predicted_cycles": 8506.581594499727,
+      "relative_prediction_error": -0.08007120206556428,
+      "predicted_cache_hit_bytes": 9998,
+      "actual_cache_hit_bytes": 18638
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 5,
+      "makespan": 23233,
+      "selected": "component_scalar",
+      "predicted_cycles": 24013.808150649253,
+      "relative_prediction_error": 0.033607719650895485,
+      "predicted_cache_hit_bytes": 101952,
+      "actual_cache_hit_bytes": 108384
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "solver_version": "fresh-all-20260926-v2",
+  "selected": "shared_prefix",
+  "method": "trained",
+  "question": 3,
+  "official_calls": 0,
+  "graph_sha256": "437cc74cae9e0fc0cb89b05403c62062ceff8d5bc2224c8834c519e69524e897",
+  "model_sha256": "c4298d6b1054adc7979663b5cb97378eb5f79806faa3886182f4156dd3f08efc",
+  "plan_sha256": "e970cc4f2a65872a790a16e83bf1c3307363968492f86d8c05d7eb2bc42c4586",
+  "generation_seconds": 0.04091630000039004,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        12534,
+        5142,
+        2024.1,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 121446,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 121446,
+        "physical_lower_bound_cycles": 12534,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 35520,
+            "UB": 19298
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 17676,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 111462,
+          "ddr_bytes": 121446,
+          "hits": 0,
+          "insertions": 35,
+          "evictions": 0,
+          "trace_end": 17701.6
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        12444,
+        5774.799999999999,
+        2403.8333333333335,
+        0.0,
+        39.96
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 154220,
+        "cross_task_copy_bytes": 22688,
+        "minimum_ddr_bytes": 144134,
+        "physical_lower_bound_cycles": 12444,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 4800,
+            "UB": 4610
+          },
+          {
+            "task": 2,
+            "L1": 27648,
+            "UB": 19298
+          },
+          {
+            "task": 1,
+            "L1": 4800,
+            "UB": 4608
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 18218.8,
+        "cache_request_proxy": {
+          "hit_bytes": 9990,
+          "read_bytes": 132892,
+          "ddr_bytes": 144230,
+          "hits": 8,
+          "insertions": 57,
+          "evictions": 0,
+          "trace_end": 18244.399999999998
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "shared_prefix",
+      "features": [
+        4470,
+        2969.6000000000004,
+        4545.7,
+        0.0,
+        141.344
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 308078,
+        "cross_task_copy_bytes": 96000,
+        "minimum_ddr_bytes": 197286,
+        "physical_lower_bound_cycles": 4470,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 26208,
+            "UB": 11618
+          },
+          {
+            "task": 1,
+            "L1": 33792,
+            "UB": 11620
+          },
+          {
+            "task": 2,
+            "L1": 33792,
+            "UB": 11620
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 7439.6,
+        "cache_request_proxy": {
+          "hit_bytes": 35336,
+          "read_bytes": 250094,
+          "ddr_bytes": 272742,
+          "hits": 14,
+          "insertions": 61,
+          "evictions": 0,
+          "trace_end": 7490.8
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}

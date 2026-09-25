@@ -1,0 +1,85 @@
+{
+  "solver_version": "fresh-all-20260926-v2",
+  "selected": "component_scalar",
+  "method": "component_scalar",
+  "question": 3,
+  "official_calls": 0,
+  "graph_sha256": "199ccf5f40c65b63ef88efcf05a0ccbf6b9368963d7a62cabd240d7b98847429",
+  "model_sha256": "c4298d6b1054adc7979663b5cb97378eb5f79806faa3886182f4156dd3f08efc",
+  "plan_sha256": "0135cb278b39f4a74a4929b143e024ce78355721046757b33d4ec25e05344101",
+  "generation_seconds": 0.029204100006609224,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        48436,
+        29803,
+        3116.4,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 186984,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 186984,
+        "physical_lower_bound_cycles": 48436,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 36864,
+            "UB": 18432
+          }
+        ],
+        "logical_excess_bytes": 0,
+        "nominal_compute_end": 78239,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 179252,
+          "ddr_bytes": 186984,
+          "hits": 0,
+          "insertions": 88,
+          "evictions": 0,
+          "trace_end": 78264.6
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        48436,
+        21083,
+        3116.4,
+        1924.2666666666667,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 186984,
+        "cross_task_copy_bytes": 0,
+        "minimum_ddr_bytes": 186984,
+        "physical_lower_bound_cycles": 48436,
+        "logical_peak_bytes": [
+          {
+            "task": 0,
+            "L1": 96256,
+            "UB": 246528
+          }
+        ],
+        "logical_excess_bytes": 115456,
+        "nominal_compute_end": 69519,
+        "cache_request_proxy": {
+          "hit_bytes": 0,
+          "read_bytes": 179252,
+          "ddr_bytes": 186984,
+          "hits": 0,
+          "insertions": 88,
+          "evictions": 0,
+          "trace_end": 69519.03333333334
+        },
+        "memory_feasibility": "not certified by logical intervals"
+      }
+    }
+  ]
+}

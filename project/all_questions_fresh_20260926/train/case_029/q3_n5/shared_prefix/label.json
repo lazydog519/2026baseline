@@ -1,0 +1,27 @@
+{
+  "case": "case_029",
+  "question": 3,
+  "cores": 5,
+  "name": "shared_prefix",
+  "path": "train/case_029/q3_n5/shared_prefix",
+  "plan_sha256": "7baf74f616ac433d9f4991459eb81c68451b1b70473dab0e5d7b5dc3e0cbf4cf",
+  "status": "ok",
+  "makespan": 23497,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 430164,
+    "scheduled_copy_bytes": 860916,
+    "added_copy_bytes": 430752,
+    "partition_added_copy_bytes": 430752,
+    "spill_added_copy_bytes": 0
+  },
+  "cache_stats": {
+    "copy_in_hits": 229,
+    "copy_in_misses": 317,
+    "hit_bytes": 211196,
+    "miss_bytes": 477352,
+    "hits": 229,
+    "accesses": 546,
+    "hit_rate": 0.30672661891400455
+  },
+  "seconds": 0.23021519999019802
+}

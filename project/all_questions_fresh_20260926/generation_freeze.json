@@ -1,0 +1,1454 @@
+{
+  "model_sha256": "c4298d6b1054adc7979663b5cb97378eb5f79806faa3886182f4156dd3f08efc",
+  "solver_sha256": {
+    "solver.py": "156dc6991418d71d0543fd17d0a9e367ddf22ac5577236c2f6a1aabf7845b13e",
+    "mechanism.py": "7e2dfb0e3afd31a76c02ea72e24ab27a3316ffa5c451f6716f5f050192678aa8"
+  },
+  "jobs": [
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_094/q1_n1/component_scalar",
+      "plan_sha256": "e5d1655eb903efd8b5aae60095f61dfde6040cd588b73b201dfa94181b82dcd1"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_094/q1_n1/trained",
+      "plan_sha256": "ca089fdf274fe2e4cf4729d18101b706b829cb574377f7e7d2d25817a5bde093"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_094/q1_n2/component_scalar",
+      "plan_sha256": "57927f9d0d2168c1af7e204df206e49fd387e2764d6b139168665a2b13431435"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_094/q1_n2/trained",
+      "plan_sha256": "099e39562084027d38584ead2c12f56cf65c297752bad01b59e901c0b721ffbe"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_094/q1_n3/component_scalar",
+      "plan_sha256": "c87dc441a9bf1d90b58f40c9a378c0b65332fa5a8c60663a26353f6f755151c8"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_094/q1_n3/trained",
+      "plan_sha256": "4e9d19db6d26f33c1de824774e0927e6a904567cc134707b0102f485081565af"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_094/q1_n4/component_scalar",
+      "plan_sha256": "2bb4e732a75f77560206a2cb138f9f3a08686222aaba9de06923c9197f2bc33a"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_094/q1_n4/trained",
+      "plan_sha256": "13178a446276706d04e68cb97b280434951f10eb05474b850eee819c4e1783bf"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_094/q1_n5/component_scalar",
+      "plan_sha256": "cf59528a4532697816e213bb88bbbed34bc3024f7fb2fff2a182a1a285483f1a"
+    },
+    {
+      "case": "case_094",
+      "question": 1,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_094/q1_n5/trained",
+      "plan_sha256": "2178847f6ce688339c1d35868ac776b17c8b78357392ad7d60beafeb4fff53bf"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_094/q2_n1/component_scalar",
+      "plan_sha256": "e5d1655eb903efd8b5aae60095f61dfde6040cd588b73b201dfa94181b82dcd1"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_094/q2_n1/trained",
+      "plan_sha256": "280ac27c8985be3ec44b5243dcb141326b1e4e661cb082cf8108a89fefce884f"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_094/q2_n2/component_scalar",
+      "plan_sha256": "57927f9d0d2168c1af7e204df206e49fd387e2764d6b139168665a2b13431435"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_094/q2_n2/trained",
+      "plan_sha256": "57927f9d0d2168c1af7e204df206e49fd387e2764d6b139168665a2b13431435"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_094/q2_n3/component_scalar",
+      "plan_sha256": "c87dc441a9bf1d90b58f40c9a378c0b65332fa5a8c60663a26353f6f755151c8"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_094/q2_n3/trained",
+      "plan_sha256": "8351af673c35d6f3add78f65ff896c1eac614708c0686f4690bd4b771322c933"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_094/q2_n4/component_scalar",
+      "plan_sha256": "2bb4e732a75f77560206a2cb138f9f3a08686222aaba9de06923c9197f2bc33a"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_094/q2_n4/trained",
+      "plan_sha256": "2bb4e732a75f77560206a2cb138f9f3a08686222aaba9de06923c9197f2bc33a"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_094/q2_n5/component_scalar",
+      "plan_sha256": "cf59528a4532697816e213bb88bbbed34bc3024f7fb2fff2a182a1a285483f1a"
+    },
+    {
+      "case": "case_094",
+      "question": 2,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_094/q2_n5/trained",
+      "plan_sha256": "cf59528a4532697816e213bb88bbbed34bc3024f7fb2fff2a182a1a285483f1a"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_094/q3_n1/component_scalar",
+      "plan_sha256": "e5d1655eb903efd8b5aae60095f61dfde6040cd588b73b201dfa94181b82dcd1"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_094/q3_n1/trained",
+      "plan_sha256": "280ac27c8985be3ec44b5243dcb141326b1e4e661cb082cf8108a89fefce884f"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_094/q3_n2/component_scalar",
+      "plan_sha256": "57927f9d0d2168c1af7e204df206e49fd387e2764d6b139168665a2b13431435"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_094/q3_n2/trained",
+      "plan_sha256": "57927f9d0d2168c1af7e204df206e49fd387e2764d6b139168665a2b13431435"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_094/q3_n3/component_scalar",
+      "plan_sha256": "c87dc441a9bf1d90b58f40c9a378c0b65332fa5a8c60663a26353f6f755151c8"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_094/q3_n3/trained",
+      "plan_sha256": "8351af673c35d6f3add78f65ff896c1eac614708c0686f4690bd4b771322c933"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_094/q3_n4/component_scalar",
+      "plan_sha256": "2bb4e732a75f77560206a2cb138f9f3a08686222aaba9de06923c9197f2bc33a"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_094/q3_n4/trained",
+      "plan_sha256": "2bb4e732a75f77560206a2cb138f9f3a08686222aaba9de06923c9197f2bc33a"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_094/q3_n5/component_scalar",
+      "plan_sha256": "cf59528a4532697816e213bb88bbbed34bc3024f7fb2fff2a182a1a285483f1a"
+    },
+    {
+      "case": "case_094",
+      "question": 3,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_094/q3_n5/trained",
+      "plan_sha256": "cf59528a4532697816e213bb88bbbed34bc3024f7fb2fff2a182a1a285483f1a"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_019/q1_n1/component_scalar",
+      "plan_sha256": "0135cb278b39f4a74a4929b143e024ce78355721046757b33d4ec25e05344101"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_019/q1_n1/trained",
+      "plan_sha256": "6ca0558ee556b4b56f3a68363865a3f8bad08b581e2e9210374aa62c3279e113"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_019/q1_n2/component_scalar",
+      "plan_sha256": "d759c2d78ffbdd769519de34b93e1f4951e9b28acbaa0140d06fc64ffa59e78f"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_019/q1_n2/trained",
+      "plan_sha256": "569044ad3a43419311943613c39c8632f4b4027f94bb2ef1df1edf101e97b667"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_019/q1_n3/component_scalar",
+      "plan_sha256": "cdeecd0287c6ccb632011d8d9e43584ae0571440dcfb268aca5d48f765aeedd1"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_019/q1_n3/trained",
+      "plan_sha256": "6060e413b2eb17f11973696172641afb4ca78b578a040ccc8513726653457e47"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_019/q1_n4/component_scalar",
+      "plan_sha256": "4ef80c256e81ad88a738492a366e24d496a528c74b87c4a744259a93a88abf37"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_019/q1_n4/trained",
+      "plan_sha256": "c2c621e131d8e31e95dab963ca7c4fc59e4ca082f2fab7875b408f3e001f9e97"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_019/q1_n5/component_scalar",
+      "plan_sha256": "be8323a2b9b91cecab720010f9b751ecdb14f99bfe761cebceaa19eda7fe8460"
+    },
+    {
+      "case": "case_019",
+      "question": 1,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_019/q1_n5/trained",
+      "plan_sha256": "77a32665994e33bf004e642d7be3407ed291faae9285fc51513743a6dd5260f7"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_019/q2_n1/component_scalar",
+      "plan_sha256": "0135cb278b39f4a74a4929b143e024ce78355721046757b33d4ec25e05344101"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_019/q2_n1/trained",
+      "plan_sha256": "3dfe4a54d417405015e94ce557706d6604414b4a1b741163f7d386253b8aab58"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_019/q2_n2/component_scalar",
+      "plan_sha256": "d759c2d78ffbdd769519de34b93e1f4951e9b28acbaa0140d06fc64ffa59e78f"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_019/q2_n2/trained",
+      "plan_sha256": "d759c2d78ffbdd769519de34b93e1f4951e9b28acbaa0140d06fc64ffa59e78f"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_019/q2_n3/component_scalar",
+      "plan_sha256": "cdeecd0287c6ccb632011d8d9e43584ae0571440dcfb268aca5d48f765aeedd1"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_019/q2_n3/trained",
+      "plan_sha256": "cdeecd0287c6ccb632011d8d9e43584ae0571440dcfb268aca5d48f765aeedd1"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_019/q2_n4/component_scalar",
+      "plan_sha256": "4ef80c256e81ad88a738492a366e24d496a528c74b87c4a744259a93a88abf37"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_019/q2_n4/trained",
+      "plan_sha256": "8216beebec0b04c4a1d38beefb57e21d9a0cbc3fb3e25bd3dba79c0277666c12"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_019/q2_n5/component_scalar",
+      "plan_sha256": "be8323a2b9b91cecab720010f9b751ecdb14f99bfe761cebceaa19eda7fe8460"
+    },
+    {
+      "case": "case_019",
+      "question": 2,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_019/q2_n5/trained",
+      "plan_sha256": "b155731f154f55798ceaf4dc8f2ca525690d7aa23a21df94c8a7f6453aeeb1bd"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_019/q3_n1/component_scalar",
+      "plan_sha256": "0135cb278b39f4a74a4929b143e024ce78355721046757b33d4ec25e05344101"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_019/q3_n1/trained",
+      "plan_sha256": "3dfe4a54d417405015e94ce557706d6604414b4a1b741163f7d386253b8aab58"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_019/q3_n2/component_scalar",
+      "plan_sha256": "d759c2d78ffbdd769519de34b93e1f4951e9b28acbaa0140d06fc64ffa59e78f"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_019/q3_n2/trained",
+      "plan_sha256": "d759c2d78ffbdd769519de34b93e1f4951e9b28acbaa0140d06fc64ffa59e78f"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_019/q3_n3/component_scalar",
+      "plan_sha256": "cdeecd0287c6ccb632011d8d9e43584ae0571440dcfb268aca5d48f765aeedd1"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_019/q3_n3/trained",
+      "plan_sha256": "cdeecd0287c6ccb632011d8d9e43584ae0571440dcfb268aca5d48f765aeedd1"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_019/q3_n4/component_scalar",
+      "plan_sha256": "4ef80c256e81ad88a738492a366e24d496a528c74b87c4a744259a93a88abf37"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_019/q3_n4/trained",
+      "plan_sha256": "4ef80c256e81ad88a738492a366e24d496a528c74b87c4a744259a93a88abf37"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_019/q3_n5/component_scalar",
+      "plan_sha256": "be8323a2b9b91cecab720010f9b751ecdb14f99bfe761cebceaa19eda7fe8460"
+    },
+    {
+      "case": "case_019",
+      "question": 3,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_019/q3_n5/trained",
+      "plan_sha256": "b155731f154f55798ceaf4dc8f2ca525690d7aa23a21df94c8a7f6453aeeb1bd"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_066/q1_n1/component_scalar",
+      "plan_sha256": "08547bca68dbb9f3f1232344d798bddfd999cb3697067047fa44d3c776ad088c"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_066/q1_n1/trained",
+      "plan_sha256": "76f64c7d957f85097c7fd21e4bc6151a680b5e8ba66769199c87d5cec4b2c940"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_066/q1_n2/component_scalar",
+      "plan_sha256": "f0148b6bedee82a0c8c953e55c8107496c52dcc475b7ee8743d1c0b7a2017c60"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_066/q1_n2/trained",
+      "plan_sha256": "4568543b98f6c8ff8cc620741915bae27cb35a18f37f2fd64bf959d03d5b0e24"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_066/q1_n3/component_scalar",
+      "plan_sha256": "ae5a1b58d7a2972440ed1b5e6aed99e8792232aba1203fcc738edb55d3a452e9"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_066/q1_n3/trained",
+      "plan_sha256": "ee36c22d05f589203ef33db2c319f2deebc5631474a534d3752aa839c562154c"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_066/q1_n4/component_scalar",
+      "plan_sha256": "854528f85bb7694cca1dc323b40f250833db9d138d0e81507eafc5be68fc9934"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_066/q1_n4/trained",
+      "plan_sha256": "42e5602a6e584d318da97915e4280b62ae91c31e0d4df557cee0d9ecd02c9539"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_066/q1_n5/component_scalar",
+      "plan_sha256": "d293f1bad1f7d236aa15de32e7093db92aa50c23ab134f0a463f01d526649dbd"
+    },
+    {
+      "case": "case_066",
+      "question": 1,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_066/q1_n5/trained",
+      "plan_sha256": "c44ce46bad2e4419df66515fbd092c668e0e09c24f5acf2f09b512b14895ea37"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_066/q2_n1/component_scalar",
+      "plan_sha256": "08547bca68dbb9f3f1232344d798bddfd999cb3697067047fa44d3c776ad088c"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_066/q2_n1/trained",
+      "plan_sha256": "08547bca68dbb9f3f1232344d798bddfd999cb3697067047fa44d3c776ad088c"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_066/q2_n2/component_scalar",
+      "plan_sha256": "f0148b6bedee82a0c8c953e55c8107496c52dcc475b7ee8743d1c0b7a2017c60"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_066/q2_n2/trained",
+      "plan_sha256": "f0148b6bedee82a0c8c953e55c8107496c52dcc475b7ee8743d1c0b7a2017c60"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_066/q2_n3/component_scalar",
+      "plan_sha256": "ae5a1b58d7a2972440ed1b5e6aed99e8792232aba1203fcc738edb55d3a452e9"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_066/q2_n3/trained",
+      "plan_sha256": "ae5a1b58d7a2972440ed1b5e6aed99e8792232aba1203fcc738edb55d3a452e9"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_066/q2_n4/component_scalar",
+      "plan_sha256": "854528f85bb7694cca1dc323b40f250833db9d138d0e81507eafc5be68fc9934"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_066/q2_n4/trained",
+      "plan_sha256": "11e9069c4be10759e53af294751f42f587ac1ccbfe24f0b54a1076b6b9532b1e"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_066/q2_n5/component_scalar",
+      "plan_sha256": "d293f1bad1f7d236aa15de32e7093db92aa50c23ab134f0a463f01d526649dbd"
+    },
+    {
+      "case": "case_066",
+      "question": 2,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_066/q2_n5/trained",
+      "plan_sha256": "c7501ce2d2a12f3b01c05e8dce06b76eb610c232306923bbc1a147b66f1053e2"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_066/q3_n1/component_scalar",
+      "plan_sha256": "08547bca68dbb9f3f1232344d798bddfd999cb3697067047fa44d3c776ad088c"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_066/q3_n1/trained",
+      "plan_sha256": "08547bca68dbb9f3f1232344d798bddfd999cb3697067047fa44d3c776ad088c"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_066/q3_n2/component_scalar",
+      "plan_sha256": "f0148b6bedee82a0c8c953e55c8107496c52dcc475b7ee8743d1c0b7a2017c60"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_066/q3_n2/trained",
+      "plan_sha256": "f0148b6bedee82a0c8c953e55c8107496c52dcc475b7ee8743d1c0b7a2017c60"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_066/q3_n3/component_scalar",
+      "plan_sha256": "ae5a1b58d7a2972440ed1b5e6aed99e8792232aba1203fcc738edb55d3a452e9"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_066/q3_n3/trained",
+      "plan_sha256": "ae5a1b58d7a2972440ed1b5e6aed99e8792232aba1203fcc738edb55d3a452e9"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_066/q3_n4/component_scalar",
+      "plan_sha256": "854528f85bb7694cca1dc323b40f250833db9d138d0e81507eafc5be68fc9934"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_066/q3_n4/trained",
+      "plan_sha256": "82671a94889fd0af94b906b6f9e8bc19c1384d5a2bfd4d75bbc2f94c0d242963"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_066/q3_n5/component_scalar",
+      "plan_sha256": "d293f1bad1f7d236aa15de32e7093db92aa50c23ab134f0a463f01d526649dbd"
+    },
+    {
+      "case": "case_066",
+      "question": 3,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_066/q3_n5/trained",
+      "plan_sha256": "c7501ce2d2a12f3b01c05e8dce06b76eb610c232306923bbc1a147b66f1053e2"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_071/q1_n1/component_scalar",
+      "plan_sha256": "e00c1ada9c9b2496b0b87bc56943834748c8c9058f8debdc8b15a8018fd210f9"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_071/q1_n1/trained",
+      "plan_sha256": "e00c1ada9c9b2496b0b87bc56943834748c8c9058f8debdc8b15a8018fd210f9"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_071/q1_n2/component_scalar",
+      "plan_sha256": "7564d425a1529e6da7075ed8c8550b98157731f1e6d0279d0e87578b9bbe00a0"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_071/q1_n2/trained",
+      "plan_sha256": "4189b5797b01b1e1d4ca7419000b0b84d67c25280645f7a6ea0f6c94c391318c"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_071/q1_n3/component_scalar",
+      "plan_sha256": "15649b1818bb8ee690307daa2ab90f2392be0f4709c19a7700c6c1057476f4a8"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_071/q1_n3/trained",
+      "plan_sha256": "e970cc4f2a65872a790a16e83bf1c3307363968492f86d8c05d7eb2bc42c4586"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_071/q1_n4/component_scalar",
+      "plan_sha256": "b7c86567c10457951771394c1a7e554a02df8ebfa68e1a2bcb39e4934639d024"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_071/q1_n4/trained",
+      "plan_sha256": "a40692493d91533e08831df71fa6710dcc2903e6c109e0185a929a2b3e568e5b"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_071/q1_n5/component_scalar",
+      "plan_sha256": "1e71a3d32dc71c996be0e65d0064b9789c09b41ca4f17655f377e0e0bb674f7e"
+    },
+    {
+      "case": "case_071",
+      "question": 1,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_071/q1_n5/trained",
+      "plan_sha256": "45ae9d702d0504935beb39cc28a825a07c37f8ac0b7c8505db223c684e73c269"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_071/q2_n1/component_scalar",
+      "plan_sha256": "e00c1ada9c9b2496b0b87bc56943834748c8c9058f8debdc8b15a8018fd210f9"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_071/q2_n1/trained",
+      "plan_sha256": "1b91a3b040e6a79ec1970b74155320d38d027ff66f4c65977fe1d2de49979194"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_071/q2_n2/component_scalar",
+      "plan_sha256": "7564d425a1529e6da7075ed8c8550b98157731f1e6d0279d0e87578b9bbe00a0"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_071/q2_n2/trained",
+      "plan_sha256": "4189b5797b01b1e1d4ca7419000b0b84d67c25280645f7a6ea0f6c94c391318c"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_071/q2_n3/component_scalar",
+      "plan_sha256": "15649b1818bb8ee690307daa2ab90f2392be0f4709c19a7700c6c1057476f4a8"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_071/q2_n3/trained",
+      "plan_sha256": "e970cc4f2a65872a790a16e83bf1c3307363968492f86d8c05d7eb2bc42c4586"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_071/q2_n4/component_scalar",
+      "plan_sha256": "b7c86567c10457951771394c1a7e554a02df8ebfa68e1a2bcb39e4934639d024"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_071/q2_n4/trained",
+      "plan_sha256": "a40692493d91533e08831df71fa6710dcc2903e6c109e0185a929a2b3e568e5b"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_071/q2_n5/component_scalar",
+      "plan_sha256": "1e71a3d32dc71c996be0e65d0064b9789c09b41ca4f17655f377e0e0bb674f7e"
+    },
+    {
+      "case": "case_071",
+      "question": 2,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_071/q2_n5/trained",
+      "plan_sha256": "60376c477d124f9858c4a4226a359c8190d52d6c18f959e4f93323aefb022dcc"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_071/q3_n1/component_scalar",
+      "plan_sha256": "e00c1ada9c9b2496b0b87bc56943834748c8c9058f8debdc8b15a8018fd210f9"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_071/q3_n1/trained",
+      "plan_sha256": "1b91a3b040e6a79ec1970b74155320d38d027ff66f4c65977fe1d2de49979194"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_071/q3_n2/component_scalar",
+      "plan_sha256": "7564d425a1529e6da7075ed8c8550b98157731f1e6d0279d0e87578b9bbe00a0"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_071/q3_n2/trained",
+      "plan_sha256": "4189b5797b01b1e1d4ca7419000b0b84d67c25280645f7a6ea0f6c94c391318c"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_071/q3_n3/component_scalar",
+      "plan_sha256": "15649b1818bb8ee690307daa2ab90f2392be0f4709c19a7700c6c1057476f4a8"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_071/q3_n3/trained",
+      "plan_sha256": "e970cc4f2a65872a790a16e83bf1c3307363968492f86d8c05d7eb2bc42c4586"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_071/q3_n4/component_scalar",
+      "plan_sha256": "b7c86567c10457951771394c1a7e554a02df8ebfa68e1a2bcb39e4934639d024"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_071/q3_n4/trained",
+      "plan_sha256": "a40692493d91533e08831df71fa6710dcc2903e6c109e0185a929a2b3e568e5b"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_071/q3_n5/component_scalar",
+      "plan_sha256": "1e71a3d32dc71c996be0e65d0064b9789c09b41ca4f17655f377e0e0bb674f7e"
+    },
+    {
+      "case": "case_071",
+      "question": 3,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_071/q3_n5/trained",
+      "plan_sha256": "60376c477d124f9858c4a4226a359c8190d52d6c18f959e4f93323aefb022dcc"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_009/q1_n1/component_scalar",
+      "plan_sha256": "8763731649897e6042854bd71b83de21b90f140aad885ebca1e4d83e31e0063d"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_009/q1_n1/trained",
+      "plan_sha256": "5a4f347a639005d28076be626133c30228c13fb3c4d3cc9fe287ab89b6ed6040"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_009/q1_n2/component_scalar",
+      "plan_sha256": "eca4954903c786e2bf01254d19c1038e9260e12152e6d1ed1240330fbfec3992"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_009/q1_n2/trained",
+      "plan_sha256": "5d569e8bc0b811567eac3ec3f3ee1e584b873b24b78c7e5cd145fb623a8ea2a4"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_009/q1_n3/component_scalar",
+      "plan_sha256": "d190f0ed1b29715ec04d71606b1d39637f671e64e681f5092afa8dd7dea41648"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_009/q1_n3/trained",
+      "plan_sha256": "15a9e7941612d939186aa23475abc6a525ee381bd07929cf00dca5e7b5cfe8f6"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_009/q1_n4/component_scalar",
+      "plan_sha256": "efcdb522dd5c9d3f92910c9160988201e6c68f3a5abe7bfe07cf070bc84ff3d4"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_009/q1_n4/trained",
+      "plan_sha256": "c16228c382c58180f1b843b28df33bc662d96bc2c8847fe423e38375521d0dad"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_009/q1_n5/component_scalar",
+      "plan_sha256": "6676f2bf72d5e34eed27a02ab5d9b03667a800bc5231354ffd7e41e80a60664d"
+    },
+    {
+      "case": "case_009",
+      "question": 1,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_009/q1_n5/trained",
+      "plan_sha256": "89900a2eb8a29675cb0a6ff731ff623de8327b98b1cc933b476bf211db55448a"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_009/q2_n1/component_scalar",
+      "plan_sha256": "8763731649897e6042854bd71b83de21b90f140aad885ebca1e4d83e31e0063d"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_009/q2_n1/trained",
+      "plan_sha256": "8763731649897e6042854bd71b83de21b90f140aad885ebca1e4d83e31e0063d"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_009/q2_n2/component_scalar",
+      "plan_sha256": "eca4954903c786e2bf01254d19c1038e9260e12152e6d1ed1240330fbfec3992"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_009/q2_n2/trained",
+      "plan_sha256": "eca4954903c786e2bf01254d19c1038e9260e12152e6d1ed1240330fbfec3992"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_009/q2_n3/component_scalar",
+      "plan_sha256": "d190f0ed1b29715ec04d71606b1d39637f671e64e681f5092afa8dd7dea41648"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_009/q2_n3/trained",
+      "plan_sha256": "8830f875e98d9eabd4cac074c795a1557a334495b9e9eb9dc1daae5930783584"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_009/q2_n4/component_scalar",
+      "plan_sha256": "efcdb522dd5c9d3f92910c9160988201e6c68f3a5abe7bfe07cf070bc84ff3d4"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_009/q2_n4/trained",
+      "plan_sha256": "fdd61fafe3050a65f1e712234e600fe7f728fdde81f366963d3346f7f91c8876"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_009/q2_n5/component_scalar",
+      "plan_sha256": "6676f2bf72d5e34eed27a02ab5d9b03667a800bc5231354ffd7e41e80a60664d"
+    },
+    {
+      "case": "case_009",
+      "question": 2,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_009/q2_n5/trained",
+      "plan_sha256": "29b3b6728d8a245d751a260ebba5efa96151b77ac97a8c7a52de02e11c47b3d7"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_009/q3_n1/component_scalar",
+      "plan_sha256": "8763731649897e6042854bd71b83de21b90f140aad885ebca1e4d83e31e0063d"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_009/q3_n1/trained",
+      "plan_sha256": "8763731649897e6042854bd71b83de21b90f140aad885ebca1e4d83e31e0063d"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_009/q3_n2/component_scalar",
+      "plan_sha256": "eca4954903c786e2bf01254d19c1038e9260e12152e6d1ed1240330fbfec3992"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_009/q3_n2/trained",
+      "plan_sha256": "eca4954903c786e2bf01254d19c1038e9260e12152e6d1ed1240330fbfec3992"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_009/q3_n3/component_scalar",
+      "plan_sha256": "d190f0ed1b29715ec04d71606b1d39637f671e64e681f5092afa8dd7dea41648"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_009/q3_n3/trained",
+      "plan_sha256": "8830f875e98d9eabd4cac074c795a1557a334495b9e9eb9dc1daae5930783584"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_009/q3_n4/component_scalar",
+      "plan_sha256": "efcdb522dd5c9d3f92910c9160988201e6c68f3a5abe7bfe07cf070bc84ff3d4"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_009/q3_n4/trained",
+      "plan_sha256": "fdd61fafe3050a65f1e712234e600fe7f728fdde81f366963d3346f7f91c8876"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_009/q3_n5/component_scalar",
+      "plan_sha256": "6676f2bf72d5e34eed27a02ab5d9b03667a800bc5231354ffd7e41e80a60664d"
+    },
+    {
+      "case": "case_009",
+      "question": 3,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_009/q3_n5/trained",
+      "plan_sha256": "963c198ae41ad3cdb2b50d0c05b47de15df6767b40acb1a144e8ffe73eb33672"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_026/q1_n1/component_scalar",
+      "plan_sha256": "5d6e0f23644ab24397b85b57dd5fb2670ea89fbabbf0c7df5d56f7e7795a064d"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_026/q1_n1/trained",
+      "plan_sha256": "ac3309b1e0ac9e3ce4b29b36d6032fdbbc595af8329fbc472db8c5731598bfa0"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_026/q1_n2/component_scalar",
+      "plan_sha256": "c93b2afb53a20718009b7d14a314dbf56f9fd92d544fd9efb3e546e3ab86a435"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_026/q1_n2/trained",
+      "plan_sha256": "6cda0d4b315e879955e30b2c9b217ada2fcfc0e6f0fd708fa9d4ccafe2400a5d"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_026/q1_n3/component_scalar",
+      "plan_sha256": "64d84a6ca930e17292c61c7b1532bfcec4f50e55174067adef85552e999d2eb7"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_026/q1_n3/trained",
+      "plan_sha256": "5d16d69f82162aa590d3caa8eb685e4743cc508646e5f7cae91e067062b1ff74"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_026/q1_n4/component_scalar",
+      "plan_sha256": "cfe53074b4f5282f3ddf56e31abe6445c0b444799ffc55b56a0de16bf17b59b8"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_026/q1_n4/trained",
+      "plan_sha256": "cf39502893d81f49590688874801d88c8a9efcf48efb2f36acbe5eebfb53f731"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_026/q1_n5/component_scalar",
+      "plan_sha256": "5ee291e22b914fad55bee5c3a5a19fe625e62a36d22d3f85ef5a0199ce690a9a"
+    },
+    {
+      "case": "case_026",
+      "question": 1,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_026/q1_n5/trained",
+      "plan_sha256": "8aaedd1bc9addd2d1db2012d544abd9117abbd49f48e2f7deef8aa37491edd50"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_026/q2_n1/component_scalar",
+      "plan_sha256": "5d6e0f23644ab24397b85b57dd5fb2670ea89fbabbf0c7df5d56f7e7795a064d"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_026/q2_n1/trained",
+      "plan_sha256": "5d6e0f23644ab24397b85b57dd5fb2670ea89fbabbf0c7df5d56f7e7795a064d"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_026/q2_n2/component_scalar",
+      "plan_sha256": "c93b2afb53a20718009b7d14a314dbf56f9fd92d544fd9efb3e546e3ab86a435"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_026/q2_n2/trained",
+      "plan_sha256": "c93b2afb53a20718009b7d14a314dbf56f9fd92d544fd9efb3e546e3ab86a435"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_026/q2_n3/component_scalar",
+      "plan_sha256": "64d84a6ca930e17292c61c7b1532bfcec4f50e55174067adef85552e999d2eb7"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_026/q2_n3/trained",
+      "plan_sha256": "2c6a196fe14fe2059c28d3f4188215b4fd24bf48610783a291d3eb5814a66189"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_026/q2_n4/component_scalar",
+      "plan_sha256": "cfe53074b4f5282f3ddf56e31abe6445c0b444799ffc55b56a0de16bf17b59b8"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_026/q2_n4/trained",
+      "plan_sha256": "0c6fa7a111767b3834c8f66e371de030e7a2c53f4f970e0a7708ad103c8ce8c3"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_026/q2_n5/component_scalar",
+      "plan_sha256": "5ee291e22b914fad55bee5c3a5a19fe625e62a36d22d3f85ef5a0199ce690a9a"
+    },
+    {
+      "case": "case_026",
+      "question": 2,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_026/q2_n5/trained",
+      "plan_sha256": "74a4bce99b6e660a2408085288506a4d4bacc87ec708a4a9f47611da268a7cf4"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 1,
+      "method": "component_scalar",
+      "path": "validation/case_026/q3_n1/component_scalar",
+      "plan_sha256": "5d6e0f23644ab24397b85b57dd5fb2670ea89fbabbf0c7df5d56f7e7795a064d"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 1,
+      "method": "trained",
+      "path": "validation/case_026/q3_n1/trained",
+      "plan_sha256": "5d6e0f23644ab24397b85b57dd5fb2670ea89fbabbf0c7df5d56f7e7795a064d"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 2,
+      "method": "component_scalar",
+      "path": "validation/case_026/q3_n2/component_scalar",
+      "plan_sha256": "c93b2afb53a20718009b7d14a314dbf56f9fd92d544fd9efb3e546e3ab86a435"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 2,
+      "method": "trained",
+      "path": "validation/case_026/q3_n2/trained",
+      "plan_sha256": "c93b2afb53a20718009b7d14a314dbf56f9fd92d544fd9efb3e546e3ab86a435"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 3,
+      "method": "component_scalar",
+      "path": "validation/case_026/q3_n3/component_scalar",
+      "plan_sha256": "64d84a6ca930e17292c61c7b1532bfcec4f50e55174067adef85552e999d2eb7"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 3,
+      "method": "trained",
+      "path": "validation/case_026/q3_n3/trained",
+      "plan_sha256": "2c6a196fe14fe2059c28d3f4188215b4fd24bf48610783a291d3eb5814a66189"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 4,
+      "method": "component_scalar",
+      "path": "validation/case_026/q3_n4/component_scalar",
+      "plan_sha256": "cfe53074b4f5282f3ddf56e31abe6445c0b444799ffc55b56a0de16bf17b59b8"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 4,
+      "method": "trained",
+      "path": "validation/case_026/q3_n4/trained",
+      "plan_sha256": "0c6fa7a111767b3834c8f66e371de030e7a2c53f4f970e0a7708ad103c8ce8c3"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 5,
+      "method": "component_scalar",
+      "path": "validation/case_026/q3_n5/component_scalar",
+      "plan_sha256": "5ee291e22b914fad55bee5c3a5a19fe625e62a36d22d3f85ef5a0199ce690a9a"
+    },
+    {
+      "case": "case_026",
+      "question": 3,
+      "cores": 5,
+      "method": "trained",
+      "path": "validation/case_026/q3_n5/trained",
+      "plan_sha256": "74a4bce99b6e660a2408085288506a4d4bacc87ec708a4a9f47611da268a7cf4"
+    }
+  ],
+  "generated_before_acceptance": true,
+  "isolated_renamed_input": true,
+  "repeat_30_plans_identical": true,
+  "official_calls_in_inference": 0,
+  "time_ns": 1790358481870207100
+}

@@ -1,0 +1,32 @@
+{
+  "name": "shared_prefix_coalesced",
+  "features": [
+    568936,
+    111164.06666666665,
+    13286.566666666668,
+    0.0,
+    0.0
+  ],
+  "detail": {
+    "no_hit_copy_bytes": 797194,
+    "cross_task_copy_bytes": 205056,
+    "minimum_ddr_bytes": 797194,
+    "physical_lower_bound_cycles": 568936,
+    "logical_peak_bytes": [
+      {
+        "task": 0,
+        "L1": 76672,
+        "UB": 76358
+      },
+      {
+        "task": 1,
+        "L1": 50816,
+        "UB": 50754
+      }
+    ],
+    "logical_excess_bytes": 0,
+    "nominal_compute_end": 680100.0666666667,
+    "cache_request_proxy": null,
+    "memory_feasibility": "not certified by logical intervals"
+  }
+}
