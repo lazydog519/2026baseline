@@ -1,0 +1,5 @@
+{"name": "data_band", "width": 2, "status": "proxy_shortlisted", "estimate_cycles": 125542.4}
+{"name": "reuse_pack_k2", "width": 0, "status": "proxy_shortlisted", "estimate_cycles": 144522}
+{"name": "component_baseline", "fingerprint": "b1d2c79791a0e155dde0d958b84f908c663740bb6ef798e5659694ccd403358d", "task_count": 3, "pre_spill_bytes": 5025792, "lower_bound_cycles": 96348, "estimate_cycles": 96348, "evaluation": 1, "status": "ok", "makespan_cycles": 100325, "added_copy_bytes": 3047424, "spill_bytes": 0, "accepted": true, "best_cycles": 100325, "evaluation_seconds": 0.27332839999871794, "elapsed_seconds": 0.3216956000032951}
+{"name": "data_band_w2", "fingerprint": "64272cbde64ddd519ace005c284d086dc63c3157f5f7fd9a25c827c652b00cce", "task_count": 9, "pre_spill_bytes": 7532544, "lower_bound_cycles": 125542.4, "estimate_cycles": 125542.4, "status": "bound_pruned", "best_cycles": 100325}
+{"name": "reuse_pack_k2", "fingerprint": "2b9a1deb378d98e810388711814ef4b532a6dfb602d3c13e18fb3c515f28c58a", "task_count": 2, "pre_spill_bytes": 3883008, "lower_bound_cycles": 144522, "estimate_cycles": 144522, "status": "bound_pruned", "best_cycles": 100325}

@@ -1,0 +1,13 @@
+{
+  "schema": "q1-independent-frozen-v5",
+  "created": "2026-09-24T21:19:12.837140+00:00",
+  "files": {
+    "q1_cold.py": "6df6735fefb36372d5ab861d059db3a304ce81a882163b3b0b19b30f97cbfb29",
+    "q1_cold_config.json": "6ed57a985ffd781e88c1c1f8cee7e67b6b78d733b36158787d4d0853f3a15b48",
+    "q1_submit.py": "87dfb13feebc31ab60f50195daf3a2ff5675c5295887e30cba5234fac736e1ae",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab"
+  },
+  "official_config_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "experiment": "each case/core in fresh process; fixed up to 6 official calls; deterministic 3 percent lower-bound stop; no historical plans"
+}

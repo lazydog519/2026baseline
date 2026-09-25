@@ -1,0 +1,9 @@
+{"name": "valley", "width": 2, "status": "proxy_shortlisted", "estimate_cycles": 156018}
+{"name": "terminal", "width": 2, "status": "proxy_shortlisted", "estimate_cycles": 185514}
+{"name": "reuse_pack_k2", "width": 0, "status": "proxy_shortlisted", "estimate_cycles": 212238}
+{"name": "data_band", "width": 2, "status": "proxy_budget_skipped", "estimate_cycles": 229169.86666666667}
+{"name": "component_baseline", "fingerprint": "1377727c4360ea9050ac136799830d366ac2de42aca2633b08b9d2f184f7ba9f", "task_count": 3, "pre_spill_bytes": 2256048, "lower_bound_cycles": 144200, "estimate_cycles": 144200, "evaluation": 1, "status": "ok", "makespan_cycles": 178739, "added_copy_bytes": 114688, "spill_bytes": 0, "accepted": true, "best_cycles": 178739, "evaluation_seconds": 2.775843099996564, "elapsed_seconds": 3.071487799999886}
+{"name": "valley_w2", "fingerprint": "a74432afbcf71c3be4040e3383d6d0765cb550beb59b1d1d1d6c0cbda5ce1337", "task_count": 27, "pre_spill_bytes": 3106680, "lower_bound_cycles": 140488, "estimate_cycles": 156018, "evaluation": 2, "status": "ok", "makespan_cycles": 204141, "added_copy_bytes": 965320, "spill_bytes": 0, "accepted": false, "best_cycles": 178739, "evaluation_seconds": 1.14284239999688, "elapsed_seconds": 4.216514800005825}
+{"name": "terminal_w2", "fingerprint": "1939d4d5831d5841f069d31fae8357d9713f852f2f74c3559a9bbb0e2e84b39c", "task_count": 4, "pre_spill_bytes": 2467360, "lower_bound_cycles": 185157, "estimate_cycles": 185514, "status": "bound_pruned", "best_cycles": 178739}
+{"name": "reuse_pack_k2", "fingerprint": "1296c81faab3be8408d4907e0817b1bede8cdc628b2b147e9213d4cefd654854", "task_count": 2, "pre_spill_bytes": 2198704, "lower_bound_cycles": 212238, "estimate_cycles": 212238, "status": "bound_pruned", "best_cycles": 178739}
+{"name": "greedy_schedule", "status": "core_renaming_skipped"}

@@ -1,0 +1,80 @@
+{
+  "cases": 100,
+  "non_copy_pipes": "actual pipe field; never inferred from op name",
+  "ranges": {
+    "compute_ops": [
+      552,
+      35705
+    ],
+    "tensor_count": [
+      816,
+      40287
+    ],
+    "edges": [
+      1841,
+      108272
+    ],
+    "depth": [
+      3,
+      2440
+    ],
+    "width_max": [
+      8,
+      15921
+    ],
+    "weak_components": [
+      1,
+      2666
+    ],
+    "largest_component_fraction": [
+      0.00037509377344336085,
+      1.0
+    ],
+    "branches": [
+      0,
+      6003
+    ],
+    "joins": [
+      0,
+      14725
+    ],
+    "compute_cycles": [
+      23052,
+      61275840
+    ],
+    "critical_path_cycles": [
+      400,
+      863040
+    ],
+    "structural_parallelism": [
+      3.417535545023697,
+      6258.780160857908
+    ],
+    "original_copy_bytes": [
+      37414,
+      13401600
+    ],
+    "io_compute_ratio": [
+      0.0008494691600858503,
+      0.1926438524978671
+    ],
+    "m_share": [
+      0.0,
+      0.9614757137560253
+    ],
+    "max_l1_tensor_bytes": [
+      0,
+      294912
+    ],
+    "max_ub_tensor_bytes": [
+      0,
+      32768
+    ],
+    "max_compute_producers_per_tensor": [
+      1,
+      1
+    ]
+  },
+  "no_rows_filtered": true,
+  "input_modified": false
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "q1-independent-audit-v1",
+  "complete_cases": 100,
+  "missing_jobs": 0,
+  "evaluated_selections": 400,
+  "official_recheck": true,
+  "rechecked_jobs": 400,
+  "official_files_unchanged": 114,
+  "cold_start": true,
+  "arithmetic_mean_speedup": {
+    "1": 1.0,
+    "2": 1.890839285352795,
+    "3": 2.623565520857705,
+    "4": 3.25493480663082,
+    "5": 3.7863863185912505
+  },
+  "baseline_mean_speedup": {
+    "1": 1.0,
+    "2": 1.7192038308333841,
+    "3": 2.3343109799038557,
+    "4": 2.8733901489079687,
+    "5": 3.324936437310409
+  },
+  "improved_cases": {
+    "2": 37,
+    "3": 37,
+    "4": 43,
+    "5": 50
+  },
+  "regressed_cases": {
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "median_wall_seconds": {
+    "2": 4.103748049998103,
+    "3": 4.17271664999862,
+    "4": 3.4675725999986753,
+    "5": 3.7615516999976535
+  },
+  "max_wall_seconds": 2457.9550545999955,
+  "total_official_search_evaluations": 1036,
+  "total_pruned_candidates": 396,
+  "infeasible_candidates": 0,
+  "certificate_stops": 56,
+  "search_config": {
+    "version": "q1-independent-v5",
+    "max_evaluations": 6,
+    "structure_evaluations": 3,
+    "max_generated_tasks": 256,
+    "merge_limit": 4,
+    "merge_pair_trials": 3,
+    "greedy_reschedule": true,
+    "greedy_merge": true,
+    "cert_relative_gap": 0.03,
+    "reuse_packing": true,
+    "random_seed": null,
+    "stop_rule": "deterministic evaluation count; no wall-clock-dependent selection",
+    "primary_objective": "official Makespan in cycles",
+    "secondary_objective": "official added DDR bytes"
+  }
+}

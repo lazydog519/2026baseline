@@ -1,0 +1,59 @@
+{
+  "selection": "log1p + min-max scaling + deterministic farthest-point coverage; no scores used",
+  "fields": [
+    "compute_ops",
+    "depth",
+    "weak_components",
+    "structural_parallelism",
+    "io_compute_ratio",
+    "width_max",
+    "joins"
+  ],
+  "ordered_cases": [
+    "case_077",
+    "case_036",
+    "case_076",
+    "case_016",
+    "case_029",
+    "case_062",
+    "case_051",
+    "case_004",
+    "case_087",
+    "case_084",
+    "case_002",
+    "case_021",
+    "case_044",
+    "case_057",
+    "case_085",
+    "case_013",
+    "case_092",
+    "case_027",
+    "case_001",
+    "case_082"
+  ],
+  "development": [
+    "case_077",
+    "case_076",
+    "case_029",
+    "case_051",
+    "case_087",
+    "case_002",
+    "case_044",
+    "case_085",
+    "case_092",
+    "case_001"
+  ],
+  "confirmation": [
+    "case_036",
+    "case_016",
+    "case_062",
+    "case_004",
+    "case_084",
+    "case_021",
+    "case_057",
+    "case_013",
+    "case_027",
+    "case_082"
+  ],
+  "scope": "Confirmation is held out from this round of algorithm selection only. All official graphs were available in earlier work; no unseen-data generalisation claim."
+}

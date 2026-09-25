@@ -1,0 +1,5 @@
+{"name": "reuse_pack_k2", "width": 0, "status": "proxy_shortlisted", "estimate_cycles": 76755}
+{"name": "valley", "width": 2, "status": "proxy_shortlisted", "estimate_cycles": 81348.0}
+{"name": "terminal", "width": 2, "status": "proxy_shortlisted", "estimate_cycles": 90981}
+{"name": "data_band", "width": 2, "status": "proxy_budget_skipped", "estimate_cycles": 106481.56666666667}
+{"name": "component_baseline", "fingerprint": "ad60bb1b5dd0edcc1c0e039f392dd4559260de303faa5973a5d89d4de5457987", "task_count": 3, "pre_spill_bytes": 1741140, "lower_bound_cycles": 51765, "estimate_cycles": 51765, "evaluation": 1, "status": "ok", "makespan_cycles": 51943, "added_copy_bytes": 0, "spill_bytes": 0, "accepted": true, "best_cycles": 51943, "evaluation_seconds": 1.3674140000002808, "elapsed_seconds": 1.6236320999960299}

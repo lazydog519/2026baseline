@@ -1,0 +1,15 @@
+{
+  "version": "q1-independent-v5",
+  "confirmation_cases": 10,
+  "confirmation_cores": [
+    5
+  ],
+  "successful_jobs": 10,
+  "official_evaluations": 22,
+  "mean_speedup": 3.9391453793324143,
+  "paired_baseline_mean": 3.534928024033215,
+  "improved": 3,
+  "regressed": 0,
+  "decision": "Proceed to all 100 cases x cores 2..5 with this frozen version; no score-dependent changes after confirmation.",
+  "limitation": "Decision recorded after confirmation, not a pre-registered statistical threshold. This round holdout is not unseen data."
+}

@@ -1,0 +1,169 @@
+% 可插入中文论文；需要 amsmath, amssymb。实验数值由另附结果表给出。
+\section{场景 A 下的结构切分与贪心调度}
+\subsection{决策对象与场景边界}
+记原计算图为 $G=(\mathcal O\cup\mathcal X,E)$，其中 $\mathcal O$ 为操作节点，
+$\mathcal X$ 为张量节点。待分配集合为
+$\mathcal O^*=\{o\in\mathcal O:o\text{ 不是 COPY\_IN/COPY\_OUT}\}$。
+设子图集合为 $\mathcal S$，$p(o)\in\mathcal S$ 表示操作所属子图，
+$c(s)\in\{0,\ldots,n-1\}$ 表示子图所在核心，$\pi_k$ 表示核心 $k$ 上的子图序列。
+每个子图在场景 A 中独立构成一个 Task。本文只改变 $p,c,\pi$；
+原图、节点属性及附录规定的核内调度与仿真过程均保持不变。
+
+合法划分须满足完整覆盖与互斥：
+\begin{equation}
+ \bigcup_{s\in\mathcal S}\mathcal O_s=\mathcal O^*,\qquad
+ \mathcal O_s\cap\mathcal O_t=\varnothing\quad(s\ne t),\qquad
+ \mathcal O_s\ne\varnothing .
+ \label{eq:q1-cover}
+\end{equation}
+将跨子图原依赖收缩得到 Task 依赖图 $G_{\mathcal S}$。
+在其中加入每个 $\pi_k$ 相邻 Task 的顺序边后，所得图仍须无环；
+仅验证每核列表各自的局部顺序并不足以排除跨核等待环。
+各 Task 恰好调度一次，允许某些核心列表为空。
+
+设 $S_s,F_s$ 分别为 Task 的实际启动与完成时刻；若 $\operatorname{prev}_k(s)$
+存在，则由附录 D 的规则有
+\begin{equation}
+ S_s\ge\max\left\{0,
+ F_{\operatorname{prev}_k(s)}+\delta_{\mathrm{s}},
+ \max_{t\in\operatorname{pred}(s),\,c(t)\ne k}(F_t+\delta_{\mathrm{x}})
+ \right\},\quad k=c(s),
+ \label{eq:q1-release}
+\end{equation}
+不存在的前驱项省略。其中 $\delta_{\mathrm{s}}=100$ cycles，
+$\delta_{\mathrm{x}}=1000$ cycles。同核间隔适用于前后两个 Task，
+并不要求二者存在数据依赖；跨核等待施加于每个跨核前驱完成时刻，
+各项取最大值，不能将所有等待时间直接相加。
+
+每核每条 Pipe 串行，不同 Pipe 可并行；共享 DDR 总带宽为
+$B=60$ bytes/cycle。L1、UB 的容量分别为 $524288$、$131072$ bytes。
+实际峰值须满足
+\begin{equation}
+ 0\le M_{k,r}(t)\le C_r,\qquad r\in\{\mathrm{L1},\mathrm{UB}\}.
+ \label{eq:q1-memory}
+\end{equation}
+容量不足时，由原核内调度插入合法换出与换入；粗略生命周期估计超限
+不能直接判定方案非法。Task 完成后不向下一 Task 保留私有缓存。
+
+优化目标采用明确的字典序：
+\begin{equation}
+ \min_{p,c,\pi}\bigl(T,D_{\mathrm{extra}}\bigr)_{\mathrm{lex}},
+ \qquad T=\max_s F_s .
+ \label{eq:q1-objective}
+\end{equation}
+首先比较官方 Makespan，只有其相同时才比较额外搬运量。
+字典序是本文的选优设计，不是题面给定的加权评分公式。
+
+\subsection{以张量为单位核算边界搬运}
+记 $b_x$ 为张量 $x$ 的字节数，$P_x,C_x$ 分别为其计算生产者与消费者
+所在 Task 的集合，$z_x$ 表示原图是否要求对该张量执行 COPY\_OUT。
+按照原附件，换入换出前的搬运量为
+\begin{align}
+ D_0(p)&=\sum_{x\in\mathcal X}b_x\left(
+ |C_x\setminus P_x|+
+ \sum_{s\in P_x}\mathbf 1\{z_x=1\ \lor\ C_x=\varnothing\ \lor\ C_x\setminus\{s\}\ne\varnothing\}
+ \right), \label{eq:q1-ddr}\\
+ D_{\mathrm{extra}}&=D_0+D_{\mathrm{spill}}-D_{\mathrm{original}}.
+ \label{eq:q1-extra}
+\end{align}
+式~\eqref{eq:q1-ddr} 的第一项是每个消费 Task 的边界读取，第二项是每个生产
+Task 的必要写回。对一份大小为 $b$ 的中间张量，若一个生产 Task 向另外
+$m$ 个 Task 提供数据，通常产生 $(1+m)b$ 的搬运，而不是逐依赖边计算 $2mb$。
+同核跨 Task 也适用该式。因此，固定划分时改变核心分配不会消除边界 COPY；
+分核主要改变同步等待、负载以及搬运的并发竞争。
+每个正式评估候选均核对式~\eqref{eq:q1-ddr} 与官方
+\texttt{scheduled\_copy\_bytes - spill\_added\_copy\_bytes} 一致。
+
+\subsection{构造候选与严格下界剪枝}
+令 $d(o)$ 为操作的拓扑深度，$h=\max_o d(o)$，$a_o$ 为给定计算周期，
+$W=\sum_{o\in\mathcal O^*}a_o$。用以下初始尺度控制切分粒度：
+\begin{equation}
+ w_0=\max\left\{2,
+ \left\lceil\frac{n\delta_{\mathrm{x}}h}{\max(1,W)}\right\rceil,
+ \left\lceil\frac{nh}{N_{\mathrm{task}}}\right\rceil\right\}.
+ \label{eq:q1-width}
+\end{equation}
+第二项用每层平均工作量估计同步开销的摊销尺度，第三项控制候选规模。
+$N_{\mathrm{task}}$ 是算法的计算预算参数，不能误写为题目对子图数的限制。
+根据图宽变化、低边界数据量的深度区间、分叉汇合阶段和末端独立分支
+构造少量划分；同一阶段内用按负载递减的贪心分配形成初始核心列表。
+重复方案不重复正式评估。
+
+对给定方案，设 $W_{kq}$ 为核心 $k$ 上 Pipe $q$ 的原计算周期之和，
+$L_{\mathrm{cp}}$ 为原图纯计算关键路径长度，则
+\begin{equation}
+ L=\max\left\{L_{\mathrm{cp}},\max_{k,q}W_{kq},D_0/B\right\}\le T .
+ \label{eq:q1-lower-bound}
+\end{equation}
+三项分别由依赖顺序、单 Pipe 串行和共享 DDR 总工作量给出必要下界；
+它们忽略了额外等待及缓存换入换出，故不会把这些因素重复计入。
+若 $L>T_{\mathrm{best}}$，该候选不可能改进当前已验证方案，可省去正式评估。
+这个结论只针对固定候选。进一步，令 $W_q=\sum_o a_o\mathbf1\{\operatorname{pipe}(o)=q\}$，
+可得到与划分无关的全局下界和有条件停止规则：
+\begin{equation}
+ L_{\mathrm g}=\max\{L_{\mathrm{cp}},\max_q W_q/n\}\le T^*,\qquad
+ T_{\mathrm{best}}\le(1+\varepsilon)L_{\mathrm g}\ \Longrightarrow
+ T_{\mathrm{best}}\le(1+\varepsilon)T^*,\quad\varepsilon=0.03.
+ \label{eq:q1-certificate}
+\end{equation}
+这里只对实际触发该条件的运行给出误差证书；没有触发的运行不具备该保证。
+该阈值用于避免对已经接近必要下界的方案继续仿真，不是改变官方计分精度。
+
+对存在大量独立计算分量的图，还构造允许部分核心空闲的并包候选。
+将分量按工作量递减分配到 $k=1,\ldots,n-1$ 个活动核心，同核分量合成一个 Task，
+仅保留代理完成时间最小的一份候选。这样可能减少共享输入的重复读取，
+也可能增加核内串行与缓存换入换出；是否保留最终仍由官方仿真决定。
+这一步按当前图重新计算，不读取其他核数的历史求解结果。
+
+\subsection{关键路径优先的贪心分核与排序}
+记 Task $s$ 在 Pipe $q$ 上的计算工作量为 $W_{sq}$，其边界读写量为
+$D_s^{\mathrm{in}},D_s^{\mathrm{out}}$。构造轻量持续时间估计
+\begin{align}
+ \widehat\tau_s&=\max\left\{\max_q W_{sq},
+ (D_s^{\mathrm{in}}+D_s^{\mathrm{out}})/B\right\}, \label{eq:q1-duration}\\
+ r_s&=\widehat\tau_s+\max_{u\in\operatorname{succ}(s)}
+ (\delta_{\mathrm{s}}+r_u). \label{eq:q1-rank}
+\end{align}
+空后继集合的最大值取零。每次从所有前驱均已分配的就绪集合中选择
+$r_s$ 最大的 Task；并列时按固定 Task id 决定，以保证确定性。
+设 $A_k$ 为核心当前列表末尾的估计完成时间，则
+\begin{align}
+ \widehat S_s(k)&=\max\left\{0,
+ A_k+\delta_{\mathrm{s}}\mathbf1\{\pi_k\ne\varnothing\},
+ \max_{t\in\operatorname{pred}(s)}
+ [\widehat F_t+\delta_{\mathrm{x}}\mathbf1\{c(t)\ne k\}]
+ \right\},\label{eq:q1-est}\\
+ k^*&=\arg\min_k\bigl(\widehat S_s(k)+\widehat\tau_s,\ |\pi_k|,\ k\bigr)_{\mathrm{lex}}.
+ \label{eq:q1-eft}
+\end{align}
+将 $s$ 追加到 $\pi_{k^*}$ 后更新完成时间。所有核心列表均来自同一个合法
+全局选择序列，因此不会仅因列表投影引入等待环。
+这些估计用于排序，不把 Task 当成固定真实时长的作业；实际时长仍受共享带宽
+和附录 C 的核内调度影响，最终只以原评估器的结果接受或拒绝改动。
+
+在此基础上，只对全局拓扑序相邻、且同核执行序也相邻的 Task 尝试合并。
+优先检查共享张量较多的少数候选，并重新检查收缩图与核内顺序的合法性。
+合并可能减少边界读取和 100 周期切换开销，也可能增大缓存压力、延迟后继释放；
+故代理值改善不能直接视为真实收益，仍须通过统一正式评估。
+
+\subsection{实验边界与复现口径}
+全部 100 个输入仅作无损解析与特征统计，不删除节点、张量、边或困难用例。
+使用规模、深度、连通分量、结构并行度、输入搬运/计算比、最大层宽与汇合点数
+构造特征；对非负特征作 $\log(1+x)$ 与极差归一化，以最远点覆盖选择开发与确认样本。
+选样不读取任何优化成绩。本轮确认样本不参与本轮方法选择，但此前全部官方图均已
+可见，因此不能将确认结果表述为未知分布泛化能力。
+
+每个 case、每种核数启动独立进程，只读取当前图、官方固定配置和统一算法参数。
+本次调用内保留更好方案是算法正常迭代，不继承历史答案。
+正式运行至多使用六次官方评估：三个结构候选、一个连通分量基线及两个贪心改进候选。
+重复、下界剪枝或满足式~\eqref{eq:q1-certificate} 时实际次数更少，
+不依据机器负载改变搜索停止点；尚未进入前三的候选也记录代理值与预算跳过原因。
+每次正式评估后保存方案来源、下界、真实 Makespan、额外搬运、接受标记和耗时；
+不可行候选保存具体异常信息。单核结果只在求解结束后的汇总中用于计算
+\begin{equation}
+ S_i(n)=T_i(1)/T_i(n),\qquad
+ \overline S(n)=\frac1{100}\sum_{i=1}^{100}S_i(n),\qquad \overline S(1)=1.
+ \label{eq:q1-speedup}
+\end{equation}
+不能用总单核时间除以总多核时间代替逐例加速比的算术平均，也不能把抽样均值
+标注为全部 100 例均值。模型说明、最终参数和实验表应使用同一冻结版本。

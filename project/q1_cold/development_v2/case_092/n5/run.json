@@ -1,0 +1,33 @@
+{
+  "schema": "q1-independent-v2",
+  "cold_start": true,
+  "cores": 5,
+  "search_config": {
+    "version": "q1-independent-v2",
+    "max_evaluations": 6,
+    "structure_evaluations": 3,
+    "max_generated_tasks": 256,
+    "merge_limit": 4,
+    "merge_pair_trials": 3,
+    "greedy_reschedule": true,
+    "greedy_merge": true,
+    "random_seed": null,
+    "stop_rule": "deterministic evaluation count; no wall-clock-dependent selection",
+    "primary_objective": "official Makespan in cycles",
+    "secondary_objective": "official added DDR bytes"
+  },
+  "initial_width": 3,
+  "graph_sha256": "1cb68245c84f98824a9d4cacfe37c8c4fc63a792a8057d028fd2577206f44fd9",
+  "config_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "initial_cycles": 1661234,
+  "makespan_cycles": 1278737,
+  "added_copy_bytes": 57740672,
+  "evaluations": 2,
+  "selected": "data_band_w3",
+  "selected_fingerprint": "ad32a98a215e7ccec45fdd9160576470361a49b113683171ae2a6338adf0150c",
+  "wall_seconds": 52.92686830000093,
+  "invalid_candidates": 0,
+  "bound_pruned": 0,
+  "stop_reason": "fixed_candidate_budget",
+  "history_read": false
+}

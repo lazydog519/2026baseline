@@ -1,0 +1,33 @@
+{
+  "cases": [
+    "case_077",
+    "case_076",
+    "case_029",
+    "case_051",
+    "case_087",
+    "case_002",
+    "case_044",
+    "case_085",
+    "case_092",
+    "case_001"
+  ],
+  "cores": [
+    5
+  ],
+  "workers": 2,
+  "search_config": {
+    "version": "q1-independent-v1",
+    "max_evaluations": 6,
+    "structure_evaluations": 3,
+    "max_generated_tasks": 256,
+    "merge_limit": 4,
+    "merge_pair_trials": 3,
+    "greedy_reschedule": true,
+    "greedy_merge": true,
+    "random_seed": null,
+    "stop_rule": "deterministic evaluation count; no wall-clock-dependent selection",
+    "primary_objective": "official Makespan in cycles",
+    "secondary_objective": "official added DDR bytes"
+  },
+  "sample": "development"
+}

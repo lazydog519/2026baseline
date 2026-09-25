@@ -1,0 +1,8 @@
+{"name": "reuse_pack_k3", "width": 0, "status": "proxy_shortlisted", "estimate_cycles": 12495}
+{"name": "terminal", "width": 2, "status": "proxy_shortlisted", "estimate_cycles": 21349}
+{"name": "valley", "width": 2, "status": "proxy_shortlisted", "estimate_cycles": 22198.433333333334}
+{"name": "data_band", "width": 2, "status": "proxy_budget_skipped", "estimate_cycles": 28003.333333333332}
+{"name": "component_baseline", "fingerprint": "836d5d075ab0a4b2380c66ee2e325fbc77d3bc320e1cf504f32421e411fb934d", "task_count": 4, "pre_spill_bytes": 430164, "lower_bound_cycles": 10710, "estimate_cycles": 10710, "evaluation": 1, "status": "ok", "makespan_cycles": 11028, "added_copy_bytes": 0, "spill_bytes": 0, "accepted": true, "best_cycles": 11028, "evaluation_seconds": 0.15468200000032084, "elapsed_seconds": 0.22668020000128308}
+{"name": "reuse_pack_k3", "fingerprint": "171bfa092208b81a89bb8380dc71d7bbc5987c97015eca3dd5a7d3084bd7331e", "task_count": 3, "pre_spill_bytes": 430164, "lower_bound_cycles": 12495, "estimate_cycles": 12495, "status": "bound_pruned", "best_cycles": 11028}
+{"name": "terminal_w2", "fingerprint": "c7f2b2ee2a7d980216cedbd9e5a473f0338254eb9c74c70182f861960c5ba6bd", "task_count": 5, "pre_spill_bytes": 860664, "lower_bound_cycles": 20349, "estimate_cycles": 21349, "status": "bound_pruned", "best_cycles": 11028}
+{"name": "valley_w2", "fingerprint": "b24445e67a5f51381ea31a51e891a1e2c3e2323778a9bb802327db700e599585", "task_count": 16, "pre_spill_bytes": 1331906, "lower_bound_cycles": 22198.433333333334, "estimate_cycles": 22198.433333333334, "status": "bound_pruned", "best_cycles": 11028}
