@@ -1,0 +1,88 @@
+{
+  "solver_version": "fresh-q3-20260926-v1",
+  "selected": "join_tail",
+  "method": "trained",
+  "official_calls": 0,
+  "graph_sha256": "b95d97cf90bdd0fe64a0fd1ecd5a36a7b091ecadef204ef8c6ae430f6ccfac3c",
+  "model_sha256": "5e2caa3b690996c895cddc60130b7af8943d00c4d0e0bc502ed99857a2472a90",
+  "plan_sha256": "77de7d47210d8853fa097a21cb7b1145d31d4030a1fdb2c6a3fc0a49c2acb274",
+  "generation_seconds": 0.07386099999712314,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        53600,
+        0,
+        42120.53333333333,
+        546.1333333333333,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 2560000,
+        "repeat_opportunity_bytes": 32768,
+        "logical_peak_bytes": [
+          {
+            "L1": 18432,
+            "UB": 0
+          },
+          {
+            "L1": 18432,
+            "UB": 0
+          },
+          {
+            "L1": 18432,
+            "UB": 0
+          },
+          {
+            "L1": 18432,
+            "UB": 0
+          },
+          {
+            "L1": 18432,
+            "UB": 0
+          }
+        ],
+        "logical_excess_bytes": 0
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        52796,
+        0,
+        95914.66666666667,
+        546.1333333333333,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 5787648,
+        "repeat_opportunity_bytes": 32768,
+        "logical_peak_bytes": [
+          {
+            "L1": 12288,
+            "UB": 0
+          },
+          {
+            "L1": 12288,
+            "UB": 0
+          },
+          {
+            "L1": 12288,
+            "UB": 0
+          },
+          {
+            "L1": 12288,
+            "UB": 0
+          },
+          {
+            "L1": 409600,
+            "UB": 0
+          }
+        ],
+        "logical_excess_bytes": 0
+      }
+    }
+  ]
+}

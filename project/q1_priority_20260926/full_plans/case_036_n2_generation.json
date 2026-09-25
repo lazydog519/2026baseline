@@ -1,0 +1,31 @@
+{
+  "selected": "component_vector",
+  "fingerprint": "de54b31e73c4875104b671c039497deae22323bdae9b75c0504103ee7331162f",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "de54b31e73c4875104b671c039497deae22323bdae9b75c0504103ee7331162f",
+      "proxy_cycles": 465600,
+      "boundary_bytes": 6555904,
+      "tasks": 2,
+      "resource_floor": 465600
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "bdd5a1ede976fec02d36156798aef7561237fc210c84318ce5adb373b743ee1f",
+      "proxy_cycles": 627420.000000015,
+      "boundary_bytes": 17305600,
+      "tasks": 1600,
+      "resource_floor": 465600
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "10a367e1abfd8747dd7d1156a2f0a43b161fe14b9daf0c17ee19ef02ccc5ac60",
+      "proxy_cycles": 505500,
+      "boundary_bytes": 7475200,
+      "tasks": 800,
+      "resource_floor": 465600
+    }
+  ],
+  "rejected": []
+}

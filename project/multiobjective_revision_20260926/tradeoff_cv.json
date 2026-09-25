@@ -1,0 +1,2579 @@
+{
+  "scope": "9 development graphs, 2/5 cores, leave-one-graph-out; policy screen only",
+  "official_calls": 0,
+  "policies": {
+    "1": {
+      "latency": {
+        "groups": 18,
+        "mean_oracle_regret": 0.007994409703294927,
+        "mean_added_bytes_ratio_vs_latency": 1.0,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_90": {
+        "groups": 18,
+        "mean_oracle_regret": 0.007994409703294927,
+        "mean_added_bytes_ratio_vs_latency": 1.0,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_90_guard2": {
+        "groups": 18,
+        "mean_oracle_regret": 0.007994409703294927,
+        "mean_added_bytes_ratio_vs_latency": 1.0,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_80": {
+        "groups": 18,
+        "mean_oracle_regret": 0.010811945511000239,
+        "mean_added_bytes_ratio_vs_latency": 0.9053392893347166,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 2
+      },
+      "epsilon_2pct": {
+        "groups": 18,
+        "mean_oracle_regret": 0.008086366396532239,
+        "mean_added_bytes_ratio_vs_latency": 0.9571428571428571,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 1
+      }
+    },
+    "2": {
+      "latency": {
+        "groups": 18,
+        "mean_oracle_regret": 0.009014415834520388,
+        "mean_added_bytes_ratio_vs_latency": 1.0,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_90": {
+        "groups": 18,
+        "mean_oracle_regret": 0.009014415834520388,
+        "mean_added_bytes_ratio_vs_latency": 1.0,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_90_guard2": {
+        "groups": 18,
+        "mean_oracle_regret": 0.009014415834520388,
+        "mean_added_bytes_ratio_vs_latency": 1.0,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_80": {
+        "groups": 18,
+        "mean_oracle_regret": 0.009014415834520388,
+        "mean_added_bytes_ratio_vs_latency": 1.0,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 0
+      },
+      "epsilon_2pct": {
+        "groups": 18,
+        "mean_oracle_regret": 0.002855931270221706,
+        "mean_added_bytes_ratio_vs_latency": 0.9015873015873015,
+        "time_improvements_vs_latency": 1,
+        "time_regressions_vs_latency": 1
+      }
+    },
+    "3": {
+      "latency": {
+        "groups": 18,
+        "mean_oracle_regret": 0.017908075666292798,
+        "mean_added_bytes_ratio_vs_latency": 1.0,
+        "time_improvements_vs_latency": 0,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_90": {
+        "groups": 18,
+        "mean_oracle_regret": 0.009014415834520388,
+        "mean_added_bytes_ratio_vs_latency": 0.9858331131765817,
+        "time_improvements_vs_latency": 1,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_90_guard2": {
+        "groups": 18,
+        "mean_oracle_regret": 0.009014415834520388,
+        "mean_added_bytes_ratio_vs_latency": 0.9858331131765817,
+        "time_improvements_vs_latency": 1,
+        "time_regressions_vs_latency": 0
+      },
+      "weighted_80": {
+        "groups": 18,
+        "mean_oracle_regret": 0.009014415834520388,
+        "mean_added_bytes_ratio_vs_latency": 0.9858331131765817,
+        "time_improvements_vs_latency": 1,
+        "time_regressions_vs_latency": 0
+      },
+      "epsilon_2pct": {
+        "groups": 18,
+        "mean_oracle_regret": 0.0027406537730565203,
+        "mean_added_bytes_ratio_vs_latency": 0.8874204147638833,
+        "time_improvements_vs_latency": 2,
+        "time_regressions_vs_latency": 1
+      }
+    }
+  },
+  "selected": {
+    "q1_latency": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 559839.440797416
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 227725.9797862158
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 92198,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 95753.66868303166
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 87912,
+        "regret": 0.0,
+        "added_bytes": 727792,
+        "predicted_cycles": 90602.25386817103
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 23859.26193932618
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 11795.619508299003
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_affinity_coalesced",
+        "makespan": 143799,
+        "regret": 0.04394319980253503,
+        "added_bytes": 53760,
+        "predicted_cycles": 149803.88075549205
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 113996,
+        "regret": 0.05147811649679479,
+        "added_bytes": 218444,
+        "predicted_cycles": 110548.1474458581
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 166578,
+        "regret": 0.04847805835997887,
+        "added_bytes": 3521632,
+        "predicted_cycles": 130806.50723328943
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 111228.63091007418
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 174734,
+        "regret": 0.0,
+        "added_bytes": 986446,
+        "predicted_cycles": 177443.87971994336
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 142005,
+        "regret": 0.0,
+        "added_bytes": 1061958,
+        "predicted_cycles": 153523.18326886036
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 199027,
+        "regret": 0.0,
+        "added_bytes": 1681214,
+        "predicted_cycles": 213984.6695854843
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 129176,
+        "regret": 0.0,
+        "added_bytes": 2771130,
+        "predicted_cycles": 135805.652919446
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 13753,
+        "regret": 0.0,
+        "added_bytes": 150564,
+        "predicted_cycles": 13238.887920390904
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 10042,
+        "regret": 0.0,
+        "added_bytes": 185678,
+        "predicted_cycles": 8641.49963465134
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 365979,
+        "regret": 0.0,
+        "added_bytes": 1337122,
+        "predicted_cycles": 396951.86267566564
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 198761,
+        "regret": 0.0,
+        "added_bytes": 2471646,
+        "predicted_cycles": 208656.69310097187
+      }
+    ],
+    "q1_weighted_90": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 559839.440797416
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 227725.9797862158
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 92198,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 95753.66868303166
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 87912,
+        "regret": 0.0,
+        "added_bytes": 727792,
+        "predicted_cycles": 90602.25386817103
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 23859.26193932618
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 11795.619508299003
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_affinity_coalesced",
+        "makespan": 143799,
+        "regret": 0.04394319980253503,
+        "added_bytes": 53760,
+        "predicted_cycles": 149803.88075549205
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 113996,
+        "regret": 0.05147811649679479,
+        "added_bytes": 218444,
+        "predicted_cycles": 110548.1474458581
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 166578,
+        "regret": 0.04847805835997887,
+        "added_bytes": 3521632,
+        "predicted_cycles": 130806.50723328943
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 111228.63091007418
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 174734,
+        "regret": 0.0,
+        "added_bytes": 986446,
+        "predicted_cycles": 177443.87971994336
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 142005,
+        "regret": 0.0,
+        "added_bytes": 1061958,
+        "predicted_cycles": 153523.18326886036
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 199027,
+        "regret": 0.0,
+        "added_bytes": 1681214,
+        "predicted_cycles": 213984.6695854843
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 129176,
+        "regret": 0.0,
+        "added_bytes": 2771130,
+        "predicted_cycles": 135805.652919446
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 13753,
+        "regret": 0.0,
+        "added_bytes": 150564,
+        "predicted_cycles": 13238.887920390904
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 10042,
+        "regret": 0.0,
+        "added_bytes": 185678,
+        "predicted_cycles": 8641.49963465134
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 365979,
+        "regret": 0.0,
+        "added_bytes": 1337122,
+        "predicted_cycles": 396951.86267566564
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 198761,
+        "regret": 0.0,
+        "added_bytes": 2471646,
+        "predicted_cycles": 208656.69310097187
+      }
+    ],
+    "q1_weighted_90_guard2": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 559839.440797416
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 227725.9797862158
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 92198,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 95753.66868303166
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 87912,
+        "regret": 0.0,
+        "added_bytes": 727792,
+        "predicted_cycles": 90602.25386817103
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 23859.26193932618
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 11795.619508299003
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_affinity_coalesced",
+        "makespan": 143799,
+        "regret": 0.04394319980253503,
+        "added_bytes": 53760,
+        "predicted_cycles": 149803.88075549205
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 113996,
+        "regret": 0.05147811649679479,
+        "added_bytes": 218444,
+        "predicted_cycles": 110548.1474458581
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 166578,
+        "regret": 0.04847805835997887,
+        "added_bytes": 3521632,
+        "predicted_cycles": 130806.50723328943
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 111228.63091007418
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 174734,
+        "regret": 0.0,
+        "added_bytes": 986446,
+        "predicted_cycles": 177443.87971994336
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 142005,
+        "regret": 0.0,
+        "added_bytes": 1061958,
+        "predicted_cycles": 153523.18326886036
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 199027,
+        "regret": 0.0,
+        "added_bytes": 1681214,
+        "predicted_cycles": 213984.6695854843
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 129176,
+        "regret": 0.0,
+        "added_bytes": 2771130,
+        "predicted_cycles": 135805.652919446
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 13753,
+        "regret": 0.0,
+        "added_bytes": 150564,
+        "predicted_cycles": 13238.887920390904
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 10042,
+        "regret": 0.0,
+        "added_bytes": 185678,
+        "predicted_cycles": 8641.49963465134
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 365979,
+        "regret": 0.0,
+        "added_bytes": 1337122,
+        "predicted_cycles": 396951.86267566564
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 198761,
+        "regret": 0.0,
+        "added_bytes": 2471646,
+        "predicted_cycles": 208656.69310097187
+      }
+    ],
+    "q1_weighted_80": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 559839.440797416
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 227725.9797862158
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 92198,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 95753.66868303166
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "component_affinity_coalesced",
+        "makespan": 92225,
+        "regret": 0.04906042406042399,
+        "added_bytes": 49152,
+        "predicted_cycles": 95962.08669544107
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 23859.26193932618
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 11795.619508299003
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_vector_coalesced",
+        "makespan": 144027,
+        "regret": 0.04559842028080663,
+        "added_bytes": 12288,
+        "predicted_cycles": 150402.1227983224
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 113996,
+        "regret": 0.05147811649679479,
+        "added_bytes": 218444,
+        "predicted_cycles": 110548.1474458581
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 166578,
+        "regret": 0.04847805835997887,
+        "added_bytes": 3521632,
+        "predicted_cycles": 130806.50723328943
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 111228.63091007418
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 174734,
+        "regret": 0.0,
+        "added_bytes": 986446,
+        "predicted_cycles": 177443.87971994336
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 142005,
+        "regret": 0.0,
+        "added_bytes": 1061958,
+        "predicted_cycles": 153523.18326886036
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 199027,
+        "regret": 0.0,
+        "added_bytes": 1681214,
+        "predicted_cycles": 213984.6695854843
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 129176,
+        "regret": 0.0,
+        "added_bytes": 2771130,
+        "predicted_cycles": 135805.652919446
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 13753,
+        "regret": 0.0,
+        "added_bytes": 150564,
+        "predicted_cycles": 13238.887920390904
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 10042,
+        "regret": 0.0,
+        "added_bytes": 185678,
+        "predicted_cycles": 8641.49963465134
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 365979,
+        "regret": 0.0,
+        "added_bytes": 1337122,
+        "predicted_cycles": 396951.86267566564
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 198761,
+        "regret": 0.0,
+        "added_bytes": 2471646,
+        "predicted_cycles": 208656.69310097187
+      }
+    ],
+    "q1_epsilon_2pct": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 559839.440797416
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 227725.9797862158
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 92198,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 95753.66868303166
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 87912,
+        "regret": 0.0,
+        "added_bytes": 727792,
+        "predicted_cycles": 90602.25386817103
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 23859.26193932618
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 11795.619508299003
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_vector_coalesced",
+        "makespan": 144027,
+        "regret": 0.04559842028080663,
+        "added_bytes": 12288,
+        "predicted_cycles": 150402.1227983224
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 113996,
+        "regret": 0.05147811649679479,
+        "added_bytes": 218444,
+        "predicted_cycles": 110548.1474458581
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar_coalesced",
+        "makespan": 166578,
+        "regret": 0.04847805835997887,
+        "added_bytes": 3521632,
+        "predicted_cycles": 130806.50723328943
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar_coalesced",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 111228.63091007418
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 174734,
+        "regret": 0.0,
+        "added_bytes": 986446,
+        "predicted_cycles": 177443.87971994336
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 142005,
+        "regret": 0.0,
+        "added_bytes": 1061958,
+        "predicted_cycles": 153523.18326886036
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 199027,
+        "regret": 0.0,
+        "added_bytes": 1681214,
+        "predicted_cycles": 213984.6695854843
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 129176,
+        "regret": 0.0,
+        "added_bytes": 2771130,
+        "predicted_cycles": 135805.652919446
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 13753,
+        "regret": 0.0,
+        "added_bytes": 150564,
+        "predicted_cycles": 13238.887920390904
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "shared_prefix_coalesced",
+        "makespan": 10042,
+        "regret": 0.0,
+        "added_bytes": 185678,
+        "predicted_cycles": 8641.49963465134
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 365979,
+        "regret": 0.0,
+        "added_bytes": 1337122,
+        "predicted_cycles": 396951.86267566564
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 198761,
+        "regret": 0.0,
+        "added_bytes": 2471646,
+        "predicted_cycles": 208656.69310097187
+      }
+    ],
+    "q2_latency": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 522663.2117610541
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 214491.01637588194
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 107158,
+        "regret": 0.162259485021367,
+        "added_bytes": 1826,
+        "predicted_cycles": 89766.02691191527
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 55100,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 69953.68146634135
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21468.371078986875
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10504.878994391998
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 142277,
+        "regret": 0.0,
+        "added_bytes": 53760,
+        "predicted_cycles": 150781.2851110239
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103981.9246123573
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 166578,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186246.86718144058
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 196748.27799602295
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132958,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133652.29312662268
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108405,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 111738.34207633999
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195713,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 204216.7726187955
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 121366,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 128232.4041305566
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10714,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11939.527882499538
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 8146,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7967.925531460304
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 379345.3095308806
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176933,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 205574.42149399407
+      }
+    ],
+    "q2_weighted_90": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 522663.2117610541
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 214491.01637588194
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 107158,
+        "regret": 0.162259485021367,
+        "added_bytes": 1826,
+        "predicted_cycles": 89766.02691191527
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 55100,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 69953.68146634135
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21468.371078986875
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10504.878994391998
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 142277,
+        "regret": 0.0,
+        "added_bytes": 53760,
+        "predicted_cycles": 150781.2851110239
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103981.9246123573
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 166578,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186246.86718144058
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 196748.27799602295
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132958,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133652.29312662268
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108405,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 111738.34207633999
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195713,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 204216.7726187955
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 121366,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 128232.4041305566
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10714,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11939.527882499538
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 8146,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7967.925531460304
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 379345.3095308806
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176933,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 205574.42149399407
+      }
+    ],
+    "q2_weighted_90_guard2": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 522663.2117610541
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 214491.01637588194
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 107158,
+        "regret": 0.162259485021367,
+        "added_bytes": 1826,
+        "predicted_cycles": 89766.02691191527
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 55100,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 69953.68146634135
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21468.371078986875
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10504.878994391998
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 142277,
+        "regret": 0.0,
+        "added_bytes": 53760,
+        "predicted_cycles": 150781.2851110239
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103981.9246123573
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 166578,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186246.86718144058
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 196748.27799602295
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132958,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133652.29312662268
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108405,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 111738.34207633999
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195713,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 204216.7726187955
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 121366,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 128232.4041305566
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10714,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11939.527882499538
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 8146,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7967.925531460304
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 379345.3095308806
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176933,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 205574.42149399407
+      }
+    ],
+    "q2_weighted_80": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 522663.2117610541
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 214491.01637588194
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 107158,
+        "regret": 0.162259485021367,
+        "added_bytes": 1826,
+        "predicted_cycles": 89766.02691191527
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 55100,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 69953.68146634135
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21468.371078986875
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10504.878994391998
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 142277,
+        "regret": 0.0,
+        "added_bytes": 53760,
+        "predicted_cycles": 150781.2851110239
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103981.9246123573
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 166578,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186246.86718144058
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 196748.27799602295
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132958,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133652.29312662268
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108405,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 111738.34207633999
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195713,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 204216.7726187955
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 121366,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 128232.4041305566
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10714,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11939.527882499538
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 8146,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7967.925531460304
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 379345.3095308806
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176933,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 205574.42149399407
+      }
+    ],
+    "q2_epsilon_2pct": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 522663.2117610541
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 214491.01637588194
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 92198,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 89954.83813571862
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 55100,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 69953.68146634135
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21468.371078986875
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10504.878994391998
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_vector",
+        "makespan": 149591,
+        "regret": 0.05140676286399071,
+        "added_bytes": 12288,
+        "predicted_cycles": 152522.80464063346
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103981.9246123573
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 166578,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186246.86718144058
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 131039,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 196748.27799602295
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132958,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133652.29312662268
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108405,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 111738.34207633999
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195713,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 204216.7726187955
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 121366,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 128232.4041305566
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10714,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11939.527882499538
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 8146,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7967.925531460304
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 379345.3095308806
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176933,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 205574.42149399407
+      }
+    ],
+    "q3_latency": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 520208.9744372816
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 213741.28009097377
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 107158,
+        "regret": 0.162259485021367,
+        "added_bytes": 1826,
+        "predicted_cycles": 88688.4031101556
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 54293,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 71203.6688445492
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21762.299540976546
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10968.170149084677
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 142241,
+        "regret": 0.0,
+        "added_bytes": 53760,
+        "predicted_cycles": 150212.97738760972
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103130.8409079023
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 137552,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186770.3485574547
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 108388,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 174457.55746667818
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132956,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133136.73808593646
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108364,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 110612.04375693896
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195707,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 202771.39898418327
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 119197,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 126712.338995664
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 12428,
+        "regret": 0.16008587697190335,
+        "added_bytes": 138790,
+        "predicted_cycles": 11745.418380518577
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 7465,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7743.089447432048
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 377310.52361450106
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176260,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 203432.47498715005
+      }
+    ],
+    "q3_weighted_90": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 520208.9744372816
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 213741.28009097377
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 107158,
+        "regret": 0.162259485021367,
+        "added_bytes": 1826,
+        "predicted_cycles": 88688.4031101556
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 54293,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 71203.6688445492
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21762.299540976546
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10968.170149084677
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 142241,
+        "regret": 0.0,
+        "added_bytes": 53760,
+        "predicted_cycles": 150212.97738760972
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103130.8409079023
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 137552,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186770.3485574547
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 108388,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 174457.55746667818
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132956,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133136.73808593646
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108364,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 110612.04375693896
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195707,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 202771.39898418327
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 119197,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 126712.338995664
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10713,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11746.50975893655
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 7465,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7743.089447432048
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 377310.52361450106
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176260,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 203432.47498715005
+      }
+    ],
+    "q3_weighted_90_guard2": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 520208.9744372816
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 213741.28009097377
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 107158,
+        "regret": 0.162259485021367,
+        "added_bytes": 1826,
+        "predicted_cycles": 88688.4031101556
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 54293,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 71203.6688445492
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21762.299540976546
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10968.170149084677
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 142241,
+        "regret": 0.0,
+        "added_bytes": 53760,
+        "predicted_cycles": 150212.97738760972
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103130.8409079023
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 137552,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186770.3485574547
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 108388,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 174457.55746667818
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132956,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133136.73808593646
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108364,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 110612.04375693896
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195707,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 202771.39898418327
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 119197,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 126712.338995664
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10713,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11746.50975893655
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 7465,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7743.089447432048
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 377310.52361450106
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176260,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 203432.47498715005
+      }
+    ],
+    "q3_weighted_80": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 520208.9744372816
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 213741.28009097377
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "depth_band",
+        "makespan": 107158,
+        "regret": 0.162259485021367,
+        "added_bytes": 1826,
+        "predicted_cycles": 88688.4031101556
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 54293,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 71203.6688445492
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21762.299540976546
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10968.170149084677
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 142241,
+        "regret": 0.0,
+        "added_bytes": 53760,
+        "predicted_cycles": 150212.97738760972
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103130.8409079023
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 137552,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186770.3485574547
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 108388,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 174457.55746667818
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132956,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133136.73808593646
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108364,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 110612.04375693896
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195707,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 202771.39898418327
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 119197,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 126712.338995664
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10713,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11746.50975893655
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 7465,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7743.089447432048
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 377310.52361450106
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176260,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 203432.47498715005
+      }
+    ],
+    "q3_epsilon_2pct": [
+      {
+        "case": "case_007",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 507494,
+        "regret": 0.0,
+        "added_bytes": 27648,
+        "predicted_cycles": 520208.9744372816
+      },
+      {
+        "case": "case_007",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 203834,
+        "regret": 0.0,
+        "added_bytes": 110592,
+        "predicted_cycles": 213741.28009097377
+      },
+      {
+        "case": "case_009",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 92198,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 88873.431290149
+      },
+      {
+        "case": "case_009",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 54293,
+        "regret": 0.0,
+        "added_bytes": 934800,
+        "predicted_cycles": 71203.6688445492
+      },
+      {
+        "case": "case_029",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 19740,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 21762.299540976546
+      },
+      {
+        "case": "case_029",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 9383,
+        "regret": 0.0,
+        "added_bytes": 0,
+        "predicted_cycles": 10968.170149084677
+      },
+      {
+        "case": "case_040",
+        "cores": 2,
+        "name": "shared_prefix",
+        "makespan": 149258,
+        "regret": 0.049331767915017366,
+        "added_bytes": 12288,
+        "predicted_cycles": 152734.93258720482
+      },
+      {
+        "case": "case_040",
+        "cores": 5,
+        "name": "shared_prefix",
+        "makespan": 105775,
+        "regret": 0.0,
+        "added_bytes": 247244,
+        "predicted_cycles": 103130.8409079023
+      },
+      {
+        "case": "case_046",
+        "cores": 2,
+        "name": "component_scalar",
+        "makespan": 137552,
+        "regret": 0.0,
+        "added_bytes": 3521632,
+        "predicted_cycles": 186770.3485574547
+      },
+      {
+        "case": "case_046",
+        "cores": 5,
+        "name": "component_scalar",
+        "makespan": 108388,
+        "regret": 0.0,
+        "added_bytes": 5013664,
+        "predicted_cycles": 174457.55746667818
+      },
+      {
+        "case": "case_048",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 132956,
+        "regret": 0.0,
+        "added_bytes": 566342,
+        "predicted_cycles": 133136.73808593646
+      },
+      {
+        "case": "case_048",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 108364,
+        "regret": 0.0,
+        "added_bytes": 1068312,
+        "predicted_cycles": 110612.04375693896
+      },
+      {
+        "case": "case_066",
+        "cores": 2,
+        "name": "mask_band",
+        "makespan": 195707,
+        "regret": 0.0,
+        "added_bytes": 859680,
+        "predicted_cycles": 202771.39898418327
+      },
+      {
+        "case": "case_066",
+        "cores": 5,
+        "name": "mask_band",
+        "makespan": 119197,
+        "regret": 0.0,
+        "added_bytes": 2426672,
+        "predicted_cycles": 126712.338995664
+      },
+      {
+        "case": "case_071",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 10713,
+        "regret": 0.0,
+        "added_bytes": 103398,
+        "predicted_cycles": 11746.50975893655
+      },
+      {
+        "case": "case_071",
+        "cores": 5,
+        "name": "depth_band",
+        "makespan": 7465,
+        "regret": 0.0,
+        "added_bytes": 197490,
+        "predicted_cycles": 7743.089447432048
+      },
+      {
+        "case": "case_082",
+        "cores": 2,
+        "name": "valley_stage",
+        "makespan": 359484,
+        "regret": 0.0,
+        "added_bytes": 713350,
+        "predicted_cycles": 377310.52361450106
+      },
+      {
+        "case": "case_082",
+        "cores": 5,
+        "name": "valley_stage",
+        "makespan": 176260,
+        "regret": 0.0,
+        "added_bytes": 2631192,
+        "predicted_cycles": 203432.47498715005
+      }
+    ]
+  }
+}

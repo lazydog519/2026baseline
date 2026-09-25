@@ -1,0 +1,138 @@
+[
+  {
+    "case": "case_029",
+    "name": "component_scalar",
+    "plan_sha256": "58c0ed3104c4d0375a098d6cf792df26c47c60cb510748dcc0cb96053a3d8236",
+    "status": "ok",
+    "makespan": 9383,
+    "label_seconds": 0.10949030000483617
+  },
+  {
+    "case": "case_029",
+    "name": "join_tail",
+    "plan_sha256": "805ab23dbd123deb18a3f1c202e69348fb35cb8e62adb03d8bb57bbecc6b97da",
+    "status": "ok",
+    "makespan": 27219,
+    "label_seconds": 0.18264679999265354
+  },
+  {
+    "case": "case_029",
+    "name": "shared_prefix",
+    "plan_sha256": "7baf74f616ac433d9f4991459eb81c68451b1b70473dab0e5d7b5dc3e0cbf4cf",
+    "status": "ok",
+    "makespan": 23497,
+    "label_seconds": 0.19555269999546
+  },
+  {
+    "case": "case_040",
+    "name": "component_scalar",
+    "plan_sha256": "56bb27de1bb86a02e9507a2019fbdceef4155a7e1f42529f41b8080c795b2a77",
+    "status": "ok",
+    "makespan": 110337,
+    "label_seconds": 0.4579865999985486
+  },
+  {
+    "case": "case_040",
+    "name": "component_vector",
+    "plan_sha256": "97e1ad4b7f45e08c87c1b407e4a3939e85066200dddb0e02f138ea1ac6d906eb",
+    "status": "ok",
+    "makespan": 110333,
+    "label_seconds": 0.4424443000025349
+  },
+  {
+    "case": "case_040",
+    "name": "join_tail",
+    "plan_sha256": "1a3715aba1d1b04e43b2e167a21411d0178a0d30ec5964ef3ace1579c4474e96",
+    "status": "ok",
+    "makespan": 200501,
+    "label_seconds": 0.5236963000061223
+  },
+  {
+    "case": "case_040",
+    "name": "shared_prefix",
+    "plan_sha256": "81eb796c2f86c5099ff289302dd791023c28def2a1bfffa88e32ae37a9cac102",
+    "status": "ok",
+    "makespan": 105775,
+    "label_seconds": 0.4567757999902824
+  },
+  {
+    "case": "case_046",
+    "name": "component_scalar",
+    "plan_sha256": "d2592ac69c9411332023c80ba8657b7e461d1f0b9f57272c8bd19ca3db68e13a",
+    "status": "ok",
+    "makespan": 108388,
+    "label_seconds": 0.1412343999982113
+  },
+  {
+    "case": "case_046",
+    "name": "join_tail",
+    "plan_sha256": "d3d199bec4fa575d3edc552ba9465eae7c4a8996b26c9c15ad6a302e0e6e250a",
+    "status": "ok",
+    "makespan": 236457,
+    "label_seconds": 0.17038539999339264
+  },
+  {
+    "case": "case_007",
+    "name": "component_scalar",
+    "plan_sha256": "13938168df6d834357f8f2775aea5024b77f8653a70d609079499ba6c439d71d",
+    "status": "ok",
+    "makespan": 203834,
+    "label_seconds": 0.6737644000095315
+  },
+  {
+    "case": "case_048",
+    "name": "component_scalar",
+    "plan_sha256": "b675540876c4c4daee372d760007e6721d7fc3f6e0048bb007199019e438733b",
+    "status": "ok",
+    "makespan": 222220,
+    "label_seconds": 0.2783116000064183
+  },
+  {
+    "case": "case_048",
+    "name": "join_tail",
+    "plan_sha256": "f341b4d2c0f3924516b8a5122809a912209376d00458e7937b3f16247b3cec6a",
+    "status": "ok",
+    "makespan": 220694,
+    "label_seconds": 0.30500010000832845
+  },
+  {
+    "case": "case_048",
+    "name": "shared_prefix",
+    "plan_sha256": "cf4da4c4aaeeb9ed0cc9ed3909a5b793f04f2ab66974515595aa2120eda4f227",
+    "status": "ok",
+    "makespan": 212228,
+    "label_seconds": 0.2722134000068763
+  },
+  {
+    "case": "case_007",
+    "name": "join_tail",
+    "plan_sha256": "c2174d59f9c4e799465a824b1df739357631c4bb3c82baa860b01713334aed1a",
+    "status": "ok",
+    "makespan": 440019,
+    "label_seconds": 1.6512934999918798
+  },
+  {
+    "case": "case_082",
+    "name": "component_scalar",
+    "plan_sha256": "dfde50fbf3fc89387e8908490cabe90fec44ee3cc523715cfb3601b0366365fa",
+    "status": "ok",
+    "makespan": 721041,
+    "label_seconds": 0.6920588000066346
+  },
+  {
+    "case": "case_082",
+    "name": "join_tail",
+    "plan_sha256": "b2e449702ec3a513b73ad2ee7a3b772faa5b7caf9751ee6d234450cfdfab846c",
+    "status": "ok",
+    "makespan": 717242,
+    "label_seconds": 0.7415899000043282
+  },
+  {
+    "case": "case_082",
+    "name": "shared_prefix",
+    "plan_sha256": "0594922a03f10b9c7613e1c8c5c3d8392a28616f2d3583eed7fa730edf83f10e",
+    "status": "ok",
+    "makespan": 584836,
+    "label_seconds": 0.613637699992978
+  }
+]

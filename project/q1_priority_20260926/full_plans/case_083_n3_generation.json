@@ -1,0 +1,79 @@
+{
+  "selected": "component_vector",
+  "fingerprint": "da13d638989f51487f354b4419fbfa3e4b51640fa4697755c80f1379d66ec4ec",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "da13d638989f51487f354b4419fbfa3e4b51640fa4697755c80f1379d66ec4ec",
+      "proxy_cycles": 287716,
+      "boundary_bytes": 3299104,
+      "tasks": 3,
+      "resource_floor": 287716
+    },
+    {
+      "name": "first_join",
+      "fingerprint": "5eed3e094d6ab16cc68e094c7b4ae32cf1cf52f080ad352066f44535cf3c4ce9",
+      "proxy_cycles": 776016,
+      "boundary_bytes": 2455840,
+      "tasks": 4,
+      "resource_floor": 775916
+    },
+    {
+      "name": "component_2_active",
+      "fingerprint": "c52479fcc285733c9f589b9e4401d4b61256142ef3958a5d85ebcaad4e5771cf",
+      "proxy_cycles": 418496,
+      "boundary_bytes": 2368704,
+      "tasks": 2,
+      "resource_floor": 418496
+    },
+    {
+      "name": "data_band_1",
+      "fingerprint": "cef4f6ca61b4070df9d9beec7eab01c4466137b468733e47f13186a1dcd92a5e",
+      "proxy_cycles": 315812.6666666666,
+      "boundary_bytes": 18504480,
+      "tasks": 180,
+      "resource_floor": 308408.0
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "55c86a3f66818f2c02149b7a23d05ec2b7d2de3c5030bb27c5ab4fbf8e79b4ab",
+      "proxy_cycles": 745240.0,
+      "boundary_bytes": 44714400,
+      "tasks": 1922,
+      "resource_floor": 745240.0
+    },
+    {
+      "name": "data_band_2",
+      "fingerprint": "93beccdd8e122d90fc2d4d36aec19b42837088ccc9ebfb129e669abf8f709514",
+      "proxy_cycles": 290616,
+      "boundary_bytes": 13552416,
+      "tasks": 90,
+      "resource_floor": 287716
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "2d8e0c36131f16a755b4200d8238b27975091e3e487dd0467cc53fc07bed5a9b",
+      "proxy_cycles": 659266.6666666666,
+      "boundary_bytes": 39556000,
+      "tasks": 961,
+      "resource_floor": 659266.6666666666
+    },
+    {
+      "name": "data_band_4",
+      "fingerprint": "59b436da3b73fb982403387a2eabf568203f4b0ec5ebafb63ca6b2a969b5f971",
+      "proxy_cycles": 289016,
+      "boundary_bytes": 7108384,
+      "tasks": 42,
+      "resource_floor": 287716
+    },
+    {
+      "name": "mask_sink_4",
+      "fingerprint": "12fda34cdc4088e49202254411f10b731574475ac614738cd7baa59088340b40",
+      "proxy_cycles": 583345.6,
+      "boundary_bytes": 35000736,
+      "tasks": 496,
+      "resource_floor": 583345.6
+    }
+  ],
+  "rejected": []
+}

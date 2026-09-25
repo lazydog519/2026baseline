@@ -1,0 +1,57 @@
+{
+  "selected": "component",
+  "plan_sha256": "0559ecc98105c62e9edee26e8328959f0cb71f6fff6b1de476e1c2b6e3ab224d",
+  "risk_multiplier": 10,
+  "candidates": [
+    {
+      "family": "component",
+      "proxy_cycles": 9510,
+      "pre_spill_bytes": 305448,
+      "estimated_peak_bytes": {
+        "L1": 40960,
+        "UB": 40966
+      },
+      "risk_bytes": 0,
+      "rank_cycles": 14600.8,
+      "digest": "0559ecc98105c62e9edee26e8328959f0cb71f6fff6b1de476e1c2b6e3ab224d"
+    },
+    {
+      "family": "data",
+      "proxy_cycles": 14465.766666666666,
+      "pre_spill_bytes": 867946,
+      "estimated_peak_bytes": {
+        "L1": 22528,
+        "UB": 28672
+      },
+      "risk_bytes": 0,
+      "rank_cycles": 28931.533333333333,
+      "digest": "3cb74aa2de235348f3cc9b52059599998dd46dfff77e3cd26fceec89068a5978"
+    },
+    {
+      "family": "data_wide",
+      "proxy_cycles": 11495.333333333334,
+      "pre_spill_bytes": 689720,
+      "estimated_peak_bytes": {
+        "L1": 24576,
+        "UB": 36864
+      },
+      "risk_bytes": 0,
+      "rank_cycles": 22990.666666666668,
+      "digest": "869b7e7c71181642994f66a4f9618f07d7a36c459b2ac3a313624d79496a3d61"
+    },
+    {
+      "family": "band",
+      "proxy_cycles": 18627.933333333334,
+      "pre_spill_bytes": 1117676,
+      "estimated_peak_bytes": {
+        "L1": 24576,
+        "UB": 34818
+      },
+      "risk_bytes": 0,
+      "rank_cycles": 37255.86666666667,
+      "digest": "ac5fb680c76270260dd9ac7447952e1e613f7600932f416872ec22bbadf02e7e"
+    }
+  ],
+  "rejected": [],
+  "inference_seconds": 0.05191959999501705
+}

@@ -1,0 +1,92 @@
+{
+  "solver_version": "fresh-q3-20260926-v2",
+  "selected": "join_tail",
+  "method": "trained",
+  "official_calls": 0,
+  "graph_sha256": "f974fbf1a23b4a145b5f8c9c691eb1b247f93d8785d98bb46a9cdd8626399aec",
+  "model_sha256": "d3c368122a5abeaceacf985d5abd8da386284f20165d230f25bf17dd97b27ca9",
+  "plan_sha256": "b39c7ca1814b0a9b790840e023e8891693a1b4de69f7a63f1568d8f7d0aaf100",
+  "generation_seconds": 0.15209170000161976,
+  "structural_checks": "pass",
+  "execution_audit": "not_yet_run",
+  "candidates": [
+    {
+      "name": "component_scalar",
+      "features": [
+        2554795,
+        0,
+        6553.633333333333,
+        0.0,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 393218,
+        "repeat_opportunity_bytes": 0,
+        "minimum_ddr_bytes": 393218,
+        "physical_lower_bound_cycles": 2554795,
+        "logical_peak_bytes": [
+          {
+            "L1": 393216,
+            "UB": 65558
+          },
+          {
+            "L1": 0,
+            "UB": 0
+          },
+          {
+            "L1": 0,
+            "UB": 0
+          },
+          {
+            "L1": 0,
+            "UB": 0
+          },
+          {
+            "L1": 0,
+            "UB": 0
+          }
+        ],
+        "logical_excess_bytes": 0
+      }
+    },
+    {
+      "name": "join_tail",
+      "features": [
+        2529643,
+        0,
+        6554.433333333333,
+        6553.6,
+        0.0
+      ],
+      "detail": {
+        "no_hit_copy_bytes": 786482,
+        "repeat_opportunity_bytes": 393216,
+        "minimum_ddr_bytes": 393266,
+        "physical_lower_bound_cycles": 2529643,
+        "logical_peak_bytes": [
+          {
+            "L1": 32768,
+            "UB": 65536
+          },
+          {
+            "L1": 32768,
+            "UB": 65536
+          },
+          {
+            "L1": 32768,
+            "UB": 65536
+          },
+          {
+            "L1": 32768,
+            "UB": 65536
+          },
+          {
+            "L1": 393216,
+            "UB": 65558
+          }
+        ],
+        "logical_excess_bytes": 0
+      }
+    }
+  ]
+}

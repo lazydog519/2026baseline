@@ -1,0 +1,23 @@
+{
+  "solver_version": "fresh-q3-20260926-v1",
+  "features": [
+    "compute_bottleneck",
+    "cross_path_exposure",
+    "compulsory_io",
+    "repeated_read_exposure",
+    "private_memory_pressure"
+  ],
+  "weights": [
+    1.2082846072546694,
+    0.0,
+    0.0,
+    0.5467750897414134,
+    0.4774071639193517
+  ],
+  "fit": {
+    "type": "nonnegative_ridge",
+    "lambda": 0.01,
+    "seed": null
+  },
+  "origin": "only this round fresh training labels"
+}

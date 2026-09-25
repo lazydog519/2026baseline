@@ -1,0 +1,25 @@
+{
+  "complete_cases": 100,
+  "audited_jobs": 400,
+  "expected_jobs": 400,
+  "failed": 0,
+  "mean_speedup_by_cores": {
+    "2": 1.935753781501983,
+    "3": 2.7452343757149884,
+    "4": 3.4645482913893746,
+    "5": 3.952170334022541
+  },
+  "mean_added_copy_bytes_by_cores": {
+    "2": 10565939.2,
+    "3": 9104874.7,
+    "4": 8985128.08,
+    "5": 10230126.36
+  },
+  "source_sha256": {
+    "solver.py": "026e1fdf8ae07df12ec709371bd86d697874b34ee867eab34a86c61e023d134c",
+    "model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+    "memory_proxy.py": "0b9d854c4932d0e091f981d528ccee9ab39c0fc195018a5df39906396ca11465",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab"
+  }
+}

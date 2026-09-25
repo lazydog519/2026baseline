@@ -1,0 +1,95 @@
+{
+  "selected": "component_vector",
+  "fingerprint": "d3709b6ecc0907645e35849d2284a68e2a69f75dc6561eb545fdb2a8033a7f92",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "d3709b6ecc0907645e35849d2284a68e2a69f75dc6561eb545fdb2a8033a7f92",
+      "proxy_cycles": 1388240,
+      "boundary_bytes": 4344780,
+      "tasks": 2,
+      "resource_floor": 1388240
+    },
+    {
+      "name": "first_join",
+      "fingerprint": "5c0ec006344fd7438fe476d22c78ef168f83fe3fb6e03fc7438308e47e696330",
+      "proxy_cycles": 1796062,
+      "boundary_bytes": 46155724,
+      "tasks": 3,
+      "resource_floor": 1388240
+    },
+    {
+      "name": "data_band_1",
+      "fingerprint": "604843c75c5f98978868cce7636ca2dd03b385e3508c13a53413a32b48801804",
+      "proxy_cycles": 1477145.3333333333,
+      "boundary_bytes": 20726832,
+      "tasks": 8,
+      "resource_floor": 1388240
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "859c44b8b7f550dc29667ef996ba7338c9420ef7b6a73a9e2e6a43b87f2e1ab6",
+      "proxy_cycles": 1975642.533333311,
+      "boundary_bytes": 65025440,
+      "tasks": 2450,
+      "resource_floor": 1388416
+    },
+    {
+      "name": "data_band_2",
+      "fingerprint": "d3d20a033dee2b873ec791c7e3bb9663e18319a550ff8453cdcf99d4ba323223",
+      "proxy_cycles": 1400716,
+      "boundary_bytes": 4899488,
+      "tasks": 4,
+      "resource_floor": 1388240
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "afe2d268f3f82debb60fd2c476ff2e6c09fbf007e1c382bafe3676bd5c7eb93a",
+      "proxy_cycles": 1579158,
+      "boundary_bytes": 38283864,
+      "tasks": 1254,
+      "resource_floor": 1388720
+    },
+    {
+      "name": "mask_sink_4",
+      "fingerprint": "f6f19ce722f7171c41366244b3f8da4e91c8c688c88bb13271abbf4c950d9ad2",
+      "proxy_cycles": 1422616,
+      "boundary_bytes": 29369944,
+      "tasks": 649,
+      "resource_floor": 1388240
+    },
+    {
+      "name": "mask_source",
+      "fingerprint": "415408e4d259dfcac5fd7a4c189c3c6321e64f4542b7d791c17e86f682ac8321",
+      "proxy_cycles": 2366512.59999997,
+      "boundary_bytes": 111113636,
+      "tasks": 9332,
+      "resource_floor": 1851893.9333333333
+    },
+    {
+      "name": "data_band_2_ready_schedule",
+      "fingerprint": "3596da71edb611a826bf7b57d9dc7de8e63b7d2cfd3035160c63d94b21c560f5",
+      "proxy_cycles": 1400716,
+      "boundary_bytes": 4899488,
+      "tasks": 4,
+      "resource_floor": 1388240
+    },
+    {
+      "name": "mask_sink_4_ready_schedule",
+      "fingerprint": "859caa78426bfa7a62d25f693e44b631a9ff99be1113b9a43d28c748b88f0610",
+      "proxy_cycles": 1422590,
+      "boundary_bytes": 29369944,
+      "tasks": 649,
+      "resource_floor": 1388240
+    },
+    {
+      "name": "mask_sink_4_local_merge",
+      "fingerprint": "86a5eeaf87aed1074cf43227f043ca91eebf9ec374aa60f50c076ea511ae4ff3",
+      "proxy_cycles": 1422477,
+      "boundary_bytes": 29353560,
+      "tasks": 647,
+      "resource_floor": 1388240
+    }
+  ],
+  "rejected": []
+}

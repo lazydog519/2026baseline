@@ -1,0 +1,49 @@
+{
+  "scope": "3 held-out medium/small cases, 5 cores, not full contest score",
+  "training_cases": [
+    "case_029",
+    "case_040",
+    "case_046",
+    "case_007",
+    "case_048",
+    "case_082"
+  ],
+  "held_out_cases": [
+    "case_055",
+    "case_013",
+    "case_088"
+  ],
+  "metrics": {
+    "component_scalar": {
+      "l2_gain": 1.0,
+      "speedup_vs_original_singlecore": 3.5418010660409056,
+      "cache_byte_hit_rate": 0.0440049343768327,
+      "generation_seconds": 0.09537253332867597
+    },
+    "trained": {
+      "l2_gain": 1.0027784316794315,
+      "speedup_vs_original_singlecore": 2.7489943042087366,
+      "cache_byte_hit_rate": 0.07128759546908854,
+      "generation_seconds": 0.08561910000086452
+    }
+  },
+  "paired": [
+    {
+      "case": "case_055",
+      "relative_makespan_reduction": -0.04893485643717188
+    },
+    {
+      "case": "case_013",
+      "relative_makespan_reduction": -0.8884903334988872
+    },
+    {
+      "case": "case_088",
+      "relative_makespan_reduction": 0.09191156816337243
+    }
+  ],
+  "validation_official_calls": 15,
+  "official_calls_during_final_generation": 0,
+  "official_files_unchanged": 114,
+  "model_and_solver_frozen": true,
+  "isolation_renaming_repeat_tests": 6
+}

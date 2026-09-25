@@ -1,0 +1,75 @@
+% 问题一，需在主文档加载 amsmath, amssymb；数值单位：cycle, byte。
+% 与 solver.py / mechanistic.py 字段保持一致。不要把带帽变量当官方值。
+\paragraph{决策与可行域.}
+令 $G=(V,E)$ 为删去原始输入输出搬运节点后的计算依赖图，
+$\phi:V\to S$ 为操作到子图的映射，$a:S\to\{1,\ldots,N\}$ 为子图到核心的映射，
+$\pi_k$ 为核心 $k$ 的子图执行排列，$N\in\{2,3,4,5\}$。
+将跨子图依赖边与各 $\pi_k$ 中相邻子图的顺序边合并，所得有向图必须无环；
+每个操作恰好出现一次，每个子图恰好置于一个核心的排列中。
+
+\paragraph{切图引起的 DDR 搬运.}
+记 $b_t$ 为张量 $t$ 的字节数，$P_t$、$C_t$ 分别为其生产和消费子图集合。
+令 $I_s$ 为 Task $s$ 必须从 DDR 读入的张量集合，$O_s$ 为其必须写回 DDR
+供其他 Task 或原图输出使用的张量集合。集合按张量去重，因而同一 Task 中
+多次消费不重复计数。则
+\begin{align}
+B_{\mathrm{task}}
+ &=\sum_{s\in S}\left(\sum_{t\in I_s}b_t+\sum_{t\in O_s}b_t\right),\\
+B_{\mathrm{cut}}&=B_{\mathrm{task}}-B_0,\\
+D_{\mathrm{official}}&=B_{\mathrm{cut}}+B_{\mathrm{spill}},
+\end{align}
+其中 $B_0$ 是原图 COPY 搬运量，$B_{\mathrm{spill}}$ 为附件内存调度器真实插入的
+溢出搬运量。该恒等式用于结果解释，求解器不读取 $B_{\mathrm{spill}}$。
+
+\paragraph{双 Pipe 与 DDR 的快速代理.}
+记操作 $v$ 的周期为 $c_v$、Pipe 为 $p(v)\in\{M,V\}$。
+令 $\beta=60\ \mathrm{byte/cycle}$，则
+\begin{align}
+W_s^q&=\sum_{v:\,\phi(v)=s,\,p(v)=q}c_v,\quad q\in\{M,V\},\\
+\widehat d_s&=\max\left\{W_s^M,W_s^V,
+\frac{\sum_{t\in I_s}b_t+\sum_{t\in O_s}b_t}{\beta}\right\}.\label{eq:q1_task_proxy}
+\end{align}
+设 $\mathcal P^+(s)$ 为 Task 数据前驱与核内相邻前驱的并集，
+$\omega_{r,s}$ 对跨核数据前驱取 $1000$ cycle，对核内相邻前驱取
+$100$ cycle，其余取 $0$。按合并图拓扑顺序计算
+\begin{align}
+\widehat F_s&=\widehat d_s+
+\max_{r\in\mathcal P^+(s)}(\widehat F_r+\omega_{r,s}),\\
+\widehat T&=\max\left\{\max_{s\in S}\widehat F_s,
+\frac{B_{\mathrm{task}}}{\beta}\right\}.\label{eq:q1_time_proxy}
+\end{align}
+空前驱最大值定义为 $0$。式~\eqref{eq:q1_time_proxy} 是排序代理，
+不包含附件 Step 1--3 的逐操作排布、带宽竞争和真实缓存溢出，
+因此不作为官方 Makespan 或严格近似界。
+
+\paragraph{分量装箱与切分粒度.}
+对弱连通分量 $C_j$，记 $w_j^q=\sum_{v\in C_j,\,p(v)=q}c_v$，
+$L_k^q$ 为核心 $k$ 当前的 Pipe $q$ 负载。按 $\max_q w_j^q$ 降序访问分量，
+在每步取
+\begin{equation}
+k_j=\arg\min_k\left(
+\max\{L_k^M+w_j^M,L_k^V+w_j^V\},\;
+L_k^M+L_k^V,\;k\right)
+\end{equation}
+的字典序最小值，并更新负载。若图的最大拓扑深度为 $h$、计算总工作量
+为 $W=\sum_{v\in V}c_v$，候选深度带宽的初值取
+\begin{equation}
+w_0=\max\left\{2,\left\lceil\frac{N\delta_{\rm cross}h}{W}\right\rceil,
+\left\lceil\frac{Nh}{256}\right\rceil\right\},\qquad
+\delta_{\rm cross}=1000\ \mathrm{cycle}.
+\end{equation}
+构造时考察 $w_0,2w_0,4w_0$；该式只是将固定同步等待与图深和
+总工作量折算为有限候选尺度，$256$ 是计算预算参数，不是 Task 数量硬约束。
+
+\paragraph{选择规则与评价量.}
+从弱连通分量装箱、深度带、宽度谷、汇合分支和共享掩码构造有限候选集
+$\mathcal X(G,N)$；每个候选均执行覆盖和无环检查。先寻找最小
+$\widehat T$，仅当其相对分量装箱候选的预测改进超过固定阈值
+$\varepsilon=0.01$ 时选择切分方案；否则保留分量装箱。
+预测值相同时以较小 $B_{\mathrm{task}}$ 判别。
+最终官方评价指标为 $T_{i,N}$ 和 $D_{i,N}$；以单核整图时间 $T_{i,1}$
+计算第 $i$ 个图的加速比 $S_{i,N}=T_{i,1}/T_{i,N}$，且 $S_{i,1}=1$。
+对 $100$ 个图的算术平均为
+\begin{equation}
+\overline S_N=\frac{1}{100}\sum_{i=1}^{100}S_{i,N}.
+\end{equation}

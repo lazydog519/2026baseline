@@ -1,0 +1,42 @@
+{
+  "model_sha256": "d3c368122a5abeaceacf985d5abd8da386284f20165d230f25bf17dd97b27ca9",
+  "plans": [
+    {
+      "case": "case_024",
+      "method": "component_scalar",
+      "plan_sha256": "fc23b7ad8d45f2cfaef59aa6adf2fa3e3829377ab413e522caaa960a94a51837",
+      "isolated_renamed_fresh_process_repeat": true
+    },
+    {
+      "case": "case_024",
+      "method": "trained",
+      "plan_sha256": "b39c7ca1814b0a9b790840e023e8891693a1b4de69f7a63f1568d8f7d0aaf100",
+      "isolated_renamed_fresh_process_repeat": true
+    },
+    {
+      "case": "case_083",
+      "method": "component_scalar",
+      "plan_sha256": "e8d273c0ff372e508b4f7f5875f5e5f35fa7c33c1d466e455ad90821b11cb2a2",
+      "isolated_renamed_fresh_process_repeat": true
+    },
+    {
+      "case": "case_083",
+      "method": "trained",
+      "plan_sha256": "e8d273c0ff372e508b4f7f5875f5e5f35fa7c33c1d466e455ad90821b11cb2a2",
+      "isolated_renamed_fresh_process_repeat": true
+    },
+    {
+      "case": "case_069",
+      "method": "component_scalar",
+      "plan_sha256": "10154dfd0a93b230d88cf8805e7be797d9285630ff167a1ae5943be4ba095a33",
+      "isolated_renamed_fresh_process_repeat": true
+    },
+    {
+      "case": "case_069",
+      "method": "trained",
+      "plan_sha256": "06cc7df9cf981acc17bec2a73e5a10f27286661b05bdfb8f6a8ae6620d8d9c96",
+      "isolated_renamed_fresh_process_repeat": true
+    }
+  ],
+  "all_generated_before_official_holdout_evaluation": true
+}

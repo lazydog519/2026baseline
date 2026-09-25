@@ -1,0 +1,25 @@
+{
+  "complete_cases": 100,
+  "jobs": 400,
+  "failed": 0,
+  "singlecore_reference": "official fixed singlecore cycles from final_metrics/per_case_metrics.csv",
+  "mean_speedup_by_cores": {
+    "2": 1.8648245364390936,
+    "3": 2.601643123787822,
+    "4": 3.265034234160826,
+    "5": 3.8310665270827635
+  },
+  "mean_added_copy_bytes_by_cores": {
+    "2": 14521123.12,
+    "3": 15219133.92,
+    "4": 16312211.76,
+    "5": 16027333.48
+  },
+  "source_sha256": {
+    "solver.py": "c35e4efd7b50ae1fb6c6604da33e0a4b39c47132404108e20a71ca5eaf8a23d5",
+    "mechanistic.py": "27e5392ad0525cbd83736276f2c5c8b9e9b61cdb3cbc9c95ecf195ee367ba36b",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "policy.json": "5d3a34d511532917b8effb7f8d973e5dfcc94c3d90411ff9ec66144f9cd490b8"
+  }
+}

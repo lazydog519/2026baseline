@@ -1,0 +1,127 @@
+{
+  "selected": "component_vector",
+  "fingerprint": "246aa7548605a77068b9f643b24c2e6ba5e7751f6a9e11f38b60fb21cd110f34",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "246aa7548605a77068b9f643b24c2e6ba5e7751f6a9e11f38b60fb21cd110f34",
+      "proxy_cycles": 1796272,
+      "boundary_bytes": 32491000,
+      "tasks": 5,
+      "resource_floor": 1796272
+    },
+    {
+      "name": "first_join",
+      "fingerprint": "0b45c7e86ac42e6b7c56c131c992689ee72279a50e044805aed4c90816cf41d8",
+      "proxy_cycles": 2671998,
+      "boundary_bytes": 119716760,
+      "tasks": 6,
+      "resource_floor": 2010176
+    },
+    {
+      "name": "component_2_active",
+      "fingerprint": "46762c74fe7d46f8094fed8ce21a461883e6491488b587fc3e15f9458ae08498",
+      "proxy_cycles": 4496300,
+      "boundary_bytes": 13055992,
+      "tasks": 2,
+      "resource_floor": 4496300
+    },
+    {
+      "name": "component_3_active",
+      "fingerprint": "f2b483ae61ec405bc422230cae969cab811ec9842e794a4c77f8c19f8fddccbb",
+      "proxy_cycles": 2995724,
+      "boundary_bytes": 19534328,
+      "tasks": 3,
+      "resource_floor": 2995724
+    },
+    {
+      "name": "component_4_active",
+      "fingerprint": "4d1066682ae556d431dfab75ef49286ebb45bfbb956c6473665ab6a504a1d7cd",
+      "proxy_cycles": 2256676,
+      "boundary_bytes": 26012664,
+      "tasks": 4,
+      "resource_floor": 2256676
+    },
+    {
+      "name": "data_band_1",
+      "fingerprint": "a159764a44c1280794be03f8da20ff1e77180cd6e5cdd0486a1d960387072794",
+      "proxy_cycles": 1837293.3333333333,
+      "boundary_bytes": 47105996,
+      "tasks": 215,
+      "resource_floor": 1796272
+    },
+    {
+      "name": "valley_1",
+      "fingerprint": "1c9f8629c64f043fde75469cfd31b72ef615e25ffdfc8fbfb953b8fd2932ff1e",
+      "proxy_cycles": 1798372,
+      "boundary_bytes": 32816632,
+      "tasks": 20,
+      "resource_floor": 1796272
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "bb2f1e0b85ad83c42357f2859fafcb05d9341a7d3b6f26dcb17921dfdb5b2de1",
+      "proxy_cycles": 2482174.2333333334,
+      "boundary_bytes": 148930454,
+      "tasks": 4009,
+      "resource_floor": 2482174.2333333334
+    },
+    {
+      "name": "data_band_2",
+      "fingerprint": "7ac7d6d88a709ee086fd29fb4d0e968c863fef658b98a5749b2ff5954255e9ae",
+      "proxy_cycles": 1800358.6666666667,
+      "boundary_bytes": 33457490,
+      "tasks": 90,
+      "resource_floor": 1796272
+    },
+    {
+      "name": "valley_2",
+      "fingerprint": "67f28bb18835185fe9378d5c3a178bd9009ed00c4680984e5113af59a7391d3e",
+      "proxy_cycles": 1798272,
+      "boundary_bytes": 32806392,
+      "tasks": 15,
+      "resource_floor": 1796272
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "1d8e1b557fa6d42da0f327fd4ebb74fc787087b6ab2f0f9291b7045cd7a88e0a",
+      "proxy_cycles": 2049938.1333333333,
+      "boundary_bytes": 122996288,
+      "tasks": 1154,
+      "resource_floor": 2049938.1333333333
+    },
+    {
+      "name": "data_band_4",
+      "fingerprint": "0901d0fec997f30df13f8949ea56fde971613b6bed5c1204592047020317e27d",
+      "proxy_cycles": 1798706.4000000001,
+      "boundary_bytes": 32880144,
+      "tasks": 50,
+      "resource_floor": 1796272
+    },
+    {
+      "name": "mask_sink_4",
+      "fingerprint": "962c47fe24b3586cdba181bd152c169993b006a83c34a84665ed5cdba29d24ba",
+      "proxy_cycles": 1986722.5333333334,
+      "boundary_bytes": 119203352,
+      "tasks": 589,
+      "resource_floor": 1986722.5333333334
+    },
+    {
+      "name": "mask_source",
+      "fingerprint": "32fde35f96c10dc4fbfcca97704e053631a8ccdae3c847533512287d8eb81341",
+      "proxy_cycles": 4988927.033333333,
+      "boundary_bytes": 299335622,
+      "tasks": 30049,
+      "resource_floor": 4988927.033333333
+    },
+    {
+      "name": "valley_1_ready_schedule",
+      "fingerprint": "45e0252c418e5a1e971b6dfd20f35623ffec2fe1a8adedadc8777af7abee57a2",
+      "proxy_cycles": 1797472,
+      "boundary_bytes": 32816632,
+      "tasks": 20,
+      "resource_floor": 1796272
+    }
+  ],
+  "rejected": []
+}

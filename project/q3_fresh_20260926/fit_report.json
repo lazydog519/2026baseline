@@ -1,0 +1,46 @@
+{
+  "samples": 17,
+  "training_cases": 6,
+  "weights": [
+    1.2082846072546694,
+    0.0,
+    0.0,
+    0.5467750897414134,
+    0.4774071639193517
+  ],
+  "group_cv": [
+    {
+      "case": "case_029",
+      "selected": "component_scalar",
+      "relative_regret": 0.0
+    },
+    {
+      "case": "case_040",
+      "selected": "component_vector",
+      "relative_regret": 0.043091467738123335
+    },
+    {
+      "case": "case_046",
+      "selected": "component_scalar",
+      "relative_regret": 0.0
+    },
+    {
+      "case": "case_007",
+      "selected": "component_scalar",
+      "relative_regret": 0.0
+    },
+    {
+      "case": "case_048",
+      "selected": "shared_prefix",
+      "relative_regret": 0.0
+    },
+    {
+      "case": "case_082",
+      "selected": "shared_prefix",
+      "relative_regret": 0.0
+    }
+  ],
+  "mean_group_cv_regret": 0.007181911289687222,
+  "in_sample_relative_error_mean": 0.11752539964319389,
+  "model_sha256": "5e2caa3b690996c895cddc60130b7af8943d00c4d0e0bc502ed99857a2472a90"
+}

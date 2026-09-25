@@ -1,0 +1,19 @@
+{
+  "complete_cases": 100,
+  "audited_jobs": 100,
+  "expected_jobs": 100,
+  "failed": 0,
+  "mean_speedup_by_cores": {
+    "5": 3.930404665282108
+  },
+  "mean_added_copy_bytes_by_cores": {
+    "5": 10405897.68
+  },
+  "source_sha256": {
+    "solver.py": "8d6c23244a9b552259343bcfd0b754fc54d9f16a0fc99a6409b9eb9760523288",
+    "model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+    "memory_proxy.py": "0b9d854c4932d0e091f981d528ccee9ab39c0fc195018a5df39906396ca11465",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab"
+  }
+}

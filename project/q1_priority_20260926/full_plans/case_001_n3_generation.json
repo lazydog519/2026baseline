@@ -1,0 +1,39 @@
+{
+  "selected": "component_vector",
+  "fingerprint": "037717ddda462b41200b189c3cc49d60b005dcd00cfc8a0b57c9e3a76ed30182",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "037717ddda462b41200b189c3cc49d60b005dcd00cfc8a0b57c9e3a76ed30182",
+      "proxy_cycles": 77988,
+      "boundary_bytes": 1641856,
+      "tasks": 3,
+      "resource_floor": 77988
+    },
+    {
+      "name": "component_2_active",
+      "fingerprint": "a340a881a65924cbce7440c6b9a664c8410e9acbd0846b422e591df378350973",
+      "proxy_cycles": 116400,
+      "boundary_bytes": 1640704,
+      "tasks": 2,
+      "resource_floor": 116400
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "742022c0fb47577951f24926a7d3bfc8f7c91d0042eedf6c520ce53d1dfb2253",
+      "proxy_cycles": 144283.99999999994,
+      "boundary_bytes": 4326400,
+      "tasks": 400,
+      "resource_floor": 77988
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "6b1a264874448bdf0c36505921c2a5e7980917ef10e98e2226e39991aab30c44",
+      "proxy_cycles": 84588,
+      "boundary_bytes": 1868800,
+      "tasks": 200,
+      "resource_floor": 77988
+    }
+  ],
+  "rejected": []
+}

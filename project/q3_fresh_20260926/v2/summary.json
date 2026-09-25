@@ -1,0 +1,37 @@
+{
+  "scope": "3 new held-out cases, 5 cores; not the 100-case mean",
+  "metrics": {
+    "component_scalar": {
+      "l2_gain": 1.1413323206675012,
+      "speedup_vs_original_singlecore": 1.80161726166148,
+      "cache_byte_hit_rate": 0.22522481668641595,
+      "generation_seconds": 0.10945083332868914
+    },
+    "trained": {
+      "l2_gain": 1.1456002078711987,
+      "speedup_vs_original_singlecore": 2.2165227164827175,
+      "cache_byte_hit_rate": 0.4388812308310321,
+      "generation_seconds": 0.10017773333432463
+    }
+  },
+  "paired": [
+    {
+      "case": "case_024",
+      "relative_makespan_reduction": 0.006468798904882833
+    },
+    {
+      "case": "case_083",
+      "relative_makespan_reduction": 0.0
+    },
+    {
+      "case": "case_069",
+      "relative_makespan_reduction": 0.5532134902958956
+    }
+  ],
+  "validation_official_calls": 13,
+  "official_calls_during_generation": 0,
+  "isolated_repeat_count": 6,
+  "official_files_unchanged": 114,
+  "model_and_solver_frozen": true,
+  "all_observed_physical_lower_bounds_valid": true
+}

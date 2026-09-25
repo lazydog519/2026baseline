@@ -1,0 +1,23 @@
+{
+  "q1_mean_speedup_by_cores": {
+    "2": 1.8648245364390936,
+    "3": 2.601643123787822,
+    "4": 3.265034234160826,
+    "5": 3.8310665270827635
+  },
+  "q2_mean_speedup_by_cores": {
+    "2": 1.935753781501983,
+    "3": 2.7452343757149884,
+    "4": 3.4645482913893746,
+    "5": 3.952170334022541
+  },
+  "q2_five_core_higher": true,
+  "q1_component_improved": 38,
+  "q1_component_regressed": 2,
+  "q2_five_core_faster": 31,
+  "q2_five_core_slower": 19,
+  "q2_five_core_equal": 50,
+  "q2_five_core_mean_relative_time_gain": 0.016650130000530408,
+  "q2_five_core_mean_extra_ddr_delta_mib": -5.528647537231445,
+  "official_jobs_per_scene": 400
+}

@@ -1,0 +1,127 @@
+{
+  "selected": "component_vector",
+  "fingerprint": "288f33c5d6b5f85adb681df55ce559b8e3b7b318191a3ba5d94230ebc3642e16",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "288f33c5d6b5f85adb681df55ce559b8e3b7b318191a3ba5d94230ebc3642e16",
+      "proxy_cycles": 23211,
+      "boundary_bytes": 640340,
+      "tasks": 3,
+      "resource_floor": 23211
+    },
+    {
+      "name": "first_join",
+      "fingerprint": "66667a2db2c9f59ea2d1373d889d07cc488bb1b7af33715cd51e7607df7ed558",
+      "proxy_cycles": 49780,
+      "boundary_bytes": 1607524,
+      "tasks": 4,
+      "resource_floor": 48638
+    },
+    {
+      "name": "terminal_branch",
+      "fingerprint": "d1075f1c09a3567ea9c8d2815f659297e1be715d5595bf149bbb4856e49f1eca",
+      "proxy_cycles": 26230,
+      "boundary_bytes": 712196,
+      "tasks": 4,
+      "resource_floor": 25179
+    },
+    {
+      "name": "component_2_active",
+      "fingerprint": "6b59162b578ca389ba5d0e7b234e67a04cd9c97f29c3a8f79918f560ba10648f",
+      "proxy_cycles": 34824,
+      "boundary_bytes": 527828,
+      "tasks": 2,
+      "resource_floor": 34824
+    },
+    {
+      "name": "data_band_1",
+      "fingerprint": "e457414d1c03e29625b779505898454dee6c208ecb9a2a584e7b29cb0b4de34e",
+      "proxy_cycles": 51840.933333333334,
+      "boundary_bytes": 3110456,
+      "tasks": 34,
+      "resource_floor": 51840.933333333334
+    },
+    {
+      "name": "valley_1",
+      "fingerprint": "75e64b52b496ad02a081a9878e8ba1add3b92c3038abf1acd67b8ae5371cb325",
+      "proxy_cycles": 25755,
+      "boundary_bytes": 835076,
+      "tasks": 9,
+      "resource_floor": 23205
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "2b1d977de4a3fd1883f8f637fe1d977a7c03c0610ad9a9ec0da8f3294fb374b8",
+      "proxy_cycles": 77977.03333333338,
+      "boundary_bytes": 3895792,
+      "tasks": 435,
+      "resource_floor": 64929.86666666667
+    },
+    {
+      "name": "data_band_2",
+      "fingerprint": "fe9cac9f194847cb07f448431062f295ce853d1b2fa9d7eb180ee915f624e26f",
+      "proxy_cycles": 32286,
+      "boundary_bytes": 1830652,
+      "tasks": 18,
+      "resource_floor": 30510.866666666665
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "4d8b17e9539de49932f1e731ea44d9d81ae64eb5334924c9f5ac15673c1696e5",
+      "proxy_cycles": 47656.46666666666,
+      "boundary_bytes": 2494212,
+      "tasks": 253,
+      "resource_floor": 41570.2
+    },
+    {
+      "name": "data_band_4",
+      "fingerprint": "042205f79edb5ef289ca8ea3ec7504ac7e3e2d6baf2d360ea1793ff008a789c0",
+      "proxy_cycles": 26952,
+      "boundary_bytes": 958108,
+      "tasks": 9,
+      "resource_floor": 24950
+    },
+    {
+      "name": "mask_sink_4",
+      "fingerprint": "d1e4cd40b6b434603d362107bbd80851cc362c2d243ef35dee52c345ff7df42c",
+      "proxy_cycles": 41237.86666666666,
+      "boundary_bytes": 1693888,
+      "tasks": 147,
+      "resource_floor": 28231.466666666667
+    },
+    {
+      "name": "mask_source",
+      "fingerprint": "20dd505399ccf0d54bb68af031b83f6034a1ea2aca2f948ee90ae380e3d3947a",
+      "proxy_cycles": 73780.70000000016,
+      "boundary_bytes": 3942704,
+      "tasks": 482,
+      "resource_floor": 65711.73333333334
+    },
+    {
+      "name": "component_vector_ready_schedule",
+      "fingerprint": "9d51d9e8f86c9d84013ba1c095f15cb50353c50f7edecf0e8e15cab555dfb4cb",
+      "proxy_cycles": 23211,
+      "boundary_bytes": 640340,
+      "tasks": 3,
+      "resource_floor": 23211
+    },
+    {
+      "name": "valley_1_ready_schedule",
+      "fingerprint": "e1eb0f1eef25bd532a8fec1552cf044f83bb2c8b3ee0ab0f81f22783fb12a45f",
+      "proxy_cycles": 25526,
+      "boundary_bytes": 835076,
+      "tasks": 9,
+      "resource_floor": 23425
+    },
+    {
+      "name": "terminal_branch_ready_schedule",
+      "fingerprint": "cc1a83575f404c2b661119d8717d92cb7ff32f94ab339cc0c4e32ac7910e4dc8",
+      "proxy_cycles": 26227,
+      "boundary_bytes": 712196,
+      "tasks": 4,
+      "resource_floor": 25230
+    }
+  ],
+  "rejected": []
+}

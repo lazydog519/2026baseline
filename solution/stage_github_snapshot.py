@@ -2,6 +2,7 @@
 
 import argparse
 import csv
+import filecmp
 import json
 import shutil
 from datetime import datetime, timezone
@@ -10,6 +11,8 @@ from pathlib import Path
 
 def copy(source, dest):
     dest.parent.mkdir(parents=True, exist_ok=True)
+    if dest.is_file() and filecmp.cmp(source, dest, shallow=False):
+        return
     shutil.copy2(source, dest)
 
 
@@ -219,6 +222,25 @@ def main():
                    "400 份最终方案已由原评估器逐份重新核验。\n\n"
                    "运行入口：`python project/solution/q1_submit.py 输入图.json -n 5 --config project/official/data/config.txt`。"
                    "旧 `q1_optimization/` 为历史离线选优，不作为当前独立求解成绩。\n")
+    q1_pure = src / "q1_priority_20260926" / "full_summary.json"
+    if q1_pure.is_file():
+        pure = json.loads(q1_pure.read_text(encoding="utf-8"))
+        pure_complete = (pure["complete_cases"] == 100 and pure["jobs"] == 400
+                         and pure["failed"] == 0 and
+                         (src / "q1_priority_20260926" / "package_verification.json").is_file())
+        snapshot["q1_complete"] = pure_complete
+        snapshot["q1_current_evaluator_free"] = True
+        snapshot["q1_five_core_mean_speedup"] = pure["mean_speedup_by_cores"]["5"]
+        snapshot["complete"] &= pure_complete
+        q1_text = ("\n问题一当前提交版：从每个原图独立生成方案，推理过程不调用官方评估器。见 "
+                   "[`方法与实验稿`](project/q1_priority_20260926/问题一方法与实验稿.md)、"
+                   "[`公式`](project/q1_priority_20260926/模型与算法公式.tex)、"
+                   "[`独立代码包`](project/q1_priority_20260926/submission_q1.zip)、"
+                   "[`官方逐例结果`](project/q1_priority_20260926/full_metrics.csv) 和 "
+                   "[`论文图`](project/q1_priority_20260926/figures/)。"
+                   f"100 例五核平均加速比 **{snapshot['q1_five_core_mean_speedup']:.6f}**；"
+                   "2～5 核共 400 份冻结方案通过原版评估。"
+                   "旧 `q1_cold/` 使用评估器在求解时挑选候选，标记为历史结果。\n")
     q2_text = ("\n问题二优化：见 [`技术思路稿-问题二优化.md`](技术思路稿-问题二优化.md)、"
                "[`project/q2_optimization/final/`](project/q2_optimization/final/) "
                "和 [`project/solution/q2_submit.py`](project/solution/q2_submit.py)。"
@@ -234,6 +256,32 @@ def main():
                    "运行入口：`python project/solution/q2_submit.py 输入图.json -n 5 --config project/official/data/config.txt`。"
                    "旧 `q2_optimization/` 为不同预算的历史离线实验，不作为当前独立求解成绩。"
                    "\n")
+    q2_pure = src / "q2_priority_20260926" / "final_v2" / "full_summary.json"
+    if q2_pure.is_file():
+        pure = json.loads(q2_pure.read_text(encoding="utf-8"))
+        pure_complete = (pure["complete_cases"] == 100 and pure["audited_jobs"] == 400
+                         and pure["failed"] == 0 and
+                         (q2_pure.parent / "package_verification.json").is_file())
+        snapshot["q2_complete"] = pure_complete
+        snapshot["q2_current_evaluator_free"] = True
+        snapshot["q2_five_core_mean_speedup"] = pure["mean_speedup_by_cores"]["5"]
+        snapshot["complete"] &= pure_complete
+        q2_text = ("\n问题二当前提交版：同核子图合并、DDR 通信与驻留风险联合筛选；"
+                   "每个图从头求解，推理时不调用官方评估器。见 "
+                   "[`方法与复现说明`](project/q2_priority_20260926/README.md)、"
+                   "[`独立代码包`](project/q2_priority_20260926/final_v2/submission_q2.zip)、"
+                   "[`官方逐例结果`](project/q2_priority_20260926/final_v2/full_metrics.csv) 和 "
+                   "[`论文第六章`](project/论文第六章/第六章_问题一与问题二建模求解.tex)。"
+                   f"100 例五核平均加速比 **{snapshot['q2_five_core_mean_speedup']:.6f}**；"
+                   "2～5 核共 400 份冻结方案通过原版评估。"
+                   "旧 `q2_cold/` 在求解过程中调用官方评估器选优，为历史结果。\n")
+    chapter = src / "论文第六章" / "第六章_核对摘要.json"
+    if chapter.is_file():
+        paper_complete = all((src / "论文第六章" / "figures" / name).is_file()
+                             for name in ("图6-1_两场景平均加速比.pdf",
+                                          "图6-2_五核耗时与搬运成对比较.pdf"))
+        snapshot["paper_chapter_complete"] = paper_complete
+        snapshot["complete"] &= paper_complete
     q3_text = ""
     q3_summary = src / "q3_fusion" / "branch_validation" / "summary.json"
     if q3_summary.is_file():

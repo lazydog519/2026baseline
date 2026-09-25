@@ -1,0 +1,127 @@
+{
+  "selected": "component_vector",
+  "fingerprint": "d2aac74aecdf041900171a36bf5411b3015d83e2a12c66590f133e8042f53c10",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "d2aac74aecdf041900171a36bf5411b3015d83e2a12c66590f133e8042f53c10",
+      "proxy_cycles": 4308312,
+      "boundary_bytes": 39612364,
+      "tasks": 4,
+      "resource_floor": 4308312
+    },
+    {
+      "name": "first_join",
+      "fingerprint": "6b78d658b9387202efad84a7464fda2bbddca336c51e2d2c477b5f9023fe5525",
+      "proxy_cycles": 5916540,
+      "boundary_bytes": 208804492,
+      "tasks": 5,
+      "resource_floor": 4431384
+    },
+    {
+      "name": "component_2_active",
+      "fingerprint": "115085d5500ee5ccfe20d73b806fda95b65e6db1f442133e3efab1aca2bfb5d1",
+      "proxy_cycles": 8614356,
+      "boundary_bytes": 19825948,
+      "tasks": 2,
+      "resource_floor": 8614356
+    },
+    {
+      "name": "component_3_active",
+      "fingerprint": "ea2c917f050b431ecd8699b41d31bbc7221b9e56d15d075f3941da6afb66016e",
+      "proxy_cycles": 5745456,
+      "boundary_bytes": 27991156,
+      "tasks": 3,
+      "resource_floor": 5745456
+    },
+    {
+      "name": "data_band_1",
+      "fingerprint": "7f531ff4fb452ad7ef95f2d1ecca04bab86b7a36daf1e19f0c1034e32b0abcb7",
+      "proxy_cycles": 4594659.433333332,
+      "boundary_bytes": 131836616,
+      "tasks": 228,
+      "resource_floor": 4320840
+    },
+    {
+      "name": "valley_1",
+      "fingerprint": "f1c9ec58a37ecda0e0fd06642698679a61b9dbff2f2044d748437b243906f08a",
+      "proxy_cycles": 4321540,
+      "boundary_bytes": 39584716,
+      "tasks": 8,
+      "resource_floor": 4320540
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "07f6d6847647de9c0441ed4fe151508a564fac7e2bdb01b0e4025fbed229e30a",
+      "proxy_cycles": 5656002.133333334,
+      "boundary_bytes": 339360128,
+      "tasks": 12730,
+      "resource_floor": 5656002.133333334
+    },
+    {
+      "name": "data_band_2",
+      "fingerprint": "c22340a35f96b9d982937dd2c295fe38cbaeabd5dd10bc165e60fedace29e26f",
+      "proxy_cycles": 4423480.400000001,
+      "boundary_bytes": 71432520,
+      "tasks": 116,
+      "resource_floor": 4320252
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "2df904ee27279d683c082175cc0a1b7d757cd164684a5252cb9f801d06e09d92",
+      "proxy_cycles": 5104416.133333306,
+      "boundary_bytes": 249111552,
+      "tasks": 6850,
+      "resource_floor": 4306656
+    },
+    {
+      "name": "data_band_4",
+      "fingerprint": "41ed40beb78c736e31b5db93872e45f58395ed82fb744fb99c7ff2b3acf8888d",
+      "proxy_cycles": 4336115.999999999,
+      "boundary_bytes": 39890400,
+      "tasks": 56,
+      "resource_floor": 4320540
+    },
+    {
+      "name": "mask_sink_4",
+      "fingerprint": "f52ce5c85f6869617e3563a7372b765062638c29e65611b28e52282500037ba3",
+      "proxy_cycles": 4557538.999999999,
+      "boundary_bytes": 196340332,
+      "tasks": 3332,
+      "resource_floor": 4306512
+    },
+    {
+      "name": "mask_source",
+      "fingerprint": "52b04e41c89b855f3c2234cf5d226f8710a01e24ee25915c91c09413c55ae16d",
+      "proxy_cycles": 8821123.600002091,
+      "boundary_bytes": 507404712,
+      "tasks": 32926,
+      "resource_floor": 8456745.2
+    },
+    {
+      "name": "component_vector_ready_schedule",
+      "fingerprint": "e8fa9ddd5526e3797b39f528daf6542a1517950b90e39daae6b4aa0ead07d17c",
+      "proxy_cycles": 4308312,
+      "boundary_bytes": 39612364,
+      "tasks": 4,
+      "resource_floor": 4308312
+    },
+    {
+      "name": "valley_1_ready_schedule",
+      "fingerprint": "d5aa94d3b4c0368e993202411ef4c17f3a8fd932b679951e4bdf2cadfef14716",
+      "proxy_cycles": 4320640,
+      "boundary_bytes": 39584716,
+      "tasks": 8,
+      "resource_floor": 4320540
+    },
+    {
+      "name": "data_band_4_ready_schedule",
+      "fingerprint": "bdf917198900ba5629efb3c2ef83b4864c11bb5e4a2d18509a6d838863ce1fd3",
+      "proxy_cycles": 4336115.999999999,
+      "boundary_bytes": 39890400,
+      "tasks": 56,
+      "resource_floor": 4320540
+    }
+  ],
+  "rejected": []
+}

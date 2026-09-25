@@ -1,0 +1,26 @@
+{
+  "package_sha256": "cf9509a18ecfec9d9c8b7f0f5b34b1714ade3c9376d93ba4d0738688bd5d391d",
+  "members": [
+    "solver.py",
+    "mechanistic.py",
+    "q1_optimized.py",
+    "baseline.py",
+    "policy.json"
+  ],
+  "official_evaluator_in_package": false,
+  "no_case_specific_results_in_package": true,
+  "replays": [
+    {
+      "case": "case_010",
+      "cores": 5,
+      "renamed_input": true,
+      "plan_matches_frozen": true
+    },
+    {
+      "case": "case_078",
+      "cores": 5,
+      "renamed_input": true,
+      "plan_matches_frozen": true
+    }
+  ]
+}

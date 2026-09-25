@@ -1,0 +1,127 @@
+{
+  "selected": "mask_sink_4",
+  "fingerprint": "e88e9d7f8e563f54c552c0b74df44b4694b539ba1baaf9899fb10aba27ae9f32",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "82d8ec2f78d9be51282f54af5e5680873c4b209a3ac00c2ea63f587dfc33e4c9",
+      "proxy_cycles": 7896816,
+      "boundary_bytes": 14502528,
+      "tasks": 5,
+      "resource_floor": 7896816
+    },
+    {
+      "name": "first_join",
+      "fingerprint": "da06a194c45152ce7f3023703cac956dbc8cb2eaab3a09f10bff10b29a40f840",
+      "proxy_cycles": 37069480,
+      "boundary_bytes": 13436640,
+      "tasks": 6,
+      "resource_floor": 37068480
+    },
+    {
+      "name": "component_2_active",
+      "fingerprint": "a81ccb418f69c507c2f623036e50cd1b5ec3462121c7c36ec751ef85d7bff371",
+      "proxy_cycles": 19614672,
+      "boundary_bytes": 8057088,
+      "tasks": 2,
+      "resource_floor": 19614672
+    },
+    {
+      "name": "component_3_active",
+      "fingerprint": "9463bdf695d4f1e7438de2503d73d0ec793ceeb2e3bcbaf664cc45c80e3d081e",
+      "proxy_cycles": 12991536,
+      "boundary_bytes": 10205568,
+      "tasks": 3,
+      "resource_floor": 12991536
+    },
+    {
+      "name": "component_4_active",
+      "fingerprint": "92096065d28047a52aa8166206bccf73d27045e1003d18c166e9b213756dd7e6",
+      "proxy_cycles": 9934704,
+      "boundary_bytes": 12354048,
+      "tasks": 4,
+      "resource_floor": 9934704
+    },
+    {
+      "name": "data_band_1",
+      "fingerprint": "aac29243fd07c2f7975d67ba455b7c507558ec36b8d5b4fa9c76f1c92f96e23b",
+      "proxy_cycles": 7900816,
+      "boundary_bytes": 101808000,
+      "tasks": 205,
+      "resource_floor": 7896816
+    },
+    {
+      "name": "valley_1",
+      "fingerprint": "e201196c2eeae123282d29aa95977293cae8cd2ecfb84e3113994832229d29ed",
+      "proxy_cycles": 7865968,
+      "boundary_bytes": 28305024,
+      "tasks": 25,
+      "resource_floor": 7865568
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "e755f222afedcbebbf9bbf7d27cb561a85c5a544df6458e2b258dafebd40c83d",
+      "proxy_cycles": 8037879.200000057,
+      "boundary_bytes": 431298432,
+      "tasks": 7038,
+      "resource_floor": 7796688
+    },
+    {
+      "name": "data_band_2",
+      "fingerprint": "93a565a6c49d100b84f168cc742803ea46db20b7cd254d7893e10f7032041a92",
+      "proxy_cycles": 7898616,
+      "boundary_bytes": 54218880,
+      "tasks": 95,
+      "resource_floor": 7896816
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "762b7e7c067cca53b76881ac2be3c0850f874489e1b98d88d12169cc8e11a869",
+      "proxy_cycles": 7873164,
+      "boundary_bytes": 393814656,
+      "tasks": 3825,
+      "resource_floor": 7796664
+    },
+    {
+      "name": "data_band_4",
+      "fingerprint": "9c8de289f3e377f709e344866a7e7372e87fdd3efcb80c42dcaeddfa0737b7dd",
+      "proxy_cycles": 7897716,
+      "boundary_bytes": 29073024,
+      "tasks": 50,
+      "resource_floor": 7896816
+    },
+    {
+      "name": "mask_sink_4",
+      "fingerprint": "e88e9d7f8e563f54c552c0b74df44b4694b539ba1baaf9899fb10aba27ae9f32",
+      "proxy_cycles": 7842464,
+      "boundary_bytes": 364673664,
+      "tasks": 2295,
+      "resource_floor": 7796664
+    },
+    {
+      "name": "mask_sink_4_ready_schedule",
+      "fingerprint": "b707206e66bb63c91d94510f2f49e695e1e91691b8158ae660dd9adacf711644",
+      "proxy_cycles": 7842564,
+      "boundary_bytes": 364673664,
+      "tasks": 2295,
+      "resource_floor": 7796664
+    },
+    {
+      "name": "mask_sink_2_ready_schedule",
+      "fingerprint": "ab76219b0b5ef48461a0d7ad8cd4ab8c20b9a482087aed25cb2761e0169e0df1",
+      "proxy_cycles": 7874540,
+      "boundary_bytes": 393814656,
+      "tasks": 3825,
+      "resource_floor": 7797840
+    },
+    {
+      "name": "mask_sink_2_local_merge",
+      "fingerprint": "5fe95a02417d2666a152c1be8485a19925fcb50da31c31fb03f464b761d0ff23",
+      "proxy_cycles": 7873064,
+      "boundary_bytes": 393812064,
+      "tasks": 3824,
+      "resource_floor": 7796664
+    }
+  ],
+  "rejected": []
+}

@@ -1,0 +1,127 @@
+{
+  "selected": "valley_4_ready_schedule",
+  "fingerprint": "bc1999f03105efb121ba8e11c370f4bb4857bf4f0feb801cd79721b130918eb5",
+  "candidates": [
+    {
+      "name": "component_vector",
+      "fingerprint": "ad8e59e164945756d977f190f728eb597522906b4f5c7db186ca41ca73850eb1",
+      "proxy_cycles": 63882,
+      "boundary_bytes": 333414,
+      "tasks": 1,
+      "resource_floor": 63882
+    },
+    {
+      "name": "first_join",
+      "fingerprint": "f54e74186123304418b911f6dcf03b7b5e502bbad40d5b01f3e4bd89f577e724",
+      "proxy_cycles": 65418.46666666667,
+      "boundary_bytes": 387216,
+      "tasks": 4,
+      "resource_floor": 63702
+    },
+    {
+      "name": "terminal_branch",
+      "fingerprint": "e8e8ec77708848f36a52820d24ae816e033fa18ba0d1a52429d95d76b6c1f76e",
+      "proxy_cycles": 53874,
+      "boundary_bytes": 564402,
+      "tasks": 4,
+      "resource_floor": 51318
+    },
+    {
+      "name": "data_band_1",
+      "fingerprint": "267af4e0d0dc5dfbfe50b4d7d66b75065951b3e4e5c208532bb0b8fe4b7e1421",
+      "proxy_cycles": 68568.7,
+      "boundary_bytes": 3084156,
+      "tasks": 84,
+      "resource_floor": 51402.6
+    },
+    {
+      "name": "valley_1",
+      "fingerprint": "f57357fc7f7be919c495e35409feaa5697cbb43004973cc2d3ef518399dc58f2",
+      "proxy_cycles": 35714.6,
+      "boundary_bytes": 1451088,
+      "tasks": 33,
+      "resource_floor": 24184.8
+    },
+    {
+      "name": "mask_sink_1",
+      "fingerprint": "08a84cb4c58887daf6ef28c976af7258d41ee5f9cc7f2851ca608eb303c78322",
+      "proxy_cycles": 76463.3,
+      "boundary_bytes": 3362858,
+      "tasks": 158,
+      "resource_floor": 56047.63333333333
+    },
+    {
+      "name": "data_band_2",
+      "fingerprint": "3a57c3298fea449c6ccd35864ea1601bcea0c07ee174c0d3b57c24ab5a63de75",
+      "proxy_cycles": 55285.03333333333,
+      "boundary_bytes": 1700206,
+      "tasks": 39,
+      "resource_floor": 39075
+    },
+    {
+      "name": "mask_sink_2",
+      "fingerprint": "2c3e4132fa28dcf5f3de8c025940ea6371fadcd9c242fd18aedad3bf3bc67cfb",
+      "proxy_cycles": 57631.83333333334,
+      "boundary_bytes": 2621712,
+      "tasks": 96,
+      "resource_floor": 43695.2
+    },
+    {
+      "name": "data_band_4",
+      "fingerprint": "d546c518d88aaa3ee70c9ee84a762b06356fa576b7608640453ccfac6974c3a9",
+      "proxy_cycles": 60396.03333333333,
+      "boundary_bytes": 702178,
+      "tasks": 15,
+      "resource_floor": 52215
+    },
+    {
+      "name": "valley_4",
+      "fingerprint": "5cb7dfad6d0a5ec5e5906b3e563d2411b860160b5e345b81a9c33bf884c19660",
+      "proxy_cycles": 34234,
+      "boundary_bytes": 1383504,
+      "tasks": 27,
+      "resource_floor": 23058.4
+    },
+    {
+      "name": "mask_sink_4",
+      "fingerprint": "3aec7fc6ba892694abfdbd5f4e51a29f11fe1ab2de69c3a413c60555b9df3749",
+      "proxy_cycles": 52698,
+      "boundary_bytes": 1798564,
+      "tasks": 51,
+      "resource_floor": 29976.066666666666
+    },
+    {
+      "name": "mask_source",
+      "fingerprint": "3e67878a8ffa489f968fde330e1a106ea7cbc93ce7e9242d3cf2679669b66dea",
+      "proxy_cycles": 91697.76666666666,
+      "boundary_bytes": 3653938,
+      "tasks": 289,
+      "resource_floor": 60898.96666666667
+    },
+    {
+      "name": "valley_4_ready_schedule",
+      "fingerprint": "bc1999f03105efb121ba8e11c370f4bb4857bf4f0feb801cd79721b130918eb5",
+      "proxy_cycles": 33934,
+      "boundary_bytes": 1383504,
+      "tasks": 27,
+      "resource_floor": 23316
+    },
+    {
+      "name": "valley_1_ready_schedule",
+      "fingerprint": "497641936f949670387b5fb206985ae2c7e083998a5ae0abac5ed9fd5f2193ce",
+      "proxy_cycles": 35672.6,
+      "boundary_bytes": 1451088,
+      "tasks": 33,
+      "resource_floor": 24184.8
+    },
+    {
+      "name": "mask_sink_4_ready_schedule",
+      "fingerprint": "3cc892ae8d4a54e5856d8a83573b0185284498cc2616d81624572e17e185f317",
+      "proxy_cycles": 51237.0,
+      "boundary_bytes": 1798564,
+      "tasks": 51,
+      "resource_floor": 31038
+    }
+  ],
+  "rejected": []
+}
