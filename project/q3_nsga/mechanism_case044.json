@@ -1,0 +1,70 @@
+{
+  "case": "case_044",
+  "seed": 17,
+  "method": "unsga3_npu",
+  "initial": {
+    "makespan": 84117,
+    "traffic": {
+      "original_graph_copy_bytes": 975456,
+      "scheduled_copy_bytes": 4697056,
+      "added_copy_bytes": 3721600,
+      "partition_added_copy_bytes": 3721600,
+      "spill_added_copy_bytes": 0
+    },
+    "hit_rate": 0.000424427878065978,
+    "miss_bytes": 4672544,
+    "transfers": 0,
+    "core_finishes": [
+      84117,
+      81492,
+      81492,
+      81492,
+      81492
+    ]
+  },
+  "selected": {
+    "makespan": 59036,
+    "traffic": {
+      "original_graph_copy_bytes": 975456,
+      "scheduled_copy_bytes": 3739136,
+      "added_copy_bytes": 2763680,
+      "partition_added_copy_bytes": 2763680,
+      "spill_added_copy_bytes": 0
+    },
+    "hit_rate": 0.2910749799378947,
+    "miss_bytes": 2600768,
+    "transfers": 79,
+    "core_finishes": [
+      48384,
+      59036,
+      51797,
+      47072,
+      52806
+    ]
+  },
+  "winning_candidate": {
+    "evaluation": 28,
+    "phase": "offspring",
+    "plan_sha256": "ee940b90091fd293d27a57b3f85633dd23f45682c62fd93d0917dd9d6356654d",
+    "details": {
+      "generation": 4,
+      "parent": 2,
+      "donor": 16,
+      "operator": "order",
+      "engineering": true,
+      "crossover": "whole_subgraph_donor_majority",
+      "prioritized_subgraph": 4
+    },
+    "status": "ok",
+    "objectives": [
+      59036,
+      2763680,
+      2600768
+    ],
+    "hit_rate": 0.2910749799378947,
+    "elapsed_seconds": 5.392074200004572,
+    "best_makespan": 59036
+  },
+  "scope": "One illustrative seed; not an isolated causal ablation of each operator",
+  "extra_official_diagnostic_calls": 1
+}

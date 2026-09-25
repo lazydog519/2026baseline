@@ -1,0 +1,20 @@
+{
+  "version": "q3-nsga-pilot-v1",
+  "cases": ["case_044", "case_074", "case_082"],
+  "cores": [5],
+  "seeds": [17, 29, 43],
+  "methods": ["nsga3_generic", "nsga3_npu", "unsga3_npu"],
+  "official_budget": 30,
+  "population": 6,
+  "offspring_batch": 6,
+  "reference_partitions": 2,
+  "max_proposals_per_budget": 60,
+  "max_subgraphs": 256,
+  "crossover_probability": 0.35,
+  "split_cut_candidates": 5,
+  "mutation_types": ["move", "split", "merge", "order"],
+  "workers": 2,
+  "objectives": ["official_makespan_cycles", "official_added_copy_bytes", "official_cache_miss_bytes"],
+  "final_selection": "lexicographic makespan, added_copy_bytes",
+  "scope": "exploratory simplified test on previously inspected cases; not held-out or full data"
+}

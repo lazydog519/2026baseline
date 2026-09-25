@@ -1,0 +1,163 @@
+{
+  "scope": "exploratory simplified test on previously inspected cases; not held-out or full data",
+  "rows": 27,
+  "official_search_calls": 810,
+  "official_rechecks": 27,
+  "paired_no_l2_evaluations": 27,
+  "cases": [
+    "case_044",
+    "case_074",
+    "case_082"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "summaries": [
+    {
+      "case": "case_044",
+      "method": "nsga3_generic",
+      "n": 3,
+      "mean_makespan": 72299.33333333333,
+      "min_makespan": 68239,
+      "max_makespan": 75524,
+      "sd_makespan": 3713.6990095231645,
+      "construction_best": 84117,
+      "mean_construction_ratio": 1.165540417964586,
+      "mean_same_plan_cache_ratio": 1.0809410243483086,
+      "mean_calls": 30,
+      "invalid_total": 0
+    },
+    {
+      "case": "case_044",
+      "method": "nsga3_npu",
+      "n": 3,
+      "mean_makespan": 71837.66666666667,
+      "min_makespan": 56358,
+      "max_makespan": 83709,
+      "sd_makespan": 14027.984614096686,
+      "construction_best": 84117,
+      "mean_construction_ratio": 1.2041171844562137,
+      "mean_same_plan_cache_ratio": 1.3883950748886487,
+      "mean_calls": 30,
+      "invalid_total": 0
+    },
+    {
+      "case": "case_044",
+      "method": "unsga3_npu",
+      "n": 3,
+      "mean_makespan": 69429,
+      "min_makespan": 59036,
+      "max_makespan": 78326,
+      "sd_makespan": 9731.625609321394,
+      "construction_best": 84117,
+      "mean_construction_ratio": 1.2282587817138824,
+      "mean_same_plan_cache_ratio": 1.150544718664566,
+      "mean_calls": 30,
+      "invalid_total": 0
+    },
+    {
+      "case": "case_074",
+      "method": "nsga3_generic",
+      "n": 3,
+      "mean_makespan": 335197.3333333333,
+      "min_makespan": 333519,
+      "max_makespan": 336925,
+      "sd_makespan": 1703.5358327118727,
+      "construction_best": 336925,
+      "mean_construction_ratio": 1.0051714823061537,
+      "mean_same_plan_cache_ratio": 1.0132543065218746,
+      "mean_calls": 30,
+      "invalid_total": 0
+    },
+    {
+      "case": "case_074",
+      "method": "nsga3_npu",
+      "n": 3,
+      "mean_makespan": 335591,
+      "min_makespan": 332923,
+      "max_makespan": 336925,
+      "sd_makespan": 2310.5557772968823,
+      "construction_best": 336925,
+      "mean_construction_ratio": 1.0040069325339493,
+      "mean_same_plan_cache_ratio": 1.0256740782339506,
+      "mean_calls": 30,
+      "invalid_total": 0
+    },
+    {
+      "case": "case_074",
+      "method": "unsga3_npu",
+      "n": 3,
+      "mean_makespan": 335682.3333333333,
+      "min_makespan": 333664,
+      "max_makespan": 336925,
+      "sd_makespan": 1763.4552257807209,
+      "construction_best": 336925,
+      "mean_construction_ratio": 1.003720431290918,
+      "mean_same_plan_cache_ratio": 1.0127502155566466,
+      "mean_calls": 30,
+      "invalid_total": 0
+    },
+    {
+      "case": "case_082",
+      "method": "nsga3_generic",
+      "n": 3,
+      "mean_makespan": 511852.3333333333,
+      "min_makespan": 508066,
+      "max_makespan": 513771,
+      "sd_makespan": 3279.160004228725,
+      "construction_best": 513840,
+      "mean_construction_ratio": 1.0039108521943227,
+      "mean_same_plan_cache_ratio": 1.0000409793912741,
+      "mean_calls": 30,
+      "invalid_total": 0
+    },
+    {
+      "case": "case_082",
+      "method": "nsga3_npu",
+      "n": 3,
+      "mean_makespan": 510720.3333333333,
+      "min_makespan": 508038,
+      "max_makespan": 513840,
+      "sd_makespan": 2925.6189658486514,
+      "construction_best": 513840,
+      "mean_construction_ratio": 1.0061303491137812,
+      "mean_same_plan_cache_ratio": 1.000067976570812,
+      "mean_calls": 30,
+      "invalid_total": 0
+    },
+    {
+      "case": "case_082",
+      "method": "unsga3_npu",
+      "n": 3,
+      "mean_makespan": 510622.3333333333,
+      "min_makespan": 506716,
+      "max_makespan": 513840,
+      "sd_makespan": 3611.5841861063313,
+      "construction_best": 513840,
+      "mean_construction_ratio": 1.0063350888391103,
+      "mean_same_plan_cache_ratio": 1.0001893563666435,
+      "mean_calls": 30,
+      "invalid_total": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "nsga3_npu",
+      "paired_mean_speedup_over_generic": 1.0134893836446164,
+      "wins": 4,
+      "ties": 1,
+      "losses": 4,
+      "scope": "9 matched case/seed pairs; repeated seeds do not make 9 independent cases"
+    },
+    {
+      "method": "unsga3_npu",
+      "paired_mean_speedup_over_generic": 1.0174856174074112,
+      "wins": 4,
+      "ties": 1,
+      "losses": 4,
+      "scope": "9 matched case/seed pairs; repeated seeds do not make 9 independent cases"
+    }
+  ]
+}

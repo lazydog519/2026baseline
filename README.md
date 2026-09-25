@@ -17,3 +17,5 @@
 第三问当前为**方法与小样本验证**：7 例 × 1/2/5 核，共 21 组；采用同一方案有/无 L2 配对。确认组三例五核比值均值 **1.007435**，不是全量或多核对单核的均值。4 个事件反馈候选未胜出，尚不声称该局部策略有效。114 份官方文件未修改，独立改名输入复现通过。
 
 见 [第三问论文方法稿](project/q3_design/第三问论文方法稿.md)、[公式](project/q3_design/模型与算法公式.tex)、[纯代码包](project/q3_design/q3_prototype_code.zip)、[21 组结果](project/q3_design/pilot_metrics_all.csv) 与 [两幅图表](project/q3_design/figures/)。未启动全量优化。
+
+第三问新增 **NSGA-III / U-NSGA-III 的 NPU 离散适配测试**：3 例、固定 5 核、3 种子、3 方法，共 27 次独立搜索；每次同为 30 次原评估。加入拆分、合并、通信亲和迁移及拓扑修复。工程组并非稳定占优，保留全部负结果；未全量运行。见 [设计与三组结果](project/q3_nsga/README.md)、[代码包](project/q3_nsga/q3_nsga_code.zip)、[均值与范围](project/q3_nsga/summary.csv)、[搜索过程](project/q3_nsga/convergence.png)。
