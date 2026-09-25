@@ -1,0 +1,49 @@
+{
+  "version": "q3-branch-search-v2",
+  "method": "unsga3_npu",
+  "seed": 17,
+  "cores": 5,
+  "pymoo_version": "0.6.1.6",
+  "input_sha256": "47db132f9a1298bda310d6a8bc6e697a5973e66959af393afb065b20cad1fcf1",
+  "hardware_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "official_calls": 30,
+  "feasible_evaluations": 30,
+  "invalid_records": 0,
+  "proposals": 41,
+  "generations": 4,
+  "initial_population_hashes": [
+    "f28df606578d44e62e8a3a08d323c4784c3727b815554d64fdc26be7447e0b7e",
+    "a130bbf5d3cad8c96eaf075190bd3c412fcc6435ff4f442085d6658cee157cde",
+    "21c9be710d2ace8e56d0fc9fa052d6cd8c28db74dca77525df1bc7a804956b7d",
+    "36313d748d1807294fe6e236b49a2aa5e8dd8ccea1b80fe1112828a895bfec9e",
+    "6be64c68de58091035833131fa7622eea0ffeb45c081ba829b4e8fde497767bf",
+    "920b361fbca85242de541c75f641d0f2a0ca723b7c7378c6924125c3395211c9"
+  ],
+  "construction_best": 255771,
+  "makespan": 227076,
+  "improvement_ratio": 1.1263673836072505,
+  "added_copy_bytes": 3827302,
+  "cache_miss_bytes": 2435024,
+  "hit_rate": 0.4302008808750156,
+  "cold_start": true,
+  "historical_plans_read": false,
+  "empty_l2_each_evaluation": true,
+  "elapsed_seconds": 132.9414121000009,
+  "configuration": {
+    "version": "q3-branch-search-v2",
+    "official_budget": 30,
+    "population": 6,
+    "offspring_batch": 6,
+    "reference_partitions": 2,
+    "max_proposals_per_budget": 60,
+    "max_subgraphs": 256,
+    "crossover_probability": 0.35,
+    "split_cut_candidates": 5,
+    "mutation_types": [
+      "move",
+      "split",
+      "merge",
+      "order"
+    ]
+  }
+}

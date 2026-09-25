@@ -1,0 +1,187 @@
+{
+  "schema": "q3-cold-fusion-v2",
+  "cold_start": true,
+  "no_historical_plans_read": true,
+  "cores": 5,
+  "stage1_cycles": 30287,
+  "final_cycles": 30287,
+  "same_plan_no_l2_cycles": 35237,
+  "cache_hit_rate": 0.5508851295750303,
+  "cache_miss_bytes": 651654,
+  "added_copy_bytes": 1696344,
+  "reference_single_core_l2": 95618,
+  "decision_efficiency": 0.6314128173803942,
+  "efficiency_gate": 0.75,
+  "fixed_policy": {
+    "version": "q3-cold-fusion-v2",
+    "max_feedback_evaluations": 4,
+    "max_target_tensors": 8,
+    "normalized_efficiency_gate": 0.75,
+    "branch_seed": 17,
+    "branch_search": {
+      "version": "q3-branch-search-v2",
+      "official_budget": 30,
+      "population": 6,
+      "offspring_batch": 6,
+      "reference_partitions": 2,
+      "max_proposals_per_budget": 60,
+      "max_subgraphs": 256,
+      "crossover_probability": 0.35,
+      "split_cut_candidates": 5,
+      "mutation_types": [
+        "move",
+        "split",
+        "merge",
+        "order"
+      ]
+    }
+  },
+  "feedback_evaluations": [
+    {
+      "operator": "natural_stagger",
+      "plan_sha256": "ecc0b787e242505eeb9ac9a1bc54a3ee1b32e03a67c8ff0fe4c6ff3937eb8a74",
+      "detail": {
+        "tensor_id": 1000001469,
+        "core": 3,
+        "target_sg": 33,
+        "moved_sg": 43,
+        "proxy_gap_cycles": 48.0
+      },
+      "status": "feasible",
+      "makespan": 36545,
+      "cache_hit_rate": 0.564911569745564
+    },
+    {
+      "operator": "natural_stagger",
+      "plan_sha256": "d27ea0ce5baa1c129d0111658ed44e10869e598c342dc1f0ad887f4fb92080a9",
+      "detail": {
+        "tensor_id": 1000000046,
+        "core": 2,
+        "target_sg": 17,
+        "moved_sg": 27,
+        "proxy_gap_cycles": 103.4
+      },
+      "status": "feasible",
+      "makespan": 35741,
+      "cache_hit_rate": 0.5913765511994012
+    },
+    {
+      "operator": "natural_stagger",
+      "plan_sha256": "cc396ba7ea53f388dc015073e01f7d7ebbae054d86ebeabc09e88ed2849173d9",
+      "detail": {
+        "tensor_id": 1000000046,
+        "core": 3,
+        "target_sg": 18,
+        "moved_sg": 28,
+        "proxy_gap_cycles": 112.0
+      },
+      "status": "feasible",
+      "makespan": 37031,
+      "cache_hit_rate": 0.5596185734547966
+    },
+    {
+      "operator": "natural_stagger",
+      "plan_sha256": "f0ab823c59d39b77df9daac4915014068550036b6bcb0b246bd7dad61dbb20eb",
+      "detail": {
+        "tensor_id": 1000001469,
+        "core": 4,
+        "target_sg": 34,
+        "moved_sg": 39,
+        "proxy_gap_cycles": 157.23333333333335
+      },
+      "status": "feasible",
+      "makespan": 35598,
+      "cache_hit_rate": 0.5612064723420268
+    }
+  ],
+  "branch_search": {
+    "version": "q3-branch-search-v2",
+    "method": "unsga3_npu",
+    "seed": 17,
+    "cores": 5,
+    "pymoo_version": "0.6.1.6",
+    "input_sha256": "944f3c60de37e0e2dfe558f5dc74a3bb81ca06237844069eb8a2272e141455a7",
+    "hardware_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+    "official_calls": 30,
+    "feasible_evaluations": 30,
+    "invalid_records": 0,
+    "proposals": 39,
+    "generations": 4,
+    "initial_population_hashes": [
+      "fc4cabc3445636d965dcd8aaf94bd5fcb0eb9c9fd0e623b860874cb3504f5d00",
+      "0412160c54ef7f88732074b1d76073f25df48d9950470597f10c976ceba325fd",
+      "c76437036acf78267a5c455da9b96a7d3d779189977607d1c4374a2e094cb13e",
+      "c02faad9f1e8a8022117b6ec97fc6ab6dc05f9af4e1e77b4654a56d5c32e18b3",
+      "410576901703ebf696a541f0eca82d3140f1c392b1afa72065e914186b3d20ec",
+      "55f365a6871ed42bd05f4522447d55ecb9c81c888ceb68e7714c0c4e33c5c8f8"
+    ],
+    "construction_best": 68112,
+    "makespan": 52113,
+    "improvement_ratio": 1.3070059294226009,
+    "added_copy_bytes": 817560,
+    "cache_miss_bytes": 566310,
+    "hit_rate": 0.3749213560534315,
+    "cold_start": true,
+    "historical_plans_read": false,
+    "empty_l2_each_evaluation": true,
+    "elapsed_seconds": 41.00034339999547,
+    "configuration": {
+      "version": "q3-branch-search-v2",
+      "official_budget": 30,
+      "population": 6,
+      "offspring_batch": 6,
+      "reference_partitions": 2,
+      "max_proposals_per_budget": 60,
+      "max_subgraphs": 256,
+      "crossover_probability": 0.35,
+      "split_cut_candidates": 5,
+      "mutation_types": [
+        "move",
+        "split",
+        "merge",
+        "order"
+      ]
+    },
+    "accepted": false
+  },
+  "final_plan_sha256": "21f099934189dca75894e222171ac0b3c7232bdc63b8107aa380ae644d56d288",
+  "greedy_report": {
+    "schema": "q3-cold-fusion-v1",
+    "cold_start": true,
+    "graph_sha256": "4699e05f6d07cc9073da15230b18aabf146ec278b072a077d576e870e3bfb5ba",
+    "config_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+    "search_config": {
+      "max_evaluations": 24,
+      "max_seconds": 180,
+      "elite_structures": 3,
+      "heavy_groups": 3,
+      "branch_groups": 2,
+      "coarse_valley_depth": 6,
+      "max_band_depth": 64,
+      "random_seed": null,
+      "randomness": "none; deterministic ordering and tie-breaking",
+      "time_unit": "cycles; wall-clock budget in seconds",
+      "data_unit": "bytes",
+      "candidate_selection": "official Q3 Makespan minimum, ties by added DDR bytes",
+      "historical_results": "diagnostic comparison only; never read by solver"
+    },
+    "cores": 5,
+    "initial_cycles": 95618,
+    "makespan_cycles": 30287,
+    "added_copy_bytes": 1696344,
+    "evaluations": 24,
+    "elapsed_s": 21.47529950000171,
+    "invalid_candidates": 0,
+    "duplicates_skipped": 9,
+    "bound_pruned": 0,
+    "selected": "valley_w6_k5",
+    "selected_fingerprint": "21f099934189dca75894e222171ac0b3c7232bdc63b8107aa380ae644d56d288",
+    "initial_width": 2,
+    "cache_hit_rate": 0.5508851295750303,
+    "cache_miss_bytes": 651654,
+    "stop_reason": "evaluation_budget",
+    "time_budget_semantics": "Stop before the next evaluation; an in-flight official evaluation completes.",
+    "io_contract": "input graph + official code/config + fixed search parameters; no saved plans read"
+  },
+  "experimental_resume": "stage 1 generated by this frozen experiment"
+}
