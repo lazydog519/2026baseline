@@ -1,0 +1,26 @@
+{
+  "phase": "confirmation",
+  "cases": [
+    "case_095",
+    "case_008",
+    "case_074"
+  ],
+  "cores": [
+    1,
+    2,
+    5
+  ],
+  "jobs": 9,
+  "mean_paired_cache_ratio": {
+    "1": 1.0008181774843277,
+    "2": 1.0006989209975605,
+    "5": 1.0074348890702678
+  },
+  "search_calls": 30,
+  "independent_recheck_calls": 9,
+  "paired_no_l2_calls": 9,
+  "cold_start": true,
+  "all_results_rechecked": true,
+  "workers": 2,
+  "scope": "Only this listed small-case sample; not the 100-case official mean."
+}

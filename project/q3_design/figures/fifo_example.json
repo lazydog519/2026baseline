@@ -1,0 +1,92 @@
+{
+  "case": "case_074",
+  "cores": 5,
+  "tensor_id": 3325,
+  "selection": "Most hits among tensors with at least two residence episodes and two misses; tie by tensor ID.",
+  "windows": [
+    {
+      "version": "fifo-event-replay-v1",
+      "phase": "confirmation",
+      "case": "case_074",
+      "cores": "5",
+      "source_sha256": "43d6e95d60ab5975b9c726dffbc0503255190a0ec0c8953e408b77a584bc9bc6",
+      "tensor_id": "3325",
+      "size_bytes": "4096",
+      "start_event": "15",
+      "start_cycle": "1030",
+      "end_event": "427",
+      "end_cycle": "24029",
+      "evicted": "True"
+    },
+    {
+      "version": "fifo-event-replay-v1",
+      "phase": "confirmation",
+      "case": "case_074",
+      "cores": "5",
+      "source_sha256": "43d6e95d60ab5975b9c726dffbc0503255190a0ec0c8953e408b77a584bc9bc6",
+      "tensor_id": "3325",
+      "size_bytes": "4096",
+      "start_event": "2184",
+      "start_cycle": "177088",
+      "end_event": "2844",
+      "end_cycle": "248807",
+      "evicted": "True"
+    }
+  ],
+  "accesses": [
+    {
+      "event_index": 11,
+      "tensor_id": 3325,
+      "core": 2,
+      "event": "miss",
+      "start": 685,
+      "end": 1030,
+      "memory_path": "DDR"
+    },
+    {
+      "event_index": 2182,
+      "tensor_id": 3325,
+      "core": 2,
+      "event": "miss",
+      "start": 177019,
+      "end": 177088,
+      "memory_path": "DDR"
+    },
+    {
+      "event_index": 2303,
+      "tensor_id": 3325,
+      "core": 1,
+      "event": "hit",
+      "start": 187722,
+      "end": 187739,
+      "memory_path": "CACHE_READ"
+    },
+    {
+      "event_index": 2375,
+      "tensor_id": 3325,
+      "core": 4,
+      "event": "hit",
+      "start": 195636,
+      "end": 195653,
+      "memory_path": "CACHE_READ"
+    },
+    {
+      "event_index": 2443,
+      "tensor_id": 3325,
+      "core": 3,
+      "event": "hit",
+      "start": 202303,
+      "end": 202320,
+      "memory_path": "CACHE_READ"
+    },
+    {
+      "event_index": 2555,
+      "tensor_id": 3325,
+      "core": 0,
+      "event": "hit",
+      "start": 215181,
+      "end": 215198,
+      "memory_path": "CACHE_READ"
+    }
+  ]
+}

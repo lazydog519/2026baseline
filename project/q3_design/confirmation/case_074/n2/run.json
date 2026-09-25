@@ -1,0 +1,32 @@
+{
+  "version": "q3-mechanism-pilot-v1",
+  "cold_start": true,
+  "historical_plans_read": false,
+  "initial_cache_empty": true,
+  "input_sha256": "1c454e2daeb5f89993a2d24246f685d1592539b0fed27594b339af35bc4ad881",
+  "config_sha256": "dcd10de54b23f8366428fb24e828812b1da9549e6eae4a3c3f38604fe5ae77b9",
+  "algorithm_config": {
+    "version": "q3-mechanism-pilot-v1",
+    "max_official_evaluations": 5,
+    "max_initial_blocks_target": 128,
+    "max_scale_trials": 4,
+    "feedback_candidates": 2,
+    "max_target_tensors": 3,
+    "seed": null,
+    "objective": "lexicographic official Makespan, official added_copy_bytes",
+    "stop": "fixed candidate count; no wall-clock-dependent search",
+    "units": {
+      "time": "cycles",
+      "size": "bytes",
+      "bandwidth": "bytes/cycle"
+    },
+    "scope": "small-case feasibility prototype; not frozen for full competition evaluation"
+  },
+  "cores": 2,
+  "selected_plan_sha256": "22cae387904695bf98159810437bc033359f37864dafee16f098af6bbbdf71dd",
+  "makespan": 820789,
+  "official_evaluations": 4,
+  "elapsed_seconds": 3.7966081999911694,
+  "feedback_proposals_evaluated": 1,
+  "invalid_candidates": 0
+}

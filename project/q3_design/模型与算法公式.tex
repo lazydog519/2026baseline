@@ -1,0 +1,93 @@
+% UTF-8; include after loading amsmath and Chinese text support.
+% Generated from the Markdown report; equations and results share one source.
+\section{共享只读缓存下的事件模型与有界搜索}
+所有候选使用原始图与固定配置，每次评估从空缓存开始，不读取历史方案。
+容量 $C_2=1048576$、$C_{\rm L1}=524288$、$C_{\rm UB}=131072$ bytes；
+带宽 $B_D=60$、$B_2=250$ bytes/cycle。
+$G=(V\cup\mathcal T,E)$ 为原图，$P=(\phi,\kappa,\pi)$ 为子图、分核与顺序；
+$s_q,f_q$ 为原评估推导的操作开始与完成时刻，$b_x$ 为张量字节数。
+$Q_e$ 为事件后的 FIFO 队列，$Q_0=\varnothing$；命中不刷新顺序。
+COPY\_IN 完成时对不驻留且可容纳的张量尝试插入；COPY\_OUT 不填充缓存。
+
+跨核读取释放约束：L2 命中不能省略 500 cycles 同步。
+\[
+s_{\mathrm{in}}\ge f_{\mathrm{out}}+500. \tag{1}
+\]
+
+私有存储容量：实际峰值由附录 C 的展开与换入换出确定。
+\[
+\max_t M_k^r(t)\le C_r,\quad r\in\{\mathrm{L1},\mathrm{UB}\}. \tag{2}
+\]
+
+发射时命中判定：查询此前状态，不刷新 FIFO 次序。
+\[
+h_q=\mathbf1\{x(q)\in Q_{e(q)-1}\}. \tag{3}
+\]
+
+FIFO 插入：删除能容纳新条目的最短队首前缀，已驻留时不变。
+\[
+j^*=\min\left\{j\in\{0,\ldots,m\}:\sum_{i=j+1}^{m}b_{x_i}+b_x\le C_2\right\},
+\quad Q'=(x_{j^*+1},\ldots,x_m,x). \tag{4}
+\]
+
+驻留窗口：a 和 d 为事件编号，同周期按实际处理次序区分。
+\[
+\mathcal W_x=\bigcup_j[a_{xj},d_{xj}),\qquad
+h_q=\mathbf1\{e(q)\in\mathcal W_{x(q)}\}. \tag{5}
+\]
+
+参考工作量：操作汇总字节按原函数取值，带宽单位 bytes/cycle。
+\[
+\ell_q=\max\left(1,\left\lceil b_q^{\mathrm{op}}/B_{r(q)}\right\rceil\right).
+\tag{6}
+\]
+
+共享服务积分：N 为正剩余工作请求数，数值执行还须原程序的整数取整。
+\[
+w_q(t)=\left[\ell_q-\int_{s_q}^{t}
+\frac{\mathbf1\{q\text{仍有未完成工作}\}}{N_{r(q)}(u)}\,du\right]_+ . \tag{7}
+\]
+
+主目标：完成时间最小，同时间以官方额外搬运量破同。
+\[
+\min_{P\in\mathcal F_n}T_2(P),\qquad T_2(P)=\max_q f_q(P). \tag{8}
+\]
+
+字节命中率：无查询字节取零，查询字节与操作汇总字节按原字段区分。
+\[
+H(P)=\frac{\sum_{q\in\mathrm{COPY\_IN}}b_{x(q)}h_q}
+{\sum_{q\in\mathrm{COPY\_IN}}b_{x(q)}}. \tag{9}
+\]
+
+双负载分核：M 为矩阵 Pipe，O 为其他非 COPY 操作工作，这是代理量。
+\[
+k^*=\arg\min_k\left(
+\max(L_{kM}+W_{jM},L_{kO}+W_{jO}),\
+L_{kM}+L_{kO},\ k\right). \tag{10}
+\]
+
+分带割边代理：可能重复计入多消费关系，不作为精确搬运量或下界。
+\[
+B_{\mathrm{cut}}(\ell)=
+\sum_{(u,x,v):\,d(u)\le\ell<d(v)}b_x. \tag{11}
+\]
+
+错峰排序代理：没有精确计入共享竞争与重叠，接受由完整评估决定。
+\[
+\delta(S)=\left|\widehat b_{\mathrm{in}}(S)/60-
+(t_{\mathrm{fill}}-s_{\mathrm{miss}})\right|. \tag{12}
+\]
+
+同方案两配置对照：逐例比值算术平均，不是两边分别优化所得最优值之比。
+\[
+R_{i,n}=\frac{T_B(P_{i,n})}{T_2(P_{i,n})},\qquad
+\overline R_{\mathcal I,n}=\frac1{|\mathcal I|}\sum_{i\in\mathcal I}R_{i,n}. \tag{13}
+\]
+
+\paragraph{算法与证据边界}
+每次独立求解比较完整分量装箱、分量块顺序和数据感知深度带，
+再由本次缓存事件提出至多两个合法重排候选，总计不超过五次原评估。
+本轮七例、三种核数共二十一组，确认组三例五核同方案配置比值均值为 1.007435。
+该值不是全量均值。四个反馈候选均未胜出，未证明局部时序修正有稳定优势。
+缓存窗口经完整事件重放核对；积分表达不替代原整数事件模拟器。
+代码与参数在确认前冻结，隔离改名输入复现了完整方案与结果。

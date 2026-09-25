@@ -1,0 +1,4 @@
+case,cores,with_l2_cycles,same_plan_no_l2_cycles,paired_cache_ratio,initial_with_l2_cycles,construction_to_selected_ratio,selected_candidate,added_copy_bytes,hit_rate,hit_bytes,miss_bytes,peak_l1_bytes,peak_ub_bytes,max_l2_bytes,official_search_calls,feedback_candidates,invalid_candidates,solver_seconds,total_seconds,full_result_rechecked
+case_044,1,86719,86719,1.0,107814,1.243256956376342,data_aware_bands,0,0.0,0,952928,413696,0,952928,3,0,0,0.7276255999895511,1.7850385999918217,True
+case_044,2,45906,51301,1.1175227639088572,85335,1.858907332374853,data_aware_bands,930400,0.17487341557073435,329344,1553984,393216,0,952928,3,0,0,0.7661430000007385,1.8064276999939466,True
+case_044,5,84117,84213,1.0011412675202396,102921,1.2235457755269445,data_aware_bands,3721600,0.000424427878065978,1984,4672544,380928,0,952928,3,0,0,1.176485900010448,1.6963391000026604,True

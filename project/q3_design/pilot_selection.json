@@ -1,0 +1,38 @@
+{
+  "version": "q3-pilot-selection-v1",
+  "all_profiled_cases": 100,
+  "eligible_pilot_cases": 62,
+  "selection": "log1p/min-max/farthest-point; actual input descriptors only; no measured scores",
+  "max_compute_ops_for_pilot": 5000,
+  "fields": [
+    "compute_ops",
+    "depth",
+    "weak_components",
+    "structural_parallelism",
+    "shared_input_bytes",
+    "max_input_consumers",
+    "input_working_set_in_l2_capacities"
+  ],
+  "cores": [
+    1,
+    2,
+    5
+  ],
+  "development": [
+    "case_100",
+    "case_036",
+    "case_082"
+  ],
+  "confirmation": [
+    "case_095",
+    "case_008",
+    "case_074"
+  ],
+  "limitations": "Cost-bounded small-case feasibility study, not a representative 100-case average or unseen generalisation test.",
+  "parameter_source": "Fixed exploratory budget; no statistical tuning claim.",
+  "feature_warning": "Potential repeated bytes count per-op consumers before assignment; not a bound or a measured DDR volume.",
+  "diagnostic": [
+    "case_044"
+  ],
+  "diagnostic_selection": "After the initial development pilot showed no paired Makespan gain, select the highest original COPY/work ratio among <=5000-op cases with shared inputs. This is an exploratory mechanism test, not confirmation."
+}
