@@ -1,0 +1,33 @@
+% XeLaTeX entry point. Insert the two chapter files into the team template as needed.
+\documentclass[UTF8,a4paper,zihao=-4]{ctexart}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\captionsetup{font=small,labelsep=quad}
+\ctexset{section={name={第,章},number=\chinese{section},format=\Large\bfseries},
+subsection={number=\arabic{section}.\arabic{subsection},format=\large\bfseries}}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{section}-\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}-\arabic{table}}
+\newcounter{alglinecount}
+\newenvironment{algorithmblock}[1]{\par\medskip\noindent\begin{minipage}{\linewidth}
+\hrule\vspace{5pt}\textbf{#1}\par\vspace{4pt}\hrule\vspace{5pt}\small
+\setcounter{alglinecount}{0}}{\par\vspace{5pt}\hrule\end{minipage}\par\medskip}
+\newcommand{\alginput}[1]{\noindent\textbf{输入：}#1\par}
+\newcommand{\algoutput}[1]{\noindent\textbf{输出：}#1\par\vspace{3pt}}
+\newcommand{\algline}[2][0]{\stepcounter{alglinecount}\par\noindent
+\hangindent=2em\hangafter=1\makebox[2em][l]{\arabic{alglinecount}.}\hspace*{#1em}#2\par}
+\begin{document}
+\setcounter{section}{5}
+\input{第六章_问题一.tex}
+\clearpage
+\input{第七章_问题二.tex}
+\begin{thebibliography}{9}
+\bibitem{Graham1969} Graham R L. Bounds on Multiprocessing Timing Anomalies[J]. SIAM Journal on Applied Mathematics, 1969, 17(2): 416--429. DOI: 10.1137/0117039.
+\bibitem{Topcuoglu2002} Topcuoglu H, Hariri S, Wu M Y. Performance-effective and low-complexity task scheduling for heterogeneous computing[J]. IEEE Transactions on Parallel and Distributed Systems, 2002, 13(3): 260--274. DOI: 10.1109/71.993206.
+\end{thebibliography}
+\end{document}

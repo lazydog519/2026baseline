@@ -1,0 +1,172 @@
+\section{问题一：基于拓扑结构的切图与任务调度}
+
+\subsection{问题分析与计算图预处理}
+问题一的关键在于确定合适的并行粒度。场景 A 将每个子图独立封装为一个 Task，子图之间的数据均通过 DDR 传递，即使两个子图位于同一核心也不例外。切分能够增加并行机会，却会引入边界搬运和任务等待。因此，算法首先分析当前计算图中的独立分量、分支与汇合位置，再比较不同粒度的切图方案。
+
+设原始计算图为 $G=(T\cup O,E)$，其中 $T$、$O$ 分别为张量节点与操作节点集合。张量 $t$ 的大小记为 $b_t$，操作 $u$ 的计算周期记为 $c_u$，其计算管道记为 $p(u)\in\{M,V\}$。为分析计算依赖，从操作集合中取出非 COPY 操作 $O_c$，将经张量连接的生产者与消费者转化为操作间依赖：
+\begin{equation}
+G_c=(O_c,E_c),\qquad
+E_c=\{(u,v)\in O_c^2:\exists t\in T,\ (u,t),(t,v)\in E\}\cup E_{OO}.
+\label{eq:q1-opgraph}
+\end{equation}
+其中 $E_{OO}$ 表示原图直接给出的操作间依赖。本题 100 个输入图中该集合均为空，但预处理仍保留对此类边的支持。式~\eqref{eq:q1-opgraph} 只建立用于求解的依赖视图，原图中的 COPY 操作、张量大小和存储位置均予以保留。
+
+对 $G_c$ 进行拓扑排序，并在其无向形式上提取弱连通分量 $\mathcal C=\{C_1,\ldots,C_K\}$。沿拓扑序计算操作深度、层宽和两条计算管道的工作量：
+\begin{equation}
+\begin{aligned}
+d_u&=1+\max_{v\in\operatorname{pred}(u)}d_v,\qquad h=\max_u d_u,\\
+m_\ell&=|\{u:d_u=\ell\}|,\qquad
+W_j^q=\sum_{u\in C_j,\ p(u)=q}c_u,\quad q\in\{M,V\}.
+\end{aligned}
+\label{eq:q1-features}
+\end{equation}
+无前驱节点的深度为 1。分量数 $K$ 反映可直接分配的独立计算块数量；层宽 $m_\ell$ 描述不同深度上的并行程度；入度或出度大于 1 的节点分别标识汇合与分支位置。另建立每个张量的生产者、消费者及字节数索引，用于评价候选切分的搬运代价。
+
+表~\ref{tab:q1-structure} 给出逐图预处理的结果。84 个图包含多个弱连通分量，另外 16 个图仅有一个分量；计算规模和深度差异较大。由此，完整分量装箱适合作为稳定的初始构造，但对单个大分量或分量负载不均衡的图，还需利用内部拓扑寻找并行切分点。
+
+\begin{table}[htbp]
+\centering
+\caption{100 个计算图的结构统计}
+\label{tab:q1-structure}
+\begin{tabular}{lrrr}
+\hline
+结构量 & 最小值 & 中位数 & 最大值 \\
+\hline
+非 COPY 操作数 & 552 & 3720.5 & 35705 \\
+弱连通分量数 $K$ & 1 & 39.5 & 2666 \\
+拓扑深度 $h$ & 3 & 47.5 & 2440 \\
+最大层宽 & 8 & 217.5 & 15921 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{场景 A 的约束与时间估计}
+对给定核心数 $N\in\{2,3,4,5\}$，记子图映射为 $\phi:O_c\to\mathcal S$，核心分配为 $a:\mathcal S\to\{0,\ldots,N-1\}$，核心 $k$ 的子图执行序列为 $\pi_k$。子图编号为非负整数；每个非 COPY 操作必须且只能分配到一个子图，每个子图必须且只能在一个核心序列中出现一次。子图依赖图以及加入同核先后关系后的联合图均须无环。输出采用附件规定的 \texttt{node\_to\_subgraph} 和 \texttt{core\_schedules} 两个字段。
+
+以系统完工时间为主要优化目标，同时考虑新增 DDR 搬运量。根据固定配置，同核相邻 Task 的等待时间为 $\delta_{\rm same}=100$ cycle，跨核前驱 Task 的等待时间为 $\delta_{\rm cross}=1000$ cycle；各核心共同使用带宽 $\beta=60$ byte/cycle 的 DDR。L1 和 UB 的容量分别为 524288 byte 和 131072 byte。增加核心数不会增加 DDR 总带宽，同核 Task 切换也不能保留前一 Task 的缓存数据。
+
+为在有限时间内比较候选，采用计算工作量、边界字节数和任务依赖共同构成时间估计。设 $I_s$、$U_s$ 为 Task $s$ 需要从 DDR 读入和写回 DDR 的张量集合，同一 Task 内按张量去重，则
+\begin{equation}
+\widehat B_A=\sum_{s\in\mathcal S}\left(\sum_{t\in I_s}b_t+\sum_{t\in U_s}b_t\right),\qquad
+\widehat d_s=\max\left\{W_s^M,W_s^V,
+\frac{\sum_{t\in I_s}b_t+\sum_{t\in U_s}b_t}{\beta}\right\}.
+\label{eq:q1-duration}
+\end{equation}
+这里 $W_s^q$ 按式~\eqref{eq:q1-features} 对 Task 内操作重新求和。取最大值用于近似两条计算管道与搬运的重叠执行，$\widehat B_A$ 不含缓存不足引起的换入换出。该式用于方案比较，不能直接替代附件的核内调度结果。
+
+在子图依赖图中加入同核相邻 Task 的顺序边，记得到的前驱集合为 $P^\pi(s)$。沿该图的拓扑序递推：
+\begin{equation}
+\begin{aligned}
+\widehat f_s&=\widehat d_s+\max_{u\in P^\pi(s)}(\widehat f_u+\delta_{us}),\\
+\widehat T_A&=\max\left\{\max_s\widehat f_s,\frac{\widehat B_A}{\beta}\right\},\qquad
+\delta_{us}=\begin{cases}
+\delta_{\rm cross},&a(u)\ne a(s),\\
+\delta_{\rm same},&u\text{ 为 }s\text{ 的同核紧邻前项},\\
+0,&\text{其余同核依赖}.
+\end{cases}
+\end{aligned}
+\label{eq:q1-time}
+\end{equation}
+空前驱集合的最大值取 0。式~\eqref{eq:q1-time} 同时反映任务串行关系、跨核等待及全局搬运工作量。由于它不展开逐个 COPY 的带宽竞争，也不执行缓存换出，仍是一种排序代理。最终完工时间和额外搬运量由附件原版程序在方案生成完毕后统一验收。
+
+\subsection{分量装箱与结构切分}
+首先将弱连通分量作为完整物品分配。按 $\max(W_j^M,W_j^V)$ 从大到小处理分量，设核心 $k$ 已分配的管道负载为 $(L_k^M,L_k^V)$，则将当前分量放入
+\begin{equation}
+k^*=\arg\min_k
+\left(\max_{q\in\{M,V\}}(L_k^q+W_j^q),\ L_k^M+L_k^V,\ k\right).
+\label{eq:q1-packing}
+\end{equation}
+括号内按字典序比较，选定后更新两条管道负载。同核分量合并为一个子图，空核保留空序列。该规则采用最长工作量优先分配思想\cite{Graham1969}，并用双管道负载替代单一处理时间。共享 DDR 和缓存使本题不再满足经典独立作业调度模型，因而不直接援引其近似比作为本算法的性能保证。
+
+不同弱连通分量之间没有计算依赖，完整分配不会切断分量内部的生产--消费关系。这一性质有利于避免中间依赖造成的跨核通信，但不意味着额外搬运量必为零：共享输入可能被多个核心分别读取，核内缓存不足也会产生换入换出。另一方面，若一个分量占据大部分工作量，完整保留会限制可利用的核心数。因此，算法同时构造内部切分候选。
+
+内部切分围绕三类结构展开。第一类保留首次汇合前的独立分支，或按照末端消费者对分支归组；第二类利用拓扑层宽的收缩与扩张确定阶段边界；第三类按照深度带与源端、末端可达关系划分。在深度带构造中，候选边界附近按跨层张量字节数选择切分位置，以减少将大张量切到不同 Task 的情况。上述构造均保持原操作和依赖，不拆分操作，也不复制计算。
+
+基础深度带宽由当前图的深度 $h$、总计算量 $W=\sum_{u\in O_c}c_u$ 和核心数确定：
+\begin{equation}
+w_0=\max\left\{2,\left\lceil\frac{N\delta_{\rm cross}h}{\max(1,W)}\right\rceil,
+\left\lceil\frac{Nh}{256}\right\rceil\right\}.
+\label{eq:q1-band}
+\end{equation}
+算法考察 $w_0,2w_0,4w_0$ 三种粒度。前一项避免过细切分，第二项使计算相对等待开销较小时倾向于更粗的 Task；第三项是固定的搜索规模控制规则，256 不是题目的硬件常数。此外，还保留减少活跃核心数的分量分配候选，以应对并行计算收益不足以抵消 DDR 争用的情形。
+
+\subsection{任务列表调度与有限合并}
+各结构候选先经过覆盖性、无环性检查和方案去重，再由式~\eqref{eq:q1-time} 排序。仅对排名靠前的至多三个候选进行任务调度与合并调整，以控制额外搜索量。
+
+任务重排采用“就绪任务优先级--最早完成核心”的列表调度思想\cite{Topcuoglu2002}。先自后向前计算
+\begin{equation}
+r_s=\widehat d_s+\max_{v\in\operatorname{succ}(s)}(\delta_{\rm same}+r_v).
+\label{eq:q1-rank}
+\end{equation}
+每次从全部已分配前驱的就绪 Task 中选取 $r_s$ 最大者，比较其放到各核心后的预计完成时刻。设 $F_k$ 是核心 $k$ 已排任务的末端时间，则
+\begin{equation}
+\operatorname{EFT}(s,k)=\widehat d_s+
+\max\left\{F_k+\delta_{\rm same}\mathbf1[\pi_k\ne\varnothing],
+\max_{u\in\operatorname{pred}(s)}
+\big(\widehat f_u+\delta_{\rm cross}\mathbf1[a(u)\ne k]\big)\right\}.
+\label{eq:q1-eft}
+\end{equation}
+优先选择 EFT 最小的核心，并列时依次选择已排 Task 数较少、编号较小的核心。式~\eqref{eq:q1-rank} 中的固定等待项只用于任务优先级；核心选择时则按式~\eqref{eq:q1-eft} 区分同核与跨核等待。这里采用尾部追加排布，没有执行 HEFT 的空闲区间插入步骤。
+
+合并调整只考虑同核相邻、且在 Task 拓扑序中也相邻的任务对。按共享张量字节数选取至多八对，逐一尝试收缩；每次收缩都重新校验联合依赖图，并且只接受降低 $\widehat T_A$ 的结果，最多进行两轮。任务重排与合并分别从各自的结构候选出发，避免将多轮局部搜索叠加为无界迭代。最终选择预计时间最小的合法方案；若完整分量方案的预计时间不超过最小值的 1.01 倍，则保留完整分量方案，减少对微小估计差异的依赖。
+
+\begin{algorithmblock}{算法 6-1\quad 基于输入拓扑的切图与任务调度}
+\alginput{当前计算图 $G$，核心数 $N$，带宽 $\beta$，等待参数 $\delta_{\rm same},\delta_{\rm cross}$。}
+\algoutput{子图映射 $\phi$ 与每核子图序列 $\pi_0,\ldots,\pi_{N-1}$。}
+\algline{读取张量、操作与边；提取非 COPY 操作集 $O_c$，保留原始数据。}
+\algline{按生产--消费关系构建 $G_c$；计算拓扑序与节点深度 $d_u$。}
+\algline{提取弱连通分量、层宽、分支及汇合位置，统计双管道工作量与张量字节数。}
+\algline{按式~\eqref{eq:q1-packing} 构造完整分量方案 $P_0$，初始化 $\mathcal P\leftarrow\{P_0\}$。}
+\algline{加入首次汇合与末端分支候选，以及较少活跃核心数的分量装箱候选。}
+\algline{按式~\eqref{eq:q1-band} 计算 $w_0$。}
+\algline{\textbf{for} $w\in\{w_0,2w_0,4w_0\}$ \textbf{do}}
+\algline[1]{按 $w$ 构造数据感知深度带、分支汇合、层宽谷和末端可达归组候选。}
+\algline{\textbf{end for}；另加入宽度为 $w_0$ 的源端可达归组候选。}
+\algline{逐候选检查节点与子图覆盖、联合依赖无环性；剔除失败及重复方案。}
+\algline{按式~\eqref{eq:q1-duration}--\eqref{eq:q1-time} 计算 $\widehat B_A$、$\widehat T_A$，选取排名靠前的至多三个方案。}
+\algline{\textbf{for} 所选方案中的每个 $P$ \textbf{do}}
+\algline[1]{从 $P$ 分别生成就绪列表重排方案与至多两轮的相邻任务合并方案。}
+\algline[1]{重新检查合法性，计算时间估计，将不同的合法方案加入 $\mathcal P$。}
+\algline{\textbf{end for}}
+\algline{取 $\widehat T_A$ 最小的 $P^*$；时间并列时比较边界字节数与固定方案哈希。}
+\algline{若 $\widehat T_A(P_0)\le1.01\widehat T_A(P^*)$，令 $P^*\leftarrow P_0$。}
+\algline{\textbf{return} $P^*$ 的 \texttt{node\_to\_subgraph} 与 \texttt{core\_schedules}。}
+\end{algorithmblock}
+
+\subsection{求解结果与分析}
+算法对每个图、每种核数分别从原始输入生成方案。所有全局参数在正式运行前固定，生成过程中不读取历史方案和逐图得分，也不调用官方评估器。方案保存后，再使用未修改的附件程序完成 100 个图、2--5 核共 400 组验收，全部通过。
+
+设第 $i$ 个图在 $N$ 核下的官方完工时间为 $T_{i,N}$，按题目规定采用的单核整图时间为 $T_{i,1}$。统计采用逐图加速比的算术平均：
+\begin{equation}
+S_{i,N}=\frac{T_{i,1}}{T_{i,N}},\qquad
+\overline S_N=\frac1{100}\sum_{i=1}^{100}S_{i,N}.
+\label{eq:q1-speedup}
+\end{equation}
+单核加速比按定义置为 1，不另行进行单核搜索。表~\ref{tab:q1-result} 给出全部用例的汇总；额外搬运采用官方 \texttt{added\_copy\_bytes} 字段，并按 $1\,\mathrm{MiB}=2^{20}$ byte 换算。
+
+\begin{table}[htbp]
+\centering
+\caption{问题一的全量求解结果}
+\label{tab:q1-result}
+\begin{tabular}{crrr}
+\hline
+核心数 & 平均加速比 & 加速比中位数 & 平均额外搬运 / MiB \\
+\hline
+2 & 1.8648 & 1.9583 & 13.848 \\
+3 & 2.6016 & 2.7753 & 14.514 \\
+4 & 3.2650 & 3.5074 & 15.557 \\
+5 & 3.8311 & 4.0428 & 15.285 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/图6-1_问题一求解结果.pdf}
+\caption{问题一的加速比结果。左图为每种核数下 100 图的算术平均，单核值按定义为 1；右图为五核下按弱连通分量数分组的分布。箱体表示四分位区间，中线为中位数，须延至 1.5 倍四分位距内的最远观测，点为其外观测。}
+\label{fig:q1-result}
+\end{figure}
+
+五核平均加速比为 3.8311。多分量图的五核平均值为 4.0041，单分量图为 2.9228，表明输入结构对可利用的并行性有明显影响。多分量允许在较少新增依赖的条件下分配负载；单分量则通常需要在并行化与边界代价之间作出取舍。该分组仅作结果描述，不作为对任一新图性能的保证。
+
+与仅采用完整分量装箱的同批五核方案相比，结构切分与有限调度调整使 38 个图耗时下降、2 个图上升、60 个图不变。由此可见，保留分量能够解决一部分图，内部结构切分对另一部分图有补充作用，但代理排序仍存在误差。五核平均额外搬运中，缓存换入换出贡献 7.423 MiB，说明通信割边并不是唯一成本来源。后续场景 B 的设计还需显式考虑同核数据驻留对缓存的影响。
