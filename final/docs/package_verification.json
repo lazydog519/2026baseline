@@ -1,0 +1,22 @@
+{
+  "source_files_unchanged": 16,
+  "data_files_unchanged": 10,
+  "smoke": [
+    {
+      "solver": "q1",
+      "renamed_input": true,
+      "matches_frozen_plan": true
+    },
+    {
+      "solver": "q2",
+      "renamed_input": true,
+      "matches_frozen_plan": true
+    },
+    {
+      "solver": "q3",
+      "renamed_input": true,
+      "matches_frozen_plan": true
+    }
+  ],
+  "official_evaluator_calls": 0
+}

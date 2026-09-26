@@ -1,0 +1,55 @@
+% !TeX program = xelatex
+% Overleaf: main.tex + XeLaTeX. Collaboration draft; official cover is not supplied.
+\documentclass[UTF8,a4paper,zihao=-4,fontset=fandol]{ctexart}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\captionsetup{font=normalsize,labelsep=quad}
+\ctexset{section={name={第,章},number=\chinese{section},format=\zihao{4}\heiti\centering},
+subsection={number=\arabic{section}.\arabic{subsection},format=\zihao{-4}\heiti}}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{section}-\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}-\arabic{table}}
+\newcounter{alglinecount}
+\newenvironment{algorithmblock}[1]{\par\medskip\noindent\begin{minipage}{\linewidth}
+\hrule\vspace{5pt}\textbf{#1}\par\vspace{4pt}\hrule\vspace{5pt}\normalsize
+\setcounter{alglinecount}{0}}{\par\vspace{5pt}\hrule\end{minipage}\par\medskip}
+\newcommand{\alginput}[1]{\noindent\textbf{输入：}#1\par}
+\newcommand{\algoutput}[1]{\noindent\textbf{输出：}#1\par\vspace{3pt}}
+\newcommand{\algline}[2][0]{\stepcounter{alglinecount}\par\noindent
+\hangindent=2em\hangafter=1\makebox[2em][l]{\arabic{alglinecount}.}\hspace*{#1em}#2\par}
+
+\usepackage{longtable}
+\linespread{1}
+\pagestyle{plain}
+\setlength{\parindent}{2em}
+\begin{document}
+\input{sections/abstract.tex}
+\clearpage
+\input{sections/01.tex}
+\input{sections/02.tex}
+\input{sections/03.tex}
+\input{sections/04.tex}
+\input{sections/05.tex}
+\input{sections/06.tex}
+\input{sections/07.tex}
+\input{sections/08.tex}
+\input{sections/09.tex}
+\input{sections/references.tex}
+
+\section*{附录：结果与程序索引}
+配套电子表保存问题一、二各 400 行和问题三 500 行正式结果，包含用例、核心数、完工时间、额外搬运及缓存开关统计。数据按逐图加速比汇总，源方案及官方评估记录可按用例索引定位。
+
+\begin{itemize}[nosep,leftmargin=2em]
+\item 输入结构与正式结果分别保存在 \texttt{data/} 中的输入图结构统计、两场景逐例结果和问题三逐例配对结果 CSV 文件。
+\item 三问程序入口为 \texttt{code/q1/solver.py}、\texttt{code/q2/solver.py} 和 \texttt{code/q3/solver.py}；版本校验见 \texttt{manifest.json}。
+\item 逐图结果长表见 \path{sections/results_appendix.tex}，可按最终篇幅需要并入正文。
+\end{itemize}
+\input{sections/ai_usage.tex}
+% Uncomment for the full 1300-row results appendix (long compilation).
+% \input{sections/results_appendix.tex}
+\end{document}

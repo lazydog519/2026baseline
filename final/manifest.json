@@ -1,0 +1,41 @@
+{
+  "source_commit": "b351a80ca388cbebe1cf6c2aa868bdb072411019",
+  "algorithms_unchanged": true,
+  "solver_sha256": {
+    "code/q1/solver.py": "c35e4efd7b50ae1fb6c6604da33e0a4b39c47132404108e20a71ca5eaf8a23d5",
+    "code/q1/mechanistic.py": "27e5392ad0525cbd83736276f2c5c8b9e9b61cdb3cbc9c95ecf195ee367ba36b",
+    "code/q1/q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "code/q1/baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "code/q1/policy.json": "5d3a34d511532917b8effb7f8d973e5dfcc94c3d90411ff9ec66144f9cd490b8",
+    "code/q2/solver.py": "026e1fdf8ae07df12ec709371bd86d697874b34ee867eab34a86c61e023d134c",
+    "code/q2/model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+    "code/q2/memory_proxy.py": "0b9d854c4932d0e091f981d528ccee9ab39c0fc195018a5df39906396ca11465",
+    "code/q2/q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "code/q2/baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "code/q3/solver.py": "500432c844b17d508488c66acd23ad4515f10d897e3d700f7867eec1695dfb7e",
+    "code/q3/engine.py": "1796578ea37ebf3c274c1b3f5c0731028ca7a2475c7412810ac49944cdcccc35",
+    "code/q3/graph_model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+    "code/q3/baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "code/q3/q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "code/q3/policy.json": "f233d22e6d28c9e60a9032c51121bcb6d7c131f5d72e471681719dbfe82a60a0"
+  },
+  "data_sha256": {
+    "data/case_080_n5_l2.json.gz": "610f26cd047b8f2d4769637fd7bc7b25fbd4f6d9f9a2422c0e9d231efc75dffc",
+    "data/figure_names.json": "86c91b74ba29462f03a5e3f2ba3460fd8bc317b5cdebc741441afb8c3ae14361",
+    "data/q1_component_comparator.csv": "d91bbcf7fd940dd7c8bd5f47760e5dd1c18ba6a2bca9cda043f32b05fe7c31c7",
+    "data/q2_metrics.csv": "bc90619c3b1ea6947501817ddf6663ded2cc8f218043e9f5b8d1c59d27455f44",
+    "data/q3_aggregate.json": "d0236b53d4f66fe3f0905651d6dd790abb50515b75fefc6e3982a979cf926413",
+    "data/三问冻结版本核对.json": "b98e3dd355f5c4ec9a43f04daddf79a6c8e0e6d588d7299e0eafe5e0e41c4e05",
+    "data/两场景逐例结果.csv": "647fbd00ee49c54e05399c8eab15162c1f91134b8b0959e259a7c4704a0c7ef2",
+    "data/统计摘要.json": "68b4a8c5c0674fef58c0dd61aa59a89b702f8dd1691aa37856ae257ef9feb0d5",
+    "data/输入图结构统计.csv": "d37fa64c1cb3924692aac9a2ad8238b3a594cf5d2d6475183371364e88105912",
+    "data/问题三逐例配对结果.csv": "8144923aac8d7fdb4267dfcbefa425fa386e782e3b75a28cbebc0417a40d98de"
+  },
+  "five_core_means": {
+    "q1": 3.8310665270827635,
+    "q2": 3.952170334022541,
+    "q3": 4.193922744398971
+  },
+  "manuscript_source_commit": "93841443fd5bb52a14e6c8313d9638d45e5a994e",
+  "manuscript_source": "project/论文整合修订_20260926_V2"
+}

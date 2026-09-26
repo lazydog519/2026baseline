@@ -8,3 +8,13 @@ project/q3_design/**/*.py -text
 project/q3_design/**/*.json -text
 project/q3_nsga/**/*.py -text
 project/q3_nsga/**/*.json -text
+
+# Equivalent byte-preserving rules after archiving.
+archive/project/official/** -text
+archive/project/solution/** -text
+archive/solution/** -text
+archive/project/q3_design/**/*.py -text
+archive/project/q3_design/**/*.json -text
+archive/project/q3_nsga/**/*.py -text
+archive/project/q3_nsga/**/*.json -text
+final/** -text

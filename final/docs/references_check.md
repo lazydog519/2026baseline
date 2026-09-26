@@ -1,0 +1,69 @@
+# 引文核验及适用范围
+
+按正文首次出现次序排序。中文期刊文献3篇、英文期刊/会议文献4篇、官方题目1项。信息使用范围限制在已核实的摘要/出版元数据及方法来源。
+
+## [1] Chen2022
+
+陈怡然，王一土，神经网络加速器架构概述，中国科学：信息科学，52(4)：596--611，2022。DOI: 10.1360/SSI-2021-0409。
+
+来源：https://scis.scichina.com/ssi2022.html
+
+支撑范围：架构中的计算组织、数据流与存储层级。仅作为背景，不用于替代赛题规则。
+
+## [2] Problem2026
+
+中国研究生数学建模竞赛组委会，通用神经网络处理器下的多核调度问题及配套附件，第二十三届中国研究生数学建模竞赛 A 题，2026。
+
+来源：官方题目与附件（本地原文件）
+
+支撑范围：全部硬件参数、输出接口、核内调度、多核模拟和统计定义。
+
+## [3] Liu2025
+
+刘正煜，张帆，祁晓峰，高彦钊，宋怡景，范旺，深度学习编译器研究综述，计算机科学，52(8)：29--44，2025。DOI: 10.11896/jsjkx.250100062。
+
+来源：https://www.jsjkx.com/CN/subject/listSubjectChapters.do?subjectId=1587440017120
+
+支撑范围：图表示、编译优化和目标硬件配合的研究背景。
+
+## [4] Graham1969
+
+Graham R L，Bounds on Multiprocessing Timing Anomalies，SIAM Journal on Applied Mathematics，17(2)：416--429，1969。DOI: 10.1137/0117039。
+
+来源：https://doi.org/10.1137/0117039
+
+支撑范围：最长工作量优先的来源；本文不宣称继承其独立作业近似比。
+
+## [5] Topcuoglu2002
+
+Topcuoglu H，Hariri S，Wu M Y，Performance-effective and low-complexity task scheduling for heterogeneous computing，IEEE Transactions on Parallel and Distributed Systems，13(3)：260--274，2002。DOI: 10.1109/71.993206。
+
+来源：https://experts.arizona.edu/en/publications/performance-effective-and-low-complexity-task-scheduling-for-hete/
+
+支撑范围：上行优先级、最早完成列表调度；本文尾部追加，不声称完整 HEFT 实现。
+
+## [6] Yang2025
+
+杨紫超，吴恒，吴悦文，张文博，基于性能建模的深度学习训练任务调度综述，软件学报，36(4)：1570--1589，2025。DOI: 10.13328/j.cnki.jos.007202。
+
+来源：https://jos.org.cn/jos/article/issue/2025_36_4
+
+支撑范围：性能模型支持调度决策的背景；训练集群综述不作为本题 NPU 规则来源。
+
+## [7] Chen2024
+
+Chen R，Ding Z，Zheng S，等，MAGIS: Memory Optimization via Coordinated Graph Transformation and Scheduling for DNN，Proceedings of ASPLOS 2024，Volume 3：607--621，2024。DOI: 10.1145/3620666.3651330。
+
+来源：https://github.com/pku-liang/MAGIS
+
+支撑范围：图与调度联合考虑内存和时间的启发；当前求解不调用原版 MAGIS。
+
+## [8] Parashar2019
+
+Parashar A，Raina P，Shao Y S，等，Timeloop: A Systematic Approach to DNN Accelerator Evaluation，Proceedings of ISPASS 2019：304--315，2019。DOI: 10.1109/ISPASS.2019.00042。
+
+来源：https://research.nvidia.com/publication/2019-03_timeloop-systematic-approach-dnn-accelerator-evaluation
+
+支撑范围：架构与数据流资源代价建模；当前图缺少直接复用其完整映射所需维度。
+
+网络核验使用出版社、作者/机构页面及 Crossref 两类渠道。两条中文 DOI 未在 Crossref 返回记录，采用中文期刊官网元数据；未伪称下载并精读其全文。用户提供的无可核实出版信息 PDF 仅参考章节组织，没有列为正式研究文献，也未承接其中零通信、强性能界和预热权限等未经证实的结论。

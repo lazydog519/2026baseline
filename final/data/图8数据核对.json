@@ -1,0 +1,73 @@
+{
+  "paired_jobs": 500,
+  "official_evaluations": 1000,
+  "all_added_copy_bytes_equal": true,
+  "means_recomputed": true,
+  "metrics_sha256": "8144923aac8d7fdb4267dfcbefa425fa386e782e3b75a28cbebc0417a40d98de",
+  "trace": {
+    "source": "data\\case_080_n5_l2.json.gz",
+    "sha256": "610f26cd047b8f2d4769637fd7bc7b25fbd4f6d9f9a2422c0e9d231efc75dffc",
+    "selected_case": "case_080",
+    "selected_tensors": [
+      1000000141,
+      1000000099,
+      1000000033
+    ],
+    "selection_rule": "descending insertion count, hit count, tensor id; insertions >= 2",
+    "raw_events": 1599,
+    "plotted_intervals": 9
+  },
+  "display_table": [
+    {
+      "cores": 1,
+      "q2_speedup": 1.0,
+      "no_l2_speedup": 1.0,
+      "l2_speedup": 1.0086217156663206,
+      "cache_gain": 1.0086217156663206,
+      "byte_hit_percent": 9.203711809342652,
+      "added_mib": 11.841641616821288
+    },
+    {
+      "cores": 2,
+      "q2_speedup": 1.935753781501983,
+      "no_l2_speedup": 2.02735349168245,
+      "l2_speedup": 2.0322696729378316,
+      "cache_gain": 1.0024813469351923,
+      "byte_hit_percent": 16.09489181824047,
+      "added_mib": 6.349207420349121
+    },
+    {
+      "cores": 3,
+      "q2_speedup": 2.7452343757149884,
+      "no_l2_speedup": 2.826701328501841,
+      "l2_speedup": 2.849607102060091,
+      "cache_gain": 1.0090930395343531,
+      "byte_hit_percent": 22.12679434117191,
+      "added_mib": 7.182438869476318
+    },
+    {
+      "cores": 4,
+      "q2_speedup": 3.4645482913893746,
+      "no_l2_speedup": 3.540343012190571,
+      "l2_speedup": 3.5913971883200033,
+      "cache_gain": 1.0175498232712106,
+      "byte_hit_percent": 22.037726811519224,
+      "added_mib": 7.322239646911621
+    },
+    {
+      "cores": 5,
+      "q2_speedup": 3.952170334022541,
+      "no_l2_speedup": 4.080391183229326,
+      "l2_speedup": 4.193922744398971,
+      "cache_gain": 1.0368187009038523,
+      "byte_hit_percent": 26.452239807564204,
+      "added_mib": 8.63703525543213
+    }
+  ],
+  "figures": 3,
+  "formats": [
+    "png",
+    "pdf"
+  ],
+  "statement": "Figures use frozen official records. Schematic in Fig 8-1 is not a measured trace."
+}

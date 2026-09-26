@@ -1,17 +1,24 @@
-# 2026 A题方案与验证
+# 华为杯 A 题：最终论文与三问代码
 
-最新整合修订：[一至九章阅读 PDF](project/论文整合修订_20260926/整合修订稿.pdf)、[LaTeX、图表与逐图结果](project/论文整合修订_20260926/README.md)、[结构和实质修订记录](project/论文整合修订_20260926/复核记录/结构与实质修订.md)。重组第2–6.1节、统一符号，补充预处理和逐图机制分析，共32个编号公式、10张图、9张表及4个算法框；保留冻结算法与真实成绩。含AI使用披露草稿，版本信息与最终模板编译需队伍核实。
+协作入口已整理为 `final/`。它包含最新版 V2 正文、三问冻结算法、10 张论文图、重绘脚本和对应数据；历史实验统一保存在 `archive/`。
 
-此前六至八章修订：[第八章 PDF](project/论文第六至八章/第八章_问题三_阅读版.pdf)、[第六至八章合并 PDF](project/论文第六至八章/第六至八章_修订稿.pdf)、[LaTeX、图表及口径核对](project/论文第六至八章/README.md)。保留原稿与冻结算法，修正三章符号、伪代码和结果解释；第八章补充共享 Cache 数据通路、全量配对收益与实际 FIFO 驻留轨迹。
+| 入口 | 用途 |
+|---|---|
+| [下载 Overleaf 项目 ZIP](downloads/overleaf_project.zip) | 登录 Overleaf 后选择 New Project → Upload Project，上传此文件 |
+| [查看已编译论文 PDF](downloads/paper_preview.pdf) | 25 页协作稿，本机真实编译并检查排版 |
+| [最终包与两人协作说明](final/README.md) | 文件分工、运行方式、图表更新及 Overleaf 设置 |
+| [第1–9章 LaTeX](final/sections) | 在 Overleaf 按章节共同编辑 |
+| [三问算法](final/code) | q1/q2/q3 各有独立 solver.py 入口 |
+| [论文图片](final/figures) · [绘图代码](final/plots) | PDF 用于论文，PNG 用于查看；重绘只读取本包数据 |
+| [正式结果数据](final/data) | 逐例结果、结构统计及来源核对 |
+| [历史资料](archive) | 官方附件、原版复现和开发实验，不导入 Overleaf |
 
-初始三问评测归档：**1500/1500** 组评测成功，100 例已齐全。
+五核 100 例均值：问题一 **3.831066527**，问题二 **3.952170334**，问题三 **4.193922744**。本轮仅整合文件与排版，未修改算法或实验数值。
 
-当前提交入口和成绩以以下各问说明为准。根目录 `solution/` 保留初始实验代码；`results/summary.csv` 为初始已完成组合的真实官方评测摘要，`results/raw/` 保留相应方案及评测返回 JSON（gzip）。完整结果时另有逐例统计和图。
+已核对：16 份冻结求解文件原始字节一致；三问在隔离目录中对改名输入重新求解，与冻结方案一致，求解未调用官方评估器；10 张图已用包内数据重绘；归档中的 114 个官方文件保持原始字节。
 
-`project/` 保存 A 题项目目录的完整快照，`project/source_attachment/` 保存原始 A 题 DOCX/ZIP，`project/related_outputs/` 保存此前的 A 题导读和开源复用评估；不包含其他赛题和两套第三方仓库源码。运行中的结果仅在官方评测写入成功状态后复制。评测逻辑和配置未改动；详见 `技术思路稿-基线.md` 与 `original_runs/README.md`。
+Overleaf 中选择 **main.tex / XeLaTeX**。当前包按两人协作编排；项目所有者通过 Share 邀请一位队友。Python 程序仍在本机运行。本文档不代表已在 Overleaf 创建项目；实际导入完成前，以下载包为交付物。
 
-问题一当前提交版：从每个原图独立生成方案，推理过程不调用官方评估器。见 [`方法与实验稿`](project/q1_priority_20260926/问题一方法与实验稿.md)、[`公式`](project/q1_priority_20260926/模型与算法公式.tex)、[`独立代码包`](project/q1_priority_20260926/submission_q1.zip)、[`官方逐例结果`](project/q1_priority_20260926/full_metrics.csv) 和 [`论文图`](project/q1_priority_20260926/figures/)。100 例五核平均加速比 **3.831067**；2～5 核共 400 份冻结方案通过原版评估。旧 `q1_cold/` 使用评估器在求解时挑选候选，标记为历史结果。
+原始目录结构保存在标签 [archive-before-overleaf-20260926](https://github.com/lazydog519/2026baseline/tree/archive-before-overleaf-20260926)。归档是移动目录，未重写 Git 历史；日常查看无需打开历史实验。
 
-问题二当前提交版：同核子图合并、DDR 通信与驻留风险联合筛选；每个图从头求解，推理时不调用官方评估器。见 [`方法与复现说明`](project/q2_priority_20260926/README.md)、[`独立代码包`](project/q2_priority_20260926/final_v2/submission_q2.zip)、[`官方逐例结果`](project/q2_priority_20260926/final_v2/full_metrics.csv) 和 [`论文第六章`](project/论文第六章/第六章_问题一与问题二建模求解.tex)。100 例五核平均加速比 **3.952170**；2～5 核共 400 份冻结方案通过原版评估。旧 `q2_cold/` 在求解过程中调用官方评估器选优，为历史结果。
-
-问题三当前提交版：每个输入图从头构造和比较至多十种方案；求解不调用官方评估器，不读取历史解。见 [`算法与复现`](project/q3_adaptive_20260926/README.md)、[`独立代码包`](project/q3_adaptive_20260926/submission_q3.zip)、[`权威全量结果`](project/q3_adaptive_20260926/final/)、[`论文、公式与伪代码`](project/论文第六章/问题三建模与求解.tex)、[`收益图`](project/论文第六章/figures/图6-5_第三问逐核收益与搬运.pdf) 和 [`缓存机理图`](project/论文第六章/figures/图6-6_第三问缓存复用与时序.pdf)。100 图五核平均加速比 **4.193923**；1～5 核共 500 份冻结方案完成 1000 次配对官方验收。给定 100 图参与过开发诊断，这不是完全未见数据的泛化成绩。旧 `q3_cold/` 使用求解中官方选优，保留为历史，不能混用其分数。
+本工程是论文协作稿。官方封皮、最终字体及 AI 工具完整披露仍由队伍提交前核对。
