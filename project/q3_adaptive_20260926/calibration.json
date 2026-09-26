@@ -1,0 +1,186 @@
+{
+  "trials": [
+    {
+      "weight": 0.0,
+      "mean_candidate_regret": 0.0381594448330449,
+      "selected": [
+        {
+          "case": "case_078",
+          "name": "valley",
+          "actual": 626182,
+          "best_candidate": 543260
+        },
+        {
+          "case": "case_021",
+          "name": "component_reuse_order",
+          "actual": 1248535,
+          "best_candidate": 1248535
+        },
+        {
+          "case": "case_064",
+          "name": "valley",
+          "actual": 12478,
+          "best_candidate": 12478
+        },
+        {
+          "case": "case_051",
+          "name": "fork_join",
+          "actual": 179133,
+          "best_candidate": 179133
+        }
+      ]
+    },
+    {
+      "weight": 0.25,
+      "mean_candidate_regret": 0.0381594448330449,
+      "selected": [
+        {
+          "case": "case_078",
+          "name": "valley",
+          "actual": 626182,
+          "best_candidate": 543260
+        },
+        {
+          "case": "case_021",
+          "name": "component_reuse_order",
+          "actual": 1248535,
+          "best_candidate": 1248535
+        },
+        {
+          "case": "case_064",
+          "name": "valley",
+          "actual": 12478,
+          "best_candidate": 12478
+        },
+        {
+          "case": "case_051",
+          "name": "fork_join",
+          "actual": 179133,
+          "best_candidate": 179133
+        }
+      ]
+    },
+    {
+      "weight": 0.5,
+      "mean_candidate_regret": 0.0,
+      "selected": [
+        {
+          "case": "case_078",
+          "name": "data_band",
+          "actual": 543260,
+          "best_candidate": 543260
+        },
+        {
+          "case": "case_021",
+          "name": "component_reuse_order",
+          "actual": 1248535,
+          "best_candidate": 1248535
+        },
+        {
+          "case": "case_064",
+          "name": "valley",
+          "actual": 12478,
+          "best_candidate": 12478
+        },
+        {
+          "case": "case_051",
+          "name": "fork_join",
+          "actual": 179133,
+          "best_candidate": 179133
+        }
+      ]
+    },
+    {
+      "weight": 1.0,
+      "mean_candidate_regret": 0.0,
+      "selected": [
+        {
+          "case": "case_078",
+          "name": "data_band",
+          "actual": 543260,
+          "best_candidate": 543260
+        },
+        {
+          "case": "case_021",
+          "name": "component_reuse_order",
+          "actual": 1248535,
+          "best_candidate": 1248535
+        },
+        {
+          "case": "case_064",
+          "name": "valley",
+          "actual": 12478,
+          "best_candidate": 12478
+        },
+        {
+          "case": "case_051",
+          "name": "fork_join",
+          "actual": 179133,
+          "best_candidate": 179133
+        }
+      ]
+    },
+    {
+      "weight": 2.0,
+      "mean_candidate_regret": 0.0,
+      "selected": [
+        {
+          "case": "case_078",
+          "name": "data_band",
+          "actual": 543260,
+          "best_candidate": 543260
+        },
+        {
+          "case": "case_021",
+          "name": "component_reuse_order",
+          "actual": 1248535,
+          "best_candidate": 1248535
+        },
+        {
+          "case": "case_064",
+          "name": "valley",
+          "actual": 12478,
+          "best_candidate": 12478
+        },
+        {
+          "case": "case_051",
+          "name": "fork_join",
+          "actual": 179133,
+          "best_candidate": 179133
+        }
+      ]
+    },
+    {
+      "weight": 4.0,
+      "mean_candidate_regret": 0.0,
+      "selected": [
+        {
+          "case": "case_078",
+          "name": "data_band",
+          "actual": 543260,
+          "best_candidate": 543260
+        },
+        {
+          "case": "case_021",
+          "name": "component_reuse_order",
+          "actual": 1248535,
+          "best_candidate": 1248535
+        },
+        {
+          "case": "case_064",
+          "name": "valley",
+          "actual": 12478,
+          "best_candidate": 12478
+        },
+        {
+          "case": "case_051",
+          "name": "fork_join",
+          "actual": 179133,
+          "best_candidate": 179133
+        }
+      ]
+    }
+  ],
+  "chosen_weight": 1.0,
+  "warning": "development samples are reused for calibration; no claim of independent test performance"
+}

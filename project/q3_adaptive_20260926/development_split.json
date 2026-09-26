@@ -1,0 +1,16 @@
+{
+  "development": [
+    "case_078",
+    "case_021",
+    "case_064",
+    "case_051"
+  ],
+  "confirmation": [
+    "case_011",
+    "case_040",
+    "case_071",
+    "case_002"
+  ],
+  "selection": "graph size/components and fixed hash; no score-based sample choice",
+  "boundary": "previous iterations have seen the given dataset; confirmation is iteration-specific"
+}

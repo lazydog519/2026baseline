@@ -1,0 +1,71 @@
+{
+  "version": "q3-adaptive-v1-frozen",
+  "profile": {
+    "ops": 1798,
+    "tensors": 2595,
+    "components": 1,
+    "depth": 24,
+    "compute_cycles": 275928,
+    "band_depth": 2,
+    "largest_component_fraction": 1.0
+  },
+  "selected": "data_band",
+  "plan_sha256": "0348c980385a5ac53de4f5c9940ac221a9ea05b7bc5576e32a611a9f6a320c5d",
+  "policy": {
+    "version": "q3-adaptive-v1-frozen",
+    "spill_weight": 1.0,
+    "maximum_candidates": 8,
+    "seed": 20260926,
+    "coefficient_origin": "one global overlap correction chosen using current development labels"
+  },
+  "rejected": [],
+  "candidates": [
+    {
+      "name": "component_vector",
+      "plan_sha256": "89630d9e3aebe8f0b8371459deefb9de34d1888ed5a2c1c623c5aa1c6a13a7ed",
+      "event_cycles": 268928.0,
+      "ddr_bytes": 1224192.0,
+      "hit_bytes": 0,
+      "read_bytes": 1222656.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 58,
+      "spill_bytes": 402432,
+      "sequential_excess_bytes": 1024,
+      "spill_cycles": 6707.2,
+      "projected_copy_bytes": 1626624.0,
+      "score_cycles": 275635.2
+    },
+    {
+      "name": "join_tail",
+      "plan_sha256": "1756fa9e10f6c630bf8c9c664145346e260475af416acb12a925cd55286725d5",
+      "event_cycles": 138230.4,
+      "ddr_bytes": 1531392.0,
+      "hit_bytes": 0,
+      "read_bytes": 1376256.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 108,
+      "spill_bytes": 101376,
+      "sequential_excess_bytes": 1024,
+      "spill_cycles": 1689.6,
+      "projected_copy_bytes": 1632768.0,
+      "score_cycles": 139920.0
+    },
+    {
+      "name": "data_band",
+      "plan_sha256": "0348c980385a5ac53de4f5c9940ac221a9ea05b7bc5576e32a611a9f6a320c5d",
+      "event_cycles": 125197.60000000002,
+      "ddr_bytes": 1843200.0,
+      "hit_bytes": 336384.0,
+      "read_bytes": 1930752.0,
+      "estimated_hit_rate": 0.17422434367541767,
+      "evictions": 179,
+      "spill_bytes": 270336,
+      "sequential_excess_bytes": 1024,
+      "spill_cycles": 4505.6,
+      "projected_copy_bytes": 2449920.0,
+      "score_cycles": 129703.20000000003
+    }
+  ],
+  "official_evaluator_calls": 0,
+  "inference_seconds": 0.1389988999999332
+}

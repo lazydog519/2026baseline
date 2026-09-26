@@ -1,0 +1,33 @@
+{
+  "package_sha256": "fcbaec39f0b5b2cb3775449b36e92e7cfa880b7998f57a486968ed095b0d4baf",
+  "members": [
+    "solver.py",
+    "engine.py",
+    "graph_model.py",
+    "baseline.py",
+    "q1_optimized.py",
+    "policy.json"
+  ],
+  "official_evaluator_in_package": false,
+  "case_specific_results_in_package": false,
+  "replays": [
+    {
+      "case": "case_011",
+      "renamed_input": true,
+      "plan_matches_frozen": true
+    },
+    {
+      "case": "case_078",
+      "renamed_input": true,
+      "plan_matches_frozen": true
+    }
+  ],
+  "source_sha256": {
+    "solver.py": "500432c844b17d508488c66acd23ad4515f10d897e3d700f7867eec1695dfb7e",
+    "engine.py": "1796578ea37ebf3c274c1b3f5c0731028ca7a2475c7412810ac49944cdcccc35",
+    "graph_model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "policy.json": "f233d22e6d28c9e60a9032c51121bcb6d7c131f5d72e471681719dbfe82a60a0"
+  }
+}

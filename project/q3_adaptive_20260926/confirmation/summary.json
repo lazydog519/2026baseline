@@ -1,0 +1,37 @@
+{
+  "complete_cases": 4,
+  "expected_jobs": 8,
+  "audited_jobs": 8,
+  "failed": 0,
+  "mean_by_cores": {
+    "2": {
+      "l2_speedup": 1.8333033252862083,
+      "no_l2_speedup": 1.832827537897251,
+      "cache_gain": 1.000270722412345,
+      "cache_hit_rate": 0.16943319695812736,
+      "vs_q2_gain": 0.981361174657565,
+      "l2_added_bytes": 352545.0,
+      "no_l2_added_bytes": 352545.0,
+      "cases": 4
+    },
+    "5": {
+      "l2_speedup": 3.302068906357376,
+      "no_l2_speedup": 3.2648699943279897,
+      "cache_gain": 1.0157817917108782,
+      "cache_hit_rate": 0.21806583857732387,
+      "vs_q2_gain": 1.1700041627206532,
+      "l2_added_bytes": 1267929.0,
+      "no_l2_added_bytes": 1267929.0,
+      "cases": 4
+    }
+  },
+  "source_sha256": {
+    "solver.py": "632fe2fc79bb159ca014698a8e4be2ea94ad5dd2ed90072a8918b1c1674f5f18",
+    "engine.py": "1796578ea37ebf3c274c1b3f5c0731028ca7a2475c7412810ac49944cdcccc35",
+    "graph_model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "policy.json": "ab5c0a983215821d917b57b044855b5ccf3b060cc817f4cbfd7ba128efe653a5"
+  },
+  "official_files_unchanged": 114
+}

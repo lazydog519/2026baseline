@@ -1,0 +1,101 @@
+{
+  "version": "q3-adaptive-v2-frozen",
+  "profile": {
+    "ops": 17608,
+    "tensors": 18134,
+    "components": 142,
+    "depth": 124,
+    "compute_cycles": 4040752,
+    "band_depth": 5,
+    "largest_component_fraction": 0.007042253521126761
+  },
+  "selected": "data_band",
+  "plan_sha256": "f707712796e3c3d0e0788f038c8fc6c22672d37a13ca3721e924ae6d57e38a7f",
+  "policy": {
+    "version": "q3-adaptive-v2-frozen",
+    "spill_weight": 1.0,
+    "maximum_candidates": 10,
+    "seed": 20260926,
+    "coefficient_origin": "one global overlap correction chosen using current development labels"
+  },
+  "rejected": [],
+  "candidates": [
+    {
+      "name": "component_merged",
+      "plan_sha256": "9eb7863242e2ae1b80cdfb0210991bff62e6beccb7be3d60d0c906efea5d83d5",
+      "event_cycles": 1060970.6666666667,
+      "ddr_bytes": 6048128.0,
+      "hit_bytes": 0,
+      "read_bytes": 4884864.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 64,
+      "spill_bytes": 64389184,
+      "sequential_excess_bytes": 72704,
+      "spill_cycles": 1073153.0666666667,
+      "projected_copy_bytes": 70437312.0,
+      "score_cycles": 2134123.7333333334
+    },
+    {
+      "name": "component_vector",
+      "plan_sha256": "823838a0f4246697cde44583c59fe201febffa9f1c5e81fddbf51d0fda005ecd",
+      "event_cycles": 1060970.6666666667,
+      "ddr_bytes": 6048128.0,
+      "hit_bytes": 0,
+      "read_bytes": 4884864.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 64,
+      "spill_bytes": 64389184,
+      "sequential_excess_bytes": 72704,
+      "spill_cycles": 1073153.0666666667,
+      "projected_copy_bytes": 70437312.0,
+      "score_cycles": 2134123.7333333334
+    },
+    {
+      "name": "join_tail",
+      "plan_sha256": "6e2bc7025540ece5046c36acef82383bb75057eff0fac592fd91d3b474b0bf83",
+      "event_cycles": 3831667.8666666667,
+      "ddr_bytes": 6732928.0,
+      "hit_bytes": 0,
+      "read_bytes": 3832960.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 276,
+      "spill_bytes": 67027040,
+      "sequential_excess_bytes": 72704,
+      "spill_cycles": 1117117.3333333333,
+      "projected_copy_bytes": 73759968.0,
+      "score_cycles": 4948785.2
+    },
+    {
+      "name": "data_band",
+      "plan_sha256": "f707712796e3c3d0e0788f038c8fc6c22672d37a13ca3721e924ae6d57e38a7f",
+      "event_cycles": 1007292.4,
+      "ddr_bytes": 6027136.0,
+      "hit_bytes": 20992.0,
+      "read_bytes": 4884864.0,
+      "estimated_hit_rate": 0.004297356077876477,
+      "evictions": 131,
+      "spill_bytes": 3473408,
+      "sequential_excess_bytes": 48128,
+      "spill_cycles": 57890.13333333333,
+      "projected_copy_bytes": 9521536.0,
+      "score_cycles": 1065182.5333333334
+    },
+    {
+      "name": "data_wide",
+      "plan_sha256": "f954f3d44e7ce639e7a4ac366521f93390b784fd316500f571827c0923a206a8",
+      "event_cycles": 1022580.4,
+      "ddr_bytes": 6027136.0,
+      "hit_bytes": 20992.0,
+      "read_bytes": 4884864.0,
+      "estimated_hit_rate": 0.004297356077876477,
+      "evictions": 134,
+      "spill_bytes": 3555328,
+      "sequential_excess_bytes": 72704,
+      "spill_cycles": 59255.46666666667,
+      "projected_copy_bytes": 9603456.0,
+      "score_cycles": 1081835.8666666667
+    }
+  ],
+  "official_evaluator_calls": 0,
+  "inference_seconds": 2.6129963999997017
+}

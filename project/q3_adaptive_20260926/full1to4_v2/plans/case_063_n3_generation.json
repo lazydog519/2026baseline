@@ -1,0 +1,86 @@
+{
+  "version": "q3-adaptive-v2-frozen",
+  "profile": {
+    "ops": 7360,
+    "tensors": 10629,
+    "components": 1,
+    "depth": 26,
+    "compute_cycles": 1128768,
+    "band_depth": 2,
+    "largest_component_fraction": 1.0
+  },
+  "selected": "data_wide",
+  "plan_sha256": "35292d4e049e9db946646b3e71599cc5fdba9e2cacb7d79082e792b6476484be",
+  "policy": {
+    "version": "q3-adaptive-v2-frozen",
+    "spill_weight": 1.0,
+    "maximum_candidates": 10,
+    "seed": 20260926,
+    "coefficient_origin": "one global overlap correction chosen using current development labels"
+  },
+  "rejected": [],
+  "candidates": [
+    {
+      "name": "component_merged",
+      "plan_sha256": "a25d62676e875b9fd2bf6329d942009d59312343cef0e00bda7ecef70aa4d2a6",
+      "event_cycles": 1099519.9999999998,
+      "ddr_bytes": 5021184.0,
+      "hit_bytes": 0,
+      "read_bytes": 5019648.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 1294,
+      "spill_bytes": 3683328,
+      "sequential_excess_bytes": 1024,
+      "spill_cycles": 61388.8,
+      "projected_copy_bytes": 8704512.0,
+      "score_cycles": 1160908.7999999998
+    },
+    {
+      "name": "join_tail",
+      "plan_sha256": "c5fe47c8aec400198a803b8bb049534bb90bdcb6dba8dac81cc8b24ff4c27844",
+      "event_cycles": 386864.7999999999,
+      "ddr_bytes": 6695424.0,
+      "hit_bytes": 0,
+      "read_bytes": 5856768.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 1566,
+      "spill_bytes": 2015232,
+      "sequential_excess_bytes": 1024,
+      "spill_cycles": 33587.2,
+      "projected_copy_bytes": 8710656.0,
+      "score_cycles": 420451.9999999999
+    },
+    {
+      "name": "data_band",
+      "plan_sha256": "2a2b44b04be0ffa1d19520ed9cbebbdf0c06a3f9e51a999170db86a1838e5749",
+      "event_cycles": 346607.46437036933,
+      "ddr_bytes": 9326592.0,
+      "hit_bytes": 0,
+      "read_bytes": 8188416.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 2323,
+      "spill_bytes": 10243584,
+      "sequential_excess_bytes": 2560,
+      "spill_cycles": 170726.4,
+      "projected_copy_bytes": 19570176.0,
+      "score_cycles": 517333.86437036935
+    },
+    {
+      "name": "data_wide",
+      "plan_sha256": "35292d4e049e9db946646b3e71599cc5fdba9e2cacb7d79082e792b6476484be",
+      "event_cycles": 360663.0666666664,
+      "ddr_bytes": 9798144.0,
+      "hit_bytes": 0,
+      "read_bytes": 8707584.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 2493,
+      "spill_bytes": 2224128,
+      "sequential_excess_bytes": 1024,
+      "spill_cycles": 37068.8,
+      "projected_copy_bytes": 12022272.0,
+      "score_cycles": 397731.8666666664
+    }
+  ],
+  "official_evaluator_calls": 0,
+  "inference_seconds": 1.0569295000000238
+}

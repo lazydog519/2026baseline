@@ -1,0 +1,29 @@
+{
+  "version": "q3-adaptive-v2-frozen",
+  "profile": {
+    "ops": 864,
+    "tensors": 1836,
+    "components": 108,
+    "depth": 8,
+    "compute_cycles": 487296,
+    "band_depth": 2,
+    "largest_component_fraction": 0.009259259259259259
+  },
+  "selected": "single_core_fixed",
+  "plan_sha256": "9e49010cefed73ae3d54de40191e0be23e81a73ec4cb204a97d438f8d1b73e3b",
+  "policy": {
+    "version": "q3-adaptive-v2-frozen",
+    "spill_weight": 1.0,
+    "maximum_candidates": 10,
+    "seed": 20260926,
+    "coefficient_origin": "one global overlap correction chosen using current development labels"
+  },
+  "rejected": [],
+  "candidates": [
+    {
+      "name": "single_core_fixed"
+    }
+  ],
+  "official_evaluator_calls": 0,
+  "inference_seconds": 0.01777749999973821
+}

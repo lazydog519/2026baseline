@@ -1,0 +1,19 @@
+{
+  "primary": "metrics.csv",
+  "all_cases": 100,
+  "core_counts": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "mechanism_case": "case_080",
+  "selection": "maximum paired cache_gain among all 100 five-core cases",
+  "mechanism_source": "q3_adaptive_20260926\\full5_v2\\results\\case_080_n5\\l2.json.gz",
+  "raw_sha256": "610f26cd047b8f2d4769637fd7bc7b25fbd4f6d9f9a2422c0e9d231efc75dffc",
+  "insert_events": 522,
+  "evicting_insert_events": 294,
+  "aggregation": "arithmetic mean of per-case ratios; no confidence intervals",
+  "event_downsampling": false
+}

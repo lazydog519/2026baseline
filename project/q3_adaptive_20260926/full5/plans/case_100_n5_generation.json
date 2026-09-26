@@ -1,0 +1,101 @@
+{
+  "version": "q3-adaptive-v1-frozen",
+  "profile": {
+    "ops": 1394,
+    "tensors": 1825,
+    "components": 43,
+    "depth": 52,
+    "compute_cycles": 164563,
+    "band_depth": 2,
+    "largest_component_fraction": 0.19727403156384504
+  },
+  "selected": "data_band",
+  "plan_sha256": "d703d92ec8f1e4906543909c85474b653b39cdff5fbc6e6e484961ea99af4c08",
+  "policy": {
+    "version": "q3-adaptive-v1-frozen",
+    "spill_weight": 1.0,
+    "maximum_candidates": 8,
+    "seed": 20260926,
+    "coefficient_origin": "one global overlap correction chosen using current development labels"
+  },
+  "rejected": [],
+  "candidates": [
+    {
+      "name": "component_vector",
+      "plan_sha256": "83022956ff8ff0954ef5a95e48657c0c7dfa36b3a78a6175e68824d7ff1e168a",
+      "event_cycles": 61246.64933333333,
+      "ddr_bytes": 645062.0,
+      "hit_bytes": 21504.0,
+      "read_bytes": 647974.0,
+      "estimated_hit_rate": 0.03318651674295574,
+      "evictions": 0,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 666566.0,
+      "score_cycles": 61246.64933333333
+    },
+    {
+      "name": "join_tail",
+      "plan_sha256": "b38838f92eef9e180d19a208587839386e2b5111a48eb5e2bfab171699827451",
+      "event_cycles": 97095.11053333334,
+      "ddr_bytes": 1169074.0,
+      "hit_bytes": 388096.0,
+      "read_bytes": 1199772.0,
+      "estimated_hit_rate": 0.3234747935441067,
+      "evictions": 0,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 1557170.0,
+      "score_cycles": 97095.11053333334
+    },
+    {
+      "name": "shared_prefix",
+      "plan_sha256": "4cd96a50bd2240b9ee2606cf43ef22ffcd0ac1c2c67a7cddb407381493519633",
+      "event_cycles": 62673.55866666666,
+      "ddr_bytes": 654362.0,
+      "hit_bytes": 46100.0,
+      "read_bytes": 681818.0,
+      "estimated_hit_rate": 0.06761335136356036,
+      "evictions": 0,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 700462.0,
+      "score_cycles": 62673.55866666666
+    },
+    {
+      "name": "fork_join",
+      "plan_sha256": "d0d688fb8c05ed64325057575331a39cf37cddd42f0bbb22c79981b39c2179f9",
+      "event_cycles": 61578.525333333324,
+      "ddr_bytes": 654278.0,
+      "hit_bytes": 12288.0,
+      "read_bytes": 647974.0,
+      "estimated_hit_rate": 0.018963723853117564,
+      "evictions": 0,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 666566.0,
+      "score_cycles": 61578.525333333324
+    },
+    {
+      "name": "data_band",
+      "plan_sha256": "d703d92ec8f1e4906543909c85474b653b39cdff5fbc6e6e484961ea99af4c08",
+      "event_cycles": 38831.746989069215,
+      "ddr_bytes": 1679496.0,
+      "hit_bytes": 638844.0,
+      "read_bytes": 1685452.0,
+      "estimated_hit_rate": 0.3790342293936582,
+      "evictions": 0,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 2318340.0,
+      "score_cycles": 38831.746989069215
+    }
+  ],
+  "official_evaluator_calls": 0,
+  "inference_seconds": 0.16812260000006063
+}

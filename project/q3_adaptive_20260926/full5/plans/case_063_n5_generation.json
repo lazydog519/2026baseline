@@ -1,0 +1,71 @@
+{
+  "version": "q3-adaptive-v1-frozen",
+  "profile": {
+    "ops": 7360,
+    "tensors": 10629,
+    "components": 1,
+    "depth": 26,
+    "compute_cycles": 1128768,
+    "band_depth": 2,
+    "largest_component_fraction": 1.0
+  },
+  "selected": "join_tail",
+  "plan_sha256": "af42107b1d5af685df547cf7617f8a65dc22d95aa6adc633777006f6d1eefd59",
+  "policy": {
+    "version": "q3-adaptive-v1-frozen",
+    "spill_weight": 1.0,
+    "maximum_candidates": 8,
+    "seed": 20260926,
+    "coefficient_origin": "one global overlap correction chosen using current development labels"
+  },
+  "rejected": [],
+  "candidates": [
+    {
+      "name": "component_vector",
+      "plan_sha256": "b9aed592a9fdffcf5ec893b6ef9d30ddf70a74c89f577f845cfd084af6585eae",
+      "event_cycles": 1099519.9999999998,
+      "ddr_bytes": 5021184.0,
+      "hit_bytes": 0,
+      "read_bytes": 5019648.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 1294,
+      "spill_bytes": 3683328,
+      "sequential_excess_bytes": 1024,
+      "spill_cycles": 61388.8,
+      "projected_copy_bytes": 8704512.0,
+      "score_cycles": 1160908.7999999998
+    },
+    {
+      "name": "join_tail",
+      "plan_sha256": "af42107b1d5af685df547cf7617f8a65dc22d95aa6adc633777006f6d1eefd59",
+      "event_cycles": 244497.59999999995,
+      "ddr_bytes": 7030272.0,
+      "hit_bytes": 0,
+      "read_bytes": 6024192.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 1620,
+      "spill_bytes": 1680384,
+      "sequential_excess_bytes": 1024,
+      "spill_cycles": 28006.4,
+      "projected_copy_bytes": 8710656.0,
+      "score_cycles": 272503.99999999994
+    },
+    {
+      "name": "data_band",
+      "plan_sha256": "1459f179585957fb6257bae9db7e40ea1ea3b1267ecef900c52bdf23bd52cb92",
+      "event_cycles": 250996.51164082935,
+      "ddr_bytes": 11212800.0,
+      "hit_bytes": 0,
+      "read_bytes": 9629184.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 2793,
+      "spill_bytes": 5944320,
+      "sequential_excess_bytes": 2560,
+      "spill_cycles": 99072.0,
+      "projected_copy_bytes": 17157120.0,
+      "score_cycles": 350068.5116408294
+    }
+  ],
+  "official_evaluator_calls": 0,
+  "inference_seconds": 0.8591867000000093
+}

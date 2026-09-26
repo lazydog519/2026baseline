@@ -1,0 +1,182 @@
+[
+  {
+    "case": "case_078",
+    "name": "shared_prefix",
+    "status": "ok",
+    "makespan": 578013,
+    "extra_bytes": 13620024,
+    "hit_rate": 0.34361391402732044,
+    "seconds": 0.11966769999980897
+  },
+  {
+    "case": "case_078",
+    "name": "component_vector",
+    "status": "ok",
+    "makespan": 578013,
+    "extra_bytes": 13620024,
+    "hit_rate": 0.34361391402732044,
+    "seconds": 0.1328598999998576
+  },
+  {
+    "case": "case_078",
+    "name": "data_band",
+    "status": "ok",
+    "makespan": 543260,
+    "extra_bytes": 8593920,
+    "hit_rate": 0.10508395026743651,
+    "seconds": 0.12837760000002163
+  },
+  {
+    "case": "case_078",
+    "name": "join_tail",
+    "status": "ok",
+    "makespan": 2196755,
+    "extra_bytes": 12995928,
+    "hit_rate": 0.0,
+    "seconds": 0.1604693999997835
+  },
+  {
+    "case": "case_078",
+    "name": "valley",
+    "status": "ok",
+    "makespan": 626182,
+    "extra_bytes": 13540704,
+    "hit_rate": 0.09977062081569475,
+    "seconds": 0.1357840999999098
+  },
+  {
+    "case": "case_021",
+    "name": "component_affinity",
+    "status": "ok",
+    "makespan": 1251351,
+    "extra_bytes": 7454720,
+    "hit_rate": 0.5582463465553236,
+    "seconds": 0.7015764999996463
+  },
+  {
+    "case": "case_021",
+    "name": "component_vector",
+    "status": "ok",
+    "makespan": 1249380,
+    "extra_bytes": 11431936,
+    "hit_rate": 0.5699643493761141,
+    "seconds": 0.8388425999996798
+  },
+  {
+    "case": "case_021",
+    "name": "shared_prefix",
+    "status": "ok",
+    "makespan": 1249380,
+    "extra_bytes": 11431936,
+    "hit_rate": 0.5699643493761141,
+    "seconds": 0.8683364999997139
+  },
+  {
+    "case": "case_064",
+    "name": "component_vector",
+    "status": "ok",
+    "makespan": 19116,
+    "extra_bytes": 0,
+    "hit_rate": 0.0,
+    "seconds": 0.08016029999998864
+  },
+  {
+    "case": "case_064",
+    "name": "join_tail",
+    "status": "ok",
+    "makespan": 18987,
+    "extra_bytes": 5806,
+    "hit_rate": 0.03624222652665919,
+    "seconds": 0.12959460000001854
+  },
+  {
+    "case": "case_021",
+    "name": "join_tail",
+    "status": "ok",
+    "makespan": 2101926,
+    "extra_bytes": 48168960,
+    "hit_rate": 0.0,
+    "seconds": 1.220635399999992
+  },
+  {
+    "case": "case_064",
+    "name": "shared_prefix",
+    "status": "ok",
+    "makespan": 16075,
+    "extra_bytes": 32940,
+    "hit_rate": 0.11734860290653426,
+    "seconds": 0.11899969999967652
+  },
+  {
+    "case": "case_064",
+    "name": "data_band",
+    "status": "ok",
+    "makespan": 15037,
+    "extra_bytes": 29068,
+    "hit_rate": 0.23483599368531838,
+    "seconds": 0.11542319999989559
+  },
+  {
+    "case": "case_064",
+    "name": "valley",
+    "status": "ok",
+    "makespan": 12478,
+    "extra_bytes": 150100,
+    "hit_rate": 0.3481722041801982,
+    "seconds": 0.1294398000000001
+  },
+  {
+    "case": "case_051",
+    "name": "component_vector",
+    "status": "ok",
+    "makespan": 607628,
+    "extra_bytes": 0,
+    "hit_rate": 0.0,
+    "seconds": 0.14111959999991086
+  },
+  {
+    "case": "case_021",
+    "name": "component_reuse_order",
+    "status": "ok",
+    "makespan": 1248535,
+    "extra_bytes": 9420800,
+    "hit_rate": 0.5598260869565217,
+    "seconds": 0.7882770000001074
+  },
+  {
+    "case": "case_051",
+    "name": "join_tail",
+    "status": "ok",
+    "makespan": 592006,
+    "extra_bytes": 294948,
+    "hit_rate": 0.42856021832576224,
+    "seconds": 0.16920329999993555
+  },
+  {
+    "case": "case_051",
+    "name": "fork_join",
+    "status": "ok",
+    "makespan": 179133,
+    "extra_bytes": 1232,
+    "hit_rate": 0.0003504032176156331,
+    "seconds": 0.21042220000026646
+  },
+  {
+    "case": "case_021",
+    "name": "data_band",
+    "status": "ok",
+    "makespan": 1448336,
+    "extra_bytes": 34242560,
+    "hit_rate": 0.35114309906858593,
+    "seconds": 1.1522681999999804
+  },
+  {
+    "case": "case_051",
+    "name": "data_band",
+    "status": "ok",
+    "makespan": 329407,
+    "extra_bytes": 14156712,
+    "hit_rate": 1.847000872105629e-05,
+    "seconds": 0.24467039999990448
+  }
+]

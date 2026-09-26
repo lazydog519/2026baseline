@@ -318,13 +318,42 @@ def main():
             "--config project/official/data/config.txt`。"
             "早期 `q3_fusion/branch_validation/` 仅为开发样本，不代表全量成绩。\n"
         )
+    q3_current = src / "q3_adaptive_20260926" / "final" / "aggregate.json"
+    if q3_current.is_file():
+        third = json.loads(q3_current.read_text(encoding="utf-8"))
+        package = src / "q3_adaptive_20260926" / "package_verification.json"
+        q3_complete = (third["complete_cases"] == 100 and third["missing_jobs"] == 0
+                       and third["paired_jobs"] == 500 and third["failed"] == 0
+                       and third["official_evaluations"] == 1000
+                       and third["official_files_unchanged"] == 114
+                       and third["source_frozen"] and package.is_file())
+        snapshot["q3_complete"] = q3_complete
+        snapshot["q3_current_evaluator_free"] = True
+        snapshot["q3_current_version"] = third["version"]
+        snapshot["q3_five_core_mean_speedup"] = third["mean_by_cores"]["5"]["l2_speedup"]
+        snapshot["complete"] &= q3_complete
+        q3_text = (
+            "\n问题三当前提交版：每个输入图从头构造和比较至多十种方案；"
+            "求解不调用官方评估器，不读取历史解。见 "
+            "[`算法与复现`](project/q3_adaptive_20260926/README.md)、"
+            "[`独立代码包`](project/q3_adaptive_20260926/submission_q3.zip)、"
+            "[`权威全量结果`](project/q3_adaptive_20260926/final/)、"
+            "[`论文、公式与伪代码`](project/论文第六章/问题三建模与求解.tex)、"
+            "[`收益图`](project/论文第六章/figures/图6-5_第三问逐核收益与搬运.pdf) 和 "
+            "[`缓存机理图`](project/论文第六章/figures/图6-6_第三问缓存复用与时序.pdf)。"
+            f"100 图五核平均加速比 **{snapshot['q3_five_core_mean_speedup']:.6f}**；"
+            "1～5 核共 500 份冻结方案完成 1000 次配对官方验收。"
+            "给定 100 图参与过开发诊断，这不是完全未见数据的泛化成绩。"
+            "旧 `q3_cold/` 使用求解中官方选优，保留为历史，不能混用其分数。\n"
+        )
     (dst / "results" / "snapshot.json").write_text(
         json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (dst / "README.md").write_text(
         "# 2026 A题方案与验证\n\n"
-        f"当前快照：**{done}/{expected}** 组评测成功"
+        f"初始三问评测归档：**{done}/{expected}** 组评测成功"
         + ("，100 例已齐全。\n\n" if done == expected else "，后台仍在运行。\n\n")
-        + "`solution/` 是方案生成与评测代码；`results/summary.csv` 为已完成组合的真实官方评测摘要，"
+        + "当前提交入口和成绩以以下各问说明为准。根目录 `solution/` 保留初始实验代码；"
+        "`results/summary.csv` 为初始已完成组合的真实官方评测摘要，"
         "`results/raw/` 保留相应方案及评测返回 JSON（gzip）。完整结果时另有逐例统计和图。\n\n"
         "`project/` 保存 A 题项目目录的完整快照，`project/source_attachment/` 保存原始 A 题 DOCX/ZIP，"
         "`project/related_outputs/` 保存此前的 A 题导读和开源复用评估；"

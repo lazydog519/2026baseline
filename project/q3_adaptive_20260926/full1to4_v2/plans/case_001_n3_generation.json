@@ -1,0 +1,56 @@
+{
+  "version": "q3-adaptive-v2-frozen",
+  "profile": {
+    "ops": 600,
+    "tensors": 1202,
+    "components": 200,
+    "depth": 3,
+    "compute_cycles": 263200,
+    "band_depth": 2,
+    "largest_component_fraction": 0.005
+  },
+  "selected": "component_merged",
+  "plan_sha256": "037717ddda462b41200b189c3cc49d60b005dcd00cfc8a0b57c9e3a76ed30182",
+  "policy": {
+    "version": "q3-adaptive-v2-frozen",
+    "spill_weight": 1.0,
+    "maximum_candidates": 10,
+    "seed": 20260926,
+    "coefficient_origin": "one global overlap correction chosen using current development labels"
+  },
+  "rejected": [],
+  "candidates": [
+    {
+      "name": "component_merged",
+      "plan_sha256": "037717ddda462b41200b189c3cc49d60b005dcd00cfc8a0b57c9e3a76ed30182",
+      "event_cycles": 78538.93333333333,
+      "ddr_bytes": 1641856.0,
+      "hit_bytes": 0,
+      "read_bytes": 822656.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 0,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 1641856.0,
+      "score_cycles": 78538.93333333333
+    },
+    {
+      "name": "component_vector",
+      "plan_sha256": "6b1a264874448bdf0c36505921c2a5e7980917ef10e98e2226e39991aab30c44",
+      "event_cycles": 78538.93333333333,
+      "ddr_bytes": 1641856.0,
+      "hit_bytes": 0,
+      "read_bytes": 822656.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 0,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 1641856.0,
+      "score_cycles": 78538.93333333333
+    }
+  ],
+  "official_evaluator_calls": 0,
+  "inference_seconds": 0.058793299999706505
+}

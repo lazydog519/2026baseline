@@ -1,0 +1,56 @@
+{
+  "version": "q3-adaptive-v1-frozen",
+  "profile": {
+    "ops": 2400,
+    "tensors": 4802,
+    "components": 800,
+    "depth": 3,
+    "compute_cycles": 1052800,
+    "band_depth": 2,
+    "largest_component_fraction": 0.00125
+  },
+  "selected": "component_vector",
+  "plan_sha256": "6ab596e5690aa26e59fc2f04ccae93c3d8c59f57193e6952fd385ff8f05f0faa",
+  "policy": {
+    "version": "q3-adaptive-v1-frozen",
+    "spill_weight": 1.0,
+    "maximum_candidates": 8,
+    "seed": 20260926,
+    "coefficient_origin": "one global overlap correction chosen using current development labels"
+  },
+  "rejected": [],
+  "candidates": [
+    {
+      "name": "component_vector",
+      "plan_sha256": "6ab596e5690aa26e59fc2f04ccae93c3d8c59f57193e6952fd385ff8f05f0faa",
+      "event_cycles": 187170.66666666666,
+      "ddr_bytes": 6559360.0,
+      "hit_bytes": 0,
+      "read_bytes": 3282560.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 545,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 6559360.0,
+      "score_cycles": 187170.66666666666
+    },
+    {
+      "name": "join_tail",
+      "plan_sha256": "18d5ca2a8ee47d8fb48240132ae77abca22643d26a005505bcb7c0c6a95dee06",
+      "event_cycles": 187170.66666666666,
+      "ddr_bytes": 6559360.0,
+      "hit_bytes": 0,
+      "read_bytes": 3282560.0,
+      "estimated_hit_rate": 0.0,
+      "evictions": 545,
+      "spill_bytes": 0,
+      "sequential_excess_bytes": 0,
+      "spill_cycles": 0.0,
+      "projected_copy_bytes": 6559360.0,
+      "score_cycles": 187170.66666666666
+    }
+  ],
+  "official_evaluator_calls": 0,
+  "inference_seconds": 0.3202523999998448
+}

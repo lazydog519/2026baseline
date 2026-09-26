@@ -1,0 +1,27 @@
+{
+  "complete_cases": 100,
+  "expected_jobs": 100,
+  "audited_jobs": 100,
+  "failed": 0,
+  "mean_by_cores": {
+    "5": {
+      "l2_speedup": 4.119956422251556,
+      "no_l2_speedup": 4.020821398434132,
+      "cache_gain": 1.032386378374102,
+      "cache_hit_rate": 0.25916961752945933,
+      "vs_q2_gain": 1.062399599951342,
+      "l2_added_bytes": 8557757.84,
+      "no_l2_added_bytes": 8557757.84,
+      "cases": 100
+    }
+  },
+  "source_sha256": {
+    "solver.py": "632fe2fc79bb159ca014698a8e4be2ea94ad5dd2ed90072a8918b1c1674f5f18",
+    "engine.py": "1796578ea37ebf3c274c1b3f5c0731028ca7a2475c7412810ac49944cdcccc35",
+    "graph_model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "policy.json": "ab5c0a983215821d917b57b044855b5ccf3b060cc817f4cbfd7ba128efe653a5"
+  },
+  "official_files_unchanged": 114
+}

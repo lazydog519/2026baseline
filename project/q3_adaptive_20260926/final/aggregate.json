@@ -1,0 +1,121 @@
+{
+  "version": "q3-adaptive-v2-frozen",
+  "complete_cases": 100,
+  "missing_jobs": 0,
+  "paired_jobs": 500,
+  "official_evaluations": 1000,
+  "failed": 0,
+  "source_frozen": true,
+  "official_files_unchanged": 114,
+  "source_sha256": {
+    "solver.py": "500432c844b17d508488c66acd23ad4515f10d897e3d700f7867eec1695dfb7e",
+    "engine.py": "1796578ea37ebf3c274c1b3f5c0731028ca7a2475c7412810ac49944cdcccc35",
+    "graph_model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+    "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+    "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+    "policy.json": "f233d22e6d28c9e60a9032c51121bcb6d7c131f5d72e471681719dbfe82a60a0"
+  },
+  "mean_by_cores": {
+    "1": {
+      "l2_speedup": 1.0086217156663206,
+      "no_l2_speedup": 1.0,
+      "cache_gain": 1.0086217156663206,
+      "cache_hit_rate": 0.09203711809342652,
+      "vs_q2_gain": 1.0086217156663206,
+      "l2_added_bytes": 12416861.2,
+      "no_l2_added_bytes": 12416861.2,
+      "cases": 100,
+      "inference_median_seconds": 0.05727969999998095,
+      "inference_max_seconds": 1.0391811999998026,
+      "cache_faster": 25,
+      "cache_equal": 75,
+      "cache_slower": 0
+    },
+    "2": {
+      "l2_speedup": 2.0322696729378316,
+      "no_l2_speedup": 2.02735349168245,
+      "cache_gain": 1.0024813469351923,
+      "cache_hit_rate": 0.1609489181824047,
+      "vs_q2_gain": 1.0514484575407386,
+      "l2_added_bytes": 6657626.52,
+      "no_l2_added_bytes": 6657626.52,
+      "cases": 100,
+      "inference_median_seconds": 0.6167931499999213,
+      "inference_max_seconds": 10.584197900000163,
+      "cache_faster": 33,
+      "cache_equal": 66,
+      "cache_slower": 1
+    },
+    "3": {
+      "l2_speedup": 2.849607102060091,
+      "no_l2_speedup": 2.826701328501841,
+      "cache_gain": 1.0090930395343531,
+      "cache_hit_rate": 0.22126794341171907,
+      "vs_q2_gain": 1.0403508831286798,
+      "l2_added_bytes": 7531333.02,
+      "no_l2_added_bytes": 7531333.02,
+      "cases": 100,
+      "inference_median_seconds": 0.5819152500002929,
+      "inference_max_seconds": 10.915838099999746,
+      "cache_faster": 51,
+      "cache_equal": 48,
+      "cache_slower": 1
+    },
+    "4": {
+      "l2_speedup": 3.5913971883200033,
+      "no_l2_speedup": 3.540343012190571,
+      "cache_gain": 1.0175498232712106,
+      "cache_hit_rate": 0.22037726811519226,
+      "vs_q2_gain": 1.0397996828043055,
+      "l2_added_bytes": 7677924.76,
+      "no_l2_added_bytes": 7677924.76,
+      "cases": 100,
+      "inference_median_seconds": 0.5937652000000071,
+      "inference_max_seconds": 10.300269200000002,
+      "cache_faster": 58,
+      "cache_equal": 40,
+      "cache_slower": 2
+    },
+    "5": {
+      "l2_speedup": 4.193922744398971,
+      "no_l2_speedup": 4.080391183229326,
+      "cache_gain": 1.0368187009038523,
+      "cache_hit_rate": 0.26452239807564204,
+      "vs_q2_gain": 1.0833042165171909,
+      "l2_added_bytes": 9056587.88,
+      "no_l2_added_bytes": 9056587.88,
+      "cases": 100,
+      "inference_median_seconds": 0.6174536499997885,
+      "inference_max_seconds": 10.02338809999992,
+      "cache_faster": 66,
+      "cache_equal": 33,
+      "cache_slower": 1
+    }
+  },
+  "five_core_vs_q2": {
+    "faster": 68,
+    "equal": 19,
+    "slower": 13
+  },
+  "multicores_inference": {
+    "median_seconds": 0.6000200500000119,
+    "maximum_seconds": 10.915838099999746,
+    "median_candidates": 7.0,
+    "maximum_candidates": 10
+  },
+  "selection_counts_five_core": {
+    "component_merged": 18,
+    "data_wide": 14,
+    "valley": 22,
+    "data_band": 15,
+    "component_affinity": 8,
+    "component_reuse_order": 14,
+    "fork_join": 3,
+    "component_vector": 4,
+    "shared_prefix": 2
+  },
+  "all_added_copy_bytes_equal": true,
+  "input_adaptive": true,
+  "official_evaluator_in_inference": false,
+  "interpretation": "Given cases were used for development diagnosis. Cold replay is not an unseen-distribution claim."
+}
