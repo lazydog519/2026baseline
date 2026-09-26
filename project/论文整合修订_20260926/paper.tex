@@ -1,0 +1,60 @@
+% XeLaTeX project entry point. Three chapter fragments share the same notation.
+\documentclass[UTF8,a4paper,zihao=-4]{ctexart}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\captionsetup{font=normalsize,labelsep=quad}
+\ctexset{section={name={第,章},number=\chinese{section},format=\zihao{4}\heiti\centering},
+subsection={number=\arabic{section}.\arabic{subsection},format=\zihao{-4}\heiti}}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{section}-\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}-\arabic{table}}
+\newcounter{alglinecount}
+\newenvironment{algorithmblock}[1]{\par\medskip\noindent\begin{minipage}{\linewidth}
+\hrule\vspace{5pt}\textbf{#1}\par\vspace{4pt}\hrule\vspace{5pt}\normalsize
+\setcounter{alglinecount}{0}}{\par\vspace{5pt}\hrule\end{minipage}\par\medskip}
+\newcommand{\alginput}[1]{\noindent\textbf{输入：}#1\par}
+\newcommand{\algoutput}[1]{\noindent\textbf{输出：}#1\par\vspace{3pt}}
+\newcommand{\algline}[2][0]{\stepcounter{alglinecount}\par\noindent
+\hangindent=2em\hangafter=1\makebox[2em][l]{\arabic{alglinecount}.}\hspace*{#1em}#2\par}
+
+\usepackage{longtable}
+\linespread{1}
+\pagestyle{plain}
+\setlength{\parindent}{2em}
+\begin{document}
+\input{摘要.tex}
+\clearpage
+\input{第一章_问题重述.tex}
+\input{第二章_问题分析.tex}
+\input{第三章_约定与符号.tex}
+\input{第四章_统一模型.tex}
+\input{第五章_预处理.tex}
+\input{第六章_问题一.tex}
+\input{第七章_问题二.tex}
+\input{第八章_问题三.tex}
+\input{第九章_综合评价.tex}
+\begin{thebibliography}{99}
+\bibitem{Chen2022} 陈怡然，王一土，神经网络加速器架构概述，中国科学：信息科学，52(4)：596--611，2022。DOI: 10.1360/SSI-2021-0409。
+\bibitem{Problem2026} 中国研究生数学建模竞赛组委会，通用神经网络处理器下的多核调度问题及配套附件，第二十三届中国研究生数学建模竞赛 A 题，2026。
+\bibitem{Liu2025} 刘正煜，张帆，祁晓峰，高彦钊，宋怡景，范旺，深度学习编译器研究综述，计算机科学，52(8)：29--44，2025。DOI: 10.11896/jsjkx.250100062。
+\bibitem{Graham1969} Graham R L，Bounds on Multiprocessing Timing Anomalies，SIAM Journal on Applied Mathematics，17(2)：416--429，1969。DOI: 10.1137/0117039。
+\bibitem{Topcuoglu2002} Topcuoglu H，Hariri S，Wu M Y，Performance-effective and low-complexity task scheduling for heterogeneous computing，IEEE Transactions on Parallel and Distributed Systems，13(3)：260--274，2002。DOI: 10.1109/71.993206。
+\bibitem{Yang2025} 杨紫超，吴恒，吴悦文，张文博，基于性能建模的深度学习训练任务调度综述，软件学报，36(4)：1570--1589，2025。DOI: 10.13328/j.cnki.jos.007202。
+\bibitem{Chen2024} Chen R，Ding Z，Zheng S，等，MAGIS: Memory Optimization via Coordinated Graph Transformation and Scheduling for DNN，Proceedings of ASPLOS 2024，Volume 3：607--621，2024。DOI: 10.1145/3620666.3651330。
+\bibitem{Parashar2019} Parashar A，Raina P，Shao Y S，等，Timeloop: A Systematic Approach to DNN Accelerator Evaluation，Proceedings of ISPASS 2019：304--315，2019。DOI: 10.1109/ISPASS.2019.00042。
+\bibitem{AICodex} OpenAI，Codex 辅助工具；队伍确认的模型为 GPT 5.6 SOL、GPT 6，具体版本标识与发布日期待按使用记录核实，使用时间：2026 年 9 月。
+\bibitem{AIClaude} Anthropic，Claude 人工智能工具，具体型号、版本发布日期与参与环节待队伍核实，使用时间：2026 年 9 月。
+\end{thebibliography}
+
+\clearpage
+\section*{附录：结果与程序索引}
+配套电子表保存问题一、二各 400 行和问题三 500 行正式结果，包含用例、核心数、完工时间、额外搬运及缓存开关统计。数据按逐图加速比汇总，源方案及官方评估记录可按用例索引定位。
+输入结构统计见 \texttt{data/输入图结构统计.csv}；前两问见 \texttt{data/两场景逐例结果.csv}；问题三见 \texttt{data/问题三逐例配对结果.csv}。逐图纸面结果长表另存 \texttt{附录逐图结果.tex}，供团队按最终版面需要并入模板。
+三问程序分别为项目中的 \texttt{q1\_priority\_20260926}、\texttt{q2\_priority\_20260926/final\_v2}、\texttt{q3\_adaptive\_20260926}，各自附带独立提交包和版本记录。
+\input{AI使用说明.tex}
+\end{document}

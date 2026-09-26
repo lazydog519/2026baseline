@@ -1,0 +1,54 @@
+{
+  "compute_ops": {
+    "min": 552.0,
+    "median": 3720.5,
+    "max": 35705.0
+  },
+  "dag_edges": {
+    "min": 400.0,
+    "median": 4017.0,
+    "max": 38493.0
+  },
+  "weak_components": {
+    "min": 1.0,
+    "median": 39.5,
+    "max": 2666.0
+  },
+  "graph_depth_ops": {
+    "min": 3.0,
+    "median": 47.5,
+    "max": 2440.0
+  },
+  "compute_cycles": {
+    "min": 23052.0,
+    "median": 509952.0,
+    "max": 61275840.0
+  },
+  "critical_path_cycles": {
+    "min": 400.0,
+    "median": 6140.0,
+    "max": 863040.0
+  },
+  "work_span_parallelism": {
+    "min": 3.417535545023697,
+    "median": 43.12548986077266,
+    "max": 6258.780160857908
+  },
+  "largest_component_fraction": {
+    "min": 0.00037509377344336085,
+    "median": 0.12202380952380952,
+    "max": 1.0
+  },
+  "shared_input_cases": 97,
+  "multi_component_cases": 84,
+  "multi_at_least_five": true,
+  "component_comparison": {
+    "faster": 38,
+    "slower": 2,
+    "equal": 60
+  },
+  "q2_added_reduction_pct": 36.17075246630483,
+  "q2_less_copy_but_slower": 7,
+  "original_inputs_hashed": 100,
+  "frozen_source_files_unchanged": 16
+}

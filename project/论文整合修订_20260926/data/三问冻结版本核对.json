@@ -1,0 +1,130 @@
+{
+  "q1": {
+    "files_unchanged": 5,
+    "source_sha256": {
+      "solver.py": "c35e4efd7b50ae1fb6c6604da33e0a4b39c47132404108e20a71ca5eaf8a23d5",
+      "mechanistic.py": "27e5392ad0525cbd83736276f2c5c8b9e9b61cdb3cbc9c95ecf195ee367ba36b",
+      "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+      "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+      "policy.json": "5d3a34d511532917b8effb7f8d973e5dfcc94c3d90411ff9ec66144f9cd490b8"
+    },
+    "imports": [
+      "argparse",
+      "baseline",
+      "bisect",
+      "collections",
+      "functools",
+      "hashlib",
+      "heapq",
+      "json",
+      "math",
+      "mechanistic",
+      "pathlib",
+      "q1_optimized"
+    ],
+    "package_replay_evidence": [
+      {
+        "case": "case_010",
+        "cores": 5,
+        "renamed_input": true,
+        "plan_matches_frozen": true
+      },
+      {
+        "case": "case_078",
+        "cores": 5,
+        "renamed_input": true,
+        "plan_matches_frozen": true
+      }
+    ],
+    "official_evaluator_in_package": false,
+    "audited_jobs": 400,
+    "failed": 0
+  },
+  "q2": {
+    "files_unchanged": 5,
+    "source_sha256": {
+      "solver.py": "026e1fdf8ae07df12ec709371bd86d697874b34ee867eab34a86c61e023d134c",
+      "model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+      "memory_proxy.py": "0b9d854c4932d0e091f981d528ccee9ab39c0fc195018a5df39906396ca11465",
+      "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+      "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab"
+    },
+    "imports": [
+      "argparse",
+      "baseline",
+      "bisect",
+      "collections",
+      "functools",
+      "hashlib",
+      "heapq",
+      "json",
+      "math",
+      "memory_proxy",
+      "model",
+      "pathlib",
+      "q1_optimized",
+      "statistics",
+      "time"
+    ],
+    "package_replay_evidence": [
+      {
+        "case": "case_010",
+        "cores": 5,
+        "renamed_input": true,
+        "plan_matches_frozen": true
+      },
+      {
+        "case": "case_078",
+        "cores": 5,
+        "renamed_input": true,
+        "plan_matches_frozen": true
+      }
+    ],
+    "official_evaluator_in_package": false,
+    "audited_jobs": 400,
+    "failed": 0
+  },
+  "q3": {
+    "files_unchanged": 6,
+    "source_sha256": {
+      "solver.py": "500432c844b17d508488c66acd23ad4515f10d897e3d700f7867eec1695dfb7e",
+      "engine.py": "1796578ea37ebf3c274c1b3f5c0731028ca7a2475c7412810ac49944cdcccc35",
+      "graph_model.py": "a03815b76ed8e8ecaaf3b1f49ec0ede99079e8f00e207ae2bf00bb49d1870d79",
+      "baseline.py": "56294f24ce5eeb3f0502d19d21a8f144b0483936eb84829771836f8791a77dab",
+      "q1_optimized.py": "bc7bbef912bd8a86e7268140b6eb3d176d445e009392ef5b8d7fa867ed3bbb79",
+      "policy.json": "f233d22e6d28c9e60a9032c51121bcb6d7c131f5d72e471681719dbfe82a60a0"
+    },
+    "imports": [
+      "argparse",
+      "baseline",
+      "bisect",
+      "collections",
+      "engine",
+      "functools",
+      "graph_model",
+      "hashlib",
+      "heapq",
+      "json",
+      "math",
+      "pathlib",
+      "q1_optimized",
+      "statistics",
+      "time"
+    ],
+    "package_replay_evidence": [
+      {
+        "case": "case_011",
+        "renamed_input": true,
+        "plan_matches_frozen": true
+      },
+      {
+        "case": "case_078",
+        "renamed_input": true,
+        "plan_matches_frozen": true
+      }
+    ],
+    "official_evaluator_in_package": false,
+    "audited_jobs": 500,
+    "failed": 0
+  }
+}

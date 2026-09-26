@@ -1,0 +1,68 @@
+\section{统一决策模型与执行约束}
+
+\subsection{切图、分核和排序的可行域}
+每个方案将 $O_c$ 划分为非空子图集合 $\mathcal S$。令 $O_s=\{u:\phi(u)=s\}$，则操作覆盖与子图分配满足
+\begin{equation}
+\biguplus_{s\in\mathcal S}O_s=O_c,\qquad
+\sum_{k=0}^{N-1}\mathbf1[s\in\pi_k]=1,\quad s\in\mathcal S.
+\label{eq:coverage}
+\end{equation}
+各序列内部也不允许重复出现子图。子图编号必须为非负整数，程序中的布尔值不作整数编号使用。COPY 操作由附件根据边界和空间需求处理，不与非 COPY 操作混入划分对象。
+
+将跨子图数据依赖记为 $E_{\rm dep}$，将每个 $\pi_k$ 中相邻子图的先后关系记为 $E_{\rm seq}$。合法序列要求
+\begin{equation}
+\big(\mathcal S,E_{\rm dep}\cup E_{\rm seq}\big)\ \text{为有向无环图}.
+\label{eq:jointdag}
+\end{equation}
+仅分别检查数据依赖和各核序列还不够，因为两者合并可能构成相互等待。这里检查的是任务级联合图；把一个核心上的全部节点粗缩成一个点后出现的核间环，不直接等价于实际执行死锁。
+
+\subsection{依赖、管道、容量与带宽约束}
+对展开后的执行事件 $e$，记开始和完成时刻为 $\sigma_e,f_e$，依赖边上的规定释放延迟为 $\delta_{ee'}$。执行顺序满足
+\begin{equation}
+\sigma_{e'}\ge f_e+\delta_{ee'},\quad(e,e')\in E_{\rm exec},\qquad
+T^{X}(P)=\max_e f_e.
+\label{eq:execution}
+\end{equation}
+$E_{\rm exec}$ 包含原始数据依赖、合法排序与空间复用产生的依赖。每核四条 Pipe 各自串行，不同 Pipe 在依赖和空间允许时可并行。计算操作完成时间由其周期确定；传输持续时间则随同池请求数量变化。
+
+设 $\mathcal L_{kr}(\theta)$ 为核心 $k$ 在时刻 $\theta$ 实际占用存储 $r$ 的张量集合，$v_e(\theta)$ 为传输请求的服务速率，则
+\begin{equation}
+\begin{aligned}
+\sum_{t\in\mathcal L_{kr}(\theta)}s_t&\le C_r,\quad r\in\{L1,UB\},\\
+\sum_{e\in\mathcal A_p(\theta)}v_e(\theta)&\le\beta_p,
+\quad p\in\{\mathrm{DDR},\mathrm{L2}\}.
+\end{aligned}
+\label{eq:resources}
+\end{equation}
+L2 一项只在问题三开启。带宽池非空时，附件按活跃请求动态均分总带宽。L1/UB 空间不足时允许按固定机制换出和重读，实际驻留始终受容量约束。因此，静态生命周期峰值超容量说明可能需要换出，不能直接据此宣告方案不可执行。第七、八章的风险修正只影响候选优先级，式~\eqref{eq:resources} 仍是执行层面的硬约束。
+
+\begin{table}[htbp]
+\centering
+\caption{固定硬件配置与场景差异}
+\label{tab:hardware}
+\begin{tabular}{p{0.29\linewidth}p{0.58\linewidth}}
+\hline
+项目 & 取值或规则 \\
+\hline
+核内存储 & $C_{L1}=524288$ byte，$C_{UB}=131072$ byte \\
+共享 DDR & $\beta=60$ byte/cycle，跨核共享总带宽 \\
+场景 A & 每子图一个 Task；同核切换 100 cycle；跨核前驱 Task 完成后等待 1000 cycle \\
+场景 B & 每核一个合并 Task；跨核 COPY\_OUT 完成后等待 500 cycle，再释放相应读取 \\
+只读 L2 & $1048576$ byte，$250$ byte/cycle，逻辑张量索引、FIFO 淘汰 \\
+输出字段 & \texttt{node\_to\_subgraph}，\texttt{core\_schedules} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{主目标、辅助目标与求解评价量}
+令 $X$ 表示场景 A、场景 B 或场景 B 开启 L2 的配置。在对应可行域 $\mathcal F_X(G,N)$ 内，优化方向为
+\begin{equation}
+\min_{P\in\mathcal F_X(G,N)}\big(T^{X}(P),D^{X}(P)\big),
+\qquad \text{以完工时间为主要目标}.
+\label{eq:objective}
+\end{equation}
+额外搬运 $D^X$ 按附件统计相对于原图已有 COPY 的新增字节，包括边界处理与缓存换入换出。问题三中的 Cache 命中改变传输服务路径，逻辑 COPY 字节不一定随之减少。因此，额外搬运、DDR 实际服务量和缓存命中率分别统计。
+
+直接求精确最优需要在大量划分和排列上展开执行。本文以图结构产生有限方案，并以 $J_A=\widehat T_A$、$J_B$、$J_C$ 三种机制逐渐细化的评价量近似主要执行成本。其中通信与驻留修正都先由 byte 换算为 cycle，再参与排序。这些修正体现通信压力对时间的影响，所用系数属于算法参数，不改变题目给定的带宽、容量与等待时长。
+
+最终输出由冻结的模型独立选择。官方执行程序在输出保存后计算 $T^X,D^X$ 和缓存统计，用于报告真实结果。论文中的主要比较基于这些结果，而求解过程中的候选排序由自身模型完成。
