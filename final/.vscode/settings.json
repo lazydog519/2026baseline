@@ -1,0 +1,56 @@
+{
+  "latex-workshop.latex.tools": [
+    {
+      "name": "tectonic",
+      "command": "C:/Users/lenovo3c/Desktop/数学建模/_tools/tectonic/tectonic.exe",
+      "args": [
+        "-X",
+        "compile",
+        "--untrusted",
+        "--synctex",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--outdir",
+        "%OUTDIR%",
+        "%DOC_EXT%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "本机 Tectonic",
+      "tools": [
+        "tectonic"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.build.enableMagicComments": false,
+  "latex-workshop.latex.outDir": "%DIR%/_build",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoBuild.interval": 2500,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.view.pdf.tab.editorGroup": "right",
+  "latex-workshop.latex.rootFile.useSubFile": false,
+  "latex-workshop.latex.search.rootFiles.include": [
+    "main.tex"
+  ],
+  "python.defaultInterpreterPath": "D:/huawei_a_2026/venv/Scripts/python.exe",
+  "editor.wordWrap": "on",
+  "files.encoding": "utf8",
+  "files.autoSave": "off",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+  "search.exclude": {
+    "**/_build/**": true,
+    "**/work/**": true
+  },
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "[latex]": {
+    "editor.formatOnSave": false
+  }
+}

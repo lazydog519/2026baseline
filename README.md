@@ -4,6 +4,7 @@
 
 | 入口 | 用途 |
 |---|---|
+| [VS Code 工作区](华为杯A题.code-workspace) · [使用说明](final/docs/VSCode使用说明.md) | 当前本机入口：编译、PDF 预览、三问运行与两人协作 |
 | [下载 Overleaf 项目 ZIP](downloads/overleaf_project.zip) | 登录 Overleaf 后选择 New Project → Upload Project，上传此文件 |
 | [查看已编译论文 PDF](downloads/paper_preview.pdf) | 25 页协作稿，本机真实编译并检查排版 |
 | [最终包与两人协作说明](final/README.md) | 文件分工、运行方式、图表更新及 Overleaf 设置 |

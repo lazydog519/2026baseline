@@ -17,7 +17,11 @@
 
 三问核心源文件保持原始字节，五核均值仍为 **3.831066527 / 3.952170334 / 4.193922744**。没有增加求解阶段的官方评估器，也没有重跑全量调参。
 
-## Overleaf 操作：只需这几步
+## VS Code 本机编辑（当前入口）
+
+打开仓库根目录 `华为杯A题.code-workspace`，按 **Ctrl+Alt+B** 编译、**Ctrl+Alt+V** 预览。三问运行和重绘图片通过“任务：运行任务”选择。两人实时协作使用 Live Share。[详细操作说明](docs/VSCode使用说明.md)。
+
+## Overleaf 操作（可选）
 
 1. 用自己的邮箱注册/登录 https://www.overleaf.com/project 。若学校有机构授权，优先使用学校邮箱。
 2. 点击 **New Project → Upload Project**，选择提供的 `overleaf_project.zip`。不要上传整个 GitHub 仓库，也不必先解压。
@@ -51,7 +55,7 @@ python plots/replot.py
 
 ## 统一工作版本
 
-建议 **论文文字以 Overleaf 为准，算法和实验记录以 GitHub 为准**。修改图时从 GitHub/本包在本机重绘，再同步同名图。阶段结束在 Overleaf 下载 Source ZIP 备份到 GitHub；当前没有配置自动双向同步，避免两边同时改同一章节后互相覆盖。Overleaf 的 Git/GitHub 集成受账户计划限制，初次协作不依赖它。
+当前以 **VS Code 本地文件和 GitHub 提交** 作为工作版本。通过 Live Share 可共同编辑主机文件；阶段结束后提交并推送到 GitHub。Overleaf 项目独立保留，没有配置自动双向同步；若网页已有新修改，先导出源文件再合并，避免覆盖。
 
 ## 排版与提交
 
