@@ -53,18 +53,17 @@ subsection={number=\arabic{section}.\arabic{subsection},format=\large\bfseries}}
 
 \begin{equation*}
 \min \mathbf f_1(\pi)=
-\bigl(T_1(\pi),\ Q_1(\pi),\ E_{\mathrm{mem},1}(\pi),\ I_{\mathrm{imb},1}(\pi)\bigr),
+\bigl(T_1(\pi),\ Q_1(\pi),\ I_{\mathrm{imb},1}(\pi)\bigr),
 \end{equation*}
 \begin{equation*}
 \min \mathbf f_2(\pi)=
-\bigl(T_2(\pi),\ Q_{\mathrm{cross},2}(\pi),\ E_{\mathrm{mem},2}(\pi),\ I_{\mathrm{imb},2}(\pi)\bigr),
+\bigl(T_2(\pi),\ Q_{\mathrm{cross},2}(\pi),\ I_{\mathrm{imb},2}(\pi)\bigr),
 \end{equation*}
 \begin{equation*}
 \min \mathbf f_3(\pi)=
-\bigl(T_3(\pi),\ Q_{\mathrm{DDR},3}(\pi),\ -Q_{\mathrm{hit},3}(\pi),\
-E_{\mathrm{mem},3}(\pi),\ I_{\mathrm{imb},3}(\pi)\bigr).
+\bigl(T_3(\pi),\ Q_{\mathrm{DDR},3}(\pi),\ -Q_{\mathrm{hit},3}(\pi),\ I_{\mathrm{imb},3}(\pi)\bigr).
 \end{equation*}
-其中，$T_q$ 为全图完成时间，$Q_q$ 表示场景相应的新增通信或 DDR 字节，$Q_{\mathrm{hit},3}$ 为 FIFO 命中字节，$E_{\mathrm{mem},q}$ 为片上容量超额，$I_{\mathrm{imb},q}$ 为核心/Pipe 工作量不均衡度。真实时间、换入换出量和缓存命中以官方执行程序为准；搜索阶段若使用估计量，须明确标为代理值。
+其中，$T_q$ 为全图完成时间，$Q_q$ 表示场景相应的新增通信或 DDR 字节，$Q_{\mathrm{hit},3}$ 为 FIFO 命中字节，$I_{\mathrm{imb},q}$ 为核心/Pipe 工作量不均衡度。存储容量作为硬约束单独检查，不再作为目标重复惩罚；问题三的 1 MiB FIFO 容量由题设缓存插入与淘汰规则保证。真实时间、换入换出量和缓存命中以官方执行程序为准；搜索阶段若使用估计量，须明确标为代理值。
 
 令 $x_{vk}\in\{0,1\}$ 表示操作 $v$ 是否分配到核心 $k$，$r_v$ 表示其合法拓扑执行序位。基本结构约束为：
 
