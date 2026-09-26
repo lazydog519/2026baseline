@@ -111,23 +111,48 @@ def main():
         slower+=tb>ta
         tied+=tb==ta
     relation='高于' if mean_b[5]>mean_a[5] else '低于或等于'
+    spill_a=statistics.mean(float(a[f'case_{i:03d}',5]['spill_added_copy_bytes'])
+                            for i in range(1,101))/1048576
+    spill_b=statistics.mean(float(b[f'case_{i:03d}',5]['spill_added_copy_bytes'])
+                            for i in range(1,101))/1048576
     q2_text='\n'.join(lines)+('\n五核时场景 B 的平均加速比为 '
         f'{mean_b[5]:.4f}，{relation}场景 A 的 {mean_a[5]:.4f}。'
         f'逐图配对比较中，B 在 {faster} 图耗时缩短、{slower} 图增加、'
-        f'{tied} 图相同；五核平均耗时变化为 {100*statistics.mean(relative):+.2f}\\%，'
+        f'{tied} 图相同；以 A 的逐图耗时为分母，B 的平均耗时缩减率为 '
+        f'{100*statistics.mean(relative):+.2f}\\%，'
         f'平均额外搬运差为 {statistics.mean(delta_ddr):+.3f} MiB。'
         '这些是同一批图的描述统计，不能据此断言每个图上 B 都更快。'
         '\n\\begin{figure}[htbp]\n\\centering\n'
-        '\\includegraphics[width=0.83\\linewidth]{论文第六章/figures/图6-1_两场景平均加速比.pdf}\n'
-        '\\caption{100 图在场景 A、B 下的 1--5 核平均加速比；单核值按题意为 1。}\n'
+        '\\includegraphics[width=0.86\\linewidth]{论文第六章/figures/图6-2_两场景平均加速比.pdf}\n'
+        '\\caption{场景 A 与 B 在 100 图上的 1--5 核平均加速比。'
+        '单核值按题意定义为 1；其余点各为 100 图算术平均。}\n'
         '\\label{fig:chapter6-speedup}\n\\end{figure}\n'
-        '\\begin{figure}[htbp]\n\\centering\n'
-        '\\includegraphics[width=0.83\\linewidth]{论文第六章/figures/图6-2_五核耗时与搬运成对比较.pdf}\n'
-        '\\caption{五核时场景 B 相对 A 的逐图耗时改善与额外 DDR 搬运变化。}\n'
-        '\\label{fig:chapter6-paired}\n\\end{figure}\n'
-        '图~\\ref{fig:chapter6-paired} 同时呈现收益与代价：'
-        '横轴是额外搬运差、纵轴是 Makespan 的相对改善。'
-        '模型中的驻留风险只是候选筛选量；论文结果均取自官方程序。')
+        '图~\\ref{fig:chapter6-speedup} 显示两场景的平均加速比均随核数增加，'
+        '场景 B 在 2--5 核的每个核数上均较高。该曲线报告总体均值，'
+        '不能代替逐图分布；单核的 1 是定义值而非另一次多核实验。'
+        '\n\\begin{figure}[htbp]\n\\centering\n'
+        '\\includegraphics[width=0.86\\linewidth]{论文第六章/figures/图6-3_额外DDR搬运分解.pdf}\n'
+        '\\caption{2--5 核的平均额外 DDR 搬运量。斜线段是原版评估程序给出的'
+        '缓存换入/换出新增字节，其余部分是总额外搬运扣除该字段；'
+        '后者不全部等同于跨核搬运。每根柱对应 100 图的算术平均。}\n'
+        '\\label{fig:chapter6-copy}\n\\end{figure}\n'
+        f'五核时缓存换入/换出所致新增搬运在 A、B 下的平均值分别为 '
+        f'{spill_a:.3f} 和 {spill_b:.3f} MiB。图~\\ref{{fig:chapter6-copy}}'
+        ' 说明场景 B 的总额外搬运较低，但两场景的溢出成本都不可忽略；'
+        '因此不能把同核直通写成“缓存必定无溢出”。'
+        '\n\\begin{figure}[htbp]\n\\centering\n'
+        '\\includegraphics[width=0.86\\linewidth]{论文第六章/figures/图6-4_逐图加速比分布.pdf}\n'
+        '\\caption{两场景在 2--5 核下的逐图加速比分布。每箱含 100 图；'
+        '箱体为第 25--75 百分位，中线为中位数，须延至距四分位数'
+        '1.5 倍四分位距内的最远观测，圆点为其外观测；'
+        '箱体不是均值置信区间。}\n'
+        '\\label{fig:chapter6-box}\n\\end{figure}\n'
+        '图~\\ref{fig:chapter6-box} 给出均值曲线之外的离散程度。'
+        '五核时 A、B 的逐图中位加速比分别为 4.043、4.148；'
+        '结合 31 图改善、19 图退步、50 图持平的配对结果，'
+        '场景 B 的收益存在结构依赖，不能从场景规则推出逐图单调改进。'
+        '模型中的驻留风险只用于求解阶段的候选筛选，'
+        '本节所有性能数值均来自方案冻结后的官方验收。')
     chapter=ROOT/'第六章_问题一与问题二建模求解.tex'
     text=chapter.read_text(encoding='utf-8')
     text=replace(text,'Q1_RESULTS',q1_text)
