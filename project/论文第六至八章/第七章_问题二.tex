@@ -1,0 +1,128 @@
+\section{问题二：通信与缓存驻留联合约束下的切图调度}
+
+\subsection{场景 B 的运行机制与建模重点}
+场景 B 将同一核心的全部子图合并为一个 Task，同核生产者与消费者之间可以保留 L1/UB 中的数据。此时，决定边界通信的因素由“是否跨子图”转变为“是否跨核心”。跨核依赖仍需 COPY\_OUT 和 COPY\_IN，目标搬入须等待源搬出完成，并经过 $\delta_B=500$ cycle 的同步延迟。图~\ref{fig:q2-mechanism} 对比了两种场景的数据路径。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/图7-1_Task边界与数据复用.pdf}
+\caption{两种场景下的 Task 边界与数据路径。图中为规则示意，未按实测时间绘制；L1、UB 的容量限制及共享 DDR 总带宽均保持题目配置。}
+\label{fig:q2-mechanism}
+\end{figure}
+
+合并 Task 后，中间张量可以在生产操作结束后保留到同核消费者使用。通信量因而有机会减少，张量占用核内空间的时间也可能延长。将共享大张量的操作安排在同一核心，需要同时考虑该核的计算负载与驻留数据规模。本问据此在分核阶段估计通信，在候选排序阶段补充缓存风险，仍采用有限种结构构造控制计算成本。
+
+沿用第六章的 $G_c$、$\phi$、$a$、$\pi_k$ 及硬件符号。每个 case 都重新计算拓扑序、分量、层宽和分支汇合位置，不读取问题一已输出的切图方案。记分支或汇合节点所在的不同拓扑层为 $\ell_1<\cdots<\ell_m$，其相邻间距集合为 $\mathcal D=\{\ell_{j+1}-\ell_j\}$。候选深度带宽取
+\begin{equation}
+w_B=\begin{cases}
+\max\{2,\min\{32,\operatorname{round}(\operatorname{median}\mathcal D)\}\},&\mathcal D\ne\varnothing,\\
+\max\{2,\min\{32,\lceil\sqrt h\rceil\}\},&\mathcal D=\varnothing.
+\end{cases}
+\label{eq:q2-band}
+\end{equation}
+分支与汇合层相邻间距刻画了当前图中重复出现的结构尺度，取其中位数可减少少数极长链段对带宽选择的影响。式中的 round 采用最近整数、半整数取偶的规则，与实现一致；2 和 32 为固定的搜索尺度边界。这里的深度带宽以拓扑层数计，硬件配置仍按题目给定值读取。
+
+\subsection{跨核通信与完成时间估计}
+令 $P_t$、$C_t$ 分别表示张量 $t$ 的生产核集合和消费核集合；令 $e_t=1$ 表示原图包含该张量的最终 COPY\_OUT。为比较分核方案，按生产核--消费核对累计跨核写出与读入；同核消费继续沿用核内数据。相应的计数为
+\begin{equation}
+\begin{aligned}
+n_t^{\rm in}&=\mathbf1[P_t=\varnothing]|C_t|,\\
+n_t^{\rm out}&=\mathbf1[P_t\ne\varnothing]\,
+\mathbf1[e_t=1\ \text{或}\ C_t=\varnothing]|P_t|,\\
+n_t^{\rm cross}&=\sum_{k\in P_t}\sum_{l\in C_t}\mathbf1[k\ne l].
+\end{aligned}
+\label{eq:q2-copycount}
+\end{equation}
+由此得到缓存换出之前的通信量估计
+\begin{equation}
+\widehat B_B=\sum_{t\in T}b_t
+\left(n_t^{\rm in}+n_t^{\rm out}+2n_t^{\rm cross}\right).
+\label{eq:q2-bytes}
+\end{equation}
+同一核心上多个操作读取同一张量时，在集合 $C_t$ 中只记录一个消费核，避免重复累计该核的边界读取。$\widehat B_B$ 包含输入读入、结果写出和跨核传递的估计工作量。结果表中的额外搬运则按附件扣除原图已有 COPY、加入实际缓存换入换出后统计，两者的计数范围不同。
+
+记核心 $k$ 的管道负载为 $L_k^q=\sum_{u:a(\phi(u))=k,\,p(u)=q}c_u$，$b_{uv}$ 为操作依赖 $u\to v$ 关联的张量字节数之和。沿操作拓扑序递推：
+\begin{equation}
+\begin{aligned}
+\widehat f_v^B&=c_v+\max_{u\in\operatorname{pred}(v)}
+\left[\widehat f_u^B+\mathbf1[a(\phi(u))\ne a(\phi(v))]
+\left(\delta_B+\frac{2b_{uv}}{\beta}\right)\right],\\
+\widehat T_B&=\max\left\{\max_{k,q}L_k^q,\ \max_v\widehat f_v^B,\ \frac{\widehat B_B}{\beta}\right\}.
+\end{aligned}
+\label{eq:q2-time}
+\end{equation}
+最忙管道、最长依赖路径和共享 DDR 总工作量分别给出三种时间尺度，取其最大值作为候选的主要耗时估计。各项统一为 cycle，便于与后续缓存风险的时间修正相加。四条 Pipe 的动态配合与请求间带宽均分没有在该式中逐事件展开，实际耗时仍需由冻结方案的官方执行结果检验。
+
+\subsection{张量驻留区间与缓存风险}
+为识别同核合并可能带来的缓存压力，先按 $\pi_k$ 连接各子图，并在子图内保留原操作拓扑序，得到核心 $k$ 的分析序列。对张量 $t$，令 $f_{tk}$、$l_{tk}$ 分别为其生产者或消费者在该序列中第一次和最后一次出现的位置。对资源 $r\in\{L1,UB\}$，静态活跃字节峰值为
+\begin{equation}
+H_k^r=\max_j\sum_{t:\,\operatorname{pos}_k(t)=r}
+b_t\mathbf1[f_{tk}\le j\le l_{tk}],\qquad
+R_B=\sum_{r\in\{L1,UB\}}\left(\max_k H_k^r-C_r\right)_+.
+\label{eq:q2-memory}
+\end{equation}
+其中 $(x)_+=\max(x,0)$，$C_r$ 为对应缓存容量。在静态估计中，原 DDR 输入按 UB 驻留处理。程序通过区间起止位置的差分累计计算 $H_k^r$，无需按实际周期展开整个执行过程。
+
+静态区间记录的是分析序列中的位置。附件执行时，输出空间在操作发射前申请，输入空间在最后一次使用完成后释放，并按固定核内机制插入换入换出。两种时间表示的差异会影响同时驻留的张量集合。$R_B$ 因此作为长期驻留的风险量进入排序；即使其值为零，实际执行中仍可能产生缓存换出。容量可行性在原版执行程序中按 L1/UB 的硬上限检查。
+
+对合法候选采用统一评分
+\begin{equation}
+J_B=\widehat T_B+\frac{\widehat B_B+\gamma_B R_B}{\beta},\qquad \gamma_B=10.
+\label{eq:q2-score}
+\end{equation}
+在最大瓶颈时间相近时，附加 DDR 工作量使通信较少的方案优先，缓存风险项则降低长期占用核内空间的方案的优先级。这两个修正项与 $\widehat T_B$ 均以 cycle 表示，构成用于排序的评价函数。开发阶段的 28 个正风险候选中，实际换出相关字节与风险量之比的中位数为 10.54，据此将全局系数 $\gamma_B$ 取为 10 并冻结。该系数适用于本轮统一排序，各输入图只重新计算其 $R_B$。
+
+\subsection{有限候选构造与算法实现}
+问题二构造五类方案：完整分量装箱、层宽谷切分、宽度为 $w_B$ 和 $2w_B$ 的两种数据感知深度带，以及宽度为 $w_B$ 的固定深度带。各方案使用同一输入依赖和张量字节数，其中分量或带内独立区域采用第六章的双管道负载分配规则。数据感知切分优先寻找跨层字节数较少的位置，层宽谷切分则利用并行度收缩处形成阶段。五类方案生成后去重，重复结构不再评分。
+
+候选生成后，先检查节点覆盖、子图唯一分配及联合依赖图无环性。通过检查的不同方案才计算通信、路径与缓存项，并按 $J_B$ 排序；同分时依次比较 $\widehat B_B$ 和固定的候选类别顺序。算法 7-1 给出这一过程，输出仍为各非 COPY 操作的子图编号与各核子图序列。
+
+\begin{algorithmblock}{算法 7-1\quad 基于输入结构与驻留风险的场景 B 调度}
+\alginput{当前计算图 $G$，核心数 $N$，固定配置 $\beta,\delta_B,C_{L1},C_{UB}$。}
+\algoutput{子图映射 $\phi$ 与每核子图序列 $\pi_0,\ldots,\pi_{N-1}$。}
+\algline{读取当前 case，构建 $G_c$、张量生产者/消费者表及大小、存储位置索引。}
+\algline{计算拓扑序、深度、弱连通分量、层宽和分支汇合层；按式~\eqref{eq:q2-band} 得到 $w_B$。}
+\algline{生成分量装箱、层宽谷、两种数据感知深度带及固定深度带共五类候选。}
+\algline{初始化记录集合 $\mathcal R=\varnothing$ 与已处理方案哈希集合。}
+\algline{\textbf{for} 按固定类别顺序生成的每个候选 $P$ \textbf{do}}
+\algline[1]{校验节点覆盖、子图覆盖及依赖与核内顺序的无环性；失败则记录原因并跳过。}
+\algline[1]{计算完整方案哈希；若重复则跳过，否则加入已处理集合。}
+\algline[1]{由 $\phi,a$ 建立 $P_t,C_t$，计算 $\widehat B_B$、$L_k^q$ 和 $\widehat T_B$。}
+\algline[1]{按每核子图序列构造分析序列，计算 $f_{tk},l_{tk}$，以差分累计得到 $H_k^r$。}
+\algline[1]{计算 $R_B$ 和 $J_B$，将候选及各项评价量加入 $\mathcal R$。}
+\algline{\textbf{end for}}
+\algline{若 $\mathcal R$ 为空则报告失败；否则按 $(J_B,\widehat B_B,\text{类别顺序})$ 取最小项。}
+\algline{\textbf{return} 对应的 \texttt{node\_to\_subgraph} 与 \texttt{core\_schedules}。}
+\end{algorithmblock}
+
+\subsection{求解结果与分析}
+按照与问题一相同的单核参照和统计口径，对 100 个计算图的 2--5 核方案进行独立验收，共 400 组，全部成功。表~\ref{tab:q2-result} 列出两种场景在相同图和核数下的结果。开发标定与最终验收使用了同一批给定图，因此以下数值表示本题数据上的性能，不据此声称对未知图分布的泛化效果。
+
+\begin{table}[htbp]
+\centering
+\caption{问题一与问题二的全量结果比较，额外搬运单位为 MiB}
+\label{tab:q2-result}
+\begin{tabular}{crrrr}
+\hline
+核心数 & 问题一加速比 & 问题二加速比 & 问题一额外搬运 & 问题二额外搬运 \\
+\hline
+2 & 1.8648 & 1.9358 & 13.848 & 10.076 \\
+3 & 2.6016 & 2.7452 & 14.514 & 8.683 \\
+4 & 3.2650 & 3.4645 & 15.557 & 8.569 \\
+5 & 3.8311 & 3.9522 & 15.285 & 9.756 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/图7-2_问题二求解结果.pdf}
+\caption{两种场景的全量结果比较。左图为逐图加速比的算术平均，单核值按定义为 1；右图为官方统计的平均新增 DDR 字节数，以 MiB 表示。除单核定义值外，每个点或柱均对应 100 个计算图。}
+\label{fig:q2-result}
+\end{figure}
+
+问题二在 2--5 核下的平均加速比均高于问题一，五核均值由 3.8311 增至 3.9522。同时，五核平均额外搬运由 15.285 MiB 降至 9.756 MiB。场景 B 允许保留同核数据，为降低边界搬运提供了条件；但两场景使用了各自适配的方案，以上差异同时包含场景规则和方案选择的影响，不能全部归因于单一算法步骤。
+
+逐图比较中，五核时有 31 个图耗时下降、19 个图上升、50 个图相同。以问题一的逐图耗时为分母，平均耗时缩减率为 1.67\%。问题二的五核平均缓存换入换出新增字节仍有 5.315 MiB，表明同核复用的收益受到驻留容量制约。静态风险量未记录每次实际申请和释放的时刻，候选排序仍可能低估局部高峰及其搬运代价。
+
+本问以五类构造限制了每次求解的候选规模，输入适应性来自当前图的拓扑层间距、管道负载和张量区间。后续引入共享只读 Cache 后，同一读请求可能占用不同的带宽池，命中还取决于读取完成与淘汰的先后顺序。第八章将这部分时序展开，用于进一步区分静态通信量相近的方案。
