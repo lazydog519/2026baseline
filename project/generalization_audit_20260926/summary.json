@@ -1,0 +1,124 @@
+{
+  "protocol": {
+    "seed": 26092617,
+    "base_graphs": [
+      "serial",
+      "independent",
+      "fork_join",
+      "irregular",
+      "pressure",
+      "shared_input",
+      "direct_dependency",
+      "transfer_pipe"
+    ],
+    "variants": [
+      "irregular_relabel",
+      "pressure_relabel",
+      "shared_input_relabel",
+      "direct_dependency_relabel"
+    ],
+    "cores": [
+      2,
+      5
+    ],
+    "max_official_evaluations": 80,
+    "solver_changes": false,
+    "metric": "T_component / T_selected; not single-core speedup",
+    "note": "Freeze all plans before any official evaluation. No tuning or retry selection."
+  },
+  "questions": {
+    "1": {
+      "success": 20,
+      "attempts": 20,
+      "mean_component_relative_efficiency": 1.0590534232181747,
+      "regressions": [
+        {
+          "name": "shared_input",
+          "cores": 5,
+          "slowdown": 0.006609642301710794
+        }
+      ],
+      "relabel_solver_effects": [],
+      "inference_seconds_median": 0.009253000000171596,
+      "inference_seconds_max": 0.020322600001236424,
+      "filename_and_repeat_stable": true,
+      "illegal_inputs_accepted": [
+        "duplicate_id",
+        "negative_cycles",
+        "duplicate_edge",
+        "copy_cycle"
+      ],
+      "validator_checks": [
+        {
+          "name": "negative_subgraph",
+          "rejected": false
+        },
+        {
+          "name": "boolean_subgraph",
+          "rejected": false
+        },
+        {
+          "name": "missing_op",
+          "rejected": true,
+          "error": "ValueError('compute Op coverage')"
+        },
+        {
+          "name": "order_cycle",
+          "rejected": true,
+          "error": "ValueError('combined dependency/core-order cycle')"
+        }
+      ],
+      "official_modules": [],
+      "all_inputs_unchanged": true
+    },
+    "2": {
+      "success": 20,
+      "attempts": 20,
+      "mean_component_relative_efficiency": 1.0379191435666175,
+      "regressions": [],
+      "relabel_solver_effects": [
+        {
+          "name": "irregular_relabel",
+          "relative_to_transport": 0.16463378354257152
+        }
+      ],
+      "inference_seconds_median": 0.002365349999308819,
+      "inference_seconds_max": 0.003446799999437644,
+      "filename_and_repeat_stable": true,
+      "illegal_inputs_accepted": [
+        "duplicate_id",
+        "negative_cycles",
+        "duplicate_edge",
+        "copy_cycle"
+      ],
+      "validator_checks": [
+        {
+          "name": "negative_subgraph",
+          "rejected": false
+        },
+        {
+          "name": "boolean_subgraph",
+          "rejected": false
+        },
+        {
+          "name": "missing_op",
+          "rejected": true,
+          "error": "ValueError('compute op coverage')"
+        },
+        {
+          "name": "order_cycle",
+          "rejected": true,
+          "error": "ValueError('subgraph/order cycle')"
+        }
+      ],
+      "official_modules": [],
+      "all_inputs_unchanged": true
+    }
+  },
+  "official_calls": 80,
+  "official_files_unchanged": 114,
+  "official_files": 114,
+  "solver_sources_unchanged": true,
+  "frozen_plans_unchanged": true,
+  "official_errors": []
+}

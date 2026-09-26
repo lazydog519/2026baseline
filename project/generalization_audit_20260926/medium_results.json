@@ -1,0 +1,82 @@
+[
+  {
+    "question": 1,
+    "name": "layered_576",
+    "plan": "selected",
+    "inference_seconds": 0.40398760000061884,
+    "status": "ok",
+    "makespan": 773238,
+    "spill_bytes": 0,
+    "audit_seconds": 0.3462410000011005
+  },
+  {
+    "question": 1,
+    "name": "layered_576",
+    "plan": "component",
+    "inference_seconds": 0.40398760000061884,
+    "status": "ok",
+    "makespan": 2759167,
+    "spill_bytes": 1712128,
+    "audit_seconds": 0.13125819999913801
+  },
+  {
+    "question": 1,
+    "name": "layered_1152",
+    "plan": "selected",
+    "inference_seconds": 0.8077372999996442,
+    "status": "ok",
+    "makespan": 1563459,
+    "spill_bytes": 0,
+    "audit_seconds": 1.222057599999971
+  },
+  {
+    "question": 1,
+    "name": "layered_1152",
+    "plan": "component",
+    "inference_seconds": 0.8077372999996442,
+    "status": "ok",
+    "makespan": 5772985,
+    "spill_bytes": 4644864,
+    "audit_seconds": 0.6692254999998113
+  },
+  {
+    "question": 2,
+    "name": "layered_576",
+    "plan": "selected",
+    "inference_seconds": 0.03116279999994731,
+    "status": "ok",
+    "makespan": 2318992,
+    "spill_bytes": 278528,
+    "audit_seconds": 0.11499309999999241
+  },
+  {
+    "question": 2,
+    "name": "layered_576",
+    "plan": "component",
+    "inference_seconds": 0.03116279999994731,
+    "status": "ok",
+    "makespan": 2759167,
+    "spill_bytes": 1712128,
+    "audit_seconds": 0.10297640000135289
+  },
+  {
+    "question": 2,
+    "name": "layered_1152",
+    "plan": "selected",
+    "inference_seconds": 0.05524909999985539,
+    "status": "ok",
+    "makespan": 4172607,
+    "spill_bytes": 393216,
+    "audit_seconds": 0.23935159999928146
+  },
+  {
+    "question": 2,
+    "name": "layered_1152",
+    "plan": "component",
+    "inference_seconds": 0.05524909999985539,
+    "status": "ok",
+    "makespan": 5772985,
+    "spill_bytes": 4644864,
+    "audit_seconds": 0.26322280000022147
+  }
+]

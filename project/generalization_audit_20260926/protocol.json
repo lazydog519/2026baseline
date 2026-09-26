@@ -1,0 +1,27 @@
+{
+  "seed": 26092617,
+  "base_graphs": [
+    "serial",
+    "independent",
+    "fork_join",
+    "irregular",
+    "pressure",
+    "shared_input",
+    "direct_dependency",
+    "transfer_pipe"
+  ],
+  "variants": [
+    "irregular_relabel",
+    "pressure_relabel",
+    "shared_input_relabel",
+    "direct_dependency_relabel"
+  ],
+  "cores": [
+    2,
+    5
+  ],
+  "max_official_evaluations": 80,
+  "solver_changes": false,
+  "metric": "T_component / T_selected; not single-core speedup",
+  "note": "Freeze all plans before any official evaluation. No tuning or retry selection."
+}

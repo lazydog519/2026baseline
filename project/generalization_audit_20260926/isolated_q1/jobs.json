@@ -1,0 +1,158 @@
+[
+  {
+    "name": "serial",
+    "file": "serial.json",
+    "cores": 2,
+    "kind": "base"
+  },
+  {
+    "name": "serial",
+    "file": "serial.json",
+    "cores": 5,
+    "kind": "base"
+  },
+  {
+    "name": "independent",
+    "file": "independent.json",
+    "cores": 2,
+    "kind": "base"
+  },
+  {
+    "name": "independent",
+    "file": "independent.json",
+    "cores": 5,
+    "kind": "base"
+  },
+  {
+    "name": "fork_join",
+    "file": "fork_join.json",
+    "cores": 2,
+    "kind": "base"
+  },
+  {
+    "name": "fork_join",
+    "file": "fork_join.json",
+    "cores": 5,
+    "kind": "base"
+  },
+  {
+    "name": "irregular",
+    "file": "irregular.json",
+    "cores": 2,
+    "kind": "base"
+  },
+  {
+    "name": "irregular",
+    "file": "irregular.json",
+    "cores": 5,
+    "kind": "base"
+  },
+  {
+    "name": "pressure",
+    "file": "pressure.json",
+    "cores": 2,
+    "kind": "base"
+  },
+  {
+    "name": "pressure",
+    "file": "pressure.json",
+    "cores": 5,
+    "kind": "base"
+  },
+  {
+    "name": "shared_input",
+    "file": "shared_input.json",
+    "cores": 2,
+    "kind": "base"
+  },
+  {
+    "name": "shared_input",
+    "file": "shared_input.json",
+    "cores": 5,
+    "kind": "base"
+  },
+  {
+    "name": "direct_dependency",
+    "file": "direct_dependency.json",
+    "cores": 2,
+    "kind": "base"
+  },
+  {
+    "name": "direct_dependency",
+    "file": "direct_dependency.json",
+    "cores": 5,
+    "kind": "base"
+  },
+  {
+    "name": "transfer_pipe",
+    "file": "transfer_pipe.json",
+    "cores": 2,
+    "kind": "base"
+  },
+  {
+    "name": "transfer_pipe",
+    "file": "transfer_pipe.json",
+    "cores": 5,
+    "kind": "base"
+  },
+  {
+    "name": "irregular_relabel",
+    "file": "irregular_relabel.json",
+    "cores": 5,
+    "kind": "relabel"
+  },
+  {
+    "name": "pressure_relabel",
+    "file": "pressure_relabel.json",
+    "cores": 5,
+    "kind": "relabel"
+  },
+  {
+    "name": "shared_input_relabel",
+    "file": "shared_input_relabel.json",
+    "cores": 5,
+    "kind": "relabel"
+  },
+  {
+    "name": "direct_dependency_relabel",
+    "file": "direct_dependency_relabel.json",
+    "cores": 5,
+    "kind": "relabel"
+  },
+  {
+    "name": "duplicate_id",
+    "file": "duplicate_id.json",
+    "cores": 2,
+    "kind": "invalid"
+  },
+  {
+    "name": "negative_cycles",
+    "file": "negative_cycles.json",
+    "cores": 2,
+    "kind": "invalid"
+  },
+  {
+    "name": "duplicate_edge",
+    "file": "duplicate_edge.json",
+    "cores": 2,
+    "kind": "invalid"
+  },
+  {
+    "name": "copy_cycle",
+    "file": "copy_cycle.json",
+    "cores": 2,
+    "kind": "invalid"
+  },
+  {
+    "name": "serial_alias",
+    "file": "case_001.json",
+    "cores": 5,
+    "kind": "alias"
+  },
+  {
+    "name": "serial_repeat",
+    "file": "serial.json",
+    "cores": 5,
+    "kind": "repeat"
+  }
+]

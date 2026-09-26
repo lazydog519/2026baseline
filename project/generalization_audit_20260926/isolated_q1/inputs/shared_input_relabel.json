@@ -1,0 +1,792 @@
+{
+  "ops": [
+    {
+      "id": 626156,
+      "op": "COPY_OUT",
+      "pipe": "PIPE_MTE3",
+      "cycles": 1
+    },
+    {
+      "id": 895086,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 1500
+    },
+    {
+      "id": 932465,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 20000
+    },
+    {
+      "id": 549280,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 80
+    },
+    {
+      "id": 177402,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 7000
+    },
+    {
+      "id": 141699,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 80
+    },
+    {
+      "id": 812797,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 20000
+    },
+    {
+      "id": 377085,
+      "op": "COPY_OUT",
+      "pipe": "PIPE_MTE3",
+      "cycles": 1
+    },
+    {
+      "id": 960104,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 20000
+    },
+    {
+      "id": 432005,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 300
+    },
+    {
+      "id": 840949,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 1500
+    },
+    {
+      "id": 639785,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 20000
+    },
+    {
+      "id": 786682,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 80
+    },
+    {
+      "id": 415591,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 300
+    },
+    {
+      "id": 113961,
+      "op": "COPY_OUT",
+      "pipe": "PIPE_MTE3",
+      "cycles": 1
+    },
+    {
+      "id": 370280,
+      "op": "COPY_OUT",
+      "pipe": "PIPE_MTE3",
+      "cycles": 1
+    },
+    {
+      "id": 937438,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 1500
+    },
+    {
+      "id": 769709,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 80
+    },
+    {
+      "id": 836092,
+      "op": "COPY_OUT",
+      "pipe": "PIPE_MTE3",
+      "cycles": 1
+    },
+    {
+      "id": 471904,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 80
+    },
+    {
+      "id": 739882,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 80
+    },
+    {
+      "id": 990981,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 7000
+    },
+    {
+      "id": 170806,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 7000
+    },
+    {
+      "id": 207920,
+      "op": "COPY_OUT",
+      "pipe": "PIPE_MTE3",
+      "cycles": 1
+    },
+    {
+      "id": 893072,
+      "op": "COPY_OUT",
+      "pipe": "PIPE_MTE3",
+      "cycles": 1
+    },
+    {
+      "id": 37835,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 20000
+    },
+    {
+      "id": 843779,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 7000
+    },
+    {
+      "id": 17456,
+      "op": "COPY_OUT",
+      "pipe": "PIPE_MTE3",
+      "cycles": 1
+    },
+    {
+      "id": 842126,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 1500
+    },
+    {
+      "id": 716305,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 300
+    },
+    {
+      "id": 566938,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 300
+    },
+    {
+      "id": 662532,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 300
+    },
+    {
+      "id": 839069,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 7000
+    },
+    {
+      "id": 869522,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 80
+    },
+    {
+      "id": 34495,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 7000
+    },
+    {
+      "id": 787583,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 1500
+    },
+    {
+      "id": 294441,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 20000
+    },
+    {
+      "id": 726350,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 80
+    },
+    {
+      "id": 853250,
+      "op": "COPY_IN",
+      "pipe": "PIPE_MTE2",
+      "cycles": 1
+    },
+    {
+      "id": 878735,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 7000
+    },
+    {
+      "id": 347457,
+      "op": "COMPUTE",
+      "pipe": "PIPE_V",
+      "cycles": 1500
+    }
+  ],
+  "tensors": [
+    {
+      "id": 539613,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 815747,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 131026,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 144491,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 83029,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 927384,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 120650,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 961669,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 413756,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 787040,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 556930,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 859638,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 816799,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 27011,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 906152,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 847292,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 779869,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 103960,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 213039,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 993754,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 654271,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 675117,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 510480,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 49913,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 99720,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 814483,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 632897,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 836597,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 458961,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 113489,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 421096,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 954466,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 394670,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 813576,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 572104,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 268272,
+      "pos": "DDR",
+      "size": 24000
+    },
+    {
+      "id": 68569,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 729070,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 80908,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 39505,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 337469,
+      "pos": "UB",
+      "size": 24000
+    },
+    {
+      "id": 151638,
+      "pos": "UB",
+      "size": 24000
+    }
+  ],
+  "edges": [
+    {
+      "source": 294441,
+      "target": 68569
+    },
+    {
+      "source": 812797,
+      "target": 927384
+    },
+    {
+      "source": 83029,
+      "target": 960104
+    },
+    {
+      "source": 853250,
+      "target": 394670
+    },
+    {
+      "source": 836092,
+      "target": 113489
+    },
+    {
+      "source": 39505,
+      "target": 840949
+    },
+    {
+      "source": 432005,
+      "target": 151638
+    },
+    {
+      "source": 906152,
+      "target": 432005
+    },
+    {
+      "source": 68569,
+      "target": 893072
+    },
+    {
+      "source": 17456,
+      "target": 120650
+    },
+    {
+      "source": 207920,
+      "target": 787040
+    },
+    {
+      "source": 113961,
+      "target": 268272
+    },
+    {
+      "source": 177402,
+      "target": 131026
+    },
+    {
+      "source": 878735,
+      "target": 993754
+    },
+    {
+      "source": 675117,
+      "target": 294441
+    },
+    {
+      "source": 816799,
+      "target": 878735
+    },
+    {
+      "source": 394670,
+      "target": 937438
+    },
+    {
+      "source": 840949,
+      "target": 539613
+    },
+    {
+      "source": 415591,
+      "target": 813576
+    },
+    {
+      "source": 556930,
+      "target": 932465
+    },
+    {
+      "source": 151638,
+      "target": 370280
+    },
+    {
+      "source": 213039,
+      "target": 415591
+    },
+    {
+      "source": 927384,
+      "target": 843779
+    },
+    {
+      "source": 814483,
+      "target": 639785
+    },
+    {
+      "source": 539613,
+      "target": 17456
+    },
+    {
+      "source": 632897,
+      "target": 812797
+    },
+    {
+      "source": 662532,
+      "target": 836597
+    },
+    {
+      "source": 27011,
+      "target": 787583
+    },
+    {
+      "source": 626156,
+      "target": 144491
+    },
+    {
+      "source": 170806,
+      "target": 572104
+    },
+    {
+      "source": 337469,
+      "target": 207920
+    },
+    {
+      "source": 990981,
+      "target": 556930
+    },
+    {
+      "source": 869522,
+      "target": 103960
+    },
+    {
+      "source": 859638,
+      "target": 471904
+    },
+    {
+      "source": 103960,
+      "target": 786682
+    },
+    {
+      "source": 394670,
+      "target": 869522
+    },
+    {
+      "source": 99720,
+      "target": 842126
+    },
+    {
+      "source": 786682,
+      "target": 815747
+    },
+    {
+      "source": 37835,
+      "target": 213039
+    },
+    {
+      "source": 370280,
+      "target": 654271
+    },
+    {
+      "source": 572104,
+      "target": 113961
+    },
+    {
+      "source": 394670,
+      "target": 662532
+    },
+    {
+      "source": 394670,
+      "target": 566938
+    },
+    {
+      "source": 893072,
+      "target": 510480
+    },
+    {
+      "source": 471904,
+      "target": 954466
+    },
+    {
+      "source": 729070,
+      "target": 836092
+    },
+    {
+      "source": 566938,
+      "target": 632897
+    },
+    {
+      "source": 716305,
+      "target": 421096
+    },
+    {
+      "source": 954466,
+      "target": 626156
+    },
+    {
+      "source": 836597,
+      "target": 990981
+    },
+    {
+      "source": 34495,
+      "target": 814483
+    },
+    {
+      "source": 549280,
+      "target": 458961
+    },
+    {
+      "source": 739882,
+      "target": 413756
+    },
+    {
+      "source": 847292,
+      "target": 853250
+    },
+    {
+      "source": 961669,
+      "target": 895086
+    },
+    {
+      "source": 377085,
+      "target": 779869
+    },
+    {
+      "source": 842126,
+      "target": 83029
+    },
+    {
+      "source": 726350,
+      "target": 27011
+    },
+    {
+      "source": 141699,
+      "target": 99720
+    },
+    {
+      "source": 960104,
+      "target": 729070
+    },
+    {
+      "source": 421096,
+      "target": 34495
+    },
+    {
+      "source": 394670,
+      "target": 716305
+    },
+    {
+      "source": 769709,
+      "target": 859638
+    },
+    {
+      "source": 413756,
+      "target": 141699
+    },
+    {
+      "source": 394670,
+      "target": 739882
+    },
+    {
+      "source": 813576,
+      "target": 549280
+    },
+    {
+      "source": 937438,
+      "target": 49913
+    },
+    {
+      "source": 839069,
+      "target": 816799
+    },
+    {
+      "source": 49913,
+      "target": 177402
+    },
+    {
+      "source": 932465,
+      "target": 906152
+    },
+    {
+      "source": 787583,
+      "target": 80908
+    },
+    {
+      "source": 394670,
+      "target": 726350
+    },
+    {
+      "source": 458961,
+      "target": 170806
+    },
+    {
+      "source": 131026,
+      "target": 347457
+    },
+    {
+      "source": 843779,
+      "target": 39505
+    },
+    {
+      "source": 895086,
+      "target": 337469
+    },
+    {
+      "source": 815747,
+      "target": 769709
+    },
+    {
+      "source": 80908,
+      "target": 839069
+    },
+    {
+      "source": 347457,
+      "target": 675117
+    },
+    {
+      "source": 993754,
+      "target": 377085
+    },
+    {
+      "source": 639785,
+      "target": 961669
+    },
+    {
+      "source": 394670,
+      "target": 37835
+    }
+  ]
+}

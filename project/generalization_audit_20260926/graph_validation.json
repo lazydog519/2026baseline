@@ -1,0 +1,54 @@
+{
+  "serial": {
+    "valid": true
+  },
+  "independent": {
+    "valid": true
+  },
+  "fork_join": {
+    "valid": true
+  },
+  "irregular": {
+    "valid": true
+  },
+  "pressure": {
+    "valid": true
+  },
+  "shared_input": {
+    "valid": true
+  },
+  "direct_dependency": {
+    "valid": true
+  },
+  "transfer_pipe": {
+    "valid": true
+  },
+  "irregular_relabel": {
+    "valid": true
+  },
+  "pressure_relabel": {
+    "valid": true
+  },
+  "shared_input_relabel": {
+    "valid": true
+  },
+  "direct_dependency_relabel": {
+    "valid": true
+  },
+  "duplicate_id": {
+    "valid": false,
+    "error": "duplicate op/tensor id: 4"
+  },
+  "negative_cycles": {
+    "valid": false,
+    "error": "op 4 cycles must be an integer >= 0; got -1"
+  },
+  "duplicate_edge": {
+    "valid": false,
+    "error": "duplicate edge: 1 -> 3"
+  },
+  "copy_cycle": {
+    "valid": false,
+    "error": "input graph: dependency cycle; 1 -[graph]-> 3; 3 -[graph]-> 2; 2 -[graph]-> 4; 4 -[graph]-> 5; 5 -[graph]-> 6; 6 -[graph]-> 7; 7 -[graph]-> 8; 8 -[graph]-> 9; 9 -[graph]-> 10; 10 -[graph]-> 11; 11 -[graph]-> 12; 12 -[graph]-> 13; 13 -[graph]-> 14; 14 -[graph]-> 15; 15 -[graph]-> 16; 16 -[graph]-> 17; ... (52 edges total)"
+  }
+}
