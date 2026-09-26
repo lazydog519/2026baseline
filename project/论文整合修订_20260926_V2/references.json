@@ -1,0 +1,65 @@
+[
+  {
+    "key": "Chen2022",
+    "reference": "陈怡然，王一土，神经网络加速器架构概述，中国科学：信息科学，52(4)：596--611，2022。DOI: 10.1360/SSI-2021-0409。",
+    "verified_at": "2026-09-26",
+    "source": "https://scis.scichina.com/ssi2022.html",
+    "supports": "架构中的计算组织、数据流与存储层级。仅作为背景，不用于替代赛题规则。"
+  },
+  {
+    "key": "Problem2026",
+    "reference": "中国研究生数学建模竞赛组委会，通用神经网络处理器下的多核调度问题及配套附件，第二十三届中国研究生数学建模竞赛 A 题，2026。",
+    "verified_at": "2026-09-26",
+    "source": "官方题目与附件（本地原文件）",
+    "supports": "全部硬件参数、输出接口、核内调度、多核模拟和统计定义。"
+  },
+  {
+    "key": "Liu2025",
+    "reference": "刘正煜，张帆，祁晓峰，高彦钊，宋怡景，范旺，深度学习编译器研究综述，计算机科学，52(8)：29--44，2025。DOI: 10.11896/jsjkx.250100062。",
+    "verified_at": "2026-09-26",
+    "source": "https://www.jsjkx.com/CN/subject/listSubjectChapters.do?subjectId=1587440017120",
+    "supports": "图表示、编译优化和目标硬件配合的研究背景。"
+  },
+  {
+    "key": "Graham1969",
+    "reference": "Graham R L，Bounds on Multiprocessing Timing Anomalies，SIAM Journal on Applied Mathematics，17(2)：416--429，1969。DOI: 10.1137/0117039。",
+    "verified_at": "2026-09-26",
+    "source": "https://doi.org/10.1137/0117039",
+    "supports": "最长工作量优先的来源；本文不宣称继承其独立作业近似比。"
+  },
+  {
+    "key": "Topcuoglu2002",
+    "reference": "Topcuoglu H，Hariri S，Wu M Y，Performance-effective and low-complexity task scheduling for heterogeneous computing，IEEE Transactions on Parallel and Distributed Systems，13(3)：260--274，2002。DOI: 10.1109/71.993206。",
+    "verified_at": "2026-09-26",
+    "source": "https://experts.arizona.edu/en/publications/performance-effective-and-low-complexity-task-scheduling-for-hete/",
+    "supports": "上行优先级、最早完成列表调度；本文尾部追加，不声称完整 HEFT 实现。"
+  },
+  {
+    "key": "Yang2025",
+    "reference": "杨紫超，吴恒，吴悦文，张文博，基于性能建模的深度学习训练任务调度综述，软件学报，36(4)：1570--1589，2025。DOI: 10.13328/j.cnki.jos.007202。",
+    "verified_at": "2026-09-26",
+    "source": "https://jos.org.cn/jos/article/issue/2025_36_4",
+    "supports": "性能模型支持调度决策的背景；训练集群综述不作为本题 NPU 规则来源。"
+  },
+  {
+    "key": "Chen2024",
+    "reference": "Chen R，Ding Z，Zheng S，等，MAGIS: Memory Optimization via Coordinated Graph Transformation and Scheduling for DNN，Proceedings of ASPLOS 2024，Volume 3：607--621，2024。DOI: 10.1145/3620666.3651330。",
+    "verified_at": "2026-09-26",
+    "source": "https://github.com/pku-liang/MAGIS",
+    "supports": "图与调度联合考虑内存和时间的启发；当前求解不调用原版 MAGIS。"
+  },
+  {
+    "key": "Parashar2019",
+    "reference": "Parashar A，Raina P，Shao Y S，等，Timeloop: A Systematic Approach to DNN Accelerator Evaluation，Proceedings of ISPASS 2019：304--315，2019。DOI: 10.1109/ISPASS.2019.00042。",
+    "verified_at": "2026-09-26",
+    "source": "https://research.nvidia.com/publication/2019-03_timeloop-systematic-approach-dnn-accelerator-evaluation",
+    "supports": "架构与数据流资源代价建模；当前图缺少直接复用其完整映射所需维度。"
+  },
+  {
+    "key": "AIGPT6",
+    "reference": "OpenAI. GPT-6 (model identifier: gpt-6-astra). Released 2026-09-03. https://openai.com/index/gpt-6-astra/.",
+    "verified_at": "2026-09-26",
+    "source": "https://openai.com/index/gpt-6-astra/",
+    "supports": "人工智能工具名称、模型标识、开发机构及发布日期；不作为硬件规律或算法性能的证据。"
+  }
+]
